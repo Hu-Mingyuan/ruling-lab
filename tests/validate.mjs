@@ -69,6 +69,14 @@ assert.equal(
   core.formatVertices([[-1, -1], [1, 0], [0, 1]]),
   "Conv{(-1,-1), (1,0), (0,1)}"
 );
+assert.equal(
+  core.formatRulingPolynomial([
+    { genus: 0, counts: { total: 8 } },
+    { genus: 1, counts: { total: 1 } },
+  ]),
+  "z² + 8",
+  "the ruling polynomial is written from highest genus to lowest"
+);
 const annularTransform = core.totalDrawingTransform(
   1,
   [[0, 1], [-1, 2]]
@@ -126,7 +134,12 @@ for (const item of cases) {
     [0, 1],
     `${item.id}: all possible genera`
   );
-  assert.equal(genera[1].counts.total, 1, `${item.id}: standard ruling`);
+  assert.equal(genera[1].counts.total, 1, `${item.id}: genus-one ruling`);
+  assert.equal(
+    core.formatRulingPolynomial(genera),
+    `z² + ${genera[0].counts.total}`,
+    `${item.id}: ruling polynomial`
+  );
 
   for (const entry of genera) {
     assert.equal(
@@ -151,6 +164,16 @@ for (const item of cases) {
     }
 
     for (const drawing of entry.rulings) {
+      assert.doesNotMatch(
+        drawing.identifier,
+        /standard/i,
+        `${item.id}: ordinary ruling identifier`
+      );
+      assert.doesNotMatch(
+        drawing.sector,
+        /standard/i,
+        `${item.id}: ordinary ruling sector`
+      );
       assert.equal(drawing.sl2z.length, 2, `${item.id}: SL2 matrix rows`);
       const [[a, b], [c, d]] = drawing.sl2z;
       assert.equal(a * d - b * c, 1, `${item.id}: determinant one`);
@@ -171,6 +194,11 @@ for (const item of cases) {
       const svg = fs.readFileSync(svgPath, "utf8");
       assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
       assert.match(svg, /fill-opacity:(?:0?\.)30/);
+      assert.equal(
+        (svg.match(/<circle\b/g) || []).length,
+        drawing.switches,
+        `${drawing.src}: black switch points`
+      );
       assert.match(
         svg,
         /&quot;sl2z&quot;:\[\[1,0\],\[0,1\]\]/,
@@ -189,8 +217,8 @@ for (const item of cases) {
   );
 }
 
-assert.equal(rulingMultiplicity, 112, "96 rational + 16 standard rulings");
-assert.equal(rationalMultiplicity, 96, "the preview contains 96 rational rulings");
+assert.equal(rulingMultiplicity, 112, "96 genus-zero + 16 genus-one rulings");
+assert.equal(rationalMultiplicity, 96, "the preview contains 96 genus-zero rulings");
 assert.ok(drawingCount > 0 && drawingCount <= rulingMultiplicity);
 
 const index = fs.readFileSync(path.join(root, "index.html"), "utf8");
@@ -213,19 +241,33 @@ assert.doesNotMatch(oneInterior, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(oneInterior, /<th scope="col">Genus<\/th>/);
 assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);
 assert.match(oneInterior, /Polygon used for every ruling/);
-assert.match(oneInterior, /fixed Λ/);
+assert.match(oneInterior, /fixed\s+Λ/);
 assert.doesNotMatch(oneInterior, /diagram-representative/);
-assert.match(oneInterior, /id="standard-ruling"/);
+assert.doesNotMatch(oneInterior, /standard ruling/i);
+assert.doesNotMatch(oneInterior, /id="standard-ruling"/);
 assert.match(oneInterior, /id="genus-sections"/);
+assert.match(oneInterior, /id="ruling-polynomial"/);
+assert.match(oneInterior, /Switches are the black points/);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
-assert.match(app, /standardEntry = sortedGenera\[sortedGenera\.length - 1\]/);
+assert.doesNotMatch(app, /standard ruling/i);
+assert.doesNotMatch(app, /standardEntry|standardRuling/);
 assert.match(app, /document\.createElement\("details"\)/);
 assert.match(app, /sortedGenera\.map\(\(entry\) => renderGenusPanel\(item, entry\)\)/);
 assert.doesNotMatch(app, /genus-links|showGenus/);
+assert.equal(
+  (app.match(/right\.genus - left\.genus/g) || []).length,
+  2,
+  "atlas counts and ruling galleries are ordered from high genus to low"
+);
 assert.match(app, /totalDrawingTransform/);
 assert.match(app, /fixedTransform/);
+assert.match(app, /formatRulingPolynomial/);
 assert.match(app, /Polygon used for every ruling/);
+
+const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
+assert.doesNotMatch(readme, /standard ruling/i);
+assert.match(readme, /highest genus to lowest genus/);
 
 const packageRoot = path.join(root, "downloads", "direct-ruling-counter");
 const archive = path.join(root, "downloads", "direct-ruling-counter.zip");

@@ -333,23 +333,51 @@ h2 {
   font-weight: 700;
 }
 
-.standard-section {
-  margin-top: 24px;
+.ruling-polynomial {
+  margin-top: 18px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
 }
 
-.standard-section h3,
+.ruling-polynomial > span {
+  display: block;
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.polynomial-value {
+  margin-top: 7px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.polynomial-value strong {
+  font-weight: 500;
+}
+
+.ruling-polynomial small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.genus-navigation {
+  margin-top: 26px;
+}
+
 .genus-navigation h3 {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 1rem;
   font-weight: 600;
 }
 
-.standard-ruling {
-  max-width: 360px;
-}
-
-.genus-navigation {
-  margin-top: 24px;
+.switch-note {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: .8rem;
 }
 
 .method-note {

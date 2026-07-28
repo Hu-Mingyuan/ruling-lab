@@ -94,9 +94,40 @@
     return `[${matrix.map((row) => `[${row.join(",")}]`).join(",")}]`;
   }
 
+  function formatRulingPolynomial(genera) {
+    const superscriptDigits = "⁰¹²³⁴⁵⁶⁷⁸⁹";
+    const superscript = (value) =>
+      String(value)
+        .split("")
+        .map((digit) => superscriptDigits[Number(digit)])
+        .join("");
+    const terms = [...genera]
+      .map((entry) => ({
+        genus: Number(entry.genus),
+        coefficient: Number(entry.counts?.total || 0),
+      }))
+      .filter(
+        ({ genus, coefficient }) =>
+          Number.isInteger(genus) &&
+          genus >= 0 &&
+          Number.isInteger(coefficient) &&
+          coefficient > 0
+      )
+      .sort((left, right) => right.genus - left.genus)
+      .map(({ genus, coefficient }) => {
+        if (genus === 0) {
+          return String(coefficient);
+        }
+        const monomial = `z${superscript(2 * genus)}`;
+        return coefficient === 1 ? monomial : `${coefficient}${monomial}`;
+      });
+    return terms.join(" + ") || "0";
+  }
+
   window.RulingLabCore = Object.freeze({
     formatArea,
     formatMatrix,
+    formatRulingPolynomial,
     formatVertices,
     pointLocation,
     signedDoubleArea,

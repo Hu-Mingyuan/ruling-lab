@@ -4,6 +4,7 @@
   const {
     formatArea,
     formatMatrix,
+    formatRulingPolynomial,
     formatVertices,
     pointLocation,
     totalDrawingTransform,
@@ -20,7 +21,7 @@
   const selectedPolygon = document.querySelector("#selected-polygon");
   const selectedVertices = document.querySelector("#selected-vertices");
   const countTableBody = document.querySelector("#count-table-body");
-  const standardRuling = document.querySelector("#standard-ruling");
+  const rulingPolynomial = document.querySelector("#ruling-polynomial");
   const genusSections = document.querySelector("#genus-sections");
   const cardTemplate = document.querySelector("#polygon-card-template");
   const rulingTemplate = document.querySelector("#ruling-card-template");
@@ -62,7 +63,7 @@
       coordinates.textContent =
         `Catalog representative: ${formatVertices(item.vertices)}`;
       counts.textContent = [...item.genera]
-        .sort((left, right) => left.genus - right.genus)
+        .sort((left, right) => right.genus - left.genus)
         .map((entry) => `g=${entry.genus}: ${entry.counts.total}`)
         .join(" · ");
       card.addEventListener("click", () => selectCase(item.id, true));
@@ -131,7 +132,7 @@
       item.interiorLatticePoints;
 
     const sortedGenera = [...item.genera].sort(
-      (left, right) => left.genus - right.genus
+      (left, right) => right.genus - left.genus
     );
     countTableBody.replaceChildren(
       ...sortedGenera.map((entry) => {
@@ -152,19 +153,7 @@
         return row;
       })
     );
-
-    const standardEntry = sortedGenera[sortedGenera.length - 1];
-    const standardDrawing = standardEntry?.rulings?.[0];
-    if (standardEntry && standardDrawing) {
-      standardRuling.replaceChildren(
-        renderRulingCard(item, standardEntry, standardDrawing, 0)
-      );
-    } else {
-      const note = document.createElement("p");
-      note.className = "empty-gallery";
-      note.textContent = "The standard ruling diagram is not yet available.";
-      standardRuling.replaceChildren(note);
-    }
+    rulingPolynomial.textContent = formatRulingPolynomial(sortedGenera);
 
     genusSections.replaceChildren(
       ...sortedGenera.map((entry) => renderGenusPanel(item, entry))
@@ -184,8 +173,7 @@
     panel.className = "genus-panel";
     heading.className = "genus-heading";
     title.textContent = `Genus ${entry.genus}`;
-    description.textContent =
-      entry.genus === 0 ? "rational rulings" : "standard ruling";
+    description.textContent = "rulings";
     summaryCounts.className = "genus-summary-counts";
     summaryCounts.textContent =
       `${entry.counts.total} total · ` +

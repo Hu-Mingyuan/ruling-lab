@@ -70,11 +70,13 @@ def browser_drawings(
     for raw in raw_drawings:
         if not isinstance(raw, dict) or int(raw.get("genus", -1)) != genus_number:
             continue
-        sector = str(raw["sector"])
+        sector = (
+            "annular"
+            if str(raw["sector"]).lower().startswith("annular")
+            else "all-disk"
+        )
         sector_indices[sector] = sector_indices.get(sector, 0) + 1
-        if genus_number == 1:
-            identifier_text = "Standard"
-        elif sector == "annular":
+        if sector == "annular":
             identifier_text = f"A{sector_indices[sector]:02d}"
         else:
             identifier_text = f"D{sector_indices[sector]:02d}"

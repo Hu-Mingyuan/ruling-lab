@@ -21,18 +21,20 @@ For each polygon the site records:
 - the single `SL(2,Z)`-equivalent polygon used to draw every ruling of the
   selected lattice-equivalence class.
 
-Selecting a polygon first shows its common drawing representative and standard
-ruling. The ruling galleries for the individual genera appear below as
-independent expandable sections.
+Selecting a polygon first shows its common drawing representative. The ruling
+galleries then appear from highest genus to lowest genus as independent
+expandable sections.
 
-For a fixed polygon, all-disk, annular, and standard diagrams share one
-fundamental square and one fixed Lambda. Annular eyes are normalized only in
-lifted coordinates and mapped back before rendering.
+For a fixed polygon, all-disk and annular diagrams share one fundamental square
+and one fixed Lambda. Annular eyes are normalized only in lifted coordinates
+and mapped back before rendering. Switches are the black points in the ruling
+diagrams.
 
-The preview displays 96 genus-zero rational rulings and 16 genus-one standard
-rulings, for 112 rulings in total. Its counts and diagrams are generated from
-direct ruling certificates; the atlas exporter does not import or consult a
-tropical counter.
+The preview displays 96 genus-zero rulings and 16 genus-one rulings, for 112
+rulings in total. For every polygon it also evaluates
+`R_Delta(z) = sum_g r_(Delta,g) z^(2g)` from these direct counts. Its counts and
+diagrams are generated from direct ruling certificates; the atlas exporter does
+not import or consult a tropical counter.
 
 ## Run the private site locally
 

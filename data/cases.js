@@ -108,8 +108,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/01_polygon-4682f4498d_m1-m1_1-0_0-1/g1-standard-0x01ff.svg",
             "mask": "0x01ff",
             "witness": null,
@@ -267,8 +267,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g1-standard-0x0fff.svg",
             "mask": "0x0fff",
             "witness": null,
@@ -470,8 +470,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/03_polygon-36a030f3ad_m3-m2_1-0_0-1/g1-standard-0x3f5ff.svg",
             "mask": "0x3f5ff",
             "witness": null,
@@ -717,8 +717,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g1-standard-0xdfbf35.svg",
             "mask": "0xdfbf35",
             "witness": null,
@@ -986,8 +986,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g1-standard-0x77cd6c6.svg",
             "mask": "0x77cd6c6",
             "witness": null,
@@ -1149,8 +1149,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g1-standard-0x00ff.svg",
             "mask": "0x00ff",
             "witness": null,
@@ -1312,8 +1312,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g1-standard-0x03ed.svg",
             "mask": "0x03ed",
             "witness": null,
@@ -1497,8 +1497,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/08_polygon-8b90cfe09b_m1-m1_1-0_0-1_m1-1/g1-standard-0x1fed.svg",
             "mask": "0x1fed",
             "witness": null,
@@ -1704,8 +1704,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g1-standard-0x3ba7.svg",
             "mask": "0x3ba7",
             "witness": null,
@@ -1933,8 +1933,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g1-standard-0x7bff7.svg",
             "mask": "0x7bff7",
             "witness": null,
@@ -2184,8 +2184,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g1-standard-0x7cf5d.svg",
             "mask": "0x7cf5d",
             "witness": null,
@@ -2435,8 +2435,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g1-standard-0x7de7.svg",
             "mask": "0x7de7",
             "witness": null,
@@ -2624,8 +2624,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g1-standard-0x077d.svg",
             "mask": "0x077d",
             "witness": null,
@@ -2835,8 +2835,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g1-standard-0x3bfd.svg",
             "mask": "0x3bfd",
             "witness": null,
@@ -3068,8 +3068,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x7e5b.svg",
             "mask": "0x7e5b",
             "witness": null,
@@ -3283,8 +3283,8 @@ window.RULING_CASES = [
         "phaseCardinality": "FINITE",
         "rulings": [
           {
-            "identifier": "Standard",
-            "sector": "all-disk standard",
+            "identifier": "D01",
+            "sector": "all-disk",
             "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x07bf.svg",
             "mask": "0x07bf",
             "witness": null,

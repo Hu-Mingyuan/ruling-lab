@@ -58,11 +58,12 @@ The `O(4) on P^2` entry uses
 `Conv{(-2,-1), (2,-1), (-2,3)}` for every genus, with displayed vertical
 direction `(-1,2)`. This is the direction used by the ruling diagram itself:
 the covector `(2,1)` is positive on the displayed future tangents
-`(1,0)`, `(0,1)`, and `(1,-1)`. Its page copies the 14 existing desktop SVGs
-directly: one genus-three diagram and thirteen genus-zero symmetry
-representatives. Their displayed orbit sizes sum to all 304 rational rulings
-(288 all-disk and 16 annular). The figures use green Lambda, red and blue eyes,
-black switches, and darker fills where eyes overlap.
+`(1,0)`, `(0,1)`, and `(1,-1)`. Its page contains one genus-three diagram,
+six genus-one symmetry representatives, and thirteen genus-zero symmetry
+representatives. The six genus-one orbit sizes sum to 104; an exhaustive
+exact annular search gives zero additional genus-one rulings. The genus-zero
+orbit sizes sum to 304 (288 all-disk and 16 annular). The figures use green
+Lambda, red and blue eyes, black switches, and darker fills where eyes overlap.
 
 The centrally symmetric six-vertex polygon
 `Conv{(-1,0), (0,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses exact separated
@@ -85,7 +86,7 @@ blue equal square eyes.
 
 The two census collections display all 1,601 rulings separately: 112 for the
 one-interior collection and 1,489 for the two-interior collection. The
-other-polygons page adds the 14 saved `O(4)` figures with symmetry
+other-polygons page adds the 20 saved `O(4)` figures with symmetry
 multiplicities. Every page records the ruling polynomial
 `R_Delta(z) = sum_g r_(Delta,g) z^(2g)`. The census counts and diagrams are
 generated from direct ruling certificates; the atlas exporter does not import

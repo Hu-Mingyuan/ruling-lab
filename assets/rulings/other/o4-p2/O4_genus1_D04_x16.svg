@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 328.0 328.0" role="img" aria-label="S01, standard bipartite, symmetry orbit 1, 48 switches"><style>.o4-diagram-bg{fill:#ffffff;}</style><defs><clipPath id="o4-clip-s01"><rect x="14.0" y="14.0" width="300.0" height="300.0"/></clipPath><clipPath id="o4-clip-s01-boundary"><rect x="12.8" y="12.8" width="302.4" height="302.4"/></clipPath></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 328.0 328.0" role="img" aria-label="G1D04, all-disk, symmetry orbit 16, 36 switches"><style>.o4-diagram-bg{fill:#ffffff;}</style><defs><clipPath id="o4-clip-g1d04"><rect x="14.0" y="14.0" width="300.0" height="300.0"/></clipPath><clipPath id="o4-clip-g1d04-boundary"><rect x="12.8" y="12.8" width="302.4" height="302.4"/></clipPath></defs>
 <rect class="o4-diagram-bg" x="0" y="0" width="328.0" height="328.0"/>
-<g clip-path="url(#o4-clip-s01)">
+<g clip-path="url(#o4-clip-g1d04)">
 <polygon points="51.50,314.00 14.00,276.50 14.00,314.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,14.00 14.00,-23.50 14.00,14.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="351.50,314.00 314.00,276.50 314.00,314.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
@@ -13,47 +13,38 @@
 <polygon points="126.50,14.00 89.00,-23.50 89.00,14.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,314.00 89.00,351.50 89.00,314.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,14.00 89.00,51.50 89.00,14.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,314.00 164.00,276.50 164.00,314.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,14.00 164.00,-23.50 164.00,14.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
+<polygon points="201.50,314.00 239.00,314.00 276.50,314.00 239.00,276.50 201.50,239.00 164.00,201.50 164.00,239.00 164.00,276.50 164.00,314.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
+<polygon points="201.50,14.00 239.00,14.00 276.50,14.00 239.00,-23.50 201.50,-61.00 164.00,-98.50 164.00,-61.00 164.00,-23.50 164.00,14.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="126.50,314.00 164.00,351.50 164.00,314.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="126.50,14.00 164.00,51.50 164.00,14.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
-<polygon points="276.50,314.00 239.00,276.50 239.00,314.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="276.50,14.00 239.00,-23.50 239.00,14.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,314.00 239.00,351.50 239.00,314.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,14.00 239.00,51.50 239.00,14.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
+<polygon points="239.00,276.50 239.00,239.00 201.50,239.00 164.00,239.00 126.50,239.00 164.00,276.50 201.50,314.00 239.00,351.50 239.00,314.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
+<polygon points="239.00,-23.50 239.00,-61.00 201.50,-61.00 164.00,-61.00 126.50,-61.00 164.00,-23.50 201.50,14.00 239.00,51.50 239.00,14.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,239.00 14.00,201.50 14.00,239.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="351.50,239.00 314.00,201.50 314.00,239.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="-23.50,239.00 14.00,276.50 14.00,239.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="276.50,239.00 314.00,276.50 314.00,239.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="126.50,239.00 89.00,201.50 89.00,239.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,239.00 89.00,276.50 89.00,239.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,239.00 164.00,201.50 164.00,239.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="126.50,239.00 164.00,276.50 164.00,239.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="276.50,239.00 239.00,201.50 239.00,239.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,239.00 239.00,276.50 239.00,239.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,164.00 14.00,126.50 14.00,164.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="351.50,164.00 314.00,126.50 314.00,164.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="-23.50,164.00 14.00,201.50 14.00,164.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="276.50,164.00 314.00,201.50 314.00,164.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="126.50,164.00 89.00,126.50 89.00,164.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,164.00 89.00,201.50 89.00,164.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,164.00 164.00,126.50 164.00,164.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
+<polygon points="201.50,164.00 239.00,164.00 276.50,164.00 239.00,126.50 201.50,89.00 164.00,51.50 164.00,89.00 164.00,126.50 164.00,164.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="126.50,164.00 164.00,201.50 164.00,164.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
-<polygon points="276.50,164.00 239.00,126.50 239.00,164.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,164.00 239.00,201.50 239.00,164.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
+<polygon points="239.00,126.50 239.00,89.00 201.50,89.00 164.00,89.00 126.50,89.00 164.00,126.50 201.50,164.00 239.00,201.50 239.00,164.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,89.00 14.00,51.50 14.00,89.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="351.50,89.00 314.00,51.50 314.00,89.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="-23.50,89.00 14.00,126.50 14.00,89.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="276.50,89.00 314.00,126.50 314.00,89.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="126.50,89.00 89.00,51.50 89.00,89.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
 <polygon points="51.50,89.00 89.00,126.50 89.00,89.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,89.00 164.00,51.50 164.00,89.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="126.50,89.00 164.00,126.50 164.00,89.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 <polygon points="276.50,89.00 239.00,51.50 239.00,89.00" style="fill:#2563eb;fill-opacity:.30;stroke:none"/>
-<polygon points="201.50,89.00 239.00,126.50 239.00,89.00" style="fill:#dc2626;fill-opacity:.30;stroke:none"/>
 </g>
 <rect x="14.0" y="14.0" width="300.0" height="300.0" style="fill:none;stroke:#16a34a;stroke-width:1.8"/>
-<g clip-path="url(#o4-clip-s01-boundary)">
+<g clip-path="url(#o4-clip-g1d04-boundary)">
 <line x1="51.50" y1="314.00" x2="14.00" y2="276.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="276.50" x2="14.00" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="314.00" x2="51.50" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
@@ -76,26 +67,35 @@
 <line x1="51.50" y1="14.00" x2="89.00" y2="51.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="51.50" x2="89.00" y2="14.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="14.00" x2="51.50" y2="14.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="201.50" y1="314.00" x2="164.00" y2="276.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="314.00" x2="239.00" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="314.00" x2="276.50" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="276.50" y1="314.00" x2="239.00" y2="276.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="276.50" x2="201.50" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="239.00" x2="164.00" y2="201.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="201.50" x2="164.00" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="239.00" x2="164.00" y2="276.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="276.50" x2="164.00" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="314.00" x2="201.50" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="201.50" y1="14.00" x2="164.00" y2="-23.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="276.50" y1="14.00" x2="239.00" y2="-23.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="-23.50" x2="164.00" y2="14.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="126.50" y1="314.00" x2="164.00" y2="351.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="351.50" x2="164.00" y2="314.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="126.50" y1="14.00" x2="164.00" y2="51.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="51.50" x2="164.00" y2="14.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="14.00" x2="126.50" y2="14.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="276.50" y1="314.00" x2="239.00" y2="276.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="276.50" x2="239.00" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="314.00" x2="276.50" y2="314.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="276.50" y1="14.00" x2="239.00" y2="-23.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="-23.50" x2="239.00" y2="14.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="276.50" x2="239.00" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="239.00" x2="201.50" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="239.00" x2="164.00" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="239.00" x2="126.50" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="126.50" y1="239.00" x2="164.00" y2="276.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="276.50" x2="201.50" y2="314.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="201.50" y1="314.00" x2="239.00" y2="351.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="239.00" y1="351.50" x2="239.00" y2="314.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="314.00" x2="239.00" y2="276.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="-23.50" x2="201.50" y2="14.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="201.50" y1="14.00" x2="239.00" y2="51.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="239.00" y1="51.50" x2="239.00" y2="14.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="14.00" x2="201.50" y2="14.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="14.00" x2="239.00" y2="-23.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="51.50" y1="239.00" x2="14.00" y2="201.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="201.50" x2="14.00" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="239.00" x2="51.50" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
@@ -112,18 +112,9 @@
 <line x1="51.50" y1="239.00" x2="89.00" y2="276.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="276.50" x2="89.00" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="239.00" x2="51.50" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="201.50" y1="239.00" x2="164.00" y2="201.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="201.50" x2="164.00" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="239.00" x2="201.50" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="126.50" y1="239.00" x2="164.00" y2="276.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="276.50" x2="164.00" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="239.00" x2="126.50" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="276.50" y1="239.00" x2="239.00" y2="201.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="239.00" y1="201.50" x2="239.00" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="239.00" y1="239.00" x2="276.50" y2="239.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="201.50" y1="239.00" x2="239.00" y2="276.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="276.50" x2="239.00" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="239.00" x2="201.50" y2="239.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="51.50" y1="164.00" x2="14.00" y2="126.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="126.50" x2="14.00" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="164.00" x2="51.50" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
@@ -140,18 +131,27 @@
 <line x1="51.50" y1="164.00" x2="89.00" y2="201.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="201.50" x2="89.00" y2="164.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="164.00" x2="51.50" y2="164.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="201.50" y1="164.00" x2="164.00" y2="126.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="164.00" x2="239.00" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="164.00" x2="276.50" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="276.50" y1="164.00" x2="239.00" y2="126.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="126.50" x2="201.50" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="89.00" x2="164.00" y2="51.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="51.50" x2="164.00" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="89.00" x2="164.00" y2="126.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="126.50" x2="164.00" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="164.00" x2="201.50" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="126.50" y1="164.00" x2="164.00" y2="201.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="201.50" x2="164.00" y2="164.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="164.00" y1="164.00" x2="126.50" y2="164.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="276.50" y1="164.00" x2="239.00" y2="126.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="126.50" x2="239.00" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="164.00" x2="276.50" y2="164.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="126.50" x2="239.00" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="89.00" x2="201.50" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="89.00" x2="164.00" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="89.00" x2="126.50" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="126.50" y1="89.00" x2="164.00" y2="126.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="126.50" x2="201.50" y2="164.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="201.50" y1="164.00" x2="239.00" y2="201.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="239.00" y1="201.50" x2="239.00" y2="164.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="164.00" x2="201.50" y2="164.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="164.00" x2="239.00" y2="126.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="51.50" y1="89.00" x2="14.00" y2="51.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="51.50" x2="14.00" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="14.00" y1="89.00" x2="51.50" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
@@ -168,18 +168,9 @@
 <line x1="51.50" y1="89.00" x2="89.00" y2="126.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="126.50" x2="89.00" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="89.00" y1="89.00" x2="51.50" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="201.50" y1="89.00" x2="164.00" y2="51.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="51.50" x2="164.00" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="89.00" x2="201.50" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="126.50" y1="89.00" x2="164.00" y2="126.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="126.50" x2="164.00" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="164.00" y1="89.00" x2="126.50" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="276.50" y1="89.00" x2="239.00" y2="51.50" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="239.00" y1="51.50" x2="239.00" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 <line x1="239.00" y1="89.00" x2="276.50" y2="89.00" style="stroke:#2563eb;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="201.50" y1="89.00" x2="239.00" y2="126.50" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="126.50" x2="239.00" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
-<line x1="239.00" y1="89.00" x2="201.50" y2="89.00" style="stroke:#dc2626;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
 </g>
 <circle cx="14.00" cy="314.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="14.00" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
@@ -189,41 +180,31 @@
 <circle cx="89.00" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="164.00" cy="314.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="164.00" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="239.00" cy="314.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="239.00" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="14.00" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="314.00" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="89.00" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="164.00" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="239.00" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="14.00" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="314.00" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="89.00" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="164.00" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="239.00" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="14.00" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="314.00" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="89.00" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="164.00" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="239.00" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="51.50" cy="314.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="51.50" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="126.50" cy="314.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="126.50" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="201.50" cy="314.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="201.50" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="276.50" cy="314.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="276.50" cy="14.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="276.50" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="51.50" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="126.50" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="201.50" cy="239.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="201.50" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="276.50" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="51.50" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="126.50" cy="164.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="126.50" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="201.50" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="276.50" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="51.50" cy="89.00" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="14.00" cy="276.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
@@ -238,11 +219,7 @@
 <circle cx="89.00" cy="276.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="89.00" cy="201.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="89.00" cy="126.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="164.00" cy="126.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="164.00" cy="51.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="164.00" cy="276.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="164.00" cy="201.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
 <circle cx="239.00" cy="201.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="239.00" cy="126.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="239.00" cy="51.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/>
-<circle cx="239.00" cy="276.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/></svg>
+<circle cx="239.00" cy="51.50" r="3.05" style="fill:#111827;stroke:#ffffff;stroke-width:1.0"/></svg>

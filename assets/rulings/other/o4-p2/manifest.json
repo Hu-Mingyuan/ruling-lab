@@ -1,0 +1,284 @@
+{
+  "schema": "p2o4-ruling-gallery-v2",
+  "uses_tropical_count": false,
+  "polygon": [
+    [
+      -2,
+      -1
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      -2,
+      3
+    ]
+  ],
+  "vertical_direction": [
+    -1,
+    2
+  ],
+  "sweep_covector": [
+    2,
+    1
+  ],
+  "symmetry_group": "(Z/4)^2 semidirect C2",
+  "counts": {
+    "genus_3": 1,
+    "genus_1_all_disk": 104,
+    "genus_1_annular": 0,
+    "genus_0_all_disk": 288,
+    "genus_0_annular": 16
+  },
+  "genus_1_annular_audit": {
+    "strict_complete": true,
+    "phase_search_exhaustive": true,
+    "finite_phase_cutoff_used": false,
+    "search_nodes": 269300,
+    "completed_masks": 4728,
+    "exact_annular_ruling_count": 0
+  },
+  "drawings": [
+    {
+      "filename": "O4_standard_bipartite_ruling.svg",
+      "identifier": "S01",
+      "genus": 3,
+      "sector": "standard bipartite",
+      "mask": "0xffffffffffff",
+      "orbit_size": 1,
+      "disk_eyes": 32,
+      "annular_eyes": 0,
+      "switches": 48,
+      "profile": "32 equal triangular eyes \u00b7 all 48 crossings switched"
+    },
+    {
+      "filename": "O4_genus1_D01_x16.svg",
+      "identifier": "G1D01",
+      "genus": 1,
+      "sector": "all-disk",
+      "mask": "0x3ddfdf397f93",
+      "orbit_size": 16,
+      "disk_eyes": 22,
+      "annular_eyes": 0,
+      "switches": 34,
+      "profile": "D22 \u00b7 A/B/V 11/1/22"
+    },
+    {
+      "filename": "O4_genus1_D02_x32.svg",
+      "identifier": "G1D02",
+      "genus": 1,
+      "sector": "all-disk",
+      "mask": "0x3dfedfe37f7a",
+      "orbit_size": 32,
+      "disk_eyes": 24,
+      "annular_eyes": 0,
+      "switches": 36,
+      "profile": "D24 \u00b7 A/B/V 12/0/24"
+    },
+    {
+      "filename": "O4_genus1_D03_x16.svg",
+      "identifier": "G1D03",
+      "genus": 1,
+      "sector": "all-disk",
+      "mask": "0x3fee3fe6cf76",
+      "orbit_size": 16,
+      "disk_eyes": 22,
+      "annular_eyes": 0,
+      "switches": 34,
+      "profile": "D22 \u00b7 A/B/V 11/1/22"
+    },
+    {
+      "filename": "O4_genus1_D04_x16.svg",
+      "identifier": "G1D04",
+      "genus": 1,
+      "sector": "all-disk",
+      "mask": "0x5affde7bb7b7",
+      "orbit_size": 16,
+      "disk_eyes": 24,
+      "annular_eyes": 0,
+      "switches": 36,
+      "profile": "D24 \u00b7 A/B/V 12/0/24"
+    },
+    {
+      "filename": "O4_genus1_D05_x16.svg",
+      "identifier": "G1D05",
+      "genus": 1,
+      "sector": "all-disk",
+      "mask": "0x5bfbbd7b7eb7",
+      "orbit_size": 16,
+      "disk_eyes": 24,
+      "annular_eyes": 0,
+      "switches": 36,
+      "profile": "D24 \u00b7 A/B/V 12/0/24"
+    },
+    {
+      "filename": "O4_genus1_D06_x8.svg",
+      "identifier": "G1D06",
+      "genus": 1,
+      "sector": "all-disk",
+      "mask": "0x7bdeff5affa5",
+      "orbit_size": 8,
+      "disk_eyes": 24,
+      "annular_eyes": 0,
+      "switches": 36,
+      "profile": "D24 \u00b7 A/B/V 12/0/24"
+    },
+    {
+      "filename": "O4_rational_D01_x16.svg",
+      "identifier": "D01",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x359fd7397d93",
+      "orbit_size": 16,
+      "disk_eyes": 20,
+      "annular_eyes": 0,
+      "switches": 30,
+      "profile": "D20 \u00b7 A/B/V 10/0/20"
+    },
+    {
+      "filename": "O4_rational_D02_x32.svg",
+      "identifier": "D02",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x35bed7a37d3a",
+      "orbit_size": 32,
+      "disk_eyes": 20,
+      "annular_eyes": 0,
+      "switches": 30,
+      "profile": "D20 \u00b7 A/B/V 10/0/20"
+    },
+    {
+      "filename": "O4_rational_D03_x32.svg",
+      "identifier": "D03",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x35fcdc63736a",
+      "orbit_size": 32,
+      "disk_eyes": 18,
+      "annular_eyes": 0,
+      "switches": 28,
+      "profile": "D18 \u00b7 A/B/V 9/1/18"
+    },
+    {
+      "filename": "O4_rational_D04_x32.svg",
+      "identifier": "D04",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x37ae37a6cd36",
+      "orbit_size": 32,
+      "disk_eyes": 18,
+      "annular_eyes": 0,
+      "switches": 28,
+      "profile": "D18 \u00b7 A/B/V 9/1/18"
+    },
+    {
+      "filename": "O4_rational_D05_x16.svg",
+      "identifier": "D05",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x37ec3c66c366",
+      "orbit_size": 16,
+      "disk_eyes": 16,
+      "annular_eyes": 0,
+      "switches": 26,
+      "profile": "D16 \u00b7 A/B/V 8/2/16"
+    },
+    {
+      "filename": "O4_rational_D06_x32.svg",
+      "identifier": "D06",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x39cfcf393f95",
+      "orbit_size": 32,
+      "disk_eyes": 20,
+      "annular_eyes": 0,
+      "switches": 30,
+      "profile": "D20 \u00b7 A/B/V 10/0/20"
+    },
+    {
+      "filename": "O4_rational_D07_x16.svg",
+      "identifier": "D07",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x3bce3fa4cf52",
+      "orbit_size": 16,
+      "disk_eyes": 18,
+      "annular_eyes": 0,
+      "switches": 28,
+      "profile": "D18 \u00b7 A/B/V 9/1/18"
+    },
+    {
+      "filename": "O4_rational_D08_x32.svg",
+      "identifier": "D08",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x3c7e27e48b74",
+      "orbit_size": 32,
+      "disk_eyes": 16,
+      "annular_eyes": 0,
+      "switches": 26,
+      "profile": "D16 \u00b7 A/B/V 8/2/16"
+    },
+    {
+      "filename": "O4_rational_D09_x32.svg",
+      "identifier": "D09",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x3c7ec7e35b7a",
+      "orbit_size": 32,
+      "disk_eyes": 20,
+      "annular_eyes": 0,
+      "switches": 30,
+      "profile": "D20 \u00b7 A/B/V 10/0/20"
+    },
+    {
+      "filename": "O4_rational_D10_x16.svg",
+      "identifier": "D10",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x3dc75f385f92",
+      "orbit_size": 16,
+      "disk_eyes": 18,
+      "annular_eyes": 0,
+      "switches": 28,
+      "profile": "D18 \u00b7 A/B/V 9/1/18"
+    },
+    {
+      "filename": "O4_rational_D11_x16.svg",
+      "identifier": "D11",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x5a7b5a7ba5b7",
+      "orbit_size": 16,
+      "disk_eyes": 20,
+      "annular_eyes": 0,
+      "switches": 30,
+      "profile": "D20 \u00b7 A/B/V 10/0/20"
+    },
+    {
+      "filename": "O4_rational_D12_x16.svg",
+      "identifier": "D12",
+      "genus": 0,
+      "sector": "all-disk",
+      "mask": "0x5a7ba57b5ab7",
+      "orbit_size": 16,
+      "disk_eyes": 20,
+      "annular_eyes": 0,
+      "switches": 30,
+      "profile": "D20 \u00b7 A/B/V 10/0/20"
+    },
+    {
+      "filename": "O4_rational_R01_x16.svg",
+      "identifier": "R01",
+      "genus": 0,
+      "sector": "annular",
+      "mask": "0x37ec00660066",
+      "orbit_size": 16,
+      "disk_eyes": 8,
+      "annular_eyes": 2,
+      "switches": 18,
+      "profile": "D8+R2 \u00b7 A/B/V 4/6/8"
+    }
+  ]
+}

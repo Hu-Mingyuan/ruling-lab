@@ -10,8 +10,11 @@
     totalDrawingTransform,
     transformVertices,
   } = window.RulingLabCore;
+  const collection = document.body.dataset.collection || "";
   const cases = Array.isArray(window.RULING_CASES)
-    ? window.RULING_CASES
+    ? window.RULING_CASES.filter(
+      (item) => !collection || item.collection === collection
+    )
     : [];
   const caseById = new Map(cases.map((item) => [item.id, item]));
 

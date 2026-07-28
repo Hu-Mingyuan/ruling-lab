@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Polygons with two interior lattice points · Ruling Atlas</title>
+    <meta
+      name="description"
+      content="Ruling diagrams for lattice polygons with two interior lattice points."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-collection="interior-2">
+    <main>
+      <header class="masthead">
+        <div class="masthead-copy">
+          <p class="breadcrumb"><a href="index.html">Ruling Atlas</a></p>
+          <h1>Polygons with two interior lattice points</h1>
+          <p class="lede">
+            The forty-five lattice-equivalence classes of convex polygons with
+            exactly two interior lattice points. Select a polygon to see all
+            rulings in genera&nbsp;0, 1, and&nbsp;2.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="primary-button"
+              href="downloads/direct-ruling-counter.zip"
+              download
+            >Download the ruling code</a>
+            <a
+              class="secondary-button"
+              href="https://github.com/Hu-Mingyuan/ruling-lab/tree/one-interior-preview/downloads/direct-ruling-counter"
+            >View source</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="atlas-section" aria-labelledby="atlas-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="atlas-title">Choose a Newton polygon</h2>
+          </div>
+          <p class="hint">
+            Each entry uses one fixed
+            <span class="math">SL₂(ℤ)</span> representative and one fixed
+            vertical direction for every ruling.
+          </p>
+        </div>
+        <div id="polygon-gallery" class="polygon-gallery"></div>
+      </section>
+
+      <section id="report" class="report" aria-live="polite" hidden>
+        <div class="section-heading report-heading">
+          <div>
+            <h2 id="report-title" tabindex="-1">Rulings</h2>
+          </div>
+          <button class="quiet-button" id="back-to-atlas" type="button">
+            Back to polygons
+          </button>
+        </div>
+
+        <div class="overview-grid">
+          <article class="selected-polygon-card">
+            <div class="card-label">Polygon used for every ruling</div>
+            <div class="selected-representative">
+              <div id="selected-polygon" class="selected-polygon"></div>
+              <div
+                id="vertical-direction-diagram"
+                class="vertical-direction-diagram"
+                role="img"
+                aria-label="Vertical direction v = (0,1)"
+              >
+                <span class="vertical-direction-arrow" aria-hidden="true"></span>
+                <span
+                  id="vertical-direction-label"
+                  class="vertical-direction-label"
+                >vertical
+v = (0,1)</span>
+              </div>
+            </div>
+            <code id="selected-vertices"></code>
+          </article>
+
+          <div class="report-summary">
+            <div class="invariant-grid" aria-label="Polygon invariants">
+              <article>
+                <span>Area</span>
+                <strong id="polygon-area">—</strong>
+              </article>
+              <article>
+                <span>Boundary points</span>
+                <strong id="boundary-count">—</strong>
+              </article>
+              <article>
+                <span>Interior points</span>
+                <strong id="interior-count">—</strong>
+              </article>
+            </div>
+
+            <div class="count-table-wrap">
+              <table class="count-table">
+                <caption>Direct ruling counts by genus</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Genus</th>
+                    <th scope="col">All-disk</th>
+                    <th scope="col">Annular</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="count-table-body"></tbody>
+              </table>
+            </div>
+
+            <div class="ruling-polynomial">
+              <span>Ruling polynomial</span>
+              <div class="polynomial-value">
+                <i>R</i><sub>Δ</sub>(<i>z</i>) =
+                <strong id="ruling-polynomial">—</strong>
+              </div>
+              <small>
+                <i>R</i><sub>Δ</sub>(<i>z</i>) =
+                ∑<sub><i>g</i></sub>
+                <i>r</i><sub>Δ,<i>g</i></sub><i>z</i><sup>2<i>g</i></sup>,
+                where <i>r</i><sub>Δ,<i>g</i></sub> is the total number of
+                genus-<i>g</i> rulings.
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <section
+          class="genus-navigation"
+          aria-labelledby="genus-navigation-title"
+        >
+          <h3 id="genus-navigation-title">Rulings by genus</h3>
+          <p class="switch-note">
+            Switches are the black points in each ruling diagram.
+          </p>
+          <div id="genus-sections" class="genus-sections"></div>
+        </section>
+
+        <p class="method-note">
+          These diagrams come from direct ruling certificates. No tropical
+          count or previously known answer is used. The disk/annular split
+          belongs to the displayed torus realization.
+        </p>
+        <p class="coordinate-note">
+          Every ruling for this entry uses exactly the polygon and the fixed
+          Λ shown above. Annular eyes are normalized only in lifted coordinates
+          and then mapped back.
+        </p>
+      </section>
+
+      <footer>
+        <a href="index.html">Atlas home</a>
+        <span id="atlas-status">45 polygons · 1,489 rulings</span>
+      </footer>
+    </main>
+
+    <template id="polygon-card-template">
+      <button class="polygon-card" type="button">
+        <span class="polygon-card-image"></span>
+        <span class="polygon-card-coordinates"></span>
+        <span class="polygon-card-counts"></span>
+      </button>
+    </template>
+
+    <template id="ruling-card-template">
+      <figure class="ruling-card">
+        <img loading="lazy" alt="">
+        <figcaption>
+          <span class="diagram-label"></span>
+          <span class="diagram-profile"></span>
+        </figcaption>
+      </figure>
+    </template>
+
+    <script src="core.js"></script>
+    <script src="data/cases.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

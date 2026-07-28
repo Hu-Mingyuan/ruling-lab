@@ -1,22 +1,22 @@
-# Rational Ruling Atlas
+# Ruling Atlas
 
 This repository is a static atlas of direct ruling counts and diagrams for
 lattice polygons. It is published separately from the author's main homepage.
 Every HTML page carries `noindex` metadata to discourage search-engine indexing;
 this is not access control.
 
-The home page is a collection index. Its first link opens the collection
-“Polygons with one interior lattice point.”
+The home page links to two collections:
 
-This preview contains the 16 lattice-equivalence classes of convex lattice
-polygons with exactly one interior lattice point. Every entry is identified
-only by its vertex coordinates, centered at the unique interior point `(0,0)`.
+- the 16 lattice-equivalence classes with one interior lattice point;
+- the 45 lattice-equivalence classes with two interior lattice points.
+
+Every entry is identified by its vertex coordinates.
 
 For each polygon the site records:
 
 - its lattice diagram and vertex coordinates;
 - area, boundary lattice-point count, and interior lattice-point count;
-- its ruling counts in every possible genus (`g = 0, 1`);
+- its ruling counts in every possible genus (`g = 0, 1` or `g = 0, 1, 2`);
 - all-disk and annular sectors for the displayed deterministic realization;
 - one SVG diagram for every ruling;
 - the single `SL(2,Z)`-equivalent polygon used to draw every ruling of the
@@ -62,8 +62,8 @@ The five-vertex class
 exact realization: the horizontal and vertical phases are both
 `{0,1/3,2/3}`, and the diagonal phase is `1/6`.
 
-The preview displays 96 genus-zero rulings and 16 genus-one rulings, for 112
-rulings in total. For every polygon it also evaluates
+The atlas displays all 1,601 rulings: 112 for the one-interior collection and
+1,489 for the two-interior collection. For every polygon it also evaluates
 `R_Delta(z) = sum_g r_(Delta,g) z^(2g)` from these direct counts. Its counts and
 diagrams are generated from direct ruling certificates; the atlas exporter does
 not import or consult a tropical counter.
@@ -90,13 +90,13 @@ python ruling_polygon.py example_polygon.json
 
 ## Rebuild and validate
 
-From the parent `Nodal_Curves` working directory:
+From the repository root:
 
 ```text
-python ruling-lab/tools/export_cases.py
-node ruling-lab/tests/validate.mjs
+python tools/export_cases.py
+node tests/validate.mjs
 ```
 
-The one-interior-point source data and direct-count audit live in the parent
-research repository. This repository stores the static browser data and
-generated SVG assets.
+The source polygon catalogs and direct-count audits live in the parent research
+repository. This repository stores the static browser data and generated SVG
+assets.

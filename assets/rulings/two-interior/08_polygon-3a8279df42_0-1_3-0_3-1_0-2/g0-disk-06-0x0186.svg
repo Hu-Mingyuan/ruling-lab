@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 328.0 328.0"
+     width="328.0" height="328.0"
+     role="img" aria-labelledby="title description">
+  <title id="title">polygon-3a8279df42, genus 0, all-disk ruling 0x0186</title>
+  <desc id="description">Newton polygon vertices [[0, 1], [3, 0], [3, 1], [0, 2]]; 2 disk eyes and 4 switches.</desc>
+  <metadata>{&quot;polygon_id&quot;:&quot;polygon-3a8279df42&quot;,&quot;vertices&quot;:[[0,1],[3,0],[3,1],[0,2]],&quot;genus&quot;:0,&quot;sector&quot;:&quot;all-disk&quot;,&quot;mask&quot;:&quot;0x0186&quot;,&quot;disk_eyes&quot;:2,&quot;annular_eyes&quot;:0,&quot;switches&quot;:4,&quot;switch_profile&quot;:{&quot;A&quot;:2,&quot;B&quot;:0,&quot;V&quot;:2},&quot;sl2z&quot;:[[1,0],[0,1]],&quot;uses_tropical_count&quot;:false,&quot;coordinate_model&quot;:&quot;fixed count-frame fundamental square shared by every ruling of this polygon&quot;}</metadata>
+  <style>
+    svg {
+      --card: #ffffff;
+      --foreground: #111827;
+      --viz-series-1: #2563eb;
+      --viz-series-2: #ef4444;
+      --viz-series-3: #16a34a;
+    }
+    .o4-diagram-bg { fill: var(--card); }
+  </style>
+<defs><clipPath id="one-polygon-3a8279df42-0-186"><rect x="14.0" y="14.0" width="300.0" height="300.0"/></clipPath><clipPath id="one-polygon-3a8279df42-0-186-boundary"><rect x="12.8" y="12.8" width="302.4" height="302.4"/></clipPath></defs>
+<rect class="o4-diagram-bg" x="0" y="0" width="328.0" height="328.0"/>
+<g clip-path="url(#one-polygon-3a8279df42-0-186)">
+<polygon points="-156.76,132.14 -87.68,63.06 20.54,117.17 112.32,163.06 220.54,217.17 151.46,286.25 120.54,317.17 51.46,386.25 -56.76,332.14 -148.54,286.25 -256.76,232.14 -187.68,163.06" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="-156.76,-167.86 -87.68,-236.94 20.54,-182.83 112.32,-136.94 220.54,-82.83 151.46,-13.75 120.54,17.17 51.46,86.25 -56.76,32.14 -148.54,-13.75 -256.76,-67.86 -187.68,-136.94" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="143.24,132.14 212.32,63.06 320.54,117.17 412.32,163.06 520.54,217.17 451.46,286.25 420.54,317.17 351.46,386.25 243.24,332.14 151.46,286.25 43.24,232.14 112.32,163.06" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="143.24,-167.86 212.32,-236.94 320.54,-182.83 412.32,-136.94 520.54,-82.83 451.46,-13.75 420.54,17.17 351.46,86.25 243.24,32.14 151.46,-13.75 43.24,-67.86 112.32,-136.94" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="-56.76,332.14 12.32,263.06 43.24,232.14 -48.54,186.25 -156.76,132.14 -248.54,86.25 -279.46,117.17 -348.54,186.25 -379.46,217.17 -287.68,263.06 -179.46,317.17 -87.68,363.06" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="-56.76,32.14 12.32,-36.94 43.24,-67.86 -48.54,-113.75 -156.76,-167.86 -248.54,-213.75 -279.46,-182.83 -348.54,-113.75 -379.46,-82.83 -287.68,-36.94 -179.46,17.17 -87.68,63.06" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="243.24,332.14 312.32,263.06 343.24,232.14 251.46,186.25 143.24,132.14 51.46,86.25 20.54,117.17 -48.54,186.25 -79.46,217.17 12.32,263.06 120.54,317.17 212.32,363.06" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="243.24,32.14 312.32,-36.94 343.24,-67.86 251.46,-113.75 143.24,-167.86 51.46,-213.75 20.54,-182.83 -48.54,-113.75 -79.46,-82.83 12.32,-36.94 120.54,17.17 212.32,63.06" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="543.24,332.14 612.32,263.06 643.24,232.14 551.46,186.25 443.24,132.14 351.46,86.25 320.54,117.17 251.46,186.25 220.54,217.17 312.32,263.06 420.54,317.17 512.32,363.06" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="543.24,32.14 612.32,-36.94 643.24,-67.86 551.46,-113.75 443.24,-167.86 351.46,-213.75 320.54,-182.83 251.46,-113.75 220.54,-82.83 312.32,-36.94 420.54,17.17 512.32,63.06" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+</g>
+<rect x="14.0" y="14.0" width="300.0" height="300.0" style="fill:none;stroke:var(--viz-series-3);stroke-width:1.8"/>
+<g clip-path="url(#one-polygon-3a8279df42-0-186-boundary)">
+<line x1="-87.68" y1="63.06" x2="20.54" y2="117.17" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="20.54" y1="117.17" x2="112.32" y2="163.06" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="112.32" y1="163.06" x2="220.54" y2="217.17" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="220.54" y1="217.17" x2="151.46" y2="286.25" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="151.46" y1="286.25" x2="120.54" y2="317.17" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="151.46" y1="-13.75" x2="120.54" y2="17.17" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="120.54" y1="17.17" x2="51.46" y2="86.25" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.46" y1="86.25" x2="-56.76" y2="32.14" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="143.24" y1="132.14" x2="212.32" y2="63.06" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="212.32" y1="63.06" x2="320.54" y2="117.17" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="243.24" y1="332.14" x2="151.46" y2="286.25" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="151.46" y1="286.25" x2="43.24" y2="232.14" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="43.24" y1="232.14" x2="112.32" y2="163.06" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="112.32" y1="163.06" x2="143.24" y2="132.14" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="351.46" y1="86.25" x2="243.24" y2="32.14" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="243.24" y1="32.14" x2="151.46" y2="-13.75" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="12.32" y1="263.06" x2="43.24" y2="232.14" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="43.24" y1="232.14" x2="-48.54" y2="186.25" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="243.24" y1="332.14" x2="312.32" y2="263.06" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="312.32" y1="263.06" x2="343.24" y2="232.14" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="343.24" y1="232.14" x2="251.46" y2="186.25" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="251.46" y1="186.25" x2="143.24" y2="132.14" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="143.24" y1="132.14" x2="51.46" y2="86.25" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.46" y1="86.25" x2="20.54" y2="117.17" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="20.54" y1="117.17" x2="-48.54" y2="186.25" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="12.32" y1="263.06" x2="120.54" y2="317.17" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="243.24" y1="32.14" x2="312.32" y2="-36.94" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="12.32" y1="-36.94" x2="120.54" y2="17.17" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="120.54" y1="17.17" x2="212.32" y2="63.06" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="212.32" y1="63.06" x2="243.24" y2="32.14" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="320.54" y1="117.17" x2="251.46" y2="186.25" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="251.46" y1="186.25" x2="220.54" y2="217.17" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="220.54" y1="217.17" x2="312.32" y2="263.06" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="312.32" y1="263.06" x2="420.54" y2="317.17" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="312.32" y1="-36.94" x2="420.54" y2="17.17" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+</g>
+<circle cx="43.24" cy="232.14" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="51.46" cy="86.25" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="212.32" cy="63.06" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="220.54" cy="217.17" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+</svg>

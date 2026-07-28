@@ -110,22 +110,66 @@ assert.deepEqual(
 const caseContext = { window: {} };
 runBrowserScript("data/cases.js", caseContext);
 const cases = caseContext.window.RULING_CASES;
-assert.equal(cases.length, 16, "the atlas contains all 16 classes");
-assert.equal(new Set(cases.map((item) => item.id)).size, 16, "unique ids");
+assert.equal(cases.length, 61, "the atlas contains all 61 classes");
+assert.equal(new Set(cases.map((item) => item.id)).size, 61, "unique ids");
+
+const collectionExpectations = new Map([
+  [
+    "interior-1",
+    {
+      interiorPoints: 1,
+      polygonCount: 16,
+      genera: [0, 1],
+      rulingMultiplicity: 112,
+    },
+  ],
+  [
+    "interior-2",
+    {
+      interiorPoints: 2,
+      polygonCount: 45,
+      genera: [0, 1, 2],
+      rulingMultiplicity: 1489,
+    },
+  ],
+]);
+const collectionStats = new Map(
+  [...collectionExpectations].map(([key]) => [
+    key,
+    { polygons: 0, drawings: 0, multiplicity: 0 },
+  ])
+);
 
 let drawingCount = 0;
 let rulingMultiplicity = 0;
-let rationalMultiplicity = 0;
+const drawingPaths = new Set();
 for (const item of cases) {
+  const expectation = collectionExpectations.get(item.collection);
+  assert.ok(expectation, `${item.id}: known collection`);
+  const stats = collectionStats.get(item.collection);
+  stats.polygons += 1;
+
   assert.match(item.id, /^polygon-[0-9a-f]{10}$/);
   assert.ok(item.vertices.length >= 3);
   assert.ok(core.signedDoubleArea(item.vertices) > 0, `${item.id}: CCW`);
-  assert.equal(item.interiorLatticePoints, 1, `${item.id}: stored I`);
-  assert.deepEqual(
-    enumerateInteriorPoints(core, item.vertices),
-    [[0, 0]],
-    `${item.id}: unique interior point`
+  assert.equal(
+    item.interiorLatticePoints,
+    expectation.interiorPoints,
+    `${item.id}: stored interior-point count`
   );
+  const interiorPoints = enumerateInteriorPoints(core, item.vertices);
+  assert.equal(
+    interiorPoints.length,
+    expectation.interiorPoints,
+    `${item.id}: enumerated interior-point count`
+  );
+  if (item.collection === "interior-1") {
+    assert.deepEqual(
+      interiorPoints,
+      [[0, 0]],
+      `${item.id}: unique interior point`
+    );
+  }
   assert.equal(
     item.doubleArea,
     item.boundaryLatticePoints + 2 * item.interiorLatticePoints - 2,
@@ -213,15 +257,27 @@ for (const item of cases) {
   const drawingRepresentatives = new Set();
   assert.deepEqual(
     genera.map((entry) => entry.genus),
-    [0, 1],
+    expectation.genera,
     `${item.id}: all possible genera`
   );
-  assert.equal(genera[1].counts.total, 1, `${item.id}: genus-one ruling`);
   assert.equal(
-    core.formatRulingPolynomial(genera),
-    `z² + ${genera[0].counts.total}`,
-    `${item.id}: ruling polynomial`
+    genera.at(-1).counts.total,
+    1,
+    `${item.id}: top-genus ruling`
   );
+  if (item.collection === "interior-1") {
+    assert.equal(
+      core.formatRulingPolynomial(genera),
+      `z² + ${genera[0].counts.total}`,
+      `${item.id}: ruling polynomial`
+    );
+  } else {
+    assert.equal(
+      core.formatRulingPolynomial(genera),
+      `z⁴ + ${genera[1].counts.total}z² + ${genera[0].counts.total}`,
+      `${item.id}: ruling polynomial`
+    );
+  }
 
   for (const entry of genera) {
     assert.equal(
@@ -230,20 +286,40 @@ for (const item of cases) {
       `${item.id}, genus ${entry.genus}: sector sum`
     );
     assert.ok(entry.rulings.length > 0, `${item.id}: drawings generated`);
-    const multiplicity = entry.rulings.reduce(
-      (sum, drawing) => sum + Number(drawing.multiplicity || 1),
-      0
-    );
+    const weightedSectors = { "all-disk": 0, annular: 0 };
+    const multiplicity = entry.rulings.reduce((sum, drawing) => {
+      const weight = Number(drawing.multiplicity || 1);
+      assert.equal(
+        weight,
+        1,
+        `${item.id}: every ruling has its own SVG`
+      );
+      assert.ok(
+        Object.hasOwn(weightedSectors, drawing.sector),
+        `${item.id}: known ruling sector`
+      );
+      weightedSectors[drawing.sector] += weight;
+      return sum + weight;
+    }, 0);
     assert.equal(
       multiplicity,
       entry.counts.total,
       `${item.id}, genus ${entry.genus}: drawing multiplicities`
     );
+    assert.equal(
+      weightedSectors["all-disk"],
+      entry.counts.allDisk,
+      `${item.id}, genus ${entry.genus}: weighted all-disk drawings`
+    );
+    assert.equal(
+      weightedSectors.annular,
+      entry.counts.annular,
+      `${item.id}, genus ${entry.genus}: weighted annular drawings`
+    );
     drawingCount += entry.rulings.length;
+    stats.drawings += entry.rulings.length;
     rulingMultiplicity += multiplicity;
-    if (entry.genus === 0) {
-      rationalMultiplicity += multiplicity;
-    }
+    stats.multiplicity += multiplicity;
 
     for (const drawing of entry.rulings) {
       assert.doesNotMatch(
@@ -273,8 +349,18 @@ for (const item of cases) {
       ));
       const svgPath = path.join(root, drawing.src);
       assert.ok(fs.existsSync(svgPath), `${drawing.src} exists`);
+      assert.ok(
+        !drawingPaths.has(drawing.src),
+        `${drawing.src}: one card per SVG representative`
+      );
+      drawingPaths.add(drawing.src);
       const svg = fs.readFileSync(svgPath, "utf8");
       assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
+      assert.match(
+        svg,
+        /&quot;uses_tropical_count&quot;:false/,
+        `${drawing.src}: direct-ruling provenance`
+      );
       assert.match(svg, /fill-opacity:(?:0?\.)30/);
       assert.equal(
         uniqueTorusSwitchCount(svg),
@@ -297,6 +383,25 @@ for (const item of cases) {
     drawingRepresentatives.size,
     1,
     `${item.id}: one representative for every ruling`
+  );
+}
+
+for (const [collection, expectation] of collectionExpectations) {
+  const stats = collectionStats.get(collection);
+  assert.equal(
+    stats.polygons,
+    expectation.polygonCount,
+    `${collection}: polygon count`
+  );
+  assert.equal(
+    stats.multiplicity,
+    expectation.rulingMultiplicity,
+    `${collection}: weighted ruling count`
+  );
+  assert.equal(
+    stats.drawings,
+    stats.multiplicity,
+    `${collection}: one SVG for every ruling`
   );
 }
 
@@ -437,45 +542,76 @@ assert.equal(pentagonGenusOne.rulings[0].mask, "0x7ce7");
 assert.equal(pentagonGenusOne.rulings[0].diskEyes, 4);
 assert.equal(pentagonGenusOne.rulings[0].switches, 11);
 
-assert.equal(rulingMultiplicity, 112, "96 genus-zero + 16 genus-one rulings");
-assert.equal(rationalMultiplicity, 96, "the preview contains 96 genus-zero rulings");
-assert.ok(drawingCount > 0 && drawingCount <= rulingMultiplicity);
+assert.equal(rulingMultiplicity, 1601, "112 one-point + 1489 two-point rulings");
+assert.equal(drawingCount, 1601, "all 1601 rulings are displayed separately");
+assert.equal(
+  drawingPaths.size,
+  drawingCount,
+  "one file per displayed SVG representative"
+);
 
 const index = fs.readFileSync(path.join(root, "index.html"), "utf8");
 assert.match(index, /name="robots" content="noindex, nofollow, noarchive"/);
 assert.match(index, /href="one-interior\.html"/);
+assert.match(index, /href="two-interior\.html"/);
 assert.match(index, /Polygons with one interior lattice point/);
+assert.match(index, /Polygons with two interior lattice points/);
 assert.match(index, /112 rulings/);
+assert.match(index, /1,489 rulings/);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
-assert.match(index, /Rational Ruling Atlas/);
+assert.match(index, /Ruling Atlas/);
+assert.doesNotMatch(index, /Rational Ruling Atlas/);
 assert.doesNotMatch(index, /src="(?:core|app)\.js"|src="data\/cases\.js"/);
 
 const oneInterior = fs.readFileSync(path.join(root, "one-interior.html"), "utf8");
-assert.match(oneInterior, /src="core\.js"/);
-assert.match(oneInterior, /src="data\/cases\.js"/);
-assert.match(oneInterior, /src="app\.js"/);
+const twoInterior = fs.readFileSync(path.join(root, "two-interior.html"), "utf8");
+for (const [filename, document, collection] of [
+  ["one-interior.html", oneInterior, "interior-1"],
+  ["two-interior.html", twoInterior, "interior-2"],
+]) {
+  assert.match(
+    document,
+    /name="robots" content="noindex, nofollow, noarchive"/,
+    `${filename}: noindex`
+  );
+  assert.match(
+    document,
+    /<title>[^<]*Ruling Atlas<\/title>/,
+    `${filename}: site title`
+  );
+  assert.doesNotMatch(document, /Rational Ruling Atlas/);
+  assert.match(document, new RegExp(`data-collection="${collection}"`));
+  assert.match(document, /src="core\.js"/);
+  assert.match(document, /src="data\/cases\.js"/);
+  assert.match(document, /src="app\.js"/);
+  assert.doesNotMatch(document, /https?:\/\/[^"]+\.js/);
+  assert.doesNotMatch(document, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
+  assert.match(document, /<th scope="col">Genus<\/th>/);
+  assert.match(document, /Polygon used for every ruling/);
+  assert.match(document, /fixed\s+Λ/);
+  assert.doesNotMatch(document, /diagram-representative/);
+  assert.doesNotMatch(document, /standard ruling/i);
+  assert.doesNotMatch(document, /id="standard-ruling"/);
+  assert.match(document, /id="genus-sections"/);
+  assert.match(document, /id="ruling-polynomial"/);
+  assert.match(document, /Switches are the black points/);
+  assert.match(document, /id="vertical-direction-diagram"/);
+  assert.match(document, /class="vertical-direction-arrow"/);
+  assert.match(document, /id="vertical-direction-label"/);
+  assert.match(document, />vertical\s+v = \(0,1\)<\/span>/);
+}
 assert.match(oneInterior, /Polygons with one interior lattice point/);
-assert.doesNotMatch(oneInterior, /https?:\/\/[^"]+\.js/);
-assert.doesNotMatch(oneInterior, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
-assert.match(oneInterior, /<th scope="col">Genus<\/th>/);
 assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);
-assert.match(oneInterior, /Polygon used for every ruling/);
-assert.match(oneInterior, /fixed\s+Λ/);
-assert.doesNotMatch(oneInterior, /diagram-representative/);
-assert.doesNotMatch(oneInterior, /standard ruling/i);
-assert.doesNotMatch(oneInterior, /id="standard-ruling"/);
-assert.match(oneInterior, /id="genus-sections"/);
-assert.match(oneInterior, /id="ruling-polynomial"/);
-assert.match(oneInterior, /Switches are the black points/);
-assert.match(oneInterior, /id="vertical-direction-diagram"/);
-assert.match(oneInterior, /class="vertical-direction-arrow"/);
-assert.match(oneInterior, /id="vertical-direction-label"/);
-assert.match(oneInterior, />vertical\s+v = \(0,1\)<\/span>/);
+assert.match(twoInterior, /Polygons with two interior lattice points/);
+assert.match(twoInterior, /genera&nbsp;0, 1, and&nbsp;2/);
+assert.match(twoInterior, /45 polygons\s+·\s+1,489 rulings/);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
 assert.doesNotMatch(app, /standard ruling/i);
 assert.doesNotMatch(app, /standardEntry|standardRuling/);
+assert.match(app, /dataset\.collection/);
+assert.match(app, /item\.collection/);
 assert.match(app, /document\.createElement\("details"\)/);
 assert.match(app, /sortedGenera\.map\(\(entry\) => renderGenusPanel\(item, entry\)\)/);
 assert.doesNotMatch(app, /genus-links|showGenus/);

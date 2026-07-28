@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 328.0 328.0"
+     width="328.0" height="328.0"
+     role="img" aria-labelledby="title description">
+  <title id="title">polygon-708fa79ea2, genus 0, all-disk ruling 0x6289</title>
+  <desc id="description">Newton polygon vertices [[0, 0], [2, 0], [3, 2], [1, 2]]; 2 disk eyes and 6 switches.</desc>
+  <metadata>{&quot;polygon_id&quot;:&quot;polygon-708fa79ea2&quot;,&quot;vertices&quot;:[[0,0],[2,0],[3,2],[1,2]],&quot;genus&quot;:0,&quot;sector&quot;:&quot;all-disk&quot;,&quot;mask&quot;:&quot;0x6289&quot;,&quot;disk_eyes&quot;:2,&quot;annular_eyes&quot;:0,&quot;switches&quot;:6,&quot;switch_profile&quot;:{&quot;A&quot;:2,&quot;B&quot;:2,&quot;V&quot;:2},&quot;sl2z&quot;:[[1,0],[0,1]],&quot;uses_tropical_count&quot;:false,&quot;coordinate_model&quot;:&quot;fixed catalog-frame fundamental square shared by every ruling of this polygon&quot;}</metadata>
+  <style>
+    svg {
+      --card: #ffffff;
+      --foreground: #111827;
+      --viz-series-1: #2563eb;
+      --viz-series-2: #ef4444;
+      --viz-series-3: #16a34a;
+    }
+    .o4-diagram-bg { fill: var(--card); }
+  </style>
+<defs><clipPath id="one-polygon-708fa79ea2-0-6289"><rect x="14.0" y="14.0" width="300.0" height="300.0"/></clipPath><clipPath id="one-polygon-708fa79ea2-0-6289-boundary"><rect x="12.8" y="12.8" width="302.4" height="302.4"/></clipPath></defs>
+<rect class="o4-diagram-bg" x="0" y="0" width="328.0" height="328.0"/>
+<g clip-path="url(#one-polygon-708fa79ea2-0-6289)">
+<polygon points="-98.50,239.00 -23.50,239.00 14.00,164.00 51.50,89.00 126.50,89.00 89.00,164.00 51.50,239.00 14.00,314.00 -61.00,314.00 -136.00,314.00 -211.00,314.00 -286.00,314.00 -323.50,389.00 -361.00,464.00 -436.00,464.00 -398.50,389.00 -361.00,314.00 -323.50,239.00 -248.50,239.00 -173.50,239.00" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="-98.50,-61.00 -23.50,-61.00 14.00,-136.00 51.50,-211.00 126.50,-211.00 89.00,-136.00 51.50,-61.00 14.00,14.00 -61.00,14.00 -136.00,14.00 -211.00,14.00 -286.00,14.00 -323.50,89.00 -361.00,164.00 -436.00,164.00 -398.50,89.00 -361.00,14.00 -323.50,-61.00 -248.50,-61.00 -173.50,-61.00" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="201.50,239.00 276.50,239.00 314.00,164.00 351.50,89.00 426.50,89.00 389.00,164.00 351.50,239.00 314.00,314.00 239.00,314.00 164.00,314.00 89.00,314.00 14.00,314.00 -23.50,389.00 -61.00,464.00 -136.00,464.00 -98.50,389.00 -61.00,314.00 -23.50,239.00 51.50,239.00 126.50,239.00" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="201.50,-61.00 276.50,-61.00 314.00,-136.00 351.50,-211.00 426.50,-211.00 389.00,-136.00 351.50,-61.00 314.00,14.00 239.00,14.00 164.00,14.00 89.00,14.00 14.00,14.00 -23.50,89.00 -61.00,164.00 -136.00,164.00 -98.50,89.00 -61.00,14.00 -23.50,-61.00 51.50,-61.00 126.50,-61.00" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="501.50,239.00 576.50,239.00 614.00,164.00 651.50,89.00 726.50,89.00 689.00,164.00 651.50,239.00 614.00,314.00 539.00,314.00 464.00,314.00 389.00,314.00 314.00,314.00 276.50,389.00 239.00,464.00 164.00,464.00 201.50,389.00 239.00,314.00 276.50,239.00 351.50,239.00 426.50,239.00" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="501.50,-61.00 576.50,-61.00 614.00,-136.00 651.50,-211.00 726.50,-211.00 689.00,-136.00 651.50,-61.00 614.00,14.00 539.00,14.00 464.00,14.00 389.00,14.00 314.00,14.00 276.50,89.00 239.00,164.00 164.00,164.00 201.50,89.00 239.00,14.00 276.50,-61.00 351.50,-61.00 426.50,-61.00" style="fill:var(--viz-series-2);fill-opacity:.30;stroke:none"/>
+<polygon points="164.00,164.00 89.00,164.00 14.00,164.00 -61.00,164.00 -98.50,239.00 -136.00,314.00 -173.50,389.00 -98.50,389.00 -23.50,389.00 51.50,389.00 89.00,314.00 126.50,239.00" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="164.00,-136.00 89.00,-136.00 14.00,-136.00 -61.00,-136.00 -98.50,-61.00 -136.00,14.00 -173.50,89.00 -98.50,89.00 -23.50,89.00 51.50,89.00 89.00,14.00 126.50,-61.00" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="464.00,164.00 389.00,164.00 314.00,164.00 239.00,164.00 201.50,239.00 164.00,314.00 126.50,389.00 201.50,389.00 276.50,389.00 351.50,389.00 389.00,314.00 426.50,239.00" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+<polygon points="464.00,-136.00 389.00,-136.00 314.00,-136.00 239.00,-136.00 201.50,-61.00 164.00,14.00 126.50,89.00 201.50,89.00 276.50,89.00 351.50,89.00 389.00,14.00 426.50,-61.00" style="fill:var(--viz-series-1);fill-opacity:.30;stroke:none"/>
+</g>
+<rect x="14.0" y="14.0" width="300.0" height="300.0" style="fill:none;stroke:var(--viz-series-3);stroke-width:1.8"/>
+<g clip-path="url(#one-polygon-708fa79ea2-0-6289-boundary)">
+<line x1="-23.50" y1="239.00" x2="14.00" y2="164.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="14.00" y1="164.00" x2="51.50" y2="89.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.50" y1="89.00" x2="126.50" y2="89.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="126.50" y1="89.00" x2="89.00" y2="164.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="89.00" y1="164.00" x2="51.50" y2="239.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.50" y1="239.00" x2="14.00" y2="314.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.50" y1="-61.00" x2="14.00" y2="14.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="239.00" x2="276.50" y2="239.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="276.50" y1="239.00" x2="314.00" y2="164.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="314.00" y1="164.00" x2="351.50" y2="89.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="351.50" y1="239.00" x2="314.00" y2="314.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="314.00" y1="314.00" x2="239.00" y2="314.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="314.00" x2="164.00" y2="314.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="314.00" x2="89.00" y2="314.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="89.00" y1="314.00" x2="14.00" y2="314.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="14.00" y1="314.00" x2="-23.50" y2="389.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="-23.50" y1="239.00" x2="51.50" y2="239.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.50" y1="239.00" x2="126.50" y2="239.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="126.50" y1="239.00" x2="201.50" y2="239.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="351.50" y1="-61.00" x2="314.00" y2="14.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="14.00" y1="14.00" x2="-23.50" y2="89.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="314.00" y1="314.00" x2="276.50" y2="389.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="389.00" x2="239.00" y2="314.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="314.00" x2="276.50" y2="239.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="276.50" y1="239.00" x2="351.50" y2="239.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="314.00" y1="14.00" x2="276.50" y2="89.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="276.50" y1="89.00" x2="239.00" y2="164.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="164.00" x2="164.00" y2="164.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="164.00" x2="201.50" y2="89.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="89.00" x2="239.00" y2="14.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="14.00" x2="276.50" y2="-61.00" style="stroke:var(--viz-series-2);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="164.00" x2="89.00" y2="164.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="89.00" y1="164.00" x2="14.00" y2="164.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="14.00" y1="164.00" x2="-61.00" y2="164.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.50" y1="389.00" x2="89.00" y2="314.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="89.00" y1="314.00" x2="126.50" y2="239.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="126.50" y1="239.00" x2="164.00" y2="164.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="-23.50" y1="89.00" x2="51.50" y2="89.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="51.50" y1="89.00" x2="89.00" y2="14.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="89.00" y1="14.00" x2="126.50" y2="-61.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="389.00" y1="164.00" x2="314.00" y2="164.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="314.00" y1="164.00" x2="239.00" y2="164.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="239.00" y1="164.00" x2="201.50" y2="239.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="239.00" x2="164.00" y2="314.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="314.00" x2="126.50" y2="389.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="-61.00" x2="164.00" y2="14.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="164.00" y1="14.00" x2="126.50" y2="89.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="126.50" y1="89.00" x2="201.50" y2="89.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="201.50" y1="89.00" x2="276.50" y2="89.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+<line x1="276.50" y1="89.00" x2="351.50" y2="89.00" style="stroke:var(--viz-series-1);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round"/>
+</g>
+<circle cx="14.00" cy="314.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="14.00" cy="14.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="314.00" cy="314.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="314.00" cy="14.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="51.50" cy="89.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="126.50" cy="89.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="164.00" cy="164.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="239.00" cy="164.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+<circle cx="276.50" cy="239.00" r="3.05" style="fill:var(--foreground);stroke:var(--card);stroke-width:1.0"/>
+</svg>

@@ -56,11 +56,13 @@ switches.
 
 The `O(4) on P^2` entry uses
 `Conv{(-2,-1), (2,-1), (-2,3)}` for every genus, with displayed vertical
-direction `(-3,2)`. Its page copies the 14 existing desktop SVGs directly:
-one genus-three diagram and thirteen genus-zero symmetry representatives.
-Their displayed orbit sizes sum to all 304 rational rulings (288 all-disk and
-16 annular). The figures use green Lambda, red and blue eyes, black switches,
-and darker fills where eyes overlap.
+direction `(-1,2)`. This is the direction used by the ruling diagram itself:
+the covector `(2,1)` is positive on the displayed future tangents
+`(1,0)`, `(0,1)`, and `(1,-1)`. Its page copies the 14 existing desktop SVGs
+directly: one genus-three diagram and thirteen genus-zero symmetry
+representatives. Their displayed orbit sizes sum to all 304 rational rulings
+(288 all-disk and 16 annular). The figures use green Lambda, red and blue eyes,
+black switches, and darker fills where eyes overlap.
 
 The centrally symmetric six-vertex polygon
 `Conv{(-1,0), (0,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses exact separated
@@ -72,6 +74,14 @@ The five-vertex class
 `Conv{(-1,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses a reflection-symmetric
 exact realization: the horizontal and vertical phases are both
 `{0,1/3,2/3}`, and the diagonal phase is `1/6`.
+
+The two-interior collection was recounted after choosing exact
+symmetry-oriented phases for each of its 45 classes. In particular, the five
+triangle examples use congruent red and blue triangular eyes in their
+highest-genus rulings. The `O(2,3) on P^1 x P^1` entry keeps the catalog
+rectangle `Conv{(0,0), (3,0), (3,2), (0,2)}` and draws every ruling on one
+fixed 6-by-4 rectangular Lambda; its highest-genus ruling has six red and six
+blue equal square eyes.
 
 The two census collections display all 1,601 rulings separately: 112 for the
 one-interior collection and 1,489 for the two-interior collection. The

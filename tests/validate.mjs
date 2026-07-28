@@ -60,13 +60,23 @@ function expectedArrangementShear(vertices) {
 }
 
 function uniqueTorusSwitchCount(svg) {
+  const frames = [...svg.matchAll(
+    /<rect x="(-?\d+(?:\.\d+)?)" y="(-?\d+(?:\.\d+)?)" width="(\d+(?:\.\d+)?)" height="(\d+(?:\.\d+)?)" style="fill:none;stroke:var\(--viz-series-3/g
+  )];
+  assert.ok(frames.length > 0, "the SVG has a torus frame");
+  const frame = frames.at(-1);
+  const origin = [Number(frame[1]), Number(frame[2])];
+  const period = [Number(frame[3]), Number(frame[4])];
   const points = new Set();
   for (const match of svg.matchAll(
     /<circle cx="(-?\d+(?:\.\d+)?)" cy="(-?\d+(?:\.\d+)?)"/g
   )) {
-    const normalize = (value) =>
-      Math.abs(Number(value) - 314) < 1e-6 ? 14 : Number(value);
-    points.add(`${normalize(match[1])},${normalize(match[2])}`);
+    const normalize = (value, axis) => {
+      const offset = Number(value) - origin[axis];
+      const reduced = ((offset % period[axis]) + period[axis]) % period[axis];
+      return Math.round((origin[axis] + reduced) * 1e6) / 1e6;
+    };
+    points.add(`${normalize(match[1], 0)},${normalize(match[2], 1)}`);
   }
   return points.size;
 }
@@ -361,7 +371,11 @@ for (const item of cases) {
         /&quot;uses_tropical_count&quot;:false/,
         `${drawing.src}: direct-ruling provenance`
       );
-      assert.match(svg, /fill-opacity:(?:0?\.)30/);
+      assert.match(
+        svg,
+        /fill-opacity:0?\.(?:28|30)/,
+        `${drawing.src}: translucent eye fill`
+      );
       assert.equal(
         uniqueTorusSwitchCount(svg),
         drawing.switches,
@@ -490,6 +504,65 @@ const o22TopSvg = fs.readFileSync(
   "utf8"
 );
 assert.match(o22TopSvg, /eight equal square eyes/);
+
+const fig2c = cases.find((item) => item.id === "polygon-dcf2998504");
+assert.ok(fig2c, "the symmetric two-interior triangle is present");
+assert.deepEqual(
+  JSON.parse(JSON.stringify(fig2c.displayFromSource)),
+  [[1, 0], [0, 1]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(fig2c.verticalDirection)),
+  [0, 1]
+);
+const fig2cGenusZero = fig2c.genera.find((entry) => entry.genus === 0);
+const fig2cGenusTwo = fig2c.genera.find((entry) => entry.genus === 2);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(fig2cGenusZero.counts)),
+  { allDisk: 8, annular: 8, total: 16 }
+);
+assert.equal(fig2cGenusTwo.rulings[0].mask, "0xffffff");
+assert.equal(fig2cGenusTwo.rulings[0].diskEyes, 16);
+assert.equal(fig2cGenusTwo.rulings[0].switches, 24);
+
+const o23 = cases.find((item) => item.id === "polygon-8ee8c76d7d");
+assert.ok(o23, "the O(2,3) rectangle is present");
+assert.equal(o23.displayName, "O(2,3) on P^1 x P^1");
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o23.displayFromSource)),
+  [[1, 0], [0, 1]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o23.verticalDirection)),
+  [-1, 1]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(core.transformVertices(
+    o23.vertices,
+    o23.displayFromSource
+  ))),
+  [[0, 0], [3, 0], [3, 2], [0, 2]],
+  "O(2,3) keeps the catalog rectangle"
+);
+const o23GenusZero = o23.genera.find((entry) => entry.genus === 0);
+const o23GenusOne = o23.genera.find((entry) => entry.genus === 1);
+const o23GenusTwo = o23.genera.find((entry) => entry.genus === 2);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o23GenusZero.counts)),
+  { allDisk: 48, annular: 0, total: 48 }
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o23GenusOne.counts)),
+  { allDisk: 12, annular: 0, total: 12 }
+);
+assert.equal(o23GenusTwo.rulings[0].mask, "0xffffff");
+assert.equal(o23GenusTwo.rulings[0].diskEyes, 12);
+assert.equal(o23GenusTwo.rulings[0].switches, 24);
+const o23TopSvg = fs.readFileSync(
+  path.join(root, o23GenusTwo.rulings[0].src),
+  "utf8"
+);
+assert.match(o23TopSvg, /6-by-4 rectangular Lambda/);
 
 const separatedHexagon = cases.find(
   (item) => item.id === "polygon-e95d7ae246"
@@ -620,7 +693,7 @@ assert.match(otherPolygons, /Genus 3/);
 assert.match(otherPolygons, /Genus 0/);
 assert.match(otherPolygons, /304 rational rulings/);
 assert.match(otherPolygons, /Conv\{\(-2,-1\), \(2,-1\), \(-2,3\)\}/);
-assert.match(otherPolygons, /vertical direction: \(-3,2\)/);
+assert.match(otherPolygons, /vertical direction: \(-1,2\)/);
 assert.match(otherPolygons, /z⁶ \+ 16z⁴ \+ 104z² \+ 304/);
 
 const o4FigureDirectory = path.join(

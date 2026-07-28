@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 268.0 188.0"
+     width="268.0" height="188.0"
+     role="img" aria-labelledby="title description">
+  <title id="title">polygon-8ee8c76d7d, genus 0, ruling 0x1bffc6</title>
+  <desc id="description">O(2,3) on a fixed 6 by 4 rectangular torus grid.</desc>
+  <metadata>{&quot;polygon_id&quot;:&quot;polygon-8ee8c76d7d&quot;,&quot;vertices&quot;:[[0,0],[3,0],[3,2],[0,2]],&quot;genus&quot;:0,&quot;sector&quot;:&quot;all-disk&quot;,&quot;mask&quot;:&quot;0x1bffc6&quot;,&quot;disk_eyes&quot;:8,&quot;annular_eyes&quot;:0,&quot;switches&quot;:16,&quot;switch_profile&quot;:{&quot;A&quot;:8,&quot;B&quot;:0,&quot;V&quot;:8},&quot;sl2z&quot;:[[1,-1],[0,1]],&quot;uses_tropical_count&quot;:false,&quot;coordinate_model&quot;:&quot;exact 6-by-4 rectangular Lambda shared by all 61 rulings; the all-switch genus-two ruling has six red and six blue equal square eyes&quot;}</metadata>
+  <style>
+    
+      
+        :root {
+          --background: #ffffff;
+          --card: #ffffff;
+          --border: #cbd5e1;
+          --muted-foreground: #64748b;
+          --foreground: #111827;
+          --viz-series-1: #2563eb;
+          --viz-series-2: #dc2626;
+        }
+        
+      .diagram-bg { fill: var(--card, #fff); }
+      .torus-frame { fill: none; stroke: var(--foreground, #111827); stroke-width: 1.5; }
+      .tile-grid { fill: none; stroke: var(--border, #cbd5e1); stroke-width: 0.8; }
+      .eye-stroke { fill: none; stroke-width: 2.45; stroke-linecap: round; stroke-linejoin: round; }
+      .underlay { fill: none; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .eye-blue { stroke: var(--viz-series-1, #2563eb); }
+      .eye-red { stroke: var(--viz-series-2, #dc2626); }
+      .eye-neutral { stroke: var(--muted-foreground, #64748b); }
+      .diagram-bg-stroke { stroke: var(--card, #fff); }
+      .switch-marker { stroke: var(--foreground, #111827); stroke-width: 0.8; }
+      .marker-a { fill: var(--card, #fff); }
+      .marker-b { fill: var(--foreground, #111827); }
+      .marker-v { fill: var(--card, #fff); }
+    
+    :root { --viz-series-3: #16a34a; }
+  </style>
+  <defs><clipPath id="clip-g0-1bffc6"><rect x="20.0" y="18.0" width="228.0" height="152.0"/></clipPath></defs>
+<rect class="diagram-bg" x="0" y="0" width="268.0" height="188.0"/>
+<g clip-path="url(#clip-g0-1bffc6)">
+<polygon points="-18.00,170.00 -56.00,170.00 -94.00,170.00 -132.00,170.00 -132.00,208.00 -94.00,208.00 -56.00,208.00 -18.00,208.00 20.00,208.00 58.00,208.00 58.00,170.00 20.00,170.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="-18.00,18.00 -56.00,18.00 -94.00,18.00 -132.00,18.00 -132.00,56.00 -94.00,56.00 -56.00,56.00 -18.00,56.00 20.00,56.00 58.00,56.00 58.00,18.00 20.00,18.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="210.00,170.00 172.00,170.00 134.00,170.00 96.00,170.00 96.00,208.00 134.00,208.00 172.00,208.00 210.00,208.00 248.00,208.00 286.00,208.00 286.00,170.00 248.00,170.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="210.00,18.00 172.00,18.00 134.00,18.00 96.00,18.00 96.00,56.00 134.00,56.00 172.00,56.00 210.00,56.00 248.00,56.00 286.00,56.00 286.00,18.00 248.00,18.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="58.00,170.00 58.00,132.00 96.00,132.00 96.00,170.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="58.00,18.00 58.00,-20.00 96.00,-20.00 96.00,18.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="20.00,132.00 20.00,94.00 58.00,94.00 58.00,132.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="248.00,132.00 248.00,94.00 286.00,94.00 286.00,132.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="-18.00,132.00 -18.00,170.00 -18.00,208.00 -18.00,246.00 20.00,246.00 20.00,208.00 20.00,170.00 20.00,132.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="-18.00,-20.00 -18.00,18.00 -18.00,56.00 -18.00,94.00 20.00,94.00 20.00,56.00 20.00,18.00 20.00,-20.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="210.00,132.00 210.00,170.00 210.00,208.00 210.00,246.00 248.00,246.00 248.00,208.00 248.00,170.00 248.00,132.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="210.00,-20.00 210.00,18.00 210.00,56.00 210.00,94.00 248.00,94.00 248.00,56.00 248.00,18.00 248.00,-20.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="172.00,132.00 172.00,94.00 210.00,94.00 210.00,132.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="134.00,132.00 134.00,170.00 134.00,208.00 134.00,246.00 172.00,246.00 172.00,208.00 172.00,170.00 172.00,132.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="134.00,-20.00 134.00,18.00 134.00,56.00 134.00,94.00 172.00,94.00 172.00,56.00 172.00,18.00 172.00,-20.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="96.00,132.00 96.00,94.00 134.00,94.00 134.00,132.00" style="fill:var(--viz-series-2, #dc2626);fill-opacity:.28;stroke:none"/>
+<polygon points="58.00,94.00 58.00,56.00 96.00,56.00 96.00,94.00" style="fill:var(--viz-series-1, #2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="-18.00,170.00 -56.00,170.00 -94.00,170.00 -132.00,170.00 -132.00,208.00 -94.00,208.00 -56.00,208.00 -18.00,208.00 20.00,208.00 58.00,208.00 58.00,170.00 20.00,170.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="-18.00,18.00 -56.00,18.00 -94.00,18.00 -132.00,18.00 -132.00,56.00 -94.00,56.00 -56.00,56.00 -18.00,56.00 20.00,56.00 58.00,56.00 58.00,18.00 20.00,18.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="210.00,170.00 172.00,170.00 134.00,170.00 96.00,170.00 96.00,208.00 134.00,208.00 172.00,208.00 210.00,208.00 248.00,208.00 286.00,208.00 286.00,170.00 248.00,170.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="210.00,18.00 172.00,18.00 134.00,18.00 96.00,18.00 96.00,56.00 134.00,56.00 172.00,56.00 210.00,56.00 248.00,56.00 286.00,56.00 286.00,18.00 248.00,18.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="58.00,170.00 58.00,132.00 96.00,132.00 96.00,170.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="58.00,18.00 58.00,-20.00 96.00,-20.00 96.00,18.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="20.00,132.00 20.00,94.00 58.00,94.00 58.00,132.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="248.00,132.00 248.00,94.00 286.00,94.00 286.00,132.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="-18.00,132.00 -18.00,170.00 -18.00,208.00 -18.00,246.00 20.00,246.00 20.00,208.00 20.00,170.00 20.00,132.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="-18.00,-20.00 -18.00,18.00 -18.00,56.00 -18.00,94.00 20.00,94.00 20.00,56.00 20.00,18.00 20.00,-20.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="210.00,132.00 210.00,170.00 210.00,208.00 210.00,246.00 248.00,246.00 248.00,208.00 248.00,170.00 248.00,132.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="210.00,-20.00 210.00,18.00 210.00,56.00 210.00,94.00 248.00,94.00 248.00,56.00 248.00,18.00 248.00,-20.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="172.00,132.00 172.00,94.00 210.00,94.00 210.00,132.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="134.00,132.00 134.00,170.00 134.00,208.00 134.00,246.00 172.00,246.00 172.00,208.00 172.00,170.00 172.00,132.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="134.00,-20.00 134.00,18.00 134.00,56.00 134.00,94.00 172.00,94.00 172.00,56.00 172.00,18.00 172.00,-20.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="96.00,132.00 96.00,94.00 134.00,94.00 134.00,132.00" style="fill:none;stroke:var(--viz-series-2, #dc2626);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="58.00,94.00 58.00,56.00 96.00,56.00 96.00,94.00" style="fill:none;stroke:var(--viz-series-1, #2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+</g>
+<rect x="20.0" y="18.0" width="228.0" height="152.0" style="fill:none;stroke:var(--viz-series-3,#f97316);stroke-width:1.8"/>
+<circle cx="58.00" cy="132.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="96.00" cy="94.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="20.00" cy="132.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="248.00" cy="132.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="58.00" cy="94.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="96.00" cy="56.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="210.00" cy="132.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="20.00" cy="94.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="248.00" cy="94.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="58.00" cy="56.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="172.00" cy="132.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="96.00" cy="170.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="96.00" cy="18.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="210.00" cy="94.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="134.00" cy="132.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="58.00" cy="170.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="58.00" cy="18.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="172.00" cy="94.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="96.00" cy="132.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="134.00" cy="94.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+</svg>

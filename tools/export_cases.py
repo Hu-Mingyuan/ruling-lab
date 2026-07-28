@@ -54,7 +54,7 @@ def default_collections() -> tuple[Collection, Collection]:
             expected_polygons=45,
             asset_directory="two-interior",
             polygons=PROJECT_ROOT / "two_interior_lattice_polygons.json",
-            counts=PROJECT_ROOT / "two_interior_ruling_counts.json",
+            counts=PROJECT_ROOT / "two_interior_symmetric_ruling_counts.json",
             manifest=(
                 SITE_ROOT
                 / "assets"

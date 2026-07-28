@@ -112,13 +112,21 @@ assert.ok(drawingCount > 0 && drawingCount <= rulingMultiplicity);
 
 const index = fs.readFileSync(path.join(root, "index.html"), "utf8");
 assert.match(index, /name="robots" content="noindex, nofollow, noarchive"/);
-assert.match(index, /src="core\.js"/);
-assert.match(index, /src="data\/cases\.js"/);
-assert.match(index, /src="app\.js"/);
+assert.match(index, /href="one-interior\.html"/);
+assert.match(index, /Polygons with one interior lattice point/);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Rational Ruling Atlas/);
-assert.doesNotMatch(index, /Genus<\/th>|genus&nbsp;1/);
+assert.doesNotMatch(index, /src="(?:core|app)\.js"|src="data\/cases\.js"/);
+
+const oneInterior = fs.readFileSync(path.join(root, "one-interior.html"), "utf8");
+assert.match(oneInterior, /src="core\.js"/);
+assert.match(oneInterior, /src="data\/cases\.js"/);
+assert.match(oneInterior, /src="app\.js"/);
+assert.match(oneInterior, /Polygons with one interior lattice point/);
+assert.doesNotMatch(oneInterior, /https?:\/\/[^"]+\.js/);
+assert.doesNotMatch(oneInterior, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
+assert.doesNotMatch(oneInterior, /Genus<\/th>|genus&nbsp;1/);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
 assert.match(app, /find\(\(entry\) => entry\.genus === 0\)/);

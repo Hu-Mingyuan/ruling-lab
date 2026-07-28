@@ -4,6 +4,9 @@ This repository is an unpublished static atlas of direct ruling counts and
 diagrams for lattice polygons. It is separate from the public homepage and has
 not been deployed.
 
+The home page is a collection index. Its first link opens the collection
+“Polygons with one interior lattice point.”
+
 This preview contains the 16 lattice-equivalence classes of convex lattice
 polygons with exactly one interior lattice point. Every entry is identified
 only by its vertex coordinates, centered at the unique interior point `(0,0)`.

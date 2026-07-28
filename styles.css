@@ -56,6 +56,16 @@ main {
   text-transform: uppercase;
 }
 
+.breadcrumb {
+  margin: 0 0 10px;
+  font-size: .85rem;
+}
+
+.breadcrumb a,
+footer a {
+  color: var(--link);
+}
+
 h1,
 h2,
 h3,
@@ -99,6 +109,33 @@ h2 {
 .atlas-section,
 .report {
   margin-top: 32px;
+}
+
+.collection-list {
+  margin-top: 28px;
+}
+
+.collection-link {
+  display: grid;
+  gap: 5px;
+  max-width: 620px;
+  padding: 14px 0;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.collection-link:hover strong,
+.collection-link:focus-visible strong {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.collection-link span {
+  color: var(--muted);
+  font-size: .85rem;
 }
 
 .section-heading {

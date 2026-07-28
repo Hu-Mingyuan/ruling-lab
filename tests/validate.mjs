@@ -7,6 +7,25 @@ import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "..");
+const cjkText =
+  /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u;
+
+for (const filename of [
+  "index.html",
+  "one-interior.html",
+  "two-interior.html",
+  "other-polygons.html",
+  "app.js",
+  "core.js",
+  "styles.css",
+  "data/cases.js",
+]) {
+  assert.doesNotMatch(
+    fs.readFileSync(path.join(root, filename), "utf8"),
+    cjkText,
+    `${filename}: public-facing text must not contain CJK characters`
+  );
+}
 
 function runBrowserScript(filename, context) {
   const source = fs.readFileSync(path.join(root, filename), "utf8");
@@ -365,6 +384,7 @@ for (const item of cases) {
       );
       drawingPaths.add(drawing.src);
       const svg = fs.readFileSync(svgPath, "utf8");
+      assert.doesNotMatch(svg, cjkText, `${drawing.src}: English-only SVG`);
       assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
       assert.match(
         svg,
@@ -741,6 +761,7 @@ assert.deepEqual(
 for (const [filename, multiplicity] of o4Figures) {
   const figurePath = path.join(o4FigureDirectory, filename);
   const svg = fs.readFileSync(figurePath, "utf8");
+  assert.doesNotMatch(svg, cjkText, `${filename}: English-only SVG`);
   assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
   assert.ok(
     otherPolygons.includes(

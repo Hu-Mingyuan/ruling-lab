@@ -93,7 +93,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -115,7 +115,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -137,7 +137,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           }
         ]
@@ -170,7 +170,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -275,7 +275,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -297,7 +297,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -319,7 +319,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -341,7 +341,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -374,7 +374,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -479,7 +479,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -501,7 +501,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -523,7 +523,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -545,7 +545,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -567,7 +567,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -589,7 +589,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -622,7 +622,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -727,7 +727,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -749,7 +749,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -771,7 +771,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -793,7 +793,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -815,7 +815,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -837,7 +837,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -859,7 +859,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -881,7 +881,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -914,7 +914,7 @@ window.RULING_CASES = [
                 -2
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1019,7 +1019,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1041,7 +1041,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1063,7 +1063,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1085,7 +1085,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1107,7 +1107,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1129,7 +1129,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1151,7 +1151,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1173,7 +1173,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -1195,7 +1195,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1228,7 +1228,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=18 路 A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1337,7 +1337,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -1359,7 +1359,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -1381,7 +1381,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -1403,7 +1403,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1436,7 +1436,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1545,7 +1545,7 @@ window.RULING_CASES = [
                 3
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -1567,7 +1567,7 @@ window.RULING_CASES = [
                 3
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -1589,7 +1589,7 @@ window.RULING_CASES = [
                 3
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -1611,7 +1611,7 @@ window.RULING_CASES = [
                 3
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1644,7 +1644,7 @@ window.RULING_CASES = [
                 3
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1753,7 +1753,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -1775,7 +1775,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -1797,7 +1797,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -1819,7 +1819,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -1841,7 +1841,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           }
         ]
@@ -1874,7 +1874,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1983,7 +1983,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -2005,7 +2005,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -2027,7 +2027,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -2049,7 +2049,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -2071,7 +2071,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -2093,7 +2093,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -2126,7 +2126,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2235,7 +2235,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -2257,7 +2257,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2279,7 +2279,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2301,7 +2301,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -2323,7 +2323,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -2345,7 +2345,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -2367,7 +2367,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           }
         ]
@@ -2400,7 +2400,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2509,7 +2509,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -2531,7 +2531,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -2553,7 +2553,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -2575,7 +2575,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -2597,7 +2597,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -2619,7 +2619,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -2641,7 +2641,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -2663,7 +2663,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2696,7 +2696,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2805,7 +2805,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2827,7 +2827,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2849,7 +2849,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2871,7 +2871,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2893,7 +2893,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2915,7 +2915,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2937,7 +2937,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -2959,7 +2959,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2992,7 +2992,7 @@ window.RULING_CASES = [
                 2
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -3105,7 +3105,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3127,7 +3127,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3149,7 +3149,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -3171,7 +3171,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -3193,7 +3193,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -3226,7 +3226,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -3339,7 +3339,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3361,7 +3361,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3383,7 +3383,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3405,7 +3405,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -3427,7 +3427,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -3449,7 +3449,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -3482,7 +3482,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -3595,7 +3595,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -3617,7 +3617,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3639,7 +3639,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -3661,7 +3661,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3683,7 +3683,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3705,7 +3705,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3727,7 +3727,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -3760,7 +3760,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -3877,7 +3877,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3899,7 +3899,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -3921,7 +3921,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -3943,7 +3943,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3965,7 +3965,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -3987,7 +3987,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -4020,7 +4020,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -4125,7 +4125,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -4147,7 +4147,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -4169,7 +4169,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -4191,7 +4191,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -4213,7 +4213,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           }
         ]
@@ -4246,7 +4246,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -4268,7 +4268,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -4290,7 +4290,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -4312,7 +4312,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -4334,7 +4334,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -4367,7 +4367,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -4472,7 +4472,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4494,7 +4494,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4516,7 +4516,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4538,7 +4538,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4560,7 +4560,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4582,7 +4582,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4604,7 +4604,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4626,7 +4626,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -4648,7 +4648,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -4681,7 +4681,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4703,7 +4703,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4725,7 +4725,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4747,7 +4747,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4769,7 +4769,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4791,7 +4791,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -4824,7 +4824,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -4929,7 +4929,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4951,7 +4951,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4973,7 +4973,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -4995,7 +4995,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -5017,7 +5017,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -5039,7 +5039,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -5061,7 +5061,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -5083,7 +5083,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -5105,7 +5105,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -5127,7 +5127,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -5149,7 +5149,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -5171,7 +5171,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -5193,7 +5193,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -5215,7 +5215,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -5237,7 +5237,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -5259,7 +5259,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           }
         ]
@@ -5292,7 +5292,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5314,7 +5314,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5336,7 +5336,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5358,7 +5358,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5380,7 +5380,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5402,7 +5402,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5424,7 +5424,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5446,7 +5446,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -5479,7 +5479,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -5584,7 +5584,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5606,7 +5606,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5628,7 +5628,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5650,7 +5650,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5672,7 +5672,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5694,7 +5694,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5716,7 +5716,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5738,7 +5738,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5760,7 +5760,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5782,7 +5782,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5804,7 +5804,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5826,7 +5826,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5848,7 +5848,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5870,7 +5870,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5892,7 +5892,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5914,7 +5914,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5936,7 +5936,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5958,7 +5958,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -5980,7 +5980,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -6002,7 +6002,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -6024,7 +6024,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6046,7 +6046,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6068,7 +6068,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6090,7 +6090,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6112,7 +6112,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6134,7 +6134,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6156,7 +6156,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6178,7 +6178,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6200,7 +6200,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -6222,7 +6222,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           }
         ]
@@ -6255,7 +6255,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6277,7 +6277,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6299,7 +6299,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6321,7 +6321,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6343,7 +6343,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6365,7 +6365,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6387,7 +6387,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6409,7 +6409,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6431,7 +6431,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6453,7 +6453,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -6486,7 +6486,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           }
         ]
@@ -6591,7 +6591,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6613,7 +6613,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6635,7 +6635,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6657,7 +6657,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6679,7 +6679,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6701,7 +6701,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6723,7 +6723,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6745,7 +6745,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6767,7 +6767,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6789,7 +6789,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6811,7 +6811,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6833,7 +6833,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6855,7 +6855,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6877,7 +6877,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6899,7 +6899,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6921,7 +6921,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6943,7 +6943,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6965,7 +6965,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -6987,7 +6987,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7009,7 +7009,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7031,7 +7031,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7053,7 +7053,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7075,7 +7075,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7097,7 +7097,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7119,7 +7119,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7141,7 +7141,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7163,7 +7163,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7185,7 +7185,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7207,7 +7207,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7229,7 +7229,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7251,7 +7251,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7273,7 +7273,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7295,7 +7295,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7317,7 +7317,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7339,7 +7339,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7361,7 +7361,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -7383,7 +7383,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7405,7 +7405,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7427,7 +7427,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7449,7 +7449,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7471,7 +7471,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7493,7 +7493,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7515,7 +7515,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7537,7 +7537,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7559,7 +7559,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7581,7 +7581,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7603,7 +7603,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           },
           {
@@ -7625,7 +7625,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=2",
+            "profile": "D=12 · A=2",
             "multiplicity": 1
           }
         ]
@@ -7658,7 +7658,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7680,7 +7680,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7702,7 +7702,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7724,7 +7724,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7746,7 +7746,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7768,7 +7768,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7790,7 +7790,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7812,7 +7812,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7834,7 +7834,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7856,7 +7856,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7878,7 +7878,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           },
           {
@@ -7900,7 +7900,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           }
         ]
@@ -7933,7 +7933,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=24 路 A=0",
+            "profile": "D=24 · A=0",
             "multiplicity": 1
           }
         ]
@@ -8042,7 +8042,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8064,7 +8064,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8086,7 +8086,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8108,7 +8108,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8130,7 +8130,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8152,7 +8152,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8174,7 +8174,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8196,7 +8196,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8218,7 +8218,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -8251,7 +8251,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -8273,7 +8273,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -8295,7 +8295,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -8317,7 +8317,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -8339,7 +8339,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -8361,7 +8361,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -8394,7 +8394,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -8503,7 +8503,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8525,7 +8525,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8547,7 +8547,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8569,7 +8569,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8591,7 +8591,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8613,7 +8613,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8635,7 +8635,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8657,7 +8657,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8679,7 +8679,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           }
         ]
@@ -8712,7 +8712,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -8734,7 +8734,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -8756,7 +8756,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8778,7 +8778,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -8800,7 +8800,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -8822,7 +8822,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -8855,7 +8855,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -8964,7 +8964,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -8986,7 +8986,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9008,7 +9008,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9030,7 +9030,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9052,7 +9052,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9074,7 +9074,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9096,7 +9096,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9118,7 +9118,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9140,7 +9140,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           }
         ]
@@ -9173,7 +9173,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9195,7 +9195,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9217,7 +9217,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9239,7 +9239,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9261,7 +9261,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9283,7 +9283,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -9316,7 +9316,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -9425,7 +9425,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9447,7 +9447,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9469,7 +9469,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9491,7 +9491,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9513,7 +9513,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9535,7 +9535,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9557,7 +9557,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -9579,7 +9579,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -9612,7 +9612,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -9634,7 +9634,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -9656,7 +9656,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -9678,7 +9678,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -9700,7 +9700,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -9722,7 +9722,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -9755,7 +9755,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -9864,7 +9864,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9886,7 +9886,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -9908,7 +9908,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -9930,7 +9930,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9952,7 +9952,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9974,7 +9974,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -9996,7 +9996,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -10018,7 +10018,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10040,7 +10040,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -10062,7 +10062,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10084,7 +10084,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -10106,7 +10106,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -10128,7 +10128,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           }
         ]
@@ -10161,7 +10161,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -10183,7 +10183,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10205,7 +10205,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10227,7 +10227,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10249,7 +10249,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10271,7 +10271,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10293,7 +10293,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -10326,7 +10326,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -10435,7 +10435,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -10457,7 +10457,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10479,7 +10479,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10501,7 +10501,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10523,7 +10523,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -10545,7 +10545,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -10567,7 +10567,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -10589,7 +10589,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -10611,7 +10611,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -10633,7 +10633,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -10655,7 +10655,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -10677,7 +10677,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -10710,7 +10710,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10732,7 +10732,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10754,7 +10754,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10776,7 +10776,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -10798,7 +10798,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10820,7 +10820,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -10842,7 +10842,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -10875,7 +10875,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -10984,7 +10984,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -11006,7 +11006,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11028,7 +11028,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -11050,7 +11050,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11072,7 +11072,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11094,7 +11094,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -11116,7 +11116,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11138,7 +11138,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -11160,7 +11160,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -11182,7 +11182,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11204,7 +11204,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11226,7 +11226,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11248,7 +11248,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11270,7 +11270,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -11292,7 +11292,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -11314,7 +11314,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -11347,7 +11347,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11369,7 +11369,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11391,7 +11391,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11413,7 +11413,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11435,7 +11435,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11457,7 +11457,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11479,7 +11479,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11501,7 +11501,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -11534,7 +11534,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -11643,7 +11643,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11665,7 +11665,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11687,7 +11687,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11709,7 +11709,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11731,7 +11731,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -11753,7 +11753,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -11775,7 +11775,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -11797,7 +11797,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11819,7 +11819,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -11841,7 +11841,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -11863,7 +11863,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -11885,7 +11885,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -11907,7 +11907,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -11929,7 +11929,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -11951,7 +11951,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -11973,7 +11973,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -11995,7 +11995,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -12028,7 +12028,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -12050,7 +12050,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -12072,7 +12072,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12094,7 +12094,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12116,7 +12116,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12138,7 +12138,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -12160,7 +12160,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12182,7 +12182,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -12215,7 +12215,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -12324,7 +12324,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -12346,7 +12346,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -12368,7 +12368,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -12390,7 +12390,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -12412,7 +12412,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -12434,7 +12434,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -12456,7 +12456,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -12478,7 +12478,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -12500,7 +12500,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -12522,7 +12522,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -12544,7 +12544,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -12566,7 +12566,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -12588,7 +12588,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -12610,7 +12610,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -12632,7 +12632,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -12654,7 +12654,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -12687,7 +12687,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -12709,7 +12709,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12731,7 +12731,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -12753,7 +12753,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12775,7 +12775,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12797,7 +12797,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -12819,7 +12819,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -12841,7 +12841,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -12874,7 +12874,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -12983,7 +12983,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13005,7 +13005,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -13027,7 +13027,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -13049,7 +13049,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13071,7 +13071,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13093,7 +13093,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13115,7 +13115,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -13137,7 +13137,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13159,7 +13159,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13181,7 +13181,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13203,7 +13203,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -13225,7 +13225,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13247,7 +13247,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -13269,7 +13269,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -13291,7 +13291,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -13313,7 +13313,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -13335,7 +13335,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -13357,7 +13357,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           }
         ]
@@ -13390,7 +13390,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -13412,7 +13412,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13434,7 +13434,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -13456,7 +13456,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13478,7 +13478,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13500,7 +13500,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13522,7 +13522,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -13544,7 +13544,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -13577,7 +13577,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -13686,7 +13686,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13708,7 +13708,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13730,7 +13730,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13752,7 +13752,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13774,7 +13774,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13796,7 +13796,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13818,7 +13818,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13840,7 +13840,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13862,7 +13862,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13884,7 +13884,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13906,7 +13906,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13928,7 +13928,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -13950,7 +13950,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13972,7 +13972,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -13994,7 +13994,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -14016,7 +14016,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -14038,7 +14038,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -14060,7 +14060,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -14082,7 +14082,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -14104,7 +14104,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -14126,7 +14126,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -14148,7 +14148,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -14170,7 +14170,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -14192,7 +14192,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           }
         ]
@@ -14225,7 +14225,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14247,7 +14247,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14269,7 +14269,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14291,7 +14291,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14313,7 +14313,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14335,7 +14335,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14357,7 +14357,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14379,7 +14379,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14401,7 +14401,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -14434,7 +14434,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -14543,7 +14543,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14565,7 +14565,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14587,7 +14587,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14609,7 +14609,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14631,7 +14631,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14653,7 +14653,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14675,7 +14675,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14697,7 +14697,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14719,7 +14719,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14741,7 +14741,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -14763,7 +14763,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14785,7 +14785,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14807,7 +14807,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14829,7 +14829,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -14851,7 +14851,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -14873,7 +14873,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -14895,7 +14895,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=2",
+            "profile": "D=6 · A=2",
             "multiplicity": 1
           },
           {
@@ -14917,7 +14917,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=1",
+            "profile": "D=8 · A=1",
             "multiplicity": 1
           },
           {
@@ -14939,7 +14939,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=1",
+            "profile": "D=8 · A=1",
             "multiplicity": 1
           },
           {
@@ -14961,7 +14961,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -14983,7 +14983,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -15005,7 +15005,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=2",
+            "profile": "D=4 · A=2",
             "multiplicity": 1
           },
           {
@@ -15027,7 +15027,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=2",
+            "profile": "D=6 · A=2",
             "multiplicity": 1
           }
         ]
@@ -15060,7 +15060,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15082,7 +15082,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15104,7 +15104,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15126,7 +15126,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15148,7 +15148,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15170,7 +15170,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15192,7 +15192,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15214,7 +15214,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -15236,7 +15236,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           }
         ]
@@ -15269,7 +15269,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -15378,7 +15378,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15400,7 +15400,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15422,7 +15422,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15444,7 +15444,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15466,7 +15466,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15488,7 +15488,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15510,7 +15510,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -15532,7 +15532,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -15554,7 +15554,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15576,7 +15576,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15598,7 +15598,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15620,7 +15620,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15642,7 +15642,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -15664,7 +15664,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -15686,7 +15686,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -15708,7 +15708,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15730,7 +15730,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -15752,7 +15752,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15774,7 +15774,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15796,7 +15796,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15818,7 +15818,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -15840,7 +15840,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=1",
+            "profile": "D=8 · A=1",
             "multiplicity": 1
           },
           {
@@ -15862,7 +15862,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           },
           {
@@ -15884,7 +15884,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -15906,7 +15906,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=1",
+            "profile": "D=8 · A=1",
             "multiplicity": 1
           },
           {
@@ -15928,7 +15928,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           },
           {
@@ -15950,7 +15950,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           },
           {
@@ -15972,7 +15972,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=1",
+            "profile": "D=8 · A=1",
             "multiplicity": 1
           },
           {
@@ -15994,7 +15994,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -16016,7 +16016,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=1",
+            "profile": "D=8 · A=1",
             "multiplicity": 1
           },
           {
@@ -16038,7 +16038,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           }
         ]
@@ -16071,7 +16071,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -16093,7 +16093,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -16115,7 +16115,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -16137,7 +16137,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -16159,7 +16159,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -16181,7 +16181,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -16203,7 +16203,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -16225,7 +16225,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -16247,7 +16247,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -16269,7 +16269,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           }
         ]
@@ -16302,7 +16302,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -16411,7 +16411,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -16433,7 +16433,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16455,7 +16455,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -16477,7 +16477,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16499,7 +16499,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16521,7 +16521,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16543,7 +16543,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16565,7 +16565,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16587,7 +16587,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16609,7 +16609,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16631,7 +16631,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16653,7 +16653,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16675,7 +16675,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -16697,7 +16697,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16719,7 +16719,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -16741,7 +16741,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16763,7 +16763,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16785,7 +16785,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16807,7 +16807,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16829,7 +16829,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16851,7 +16851,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16873,7 +16873,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -16895,7 +16895,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16917,7 +16917,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -16939,7 +16939,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -16961,7 +16961,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -16983,7 +16983,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -17005,7 +17005,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -17027,7 +17027,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -17049,7 +17049,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -17082,7 +17082,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -17104,7 +17104,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -17126,7 +17126,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -17148,7 +17148,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -17170,7 +17170,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -17192,7 +17192,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -17214,7 +17214,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -17236,7 +17236,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -17258,7 +17258,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -17280,7 +17280,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           }
         ]
@@ -17313,7 +17313,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -17422,7 +17422,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -17444,7 +17444,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17466,7 +17466,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17488,7 +17488,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17510,7 +17510,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17532,7 +17532,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -17554,7 +17554,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17576,7 +17576,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17598,7 +17598,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17620,7 +17620,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -17642,7 +17642,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17664,7 +17664,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17686,7 +17686,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17708,7 +17708,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17730,7 +17730,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -17752,7 +17752,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17774,7 +17774,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17796,7 +17796,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17818,7 +17818,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17840,7 +17840,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17862,7 +17862,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17884,7 +17884,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17906,7 +17906,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -17928,7 +17928,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -17950,7 +17950,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -17972,7 +17972,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -17994,7 +17994,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -18016,7 +18016,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -18038,7 +18038,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -18060,7 +18060,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -18093,7 +18093,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -18115,7 +18115,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -18137,7 +18137,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -18159,7 +18159,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -18181,7 +18181,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -18203,7 +18203,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -18225,7 +18225,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -18247,7 +18247,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -18269,7 +18269,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -18291,7 +18291,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -18324,7 +18324,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -18433,7 +18433,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18455,7 +18455,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18477,7 +18477,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18499,7 +18499,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18521,7 +18521,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18543,7 +18543,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18565,7 +18565,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18587,7 +18587,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18609,7 +18609,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18631,7 +18631,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18653,7 +18653,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18675,7 +18675,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18697,7 +18697,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18719,7 +18719,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18741,7 +18741,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18763,7 +18763,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18785,7 +18785,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18807,7 +18807,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18829,7 +18829,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18851,7 +18851,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18873,7 +18873,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18895,7 +18895,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18917,7 +18917,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18939,7 +18939,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -18961,7 +18961,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -18983,7 +18983,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -19005,7 +19005,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -19027,7 +19027,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -19049,7 +19049,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -19071,7 +19071,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -19093,7 +19093,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=2",
+            "profile": "D=10 · A=2",
             "multiplicity": 1
           },
           {
@@ -19115,7 +19115,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -19137,7 +19137,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -19159,7 +19159,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=1",
+            "profile": "D=12 · A=1",
             "multiplicity": 1
           },
           {
@@ -19181,7 +19181,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=1",
+            "profile": "D=12 · A=1",
             "multiplicity": 1
           },
           {
@@ -19203,7 +19203,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -19225,7 +19225,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=2",
+            "profile": "D=10 · A=2",
             "multiplicity": 1
           },
           {
@@ -19247,7 +19247,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -19269,7 +19269,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           }
         ]
@@ -19302,7 +19302,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19324,7 +19324,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19346,7 +19346,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19368,7 +19368,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19390,7 +19390,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19412,7 +19412,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19434,7 +19434,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19456,7 +19456,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19478,7 +19478,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -19500,7 +19500,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=18 路 A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           },
           {
@@ -19522,7 +19522,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=18 路 A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           }
         ]
@@ -19555,7 +19555,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           }
         ]
@@ -19664,7 +19664,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19686,7 +19686,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19708,7 +19708,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19730,7 +19730,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19752,7 +19752,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -19774,7 +19774,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19796,7 +19796,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19818,7 +19818,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19840,7 +19840,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -19862,7 +19862,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19884,7 +19884,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -19906,7 +19906,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -19928,7 +19928,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -19950,7 +19950,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -19972,7 +19972,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -19994,7 +19994,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20016,7 +20016,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20038,7 +20038,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20060,7 +20060,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20082,7 +20082,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20104,7 +20104,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -20126,7 +20126,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20148,7 +20148,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -20170,7 +20170,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20192,7 +20192,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20214,7 +20214,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20236,7 +20236,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20258,7 +20258,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -20280,7 +20280,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20302,7 +20302,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20324,7 +20324,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -20346,7 +20346,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20368,7 +20368,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20390,7 +20390,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -20412,7 +20412,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20434,7 +20434,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -20456,7 +20456,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20478,7 +20478,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20500,7 +20500,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20522,7 +20522,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20544,7 +20544,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20566,7 +20566,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20588,7 +20588,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20610,7 +20610,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20632,7 +20632,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20654,7 +20654,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20676,7 +20676,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -20698,7 +20698,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -20731,7 +20731,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20753,7 +20753,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20775,7 +20775,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20797,7 +20797,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20819,7 +20819,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20841,7 +20841,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20863,7 +20863,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20885,7 +20885,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20907,7 +20907,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20929,7 +20929,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20951,7 +20951,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -20973,7 +20973,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -21006,7 +21006,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -21115,7 +21115,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21137,7 +21137,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21159,7 +21159,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21181,7 +21181,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21203,7 +21203,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21225,7 +21225,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21247,7 +21247,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21269,7 +21269,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21291,7 +21291,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21313,7 +21313,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21335,7 +21335,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21357,7 +21357,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21379,7 +21379,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21401,7 +21401,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21423,7 +21423,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21445,7 +21445,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21467,7 +21467,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21489,7 +21489,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21511,7 +21511,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21533,7 +21533,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21555,7 +21555,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21577,7 +21577,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21599,7 +21599,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21621,7 +21621,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21643,7 +21643,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21665,7 +21665,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21687,7 +21687,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21709,7 +21709,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21731,7 +21731,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21753,7 +21753,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21775,7 +21775,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21797,7 +21797,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21819,7 +21819,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21841,7 +21841,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -21863,7 +21863,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21885,7 +21885,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -21907,7 +21907,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=2",
+            "profile": "D=10 · A=2",
             "multiplicity": 1
           },
           {
@@ -21929,7 +21929,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=2",
+            "profile": "D=10 · A=2",
             "multiplicity": 1
           },
           {
@@ -21951,7 +21951,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=1",
+            "profile": "D=12 · A=1",
             "multiplicity": 1
           },
           {
@@ -21973,7 +21973,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -21995,7 +21995,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -22017,7 +22017,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -22039,7 +22039,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=1",
+            "profile": "D=12 · A=1",
             "multiplicity": 1
           },
           {
@@ -22061,7 +22061,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=1",
+            "profile": "D=12 · A=1",
             "multiplicity": 1
           },
           {
@@ -22083,7 +22083,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=2",
+            "profile": "D=10 · A=2",
             "multiplicity": 1
           },
           {
@@ -22105,7 +22105,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=2",
+            "profile": "D=8 · A=2",
             "multiplicity": 1
           },
           {
@@ -22127,7 +22127,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=2",
+            "profile": "D=10 · A=2",
             "multiplicity": 1
           },
           {
@@ -22149,7 +22149,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=1",
+            "profile": "D=12 · A=1",
             "multiplicity": 1
           }
         ]
@@ -22182,7 +22182,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22204,7 +22204,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22226,7 +22226,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=18 路 A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           },
           {
@@ -22248,7 +22248,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22270,7 +22270,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22292,7 +22292,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=18 路 A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           },
           {
@@ -22314,7 +22314,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22336,7 +22336,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22358,7 +22358,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=18 路 A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           },
           {
@@ -22380,7 +22380,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22402,7 +22402,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           },
           {
@@ -22424,7 +22424,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=18 路 A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           }
         ]
@@ -22457,7 +22457,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=20 路 A=0",
+            "profile": "D=20 · A=0",
             "multiplicity": 1
           }
         ]
@@ -22566,7 +22566,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22588,7 +22588,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22610,7 +22610,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -22632,7 +22632,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22654,7 +22654,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -22676,7 +22676,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -22698,7 +22698,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22720,7 +22720,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -22742,7 +22742,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22764,7 +22764,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22786,7 +22786,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -22808,7 +22808,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -22830,7 +22830,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -22852,7 +22852,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -22874,7 +22874,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -22896,7 +22896,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -22918,7 +22918,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22940,7 +22940,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -22962,7 +22962,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -22984,7 +22984,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23006,7 +23006,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23028,7 +23028,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23050,7 +23050,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23072,7 +23072,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23094,7 +23094,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23116,7 +23116,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23138,7 +23138,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23160,7 +23160,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23182,7 +23182,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23204,7 +23204,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23226,7 +23226,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23248,7 +23248,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23270,7 +23270,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23292,7 +23292,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23314,7 +23314,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23336,7 +23336,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23358,7 +23358,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -23380,7 +23380,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23402,7 +23402,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -23424,7 +23424,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23446,7 +23446,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23468,7 +23468,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23490,7 +23490,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23512,7 +23512,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23534,7 +23534,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23556,7 +23556,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23578,7 +23578,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23600,7 +23600,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -23633,7 +23633,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23655,7 +23655,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -23677,7 +23677,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23699,7 +23699,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -23721,7 +23721,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23743,7 +23743,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -23765,7 +23765,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -23787,7 +23787,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -23809,7 +23809,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -23831,7 +23831,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -23853,7 +23853,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -23875,7 +23875,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           }
         ]
@@ -23908,7 +23908,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -24021,7 +24021,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -24043,7 +24043,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -24065,7 +24065,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -24087,7 +24087,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24109,7 +24109,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24131,7 +24131,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24153,7 +24153,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24175,7 +24175,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24197,7 +24197,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24219,7 +24219,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24241,7 +24241,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24263,7 +24263,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -24285,7 +24285,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           }
         ]
@@ -24318,7 +24318,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24340,7 +24340,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -24362,7 +24362,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -24384,7 +24384,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24406,7 +24406,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -24428,7 +24428,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24450,7 +24450,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -24483,7 +24483,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -24596,7 +24596,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24618,7 +24618,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24640,7 +24640,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24662,7 +24662,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24684,7 +24684,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -24706,7 +24706,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -24728,7 +24728,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -24750,7 +24750,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24772,7 +24772,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24794,7 +24794,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24816,7 +24816,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -24838,7 +24838,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -24860,7 +24860,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -24893,7 +24893,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24915,7 +24915,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24937,7 +24937,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -24959,7 +24959,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -24981,7 +24981,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25003,7 +25003,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25025,7 +25025,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -25058,7 +25058,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -25171,7 +25171,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25193,7 +25193,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25215,7 +25215,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25237,7 +25237,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25259,7 +25259,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25281,7 +25281,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25303,7 +25303,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25325,7 +25325,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25347,7 +25347,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25369,7 +25369,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25391,7 +25391,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25413,7 +25413,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -25446,7 +25446,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25468,7 +25468,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25490,7 +25490,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25512,7 +25512,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -25534,7 +25534,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -25556,7 +25556,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -25578,7 +25578,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -25611,7 +25611,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -25724,7 +25724,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25746,7 +25746,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25768,7 +25768,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25790,7 +25790,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25812,7 +25812,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25834,7 +25834,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -25856,7 +25856,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -25878,7 +25878,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25900,7 +25900,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25922,7 +25922,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25944,7 +25944,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25966,7 +25966,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -25988,7 +25988,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26010,7 +26010,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26032,7 +26032,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26054,7 +26054,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -26076,7 +26076,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -26109,7 +26109,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26131,7 +26131,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26153,7 +26153,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26175,7 +26175,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26197,7 +26197,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26219,7 +26219,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26241,7 +26241,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26263,7 +26263,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -26296,7 +26296,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -26409,7 +26409,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26431,7 +26431,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26453,7 +26453,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26475,7 +26475,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26497,7 +26497,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26519,7 +26519,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26541,7 +26541,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26563,7 +26563,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26585,7 +26585,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26607,7 +26607,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26629,7 +26629,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26651,7 +26651,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26673,7 +26673,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26695,7 +26695,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26717,7 +26717,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -26739,7 +26739,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26761,7 +26761,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -26783,7 +26783,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -26816,7 +26816,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26838,7 +26838,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26860,7 +26860,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26882,7 +26882,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -26904,7 +26904,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -26926,7 +26926,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -26948,7 +26948,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -26970,7 +26970,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -27003,7 +27003,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -27116,7 +27116,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27138,7 +27138,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27160,7 +27160,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -27182,7 +27182,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27204,7 +27204,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -27226,7 +27226,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -27248,7 +27248,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -27270,7 +27270,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27292,7 +27292,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27314,7 +27314,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -27336,7 +27336,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27358,7 +27358,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27380,7 +27380,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27402,7 +27402,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -27424,7 +27424,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -27446,7 +27446,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -27468,7 +27468,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -27490,7 +27490,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           }
         ]
@@ -27523,7 +27523,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -27545,7 +27545,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27567,7 +27567,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -27589,7 +27589,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -27611,7 +27611,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -27633,7 +27633,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27655,7 +27655,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -27677,7 +27677,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -27710,7 +27710,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -27823,7 +27823,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27845,7 +27845,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -27867,7 +27867,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -27889,7 +27889,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27911,7 +27911,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -27933,7 +27933,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -27955,7 +27955,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -27977,7 +27977,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -27999,7 +27999,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -28021,7 +28021,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -28043,7 +28043,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28065,7 +28065,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28087,7 +28087,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28109,7 +28109,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28131,7 +28131,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28153,7 +28153,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28175,7 +28175,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28197,7 +28197,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -28230,7 +28230,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28252,7 +28252,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -28274,7 +28274,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28296,7 +28296,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28318,7 +28318,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28340,7 +28340,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28362,7 +28362,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28384,7 +28384,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -28417,7 +28417,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -28530,7 +28530,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28552,7 +28552,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -28574,7 +28574,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28596,7 +28596,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -28618,7 +28618,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28640,7 +28640,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28662,7 +28662,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28684,7 +28684,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -28706,7 +28706,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -28728,7 +28728,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28750,7 +28750,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -28772,7 +28772,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28794,7 +28794,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28816,7 +28816,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28838,7 +28838,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28860,7 +28860,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28882,7 +28882,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -28904,7 +28904,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -28926,7 +28926,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -28948,7 +28948,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28970,7 +28970,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -28992,7 +28992,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29014,7 +29014,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -29047,7 +29047,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29069,7 +29069,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29091,7 +29091,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29113,7 +29113,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29135,7 +29135,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29157,7 +29157,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29179,7 +29179,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29201,7 +29201,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29223,7 +29223,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -29256,7 +29256,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -29369,7 +29369,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29391,7 +29391,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29413,7 +29413,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29435,7 +29435,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29457,7 +29457,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29479,7 +29479,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29501,7 +29501,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29523,7 +29523,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29545,7 +29545,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29567,7 +29567,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29589,7 +29589,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29611,7 +29611,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29633,7 +29633,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29655,7 +29655,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29677,7 +29677,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29699,7 +29699,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29721,7 +29721,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29743,7 +29743,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29765,7 +29765,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29787,7 +29787,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29809,7 +29809,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -29831,7 +29831,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -29853,7 +29853,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29875,7 +29875,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -29908,7 +29908,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29930,7 +29930,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -29952,7 +29952,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29974,7 +29974,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -29996,7 +29996,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30018,7 +30018,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -30040,7 +30040,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -30062,7 +30062,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30084,7 +30084,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -30117,7 +30117,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -30230,7 +30230,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30252,7 +30252,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -30274,7 +30274,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30296,7 +30296,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30318,7 +30318,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -30340,7 +30340,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30362,7 +30362,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30384,7 +30384,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30406,7 +30406,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30428,7 +30428,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30450,7 +30450,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30472,7 +30472,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30494,7 +30494,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30516,7 +30516,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30538,7 +30538,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30560,7 +30560,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30582,7 +30582,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30604,7 +30604,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30626,7 +30626,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30648,7 +30648,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30670,7 +30670,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -30692,7 +30692,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30714,7 +30714,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           }
         ]
@@ -30747,7 +30747,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -30769,7 +30769,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30791,7 +30791,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30813,7 +30813,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30835,7 +30835,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30857,7 +30857,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30879,7 +30879,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30901,7 +30901,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -30923,7 +30923,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -30956,7 +30956,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -31069,7 +31069,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31091,7 +31091,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31113,7 +31113,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31135,7 +31135,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31157,7 +31157,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31179,7 +31179,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31201,7 +31201,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31223,7 +31223,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31245,7 +31245,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31267,7 +31267,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31289,7 +31289,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31311,7 +31311,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31333,7 +31333,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31355,7 +31355,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31377,7 +31377,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31399,7 +31399,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31421,7 +31421,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           },
           {
@@ -31443,7 +31443,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -31465,7 +31465,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -31487,7 +31487,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=1",
+            "profile": "D=4 · A=1",
             "multiplicity": 1
           },
           {
@@ -31509,7 +31509,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           },
           {
@@ -31531,7 +31531,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -31553,7 +31553,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=1",
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           },
           {
@@ -31575,7 +31575,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=1",
+            "profile": "D=6 · A=1",
             "multiplicity": 1
           }
         ]
@@ -31608,7 +31608,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -31630,7 +31630,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -31652,7 +31652,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31674,7 +31674,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -31696,7 +31696,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -31718,7 +31718,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31740,7 +31740,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -31762,7 +31762,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -31784,7 +31784,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -31817,7 +31817,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -31930,7 +31930,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -31952,7 +31952,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -31974,7 +31974,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -31996,7 +31996,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32018,7 +32018,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -32040,7 +32040,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32062,7 +32062,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -32084,7 +32084,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32106,7 +32106,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32128,7 +32128,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32150,7 +32150,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32172,7 +32172,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32194,7 +32194,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32216,7 +32216,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32238,7 +32238,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -32260,7 +32260,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32282,7 +32282,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32304,7 +32304,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32326,7 +32326,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32348,7 +32348,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32370,7 +32370,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32392,7 +32392,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32414,7 +32414,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32436,7 +32436,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32458,7 +32458,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -32480,7 +32480,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32502,7 +32502,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32524,7 +32524,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32546,7 +32546,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32568,7 +32568,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32590,7 +32590,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -32623,7 +32623,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32645,7 +32645,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -32667,7 +32667,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -32689,7 +32689,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -32711,7 +32711,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -32733,7 +32733,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -32755,7 +32755,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -32777,7 +32777,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -32799,7 +32799,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -32821,7 +32821,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -32854,7 +32854,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -32967,7 +32967,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -32989,7 +32989,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -33011,7 +33011,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -33033,7 +33033,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -33055,7 +33055,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -33077,7 +33077,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -33099,7 +33099,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -33121,7 +33121,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33143,7 +33143,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33165,7 +33165,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33187,7 +33187,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33209,7 +33209,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -33231,7 +33231,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -33253,7 +33253,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33275,7 +33275,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33297,7 +33297,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33319,7 +33319,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -33341,7 +33341,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33363,7 +33363,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -33385,7 +33385,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33407,7 +33407,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -33429,7 +33429,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33451,7 +33451,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -33473,7 +33473,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33495,7 +33495,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -33517,7 +33517,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33539,7 +33539,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33561,7 +33561,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33583,7 +33583,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33605,7 +33605,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33627,7 +33627,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -33660,7 +33660,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33682,7 +33682,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -33704,7 +33704,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -33726,7 +33726,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -33748,7 +33748,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -33770,7 +33770,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -33792,7 +33792,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -33814,7 +33814,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -33836,7 +33836,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -33858,7 +33858,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -33891,7 +33891,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -34004,7 +34004,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -34026,7 +34026,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34048,7 +34048,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -34070,7 +34070,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -34092,7 +34092,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34114,7 +34114,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34136,7 +34136,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34158,7 +34158,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34180,7 +34180,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -34202,7 +34202,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -34224,7 +34224,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -34246,7 +34246,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -34268,7 +34268,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34290,7 +34290,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34312,7 +34312,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -34334,7 +34334,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -34356,7 +34356,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34378,7 +34378,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34400,7 +34400,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -34422,7 +34422,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34444,7 +34444,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34466,7 +34466,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34488,7 +34488,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -34510,7 +34510,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -34532,7 +34532,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34554,7 +34554,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34576,7 +34576,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34598,7 +34598,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34620,7 +34620,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34642,7 +34642,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -34664,7 +34664,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -34697,7 +34697,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -34719,7 +34719,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -34741,7 +34741,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -34763,7 +34763,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -34785,7 +34785,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -34807,7 +34807,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -34829,7 +34829,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -34851,7 +34851,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -34873,7 +34873,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -34895,7 +34895,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           }
         ]
@@ -34928,7 +34928,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -35041,7 +35041,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35063,7 +35063,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -35085,7 +35085,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35107,7 +35107,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35129,7 +35129,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35151,7 +35151,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35173,7 +35173,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35195,7 +35195,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35217,7 +35217,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35239,7 +35239,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35261,7 +35261,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -35283,7 +35283,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35305,7 +35305,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35327,7 +35327,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35349,7 +35349,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35371,7 +35371,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -35393,7 +35393,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35415,7 +35415,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35437,7 +35437,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35459,7 +35459,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35481,7 +35481,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35503,7 +35503,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35525,7 +35525,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35547,7 +35547,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35569,7 +35569,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35591,7 +35591,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35613,7 +35613,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35635,7 +35635,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35657,7 +35657,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35679,7 +35679,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35701,7 +35701,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -35723,7 +35723,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35745,7 +35745,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35767,7 +35767,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35789,7 +35789,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35811,7 +35811,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35833,7 +35833,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -35855,7 +35855,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35877,7 +35877,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -35910,7 +35910,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35932,7 +35932,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35954,7 +35954,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -35976,7 +35976,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -35998,7 +35998,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -36020,7 +36020,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -36042,7 +36042,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
@@ -36064,7 +36064,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -36086,7 +36086,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -36108,7 +36108,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=14 路 A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
@@ -36130,7 +36130,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -36163,7 +36163,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=16 路 A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -36276,7 +36276,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -36298,7 +36298,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36320,7 +36320,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36342,7 +36342,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -36364,7 +36364,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36386,7 +36386,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36408,7 +36408,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36430,7 +36430,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36452,7 +36452,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36474,7 +36474,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36496,7 +36496,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -36518,7 +36518,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36540,7 +36540,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36562,7 +36562,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36584,7 +36584,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36606,7 +36606,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36628,7 +36628,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36650,7 +36650,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36672,7 +36672,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36694,7 +36694,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36716,7 +36716,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36738,7 +36738,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36760,7 +36760,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36782,7 +36782,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36804,7 +36804,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36826,7 +36826,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36848,7 +36848,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36870,7 +36870,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -36892,7 +36892,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36914,7 +36914,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36936,7 +36936,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36958,7 +36958,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -36980,7 +36980,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37002,7 +37002,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37024,7 +37024,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37046,7 +37046,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37068,7 +37068,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37090,7 +37090,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37112,7 +37112,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -37145,7 +37145,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37167,7 +37167,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37189,7 +37189,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37211,7 +37211,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37233,7 +37233,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37255,7 +37255,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37277,7 +37277,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37299,7 +37299,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37321,7 +37321,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37343,7 +37343,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -37365,7 +37365,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -37398,7 +37398,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -37515,7 +37515,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37537,7 +37537,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37559,7 +37559,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -37581,7 +37581,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -37603,7 +37603,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37625,7 +37625,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -37647,7 +37647,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -37669,7 +37669,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -37691,7 +37691,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -37713,7 +37713,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -37735,7 +37735,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37757,7 +37757,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -37779,7 +37779,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37801,7 +37801,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -37823,7 +37823,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -37845,7 +37845,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37867,7 +37867,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37889,7 +37889,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -37922,7 +37922,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37944,7 +37944,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -37966,7 +37966,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -37988,7 +37988,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -38010,7 +38010,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -38032,7 +38032,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38054,7 +38054,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -38076,7 +38076,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -38109,7 +38109,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -38226,7 +38226,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -38248,7 +38248,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38270,7 +38270,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38292,7 +38292,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38314,7 +38314,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38336,7 +38336,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38358,7 +38358,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -38380,7 +38380,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38402,7 +38402,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38424,7 +38424,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38446,7 +38446,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -38468,7 +38468,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38490,7 +38490,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38512,7 +38512,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -38534,7 +38534,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38556,7 +38556,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38578,7 +38578,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38600,7 +38600,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -38633,7 +38633,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38655,7 +38655,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38677,7 +38677,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38699,7 +38699,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38721,7 +38721,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38743,7 +38743,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38765,7 +38765,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38787,7 +38787,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -38820,7 +38820,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -38937,7 +38937,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -38959,7 +38959,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -38981,7 +38981,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -39003,7 +39003,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -39025,7 +39025,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39047,7 +39047,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -39069,7 +39069,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -39091,7 +39091,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39113,7 +39113,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -39135,7 +39135,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39157,7 +39157,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39179,7 +39179,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39201,7 +39201,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39223,7 +39223,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39245,7 +39245,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39267,7 +39267,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -39289,7 +39289,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39311,7 +39311,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39333,7 +39333,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39355,7 +39355,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -39377,7 +39377,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39399,7 +39399,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -39421,7 +39421,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39443,7 +39443,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -39476,7 +39476,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39498,7 +39498,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39520,7 +39520,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39542,7 +39542,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39564,7 +39564,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39586,7 +39586,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39608,7 +39608,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39630,7 +39630,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39652,7 +39652,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -39685,7 +39685,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -39802,7 +39802,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -39824,7 +39824,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39846,7 +39846,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39868,7 +39868,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39890,7 +39890,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -39912,7 +39912,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -39934,7 +39934,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -39956,7 +39956,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -39978,7 +39978,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40000,7 +40000,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40022,7 +40022,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40044,7 +40044,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -40066,7 +40066,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40088,7 +40088,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40110,7 +40110,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40132,7 +40132,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40154,7 +40154,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40176,7 +40176,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40198,7 +40198,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40220,7 +40220,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40242,7 +40242,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40264,7 +40264,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40286,7 +40286,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40308,7 +40308,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40330,7 +40330,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40352,7 +40352,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40374,7 +40374,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40396,7 +40396,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40418,7 +40418,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -40440,7 +40440,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40462,7 +40462,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -40495,7 +40495,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40517,7 +40517,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -40539,7 +40539,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -40561,7 +40561,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -40583,7 +40583,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -40605,7 +40605,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -40627,7 +40627,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -40649,7 +40649,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -40671,7 +40671,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
@@ -40693,7 +40693,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -40726,7 +40726,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=12 路 A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -40843,7 +40843,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40865,7 +40865,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40887,7 +40887,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -40909,7 +40909,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -40931,7 +40931,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40953,7 +40953,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40975,7 +40975,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -40997,7 +40997,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41019,7 +41019,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41041,7 +41041,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41063,7 +41063,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41085,7 +41085,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41107,7 +41107,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -41129,7 +41129,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -41151,7 +41151,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41173,7 +41173,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41195,7 +41195,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41217,7 +41217,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -41239,7 +41239,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41261,7 +41261,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41283,7 +41283,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41305,7 +41305,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41327,7 +41327,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=2 路 A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
@@ -41349,7 +41349,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41371,7 +41371,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41393,7 +41393,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41415,7 +41415,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41437,7 +41437,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41459,7 +41459,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=4 路 A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
@@ -41481,7 +41481,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
@@ -41503,7 +41503,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=6 路 A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -41536,7 +41536,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41558,7 +41558,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41580,7 +41580,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41602,7 +41602,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41624,7 +41624,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41646,7 +41646,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41668,7 +41668,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41690,7 +41690,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41712,7 +41712,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
@@ -41734,7 +41734,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=8 路 A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -41767,7 +41767,7 @@ window.RULING_CASES = [
                 1
               ]
             ],
-            "profile": "D=10 路 A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]

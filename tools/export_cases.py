@@ -299,7 +299,7 @@ def browser_drawings(
                 "annularEyes": annular_eyes,
                 "switches": int(raw["switches"]),
                 "sl2z": sl2z,
-                "profile": f"D={disk_eyes} 路 A={annular_eyes}",
+                "profile": f"D={disk_eyes} · A={annular_eyes}",
                 "multiplicity": multiplicity,
             }
         )

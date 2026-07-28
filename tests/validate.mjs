@@ -653,7 +653,7 @@ assert.match(index, /Polygons with two interior lattice points/);
 assert.match(index, /Other polygons/);
 assert.match(index, /112 rulings/);
 assert.match(index, /1,489 rulings/);
-assert.match(index, /20 saved figures/);
+assert.match(index, /21 saved figures/);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Ruling Atlas/);
@@ -710,13 +710,19 @@ assert.match(otherPolygons, /Other polygons/);
 assert.match(otherPolygons, /O\(4\) on P\^2/);
 assert.match(otherPolygons, /symmetry orbit/i);
 assert.match(otherPolygons, /Genus 3/);
+assert.match(otherPolygons, /Genus 2/);
 assert.match(otherPolygons, /Genus 1/);
 assert.match(otherPolygons, /Genus 0/);
+assert.match(otherPolygons, /16 rulings/);
 assert.match(otherPolygons, /104 rulings/);
 assert.match(otherPolygons, /304 rational rulings/);
 assert.match(otherPolygons, /Conv\{\(-2,-1\), \(2,-1\), \(-2,3\)\}/);
 assert.match(otherPolygons, /vertical direction: \(-1,2\)/);
 assert.match(otherPolygons, /z⁶ \+ 16z⁴ \+ 104z² \+ 304/);
+assert.match(
+  otherPolygons,
+  /G2D01 · symmetry orbit ×16<\/span><span class="diagram-profile">D28 · 42 switches · A\/B\/V 14\/0\/28/
+);
 
 const o4FigureDirectory = path.join(
   root,
@@ -725,6 +731,9 @@ const o4FigureDirectory = path.join(
   "other",
   "o4-p2"
 );
+const o4GenusTwoFigures = [
+  ["O4_genus2_D01_x16.svg", 16],
+];
 const o4GenusOneFigures = [
   ["O4_genus1_D01_x16.svg", 16],
   ["O4_genus1_D02_x32.svg", 32],
@@ -750,13 +759,14 @@ const o4GenusZeroFigures = [
 ];
 const o4Figures = [
   ["O4_standard_bipartite_ruling.svg", 1],
+  ...o4GenusTwoFigures,
   ...o4GenusOneFigures,
   ...o4GenusZeroFigures,
 ];
 assert.deepEqual(
   fs.readdirSync(o4FigureDirectory).sort(),
   ["manifest.json", ...o4Figures.map(([filename]) => filename)].sort(),
-  "the O(4) page contains exactly 20 SVG symmetry representatives and its manifest"
+  "the O(4) page contains exactly 21 SVG symmetry representatives and its manifest"
 );
 for (const [filename, multiplicity] of o4Figures) {
   const figurePath = path.join(o4FigureDirectory, filename);
@@ -774,6 +784,14 @@ for (const [filename, multiplicity] of o4Figures) {
     new RegExp(`symmetry orbit ×${multiplicity}`)
   );
 }
+assert.equal(
+  o4GenusTwoFigures.reduce(
+    (sum, [, multiplicity]) => sum + multiplicity,
+    0
+  ),
+  16,
+  "the genus-two symmetry orbit represents all 16 rulings"
+);
 assert.equal(
   o4GenusOneFigures.reduce(
     (sum, [, multiplicity]) => sum + multiplicity,
@@ -796,14 +814,21 @@ const o4Manifest = JSON.parse(
 assert.equal(o4Manifest.uses_tropical_count, false);
 assert.deepEqual(o4Manifest.vertical_direction, [-1, 2]);
 assert.deepEqual(o4Manifest.sweep_covector, [2, 1]);
+assert.equal(o4Manifest.counts.genus_2_all_disk, 16);
+assert.equal(o4Manifest.counts.genus_2_annular, 0);
 assert.equal(o4Manifest.counts.genus_1_all_disk, 104);
 assert.equal(o4Manifest.counts.genus_1_annular, 0);
 assert.equal(o4Manifest.counts.genus_0_all_disk, 288);
 assert.equal(o4Manifest.counts.genus_0_annular, 16);
+assert.equal(o4Manifest.genus_2_annular_audit.strict_complete, true);
+assert.equal(o4Manifest.genus_2_annular_audit.phase_search_exhaustive, true);
+assert.equal(o4Manifest.genus_2_annular_audit.finite_phase_cutoff_used, false);
+assert.equal(o4Manifest.genus_2_annular_audit.translation_symmetry, false);
+assert.equal(o4Manifest.genus_2_annular_audit.max_nodes, null);
 assert.equal(o4Manifest.genus_1_annular_audit.strict_complete, true);
 assert.equal(o4Manifest.genus_1_annular_audit.phase_search_exhaustive, true);
 assert.equal(o4Manifest.genus_1_annular_audit.finite_phase_cutoff_used, false);
-assert.equal(o4Manifest.drawings.length, 20);
+assert.equal(o4Manifest.drawings.length, 21);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
 assert.doesNotMatch(app, /standard ruling/i);

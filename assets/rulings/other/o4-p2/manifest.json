@@ -1,5 +1,5 @@
 {
-  "schema": "p2o4-ruling-gallery-v2",
+  "schema": "p2o4-ruling-gallery-v3",
   "uses_tropical_count": false,
   "polygon": [
     [
@@ -26,15 +26,29 @@
   "symmetry_group": "(Z/4)^2 semidirect C2",
   "counts": {
     "genus_3": 1,
+    "genus_2_all_disk": 16,
+    "genus_2_annular": 0,
     "genus_1_all_disk": 104,
     "genus_1_annular": 0,
     "genus_0_all_disk": 288,
     "genus_0_annular": 16
   },
+  "genus_2_annular_audit": {
+    "strict_complete": true,
+    "phase_search_exhaustive": true,
+    "finite_phase_cutoff_used": false,
+    "translation_symmetry": false,
+    "max_nodes": null,
+    "search_nodes": 23707,
+    "completed_masks": 544,
+    "exact_annular_ruling_count": 0
+  },
   "genus_1_annular_audit": {
     "strict_complete": true,
     "phase_search_exhaustive": true,
     "finite_phase_cutoff_used": false,
+    "translation_symmetry": true,
+    "max_nodes": 1000000,
     "search_nodes": 269300,
     "completed_masks": 4728,
     "exact_annular_ruling_count": 0
@@ -51,6 +65,18 @@
       "annular_eyes": 0,
       "switches": 48,
       "profile": "32 equal triangular eyes \u00b7 all 48 crossings switched"
+    },
+    {
+      "filename": "O4_genus2_D01_x16.svg",
+      "identifier": "G2D01",
+      "genus": 2,
+      "sector": "all-disk",
+      "mask": "0x7bffff7bffb7",
+      "orbit_size": 16,
+      "disk_eyes": 28,
+      "annular_eyes": 0,
+      "switches": 42,
+      "profile": "D28 \u00b7 A/B/V 14/0/28"
     },
     {
       "filename": "O4_genus1_D01_x16.svg",

@@ -1,24 +1,24 @@
-# Ruling Atlas — private development build
+# Rational Ruling Atlas — private preview
 
 This repository is an unpublished static atlas of direct ruling counts and
 diagrams for lattice polygons. It is separate from the public homepage and has
 not been deployed.
 
-The first atlas collection contains the 16 lattice-equivalence classes of
-convex lattice polygons with exactly one interior lattice point. Every entry is
-identified only by its vertex coordinates, centered at the unique interior
-point `(0,0)`.
+This preview contains the 16 lattice-equivalence classes of convex lattice
+polygons with exactly one interior lattice point. Every entry is identified
+only by its vertex coordinates, centered at the unique interior point `(0,0)`.
 
 For each polygon the site records:
 
 - its lattice diagram and vertex coordinates;
 - area, boundary lattice-point count, and interior lattice-point count;
-- the direct ruling counts in every possible genus (`g = 0, 1`);
+- its genus-zero rational ruling count;
 - all-disk and annular sectors for the displayed deterministic realization;
-- one SVG diagram for every enumerated ruling.
+- one SVG diagram for every rational ruling.
 
-The totals and diagrams are generated from direct ruling certificates. The
-atlas exporter does not import or consult a tropical counter.
+The preview displays 96 rational rulings in total. Its counts and diagrams are
+generated from direct ruling certificates; the atlas exporter does not import
+or consult a tropical counter.
 
 ## Run the private site locally
 

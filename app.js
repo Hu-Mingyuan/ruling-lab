@@ -49,14 +49,13 @@
       card.dataset.caseId = item.id;
       card.setAttribute(
         "aria-label",
-        `Open ruling report for ${formatVertices(item.vertices)}`
+        `Open rational rulings for ${formatVertices(item.vertices)}`
       );
       image.innerHTML = polygonSvg(item.vertices, { compact: true });
       coordinates.textContent = formatVertices(item.vertices);
-      counts.textContent = [...item.genera]
-        .sort((left, right) => left.genus - right.genus)
-        .map((entry) => `g=${entry.genus}: ${entry.counts.total}`)
-        .join("  ·  ");
+      const rationalEntry = item.genera.find((entry) => entry.genus === 0);
+      counts.textContent =
+        `Rational rulings: ${rationalEntry?.counts.total ?? 0}`;
       card.addEventListener("click", () => selectCase(item.id, true));
       cardById.set(item.id, card);
       fragment.append(card);
@@ -65,12 +64,12 @@
     atlasStatus.textContent =
       `${cases.length} polygons · ` +
       `${cases.reduce(
-        (sum, item) => sum + item.genera.reduce(
-          (inner, entry) => inner + Number(entry.counts.total),
-          0
-        ),
+        (sum, item) =>
+          sum + Number(
+            item.genera.find((entry) => entry.genus === 0)?.counts.total || 0
+          ),
         0
-      )} displayed rulings`;
+      )} rational rulings`;
   }
 
   function restoreFromHash(shouldScroll) {
@@ -93,6 +92,7 @@
     }
     if (shouldScroll) {
       report.scrollIntoView({ behavior: "smooth", block: "start" });
+      reportTitle.focus({ preventScroll: true });
     }
   }
 
@@ -115,34 +115,26 @@
     document.querySelector("#interior-count").textContent =
       item.interiorLatticePoints;
 
-    const sortedGenera = [...item.genera].sort(
-      (left, right) => left.genus - right.genus
-    );
-    countTableBody.replaceChildren(
-      ...sortedGenera.map((entry) => {
-        const row = document.createElement("tr");
-        for (const value of [
-          entry.genus,
-          entry.counts.allDisk,
-          entry.counts.annular,
-          entry.counts.total,
-        ]) {
-          const cell = document.createElement("td");
-          cell.textContent = value;
-          row.append(cell);
-        }
-        return row;
-      })
-    );
-    genusSections.replaceChildren(
-      ...sortedGenera.map((entry, index) =>
-        renderGenusPanel(item, entry, index === 0)
-      )
-    );
+    const rationalEntry = item.genera.find((entry) => entry.genus === 0);
+    if (!rationalEntry) {
+      return;
+    }
+    const row = document.createElement("tr");
+    for (const value of [
+      rationalEntry.counts.allDisk,
+      rationalEntry.counts.annular,
+      rationalEntry.counts.total,
+    ]) {
+      const cell = document.createElement("td");
+      cell.textContent = value;
+      row.append(cell);
+    }
+    countTableBody.replaceChildren(row);
+    genusSections.replaceChildren(renderGenusPanel(item, rationalEntry));
     report.hidden = false;
   }
 
-  function renderGenusPanel(item, entry, open) {
+  function renderGenusPanel(item, entry) {
     const panel = document.createElement("details");
     const summary = document.createElement("summary");
     const heading = document.createElement("span");
@@ -152,11 +144,10 @@
     const rulingGallery = document.createElement("div");
 
     panel.className = "genus-panel";
-    panel.open = open;
+    panel.open = true;
     heading.className = "genus-heading";
-    title.textContent = `Genus ${entry.genus}`;
-    description.textContent =
-      entry.genus === 0 ? "rational rulings" : "standard ruling";
+    title.textContent = "Rational rulings";
+    description.textContent = "genus 0";
     summaryCounts.className = "genus-summary-counts";
     summaryCounts.textContent =
       `${entry.counts.total} total · ` +
@@ -194,8 +185,13 @@
       `${formatVertices(item.vertices)}, genus ${genusEntry.genus}, ` +
       `${ruling.sector || ruling.family || "ruling"} ` +
       `${index + 1} of ${genusEntry.rulings.length}`;
+    const sectorLabel = String(ruling.sector || "")
+      .toLowerCase()
+      .startsWith("annular")
+      ? "Annular"
+      : "All-disk";
     label.textContent =
-      `${ruling.identifier || `R${index + 1}`}` +
+      `${sectorLabel} · ${ruling.identifier || `R${index + 1}`}` +
       (multiplicity > 1 ? ` ×${multiplicity}` : "");
     profile.textContent = [
       ruling.profile,

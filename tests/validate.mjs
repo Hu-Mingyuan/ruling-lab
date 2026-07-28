@@ -46,6 +46,7 @@ assert.equal(new Set(cases.map((item) => item.id)).size, 16, "unique ids");
 
 let drawingCount = 0;
 let rulingMultiplicity = 0;
+let rationalMultiplicity = 0;
 for (const item of cases) {
   assert.match(item.id, /^polygon-[0-9a-f]{10}$/);
   assert.ok(item.vertices.length >= 3);
@@ -90,6 +91,9 @@ for (const item of cases) {
     );
     drawingCount += entry.rulings.length;
     rulingMultiplicity += multiplicity;
+    if (entry.genus === 0) {
+      rationalMultiplicity += multiplicity;
+    }
 
     for (const drawing of entry.rulings) {
       const svgPath = path.join(root, drawing.src);
@@ -103,6 +107,7 @@ for (const item of cases) {
 }
 
 assert.equal(rulingMultiplicity, 112, "96 rational + 16 standard rulings");
+assert.equal(rationalMultiplicity, 96, "the preview contains 96 rational rulings");
 assert.ok(drawingCount > 0 && drawingCount <= rulingMultiplicity);
 
 const index = fs.readFileSync(path.join(root, "index.html"), "utf8");
@@ -112,6 +117,12 @@ assert.match(index, /src="data\/cases\.js"/);
 assert.match(index, /src="app\.js"/);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
+assert.match(index, /Rational Ruling Atlas/);
+assert.doesNotMatch(index, /Genus<\/th>|genus&nbsp;1/);
+
+const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
+assert.match(app, /find\(\(entry\) => entry\.genus === 0\)/);
+assert.match(app, /Rational rulings:/);
 
 const packageRoot = path.join(root, "downloads", "direct-ruling-counter");
 const archive = path.join(root, "downloads", "direct-ruling-counter.zip");

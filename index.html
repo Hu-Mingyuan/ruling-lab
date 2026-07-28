@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow, noarchive">
-    <title>Ruling Atlas · private development build</title>
+    <title>Rational Ruling Atlas · private preview</title>
     <meta
       name="description"
-      content="A static atlas of direct ruling counts and diagrams for lattice polygons."
+      content="A private preview of rational ruling diagrams for lattice polygons with one interior lattice point."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -15,13 +15,12 @@
     <main>
       <header class="masthead">
         <div class="masthead-copy">
-          <p class="eyebrow">Private development build · direct ruling enumeration</p>
-          <h1>Ruling Atlas</h1>
+          <p class="eyebrow">Private preview · direct ruling enumeration</p>
+          <h1>Rational Ruling Atlas</h1>
           <p class="lede">
             The sixteen lattice-equivalence classes of convex polygons with
-            exactly one interior lattice point. Select a polygon to inspect
-            every genus&nbsp;0 and genus&nbsp;1 ruling in the chosen torus
-            realization.
+            exactly one interior lattice point. Select a polygon to see every
+            genus&nbsp;0 rational ruling in the chosen torus realization.
           </p>
           <div class="hero-actions">
             <a
@@ -35,9 +34,9 @@
             >View source</a>
           </div>
         </div>
-        <div class="formula" aria-label="Ruling counts by genus">
-          <span>r<sub>g</sub>(Δ)</span>
-          <small>g = 0, 1</small>
+        <div class="formula" aria-label="Rational ruling count">
+          <span>r<sub>0</sub>(Δ)</span>
+          <small>one interior lattice point</small>
         </div>
       </header>
 
@@ -59,7 +58,7 @@
         <div class="section-heading report-heading">
           <div>
             <p class="step">02</p>
-            <h2 id="report-title">Ruling report</h2>
+            <h2 id="report-title" tabindex="-1">Rational rulings</h2>
           </div>
           <button class="quiet-button" id="back-to-atlas" type="button">
             Back to polygons
@@ -91,10 +90,9 @@
 
             <div class="count-table-wrap">
               <table class="count-table">
-                <caption>Direct ruling counts by genus</caption>
+                <caption>Direct rational ruling count</caption>
                 <thead>
                   <tr>
-                    <th scope="col">Genus</th>
                     <th scope="col">All-disk</th>
                     <th scope="col">Annular</th>
                     <th scope="col">Total</th>
@@ -107,42 +105,17 @@
         </div>
 
         <p class="method-note">
-          The totals come from direct ruling certificates. No tropical count
-          or previously known answer is used. The disk/annular split belongs
-          to the displayed deterministic torus realization; the total is the
-          polygon invariant recorded here.
+          These diagrams come from direct ruling certificates. No tropical
+          count or previously known answer is used. The disk/annular split
+          belongs to the displayed torus realization.
         </p>
 
         <div id="genus-sections" class="genus-sections"></div>
       </section>
 
-      <section class="code-section" aria-labelledby="code-title">
-        <div class="section-heading">
-          <div>
-            <p class="step">03</p>
-            <h2 id="code-title">Compute another polygon offline</h2>
-          </div>
-        </div>
-        <div class="code-panel">
-          <div>
-            <p>
-              The downloadable package contains the same pure ruling engine
-              used to build this atlas. It accepts an integer convex polygon
-              and computes all genera from 0 through its arithmetic genus.
-            </p>
-            <ul>
-              <li>Python 3.10 or newer</li>
-              <li>Node.js 18 or newer</li>
-              <li>No Python or npm packages</li>
-            </ul>
-          </div>
-          <pre><code>python ruling_polygon.py example_polygon.json</code></pre>
-        </div>
-      </section>
-
       <footer>
-        <span>Private development build</span>
-        <span id="atlas-status">Direct ruling data</span>
+        <span>Private preview</span>
+        <span id="atlas-status">16 polygons · 96 rational rulings</span>
       </footer>
     </main>
 

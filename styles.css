@@ -209,6 +209,7 @@ h2 {
   display: block;
   min-height: 3.4em;
   overflow-wrap: anywhere;
+  white-space: pre-line;
   font-family: Consolas, "Courier New", monospace;
   font-size: .76rem;
   line-height: 1.45;
@@ -260,6 +261,7 @@ h2 {
   display: block;
   color: var(--muted);
   overflow-wrap: anywhere;
+  white-space: pre-line;
   font-size: .76rem;
   line-height: 1.5;
 }

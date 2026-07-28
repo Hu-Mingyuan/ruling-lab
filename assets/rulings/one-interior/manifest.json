@@ -8,8 +8,8 @@
   },
   "summary": {
     "polygons": 16,
-    "genus_0_all_disk": 84,
-    "genus_0_annular": 12,
+    "genus_0_all_disk": 85,
+    "genus_0_annular": 11,
     "genus_1_all_disk": 16,
     "svg_files": 112
   },
@@ -32,6 +32,44 @@
       ],
       "double_area": 3,
       "boundary_lattice_points": 3,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 3,
@@ -106,7 +144,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x01ff",
           "witness": null,
@@ -145,6 +183,44 @@
       ],
       "double_area": 4,
       "boundary_lattice_points": 4,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 4,
@@ -239,7 +315,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x0fff",
           "witness": null,
@@ -278,6 +354,44 @@
       ],
       "double_area": 6,
       "boundary_lattice_points": 6,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 6,
@@ -412,7 +526,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x3f5ff",
           "witness": null,
@@ -451,6 +565,44 @@
       ],
       "double_area": 8,
       "boundary_lattice_points": 8,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 6,
@@ -625,7 +777,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0xdfbf35",
           "witness": null,
@@ -664,10 +816,48 @@
       ],
       "double_area": 9,
       "boundary_lattice_points": 9,
+      "display_name": "O(3) on P^2",
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            2,
+            -3
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "display_from_source": [
+          [
+            2,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "exact symmetric three-family realization",
       "counts": {
         "genus_0": {
-          "all_disk": 8,
-          "annular": 1,
+          "all_disk": 9,
+          "annular": 0,
           "total": 9
         },
         "genus_1": {
@@ -680,200 +870,200 @@
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x61c96e4",
+          "mask": "0x3bfbbeb",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-01-0x61c96e4.svg",
-          "disk_eyes": 6,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-01-0x3bfbbeb.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 13,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x77c96c2",
+          "mask": "0x3fbe7de",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-02-0x77c96c2.svg",
-          "disk_eyes": 8,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-02-0x3fbe7de.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 15,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x744c7c2",
+          "mask": "0x5df7afd",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-03-0x744c7c2.svg",
-          "disk_eyes": 6,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-03-0x5df7afd.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 13,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x778d4c6",
+          "mask": "0x5eef7bb",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-04-0x778d4c6.svg",
-          "disk_eyes": 8,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-04-0x5eef7bb.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 15,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x778d2c6",
+          "mask": "0x67f3f5f",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-05-0x778d2c6.svg",
-          "disk_eyes": 8,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-05-0x67f3f5f.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 15,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x5b656c6",
+          "mask": "0x6f6eef7",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-06-0x5b656c6.svg",
-          "disk_eyes": 8,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-06-0x6f6eef7.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 15,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x37c6696",
+          "mask": "0x775dfaf",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-07-0x37c6696.svg",
-          "disk_eyes": 8,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-07-0x775dfaf.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 15,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
           "sector": "all-disk",
           "genus": 0,
-          "mask": "0x17cde45",
+          "mask": "0x7bbddf5",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-08-0x17cde45.svg",
-          "disk_eyes": 8,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-08-0x7bbddf5.svg",
+          "disk_eyes": 14,
           "annular_eyes": 0,
-          "switches": 15,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
-          "sector": "annular",
+          "sector": "all-disk",
           "genus": 0,
-          "mask": "0x66cd006",
-          "witness": 1,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-annular-01-0x66cd006-w01.svg",
-          "disk_eyes": 4,
-          "annular_eyes": 2,
-          "switches": 11,
+          "mask": "0x7cdfd7e",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-09-0x7cdfd7e.svg",
+          "disk_eyes": 14,
+          "annular_eyes": 0,
+          "switches": 21,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
-          "mask": "0x77cd6c6",
+          "mask": "0x7ffffff",
           "witness": null,
-          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g1-standard-0x77cd6c6.svg",
-          "disk_eyes": 8,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g1-standard-0x7ffffff.svg",
+          "disk_eyes": 18,
           "annular_eyes": 0,
-          "switches": 17,
+          "switches": 27,
           "sl2z": [
             [
-              1,
-              0
+              2,
+              -3
             ],
             [
-              0,
-              1
+              -1,
+              2
             ]
           ]
         }
@@ -901,6 +1091,44 @@
       ],
       "double_area": 4,
       "boundary_lattice_points": 4,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 4,
@@ -995,7 +1223,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x00ff",
           "witness": null,
@@ -1038,6 +1266,44 @@
       ],
       "double_area": 4,
       "boundary_lattice_points": 4,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            -2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            -2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 3,
@@ -1132,7 +1398,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x03ed",
           "witness": null,
@@ -1175,6 +1441,44 @@
       ],
       "double_area": 5,
       "boundary_lattice_points": 5,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 4,
@@ -1289,7 +1593,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x1fed",
           "witness": null,
@@ -1332,6 +1636,44 @@
       ],
       "double_area": 6,
       "boundary_lattice_points": 6,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 4,
@@ -1466,7 +1808,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x3ba7",
           "witness": null,
@@ -1509,6 +1851,44 @@
       ],
       "double_area": 7,
       "boundary_lattice_points": 7,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 6,
@@ -1663,7 +2043,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x7bff7",
           "witness": null,
@@ -1706,6 +2086,44 @@
       ],
       "double_area": 8,
       "boundary_lattice_points": 8,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 6,
@@ -1880,7 +2298,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x7cf5d",
           "witness": null,
@@ -1923,6 +2341,44 @@
       ],
       "double_area": 8,
       "boundary_lattice_points": 8,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 8,
@@ -2097,7 +2553,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x7de7",
           "witness": null,
@@ -2144,6 +2600,44 @@
       ],
       "double_area": 5,
       "boundary_lattice_points": 5,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 4,
@@ -2258,7 +2752,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x077d",
           "witness": null,
@@ -2305,6 +2799,44 @@
       ],
       "double_area": 6,
       "boundary_lattice_points": 6,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 5,
@@ -2439,7 +2971,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x3bfd",
           "witness": null,
@@ -2486,6 +3018,44 @@
       ],
       "double_area": 7,
       "boundary_lattice_points": 7,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 7,
@@ -2640,7 +3210,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x7e5b",
           "witness": null,
@@ -2691,6 +3261,44 @@
       ],
       "double_area": 6,
       "boundary_lattice_points": 6,
+      "display_name": null,
+      "coordinate_frames": {
+        "count_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_count": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "display_from_source": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "vertical_direction": [
+          0,
+          1
+        ]
+      },
+      "lambda_model": "deterministic direct-count realization",
       "counts": {
         "genus_0": {
           "all_disk": 6,
@@ -2825,7 +3433,7 @@
           ]
         },
         {
-          "sector": "all-disk standard",
+          "sector": "all-disk",
           "genus": 1,
           "mask": "0x07bf",
           "witness": null,

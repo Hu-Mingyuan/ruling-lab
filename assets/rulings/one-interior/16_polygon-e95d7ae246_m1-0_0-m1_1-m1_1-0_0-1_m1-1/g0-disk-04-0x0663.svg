@@ -5,7 +5,7 @@
      role="img" aria-labelledby="title description">
   <title id="title">polygon-e95d7ae246, genus 0, all-disk ruling 0x0663</title>
   <desc id="description">Newton polygon vertices [[-1, 0], [0, -1], [1, -1], [1, 0], [0, 1], [-1, 1]]; 2 disk eyes and 6 switches.</desc>
-  <metadata>{&quot;polygon_id&quot;:&quot;polygon-e95d7ae246&quot;,&quot;vertices&quot;:[[-1,0],[0,-1],[1,-1],[1,0],[0,1],[-1,1]],&quot;genus&quot;:0,&quot;sector&quot;:&quot;all-disk&quot;,&quot;mask&quot;:&quot;0x0663&quot;,&quot;disk_eyes&quot;:2,&quot;annular_eyes&quot;:0,&quot;switches&quot;:6,&quot;switch_profile&quot;:{&quot;A&quot;:3,&quot;B&quot;:1,&quot;V&quot;:2},&quot;sl2z&quot;:[[1,0],[0,1]],&quot;uses_tropical_count&quot;:false}</metadata>
+  <metadata>{&quot;polygon_id&quot;:&quot;polygon-e95d7ae246&quot;,&quot;vertices&quot;:[[-1,0],[0,-1],[1,-1],[1,0],[0,1],[-1,1]],&quot;genus&quot;:0,&quot;sector&quot;:&quot;all-disk&quot;,&quot;mask&quot;:&quot;0x0663&quot;,&quot;disk_eyes&quot;:2,&quot;annular_eyes&quot;:0,&quot;switches&quot;:6,&quot;switch_profile&quot;:{&quot;A&quot;:3,&quot;B&quot;:1,&quot;V&quot;:2},&quot;sl2z&quot;:[[1,0],[0,1]],&quot;uses_tropical_count&quot;:false,&quot;coordinate_model&quot;:&quot;fixed fundamental square&quot;}</metadata>
   <style>
     svg {
       --card: #ffffff;

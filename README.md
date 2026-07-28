@@ -28,7 +28,15 @@ expandable sections.
 For a fixed polygon, all-disk and annular diagrams share one fundamental square
 and one fixed Lambda. Annular eyes are normalized only in lifted coordinates
 and mapped back before rendering. Switches are the black points in the ruling
-diagrams.
+diagrams. Each entry labels its chosen `SL(2,Z)` representative, the matrix
+from the catalog coordinates, and the vertical direction.
+
+The plane cubic entry is explicitly labeled `O(3) on P^2`. It uses
+`Conv{(-1,-1), (2,-1), (-1,2)}` with vertical direction `(0,1)`. Its exact
+symmetric three-family realization has a horizontal, diagonal, and vertical
+family; its genus-one ruling consists of 18 equal triangular eyes and all 27
+crossings are switches. In this displayed realization the genus-zero split is
+9 all-disk and 0 annular.
 
 The preview displays 96 genus-zero rulings and 16 genus-one rulings, for 112
 rulings in total. For every polygon it also evaluates

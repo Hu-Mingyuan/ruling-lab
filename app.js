@@ -53,15 +53,29 @@
       const image = card.querySelector(".polygon-card-image");
       const coordinates = card.querySelector(".polygon-card-coordinates");
       const counts = card.querySelector(".polygon-card-counts");
+      const displayTransform = totalDrawingTransform(
+        Number(item.arrangementShear || 0),
+        item.displaySl2z
+      );
+      const drawingVertices = transformVertices(
+        item.vertices,
+        displayTransform
+      );
+      const displayLabel = item.displayName
+        ? `${item.displayName}: `
+        : "";
 
       card.dataset.caseId = item.id;
       card.setAttribute(
         "aria-label",
-        `Open all rulings for ${formatVertices(item.vertices)}`
+        `Open all rulings for ${displayLabel}${formatVertices(drawingVertices)}`
       );
-      image.innerHTML = polygonSvg(item.vertices, { compact: true });
-      coordinates.textContent =
-        `Catalog representative: ${formatVertices(item.vertices)}`;
+      image.innerHTML = polygonSvg(drawingVertices, { compact: true });
+      coordinates.textContent = [
+        item.displayName || null,
+        `SL₂(ℤ) representative: ${formatVertices(drawingVertices)}`,
+        `vertical direction: ${formatDirection(item.verticalDirection)}`,
+      ].filter(Boolean).join("\n");
       counts.textContent = [...item.genera]
         .sort((left, right) => right.genus - left.genus)
         .map((entry) => `g=${entry.genus}: ${entry.counts.total}`)
@@ -116,13 +130,20 @@
   function renderReport(item) {
     const fixedTransform = totalDrawingTransform(
       Number(item.arrangementShear || 0),
-      [[1, 0], [0, 1]]
+      item.displaySl2z
     );
     const drawingVertices = transformVertices(item.vertices, fixedTransform);
     const coordinateText = formatVertices(drawingVertices);
-    reportTitle.textContent = `Polygon used for every ruling: ${coordinateText}`;
-    selectedVertices.textContent =
-      `${coordinateText}; M=${formatMatrix(fixedTransform)}`;
+    reportTitle.textContent = [
+      item.displayName,
+      `Polygon used for every ruling: ${coordinateText}`,
+    ].filter(Boolean).join(" — ");
+    selectedVertices.textContent = [
+      `SL₂(ℤ) representative: ${coordinateText}`,
+      `catalog representative: ${formatVertices(item.vertices)}`,
+      `matrix from catalog coordinates: ${formatMatrix(fixedTransform)}`,
+      `vertical direction: ${formatDirection(item.verticalDirection)}`,
+    ].join("\n");
     selectedPolygon.innerHTML = polygonSvg(drawingVertices, { compact: false });
     document.querySelector("#polygon-area").textContent =
       formatArea(item.doubleArea);
@@ -314,5 +335,10 @@
       .replaceAll('"', "&quot;")
       .replaceAll("<", "&lt;")
       .replaceAll(">", "&gt;");
+  }
+
+  function formatDirection(direction) {
+    const [x, y] = Array.isArray(direction) ? direction : [0, 1];
+    return `(${Number(x)},${Number(y)})`;
   }
 })();

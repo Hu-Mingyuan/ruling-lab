@@ -17,6 +17,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 0,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 3,
     "boundaryLatticePoints": 3,
     "interiorLatticePoints": 1,
@@ -154,6 +180,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 0,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -313,6 +365,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 0,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -516,6 +594,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 1,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -763,6 +867,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 1,
+    "displaySl2z": [
+      [
+        2,
+        -3
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    "displayFromSource": [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": "O(3) on P^2",
+    "lambdaModel": "exact symmetric three-family realization",
     "doubleArea": 9,
     "boundaryLatticePoints": 9,
     "interiorLatticePoints": 1,
@@ -770,8 +900,8 @@ window.RULING_CASES = [
       {
         "genus": 0,
         "counts": {
-          "allDisk": 8,
-          "annular": 1,
+          "allDisk": 9,
+          "annular": 0,
           "total": 9
         },
         "phaseCardinality": "FINITE",
@@ -779,199 +909,199 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-01-0x61c96e4.svg",
-            "mask": "0x61c96e4",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-01-0x3bfbbeb.svg",
+            "mask": "0x3bfbbeb",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 13,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-02-0x77c96c2.svg",
-            "mask": "0x77c96c2",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-02-0x3fbe7de.svg",
+            "mask": "0x3fbe7de",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 15,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-03-0x744c7c2.svg",
-            "mask": "0x744c7c2",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-03-0x5df7afd.svg",
+            "mask": "0x5df7afd",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 13,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-04-0x778d4c6.svg",
-            "mask": "0x778d4c6",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-04-0x5eef7bb.svg",
+            "mask": "0x5eef7bb",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 15,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D05",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-05-0x778d2c6.svg",
-            "mask": "0x778d2c6",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-05-0x67f3f5f.svg",
+            "mask": "0x67f3f5f",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 15,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D06",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-06-0x5b656c6.svg",
-            "mask": "0x5b656c6",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-06-0x6f6eef7.svg",
+            "mask": "0x6f6eef7",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 15,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D07",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-07-0x37c6696.svg",
-            "mask": "0x37c6696",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-07-0x775dfaf.svg",
+            "mask": "0x775dfaf",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 15,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D08",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-08-0x17cde45.svg",
-            "mask": "0x17cde45",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-08-0x7bbddf5.svg",
+            "mask": "0x7bbddf5",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 14,
             "annularEyes": 0,
-            "switches": 15,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           },
           {
-            "identifier": "A01",
-            "sector": "annular",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-annular-01-0x66cd006-w01.svg",
-            "mask": "0x66cd006",
-            "witness": 1,
-            "diskEyes": 4,
-            "annularEyes": 2,
-            "switches": 11,
+            "identifier": "D09",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-09-0x7cdfd7e.svg",
+            "mask": "0x7cdfd7e",
+            "witness": null,
+            "diskEyes": 14,
+            "annularEyes": 0,
+            "switches": 21,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=2",
+            "profile": "D=14 · A=0",
             "multiplicity": 1
           }
         ]
@@ -988,23 +1118,23 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g1-standard-0x77cd6c6.svg",
-            "mask": "0x77cd6c6",
+            "src": "assets/rulings/one-interior/05_polygon-a2cd47c761_m2-m3_1-0_1-3/g1-standard-0x7ffffff.svg",
+            "mask": "0x7ffffff",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 18,
             "annularEyes": 0,
-            "switches": 17,
+            "switches": 27,
             "sl2z": [
               [
-                1,
-                0
+                2,
+                -3
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=18 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1036,6 +1166,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 0,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -1199,6 +1355,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": -2,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        -2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -1362,6 +1544,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": -1,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 5,
     "boundaryLatticePoints": 5,
     "interiorLatticePoints": 1,
@@ -1547,6 +1755,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 0,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -1754,6 +1988,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 2,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 7,
     "boundaryLatticePoints": 7,
     "interiorLatticePoints": 1,
@@ -1983,6 +2243,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": -1,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -2234,6 +2520,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 1,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -2489,6 +2801,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 2,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 5,
     "boundaryLatticePoints": 5,
     "interiorLatticePoints": 1,
@@ -2678,6 +3016,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": 2,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -2889,6 +3253,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": -1,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 7,
     "boundaryLatticePoints": 7,
     "interiorLatticePoints": 1,
@@ -3126,6 +3516,32 @@ window.RULING_CASES = [
       ]
     ],
     "arrangementShear": -1,
+    "displaySl2z": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "displayFromSource": [
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "verticalDirection": [
+      0,
+      1
+    ],
+    "displayName": null,
+    "lambdaModel": "deterministic direct-count realization",
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,

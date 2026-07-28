@@ -143,19 +143,52 @@ def main() -> int:
     cases: list[dict[str, object]] = []
     for identifier, source in source_records.items():
         counted = count_records[identifier]
+        manifest_record = manifest_records.get(identifier, {})
+        coordinate_frames = manifest_record.get("coordinate_frames", {})
+        if coordinate_frames and not isinstance(coordinate_frames, dict):
+            raise ValueError(f"invalid coordinate frames for {identifier}")
+        if coordinate_frames:
+            count_from_source = coordinate_frames["count_from_source"]
+            display_from_count = coordinate_frames["display_from_count"]
+            display_from_source = coordinate_frames["display_from_source"]
+            vertical_direction = coordinate_frames["vertical_direction"]
+            if (
+                not isinstance(count_from_source, list)
+                or count_from_source[0][0] != 1
+                or count_from_source[1] != [0, 1]
+            ):
+                raise ValueError(f"invalid counting shear for {identifier}")
+            counting_shear = int(count_from_source[0][1])
+        else:
+            counting_shear = arrangement_shear(source["vertices"])
+            count_from_source = [[1, counting_shear], [0, 1]]
+            display_from_count = [[1, 0], [0, 1]]
+            display_from_source = count_from_source
+            vertical_direction = [0, 1]
         genera = []
         for genus in counted["genera"]:  # type: ignore[index]
             genus_number = int(genus["genus"])
             drawings = browser_drawings(
                 identifier, genus_number, manifest_records
             )
+            display_counts = genus
+            manifest_counts = manifest_record.get("counts")
+            if isinstance(manifest_counts, dict):
+                candidate = manifest_counts.get(f"genus_{genus_number}")
+                if isinstance(candidate, dict):
+                    if int(candidate["total"]) != int(genus["total"]):
+                        raise AssertionError(
+                            f"{identifier} genus {genus_number}: "
+                            "display and direct totals disagree"
+                        )
+                    display_counts = candidate
             genera.append(
                 {
                     "genus": genus_number,
                     "counts": {
-                        "allDisk": genus["all_disk"],
-                        "annular": genus["annular"],
-                        "total": genus["total"],
+                        "allDisk": display_counts["all_disk"],
+                        "annular": display_counts["annular"],
+                        "total": display_counts["total"],
                     },
                     "phaseCardinality": genus["phase_cardinality"],
                     "rulings": drawings,
@@ -165,7 +198,12 @@ def main() -> int:
             {
                 "id": identifier,
                 "vertices": source["vertices"],
-                "arrangementShear": arrangement_shear(source["vertices"]),
+                "arrangementShear": counting_shear,
+                "displaySl2z": display_from_count,
+                "displayFromSource": display_from_source,
+                "verticalDirection": vertical_direction,
+                "displayName": manifest_record.get("display_name"),
+                "lambdaModel": manifest_record.get("lambda_model"),
                 "doubleArea": source["double_area"],
                 "boundaryLatticePoints": source["boundary_lattice_points"],
                 "interiorLatticePoints": len(source["interior_lattice_points"]),
@@ -193,6 +231,13 @@ def main() -> int:
                 )
             drawings = genus["rulings"]
             if drawings:
+                if any(
+                    drawing["sl2z"] != item["displaySl2z"]
+                    for drawing in drawings
+                ):
+                    raise AssertionError(
+                        f"{item['id']}: drawings do not share one display frame"
+                    )
                 multiplicity = sum(
                     int(drawing.get("multiplicity", 1)) for drawing in drawings
                 )

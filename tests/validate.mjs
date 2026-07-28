@@ -59,6 +59,18 @@ function expectedArrangementShear(vertices) {
   throw new Error("no transverse shear");
 }
 
+function uniqueTorusSwitchCount(svg) {
+  const points = new Set();
+  for (const match of svg.matchAll(
+    /<circle cx="(-?\d+(?:\.\d+)?)" cy="(-?\d+(?:\.\d+)?)"/g
+  )) {
+    const normalize = (value) =>
+      Math.abs(Number(value) - 314) < 1e-6 ? 14 : Number(value);
+    points.add(`${normalize(match[1])},${normalize(match[2])}`);
+  }
+  return points.size;
+}
+
 const coreContext = { window: {} };
 runBrowserScript("core.js", coreContext);
 const core = coreContext.window.RulingLabCore;
@@ -126,6 +138,26 @@ for (const item of cases) {
     expectedArrangementShear(item.vertices),
     `${item.id}: exported drawing shear`
   );
+  assert.equal(item.displaySl2z.length, 2, `${item.id}: display matrix rows`);
+  const [[displayA, displayB], [displayC, displayD]] = item.displaySl2z;
+  assert.equal(
+    displayA * displayD - displayB * displayC,
+    1,
+    `${item.id}: display matrix determinant`
+  );
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(item.displayFromSource)),
+    JSON.parse(JSON.stringify(core.totalDrawingTransform(
+      item.arrangementShear,
+      item.displaySl2z
+    ))),
+    `${item.id}: count and display frames compose`
+  );
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(item.verticalDirection)),
+    [0, 1],
+    `${item.id}: labeled vertical direction`
+  );
 
   const genera = [...item.genera].sort((left, right) => left.genus - right.genus);
   const drawingRepresentatives = new Set();
@@ -179,8 +211,8 @@ for (const item of cases) {
       assert.equal(a * d - b * c, 1, `${item.id}: determinant one`);
       assert.deepEqual(
         JSON.parse(JSON.stringify(drawing.sl2z)),
-        [[1, 0], [0, 1]],
-        `${item.id}: fixed global frame`
+        JSON.parse(JSON.stringify(item.displaySl2z)),
+        `${item.id}: shared polygon display frame`
       );
       const drawingTransform = core.totalDrawingTransform(
         item.arrangementShear,
@@ -195,14 +227,15 @@ for (const item of cases) {
       assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
       assert.match(svg, /fill-opacity:(?:0?\.)30/);
       assert.equal(
-        (svg.match(/<circle\b/g) || []).length,
+        uniqueTorusSwitchCount(svg),
         drawing.switches,
-        `${drawing.src}: black switch points`
+        `${drawing.src}: unique black switch points on the torus`
       );
-      assert.match(
-        svg,
-        /&quot;sl2z&quot;:\[\[1,0\],\[0,1\]\]/,
-        `${drawing.src}: identity global frame`
+      assert.ok(
+        svg.includes(
+          `&quot;sl2z&quot;:${JSON.stringify(drawing.sl2z)}`
+        ),
+        `${drawing.src}: embedded shared display frame`
       );
       if (entry.counts.annular > 0 && drawing.sector === "annular") {
         assert.match(svg, /fixed fundamental square/);
@@ -216,6 +249,50 @@ for (const item of cases) {
     `${item.id}: one representative for every ruling`
   );
 }
+
+const planeCubic = cases.find((item) => item.id === "polygon-a2cd47c761");
+assert.ok(planeCubic, "the O(3) case is present");
+assert.equal(planeCubic.displayName, "O(3) on P^2");
+assert.deepEqual(
+  JSON.parse(JSON.stringify(planeCubic.displaySl2z)),
+  [[2, -3], [-1, 2]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(planeCubic.displayFromSource)),
+  [[2, -1], [-1, 1]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(core.transformVertices(
+    planeCubic.vertices,
+    planeCubic.displayFromSource
+  ))),
+  [[-1, -1], [2, -1], [-1, 2]],
+  "O(3) uses the standard centered triangle with a vertical edge"
+);
+const planeCubicGenusZero = planeCubic.genera.find(
+  (entry) => entry.genus === 0
+);
+const planeCubicGenusOne = planeCubic.genera.find(
+  (entry) => entry.genus === 1
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(planeCubicGenusZero.counts)),
+  { allDisk: 9, annular: 0, total: 9 },
+  "the symmetric O(3) realization has nine all-disk rational rulings"
+);
+assert.equal(planeCubicGenusOne.rulings.length, 1);
+assert.equal(planeCubicGenusOne.rulings[0].mask, "0x7ffffff");
+assert.equal(planeCubicGenusOne.rulings[0].diskEyes, 18);
+assert.equal(planeCubicGenusOne.rulings[0].switches, 27);
+assert.equal(
+  core.formatRulingPolynomial(planeCubic.genera),
+  "z² + 9"
+);
+const planeCubicTopSvg = fs.readFileSync(
+  path.join(root, planeCubicGenusOne.rulings[0].src),
+  "utf8"
+);
+assert.match(planeCubicTopSvg, /18 equal triangular eyes/);
 
 assert.equal(rulingMultiplicity, 112, "96 genus-zero + 16 genus-one rulings");
 assert.equal(rationalMultiplicity, 96, "the preview contains 96 genus-zero rulings");
@@ -264,10 +341,16 @@ assert.match(app, /totalDrawingTransform/);
 assert.match(app, /fixedTransform/);
 assert.match(app, /formatRulingPolynomial/);
 assert.match(app, /Polygon used for every ruling/);
+assert.match(app, /SL₂\(ℤ\) representative/);
+assert.match(app, /matrix from catalog coordinates/);
+assert.match(app, /vertical direction/);
+assert.match(app, /item\.displaySl2z/);
 
 const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
 assert.doesNotMatch(readme, /standard ruling/i);
 assert.match(readme, /highest genus to lowest genus/);
+assert.match(readme, /O\(3\) on P\^2/);
+assert.match(readme, /18 equal triangular eyes/);
 
 const packageRoot = path.join(root, "downloads", "direct-ruling-counter");
 const archive = path.join(root, "downloads", "direct-ruling-counter.zip");

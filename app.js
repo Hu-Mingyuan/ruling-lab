@@ -20,6 +20,12 @@
   const reportTitle = document.querySelector("#report-title");
   const selectedPolygon = document.querySelector("#selected-polygon");
   const selectedVertices = document.querySelector("#selected-vertices");
+  const verticalDirectionDiagram = document.querySelector(
+    "#vertical-direction-diagram"
+  );
+  const verticalDirectionLabel = document.querySelector(
+    "#vertical-direction-label"
+  );
   const countTableBody = document.querySelector("#count-table-body");
   const rulingPolynomial = document.querySelector("#ruling-polynomial");
   const genusSections = document.querySelector("#genus-sections");
@@ -145,6 +151,7 @@
       `vertical direction: ${formatDirection(item.verticalDirection)}`,
     ].join("\n");
     selectedPolygon.innerHTML = polygonSvg(drawingVertices, { compact: false });
+    renderDirectionIndicator(item.verticalDirection);
     document.querySelector("#polygon-area").textContent =
       formatArea(item.doubleArea);
     document.querySelector("#boundary-count").textContent =
@@ -338,7 +345,36 @@
   }
 
   function formatDirection(direction) {
-    const [x, y] = Array.isArray(direction) ? direction : [0, 1];
+    const [x, y] = directionComponents(direction);
     return `(${Number(x)},${Number(y)})`;
+  }
+
+  function renderDirectionIndicator(direction) {
+    const [x, y] = directionComponents(direction);
+    const formatted = formatDirection([x, y]);
+    const angle = Math.atan2(x, y) * 180 / Math.PI;
+    verticalDirectionDiagram.style.setProperty(
+      "--direction-angle",
+      `${angle}deg`
+    );
+    verticalDirectionDiagram.setAttribute(
+      "aria-label",
+      `Vertical direction v = ${formatted}`
+    );
+    verticalDirectionLabel.textContent = `vertical\nv = ${formatted}`;
+  }
+
+  function directionComponents(direction) {
+    const values = Array.isArray(direction) ? direction : [0, 1];
+    const x = Number(values[0]);
+    const y = Number(values[1]);
+    if (
+      !Number.isFinite(x) ||
+      !Number.isFinite(y) ||
+      (x === 0 && y === 0)
+    ) {
+      return [0, 1];
+    }
+    return [x, y];
   }
 })();

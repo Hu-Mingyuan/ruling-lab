@@ -29,14 +29,33 @@ For a fixed polygon, all-disk and annular diagrams share one fundamental square
 and one fixed Lambda. Annular eyes are normalized only in lifted coordinates
 and mapped back before rendering. Switches are the black points in the ruling
 diagrams. Each entry labels its chosen `SL(2,Z)` representative, the matrix
-from the catalog coordinates, and the vertical direction.
+from the catalog coordinates, and the vertical direction. The selected
+representative also draws that direction as an arrow beside the polygon.
 
 The plane cubic entry is explicitly labeled `O(3) on P^2`. It uses
-`Conv{(-1,-1), (2,-1), (-1,2)}` with vertical direction `(0,1)`. Its exact
+`Conv{(-1,-1), (2,-1), (-1,2)}` with vertical direction `(-3,2)`. Its exact
 symmetric three-family realization has a horizontal, diagonal, and vertical
 family; its genus-one ruling consists of 18 equal triangular eyes and all 27
 crossings are switches. In this displayed realization the genus-zero split is
 9 all-disk and 0 annular.
+
+The `O(2,2) on P^1 x P^1` entry uses the standard centered square
+`Conv{(-1,-1), (1,-1), (1,1), (-1,1)}`. Its exact four-by-four Lambda grid
+has four evenly spaced horizontal and four evenly spaced vertical components.
+Its displayed vertical direction is `(-1,2)`, transverse to both families.
+The genus-one ruling has eight equal square eyes and all 16 crossings are
+switches.
+
+The centrally symmetric six-vertex polygon
+`Conv{(-1,0), (0,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses exact separated
+phases. Its three parallel pairs have gaps `1/3`, `1/2`, and `1/2`, so no two
+components are visually coincident. Recounting this realization directly gives
+five all-disk and one annular genus-zero ruling.
+
+The five-vertex class
+`Conv{(-1,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses a reflection-symmetric
+exact realization: the horizontal and vertical phases are both
+`{0,1/3,2/3}`, and the diagonal phase is `1/6`.
 
 The preview displays 96 genus-zero rulings and 16 genus-one rulings, for 112
 rulings in total. For every polygon it also evaluates

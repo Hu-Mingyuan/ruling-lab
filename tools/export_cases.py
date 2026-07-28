@@ -159,6 +159,14 @@ def main() -> int:
             ):
                 raise ValueError(f"invalid counting shear for {identifier}")
             counting_shear = int(count_from_source[0][1])
+            expected_vertical_direction = [
+                int(display_from_count[0][1]),
+                int(display_from_count[1][1]),
+            ]
+            if vertical_direction != expected_vertical_direction:
+                raise ValueError(
+                    f"vertical direction was not transported for {identifier}"
+                )
         else:
             counting_shear = arrangement_shear(source["vertices"])
             count_from_source = [[1, counting_shear], [0, 1]]

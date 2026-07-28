@@ -251,10 +251,71 @@ h2 {
   background: #fff;
 }
 
+.selected-representative {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 74px;
+  gap: 8px;
+  align-items: center;
+}
+
 .selected-polygon {
+  width: 100%;
+  min-width: 0;
   aspect-ratio: 4 / 3;
   max-height: 310px;
   margin: 3px auto 12px;
+}
+
+.vertical-direction-diagram {
+  --direction-angle: 0deg;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  color: var(--ink);
+}
+
+.vertical-direction-arrow {
+  position: relative;
+  display: block;
+  width: 2px;
+  height: 60px;
+  background: currentColor;
+  transform: rotate(var(--direction-angle));
+  transform-origin: 50% 50%;
+}
+
+.vertical-direction-arrow::before {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: 50% 50%;
+}
+
+.vertical-direction-arrow::after {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  content: "";
+  border-radius: 50%;
+  background: currentColor;
+  transform: translateX(-50%);
+}
+
+.vertical-direction-label {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .8rem;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: center;
+  white-space: pre-line;
 }
 
 #selected-vertices {
@@ -564,6 +625,19 @@ footer {
 
   .polygon-card-coordinates {
     min-height: 0;
+  }
+
+  .selected-representative {
+    grid-template-columns: minmax(0, 1fr) 58px;
+    gap: 2px;
+  }
+
+  .vertical-direction-arrow {
+    height: 44px;
+  }
+
+  .vertical-direction-label {
+    font-size: .72rem;
   }
 
   .genus-panel > summary {

@@ -153,11 +153,27 @@ for (const item of cases) {
     ))),
     `${item.id}: count and display frames compose`
   );
+  const expectedVerticalDirection = [displayB, displayD];
   assert.deepEqual(
     JSON.parse(JSON.stringify(item.verticalDirection)),
-    [0, 1],
-    `${item.id}: labeled vertical direction`
+    expectedVerticalDirection,
+    `${item.id}: vertical direction is transported to the display frame`
   );
+  const displayedVertices = core.transformVertices(
+    item.vertices,
+    item.displayFromSource
+  );
+  for (let index = 0; index < displayedVertices.length; index += 1) {
+    const start = displayedVertices[index];
+    const finish = displayedVertices[(index + 1) % displayedVertices.length];
+    const edge = [finish[0] - start[0], finish[1] - start[1]];
+    assert.notEqual(
+      item.verticalDirection[0] * edge[1]
+        - item.verticalDirection[1] * edge[0],
+      0,
+      `${item.id}: vertical direction is transverse to every Lambda family`
+    );
+  }
 
   const genera = [...item.genera].sort((left, right) => left.genus - right.genus);
   const drawingRepresentatives = new Set();
@@ -262,6 +278,10 @@ assert.deepEqual(
   [[2, -1], [-1, 1]]
 );
 assert.deepEqual(
+  JSON.parse(JSON.stringify(planeCubic.verticalDirection)),
+  [-3, 2]
+);
+assert.deepEqual(
   JSON.parse(JSON.stringify(core.transformVertices(
     planeCubic.vertices,
     planeCubic.displayFromSource
@@ -294,6 +314,95 @@ const planeCubicTopSvg = fs.readFileSync(
 );
 assert.match(planeCubicTopSvg, /18 equal triangular eyes/);
 
+const o22 = cases.find((item) => item.id === "polygon-10c88eafad");
+assert.ok(o22, "the O(2,2) case is present");
+assert.equal(o22.displayName, "O(2,2) on P^1 x P^1");
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o22.displaySl2z)),
+  [[1, -1], [-1, 2]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o22.displayFromSource)),
+  [[1, 0], [-1, 1]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o22.verticalDirection)),
+  [-1, 2]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(core.transformVertices(
+    o22.vertices,
+    o22.displayFromSource
+  ))),
+  [[-1, -1], [1, -1], [1, 1], [-1, 1]],
+  "O(2,2) uses the standard centered square"
+);
+const o22GenusZero = o22.genera.find((entry) => entry.genus === 0);
+const o22GenusOne = o22.genera.find((entry) => entry.genus === 1);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(o22GenusZero.counts)),
+  { allDisk: 8, annular: 0, total: 8 }
+);
+assert.equal(o22GenusOne.rulings[0].mask, "0xffff");
+assert.equal(o22GenusOne.rulings[0].diskEyes, 8);
+assert.equal(o22GenusOne.rulings[0].switches, 16);
+const o22TopSvg = fs.readFileSync(
+  path.join(root, o22GenusOne.rulings[0].src),
+  "utf8"
+);
+assert.match(o22TopSvg, /eight equal square eyes/);
+
+const separatedHexagon = cases.find(
+  (item) => item.id === "polygon-e95d7ae246"
+);
+assert.ok(separatedHexagon, "the separated hexagon is present");
+assert.deepEqual(
+  JSON.parse(JSON.stringify(separatedHexagon.displayFromSource)),
+  [[1, 0], [0, 1]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(separatedHexagon.verticalDirection)),
+  [1, 1]
+);
+const hexagonGenusZero = separatedHexagon.genera.find(
+  (entry) => entry.genus === 0
+);
+const hexagonGenusOne = separatedHexagon.genera.find(
+  (entry) => entry.genus === 1
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(hexagonGenusZero.counts)),
+  { allDisk: 5, annular: 1, total: 6 },
+  "the separated display has five disk and one annular rational ruling"
+);
+assert.equal(
+  hexagonGenusZero.rulings.filter(
+    (drawing) => drawing.sector === "annular"
+  ).length,
+  1
+);
+assert.equal(hexagonGenusOne.rulings[0].mask, "0x0bf7");
+assert.equal(hexagonGenusOne.rulings[0].switches, 10);
+
+const symmetricPentagon = cases.find(
+  (item) => item.id === "polygon-6a605367ef"
+);
+assert.ok(symmetricPentagon, "the reflection-symmetric pentagon is present");
+assert.deepEqual(
+  JSON.parse(JSON.stringify(symmetricPentagon.displayFromSource)),
+  [[1, 0], [0, 1]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(symmetricPentagon.verticalDirection)),
+  [1, 1]
+);
+const pentagonGenusOne = symmetricPentagon.genera.find(
+  (entry) => entry.genus === 1
+);
+assert.equal(pentagonGenusOne.rulings[0].mask, "0x7ce7");
+assert.equal(pentagonGenusOne.rulings[0].diskEyes, 4);
+assert.equal(pentagonGenusOne.rulings[0].switches, 11);
+
 assert.equal(rulingMultiplicity, 112, "96 genus-zero + 16 genus-one rulings");
 assert.equal(rationalMultiplicity, 96, "the preview contains 96 genus-zero rulings");
 assert.ok(drawingCount > 0 && drawingCount <= rulingMultiplicity);
@@ -325,6 +434,10 @@ assert.doesNotMatch(oneInterior, /id="standard-ruling"/);
 assert.match(oneInterior, /id="genus-sections"/);
 assert.match(oneInterior, /id="ruling-polynomial"/);
 assert.match(oneInterior, /Switches are the black points/);
+assert.match(oneInterior, /id="vertical-direction-diagram"/);
+assert.match(oneInterior, /class="vertical-direction-arrow"/);
+assert.match(oneInterior, /id="vertical-direction-label"/);
+assert.match(oneInterior, />vertical\s+v = \(0,1\)<\/span>/);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
 assert.doesNotMatch(app, /standard ruling/i);
@@ -345,6 +458,13 @@ assert.match(app, /SL₂\(ℤ\) representative/);
 assert.match(app, /matrix from catalog coordinates/);
 assert.match(app, /vertical direction/);
 assert.match(app, /item\.displaySl2z/);
+assert.match(app, /renderDirectionIndicator\(item\.verticalDirection\)/);
+assert.match(app, /Math\.atan2\(x, y\)/);
+
+const styles = fs.readFileSync(path.join(root, "styles.css"), "utf8");
+assert.match(styles, /\.selected-representative/);
+assert.match(styles, /\.vertical-direction-arrow::before/);
+assert.match(styles, /rotate\(var\(--direction-angle\)\)/);
 
 const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
 assert.doesNotMatch(readme, /standard ruling/i);

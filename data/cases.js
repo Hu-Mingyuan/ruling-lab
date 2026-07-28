@@ -183,7 +183,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        -1
       ],
       [
         0,
@@ -193,7 +193,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        0
+        -1
       ],
       [
         0,
@@ -201,11 +201,11 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      -1,
       1
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact symmetry-adapted realization",
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -222,8 +222,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-01-0x0c5a.svg",
-            "mask": "0x0c5a",
+            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-01-0x0b2c.svg",
+            "mask": "0x0b2c",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -231,7 +231,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
                 0,
@@ -244,8 +244,8 @@ window.RULING_CASES = [
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-02-0x0366.svg",
-            "mask": "0x0366",
+            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-02-0x069a.svg",
+            "mask": "0x069a",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -253,7 +253,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
                 0,
@@ -266,8 +266,8 @@ window.RULING_CASES = [
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-03-0x06b1.svg",
-            "mask": "0x06b1",
+            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-03-0x0555.svg",
+            "mask": "0x0555",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -275,7 +275,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
                 0,
@@ -288,8 +288,8 @@ window.RULING_CASES = [
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-04-0x098d.svg",
-            "mask": "0x098d",
+            "src": "assets/rulings/one-interior/02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-04-0x08e3.svg",
+            "mask": "0x08e3",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -297,7 +297,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
                 0,
@@ -330,7 +330,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
                 0,
@@ -596,30 +596,30 @@ window.RULING_CASES = [
     "arrangementShear": 1,
     "displaySl2z": [
       [
-        1,
-        0
+        0,
+        -1
       ],
       [
-        0,
-        1
+        1,
+        -2
       ]
     ],
     "displayFromSource": [
       [
-        1,
-        1
+        0,
+        -1
       ],
       [
-        0,
-        1
+        1,
+        -1
       ]
     ],
     "verticalDirection": [
-      0,
-      1
+      -1,
+      -2
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact symmetry-adapted realization",
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -627,8 +627,8 @@ window.RULING_CASES = [
       {
         "genus": 0,
         "counts": {
-          "allDisk": 6,
-          "annular": 2,
+          "allDisk": 8,
+          "annular": 0,
           "total": 8
         },
         "phaseCardinality": "FINITE",
@@ -636,177 +636,177 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-01-0xdfbb38.svg",
-            "mask": "0xdfbb38",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-01-0xdf7ef8.svg",
+            "mask": "0xdf7ef8",
             "witness": null,
-            "diskEyes": 10,
+            "diskEyes": 12,
             "annularEyes": 0,
-            "switches": 16,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=10 · A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-02-0xdfbe25.svg",
-            "mask": "0xdfbe25",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-02-0x7dfbec.svg",
+            "mask": "0x7dfbec",
             "witness": null,
-            "diskEyes": 10,
+            "diskEyes": 12,
             "annularEyes": 0,
-            "switches": 16,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=10 · A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-03-0xd76535.svg",
-            "mask": "0xd76535",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-03-0xedf73b.svg",
+            "mask": "0xedf73b",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 12,
             "annularEyes": 0,
-            "switches": 14,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-04-0xa1bf35.svg",
-            "mask": "0xa1bf35",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-04-0xef8df7.svg",
+            "mask": "0xef8df7",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 12,
             "annularEyes": 0,
-            "switches": 14,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D05",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-05-0x4e2fb5.svg",
-            "mask": "0x4e2fb5",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-05-0xd2fbf7.svg",
+            "mask": "0xd2fbf7",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 12,
             "annularEyes": 0,
-            "switches": 14,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D06",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-06-0x9c9775.svg",
-            "mask": "0x9c9775",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-06-0xbf7d2f.svg",
+            "mask": "0xbf7d2f",
             "witness": null,
-            "diskEyes": 8,
+            "diskEyes": 12,
             "annularEyes": 0,
-            "switches": 14,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=8 · A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
-            "identifier": "A01",
-            "sector": "annular",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-annular-01-0xdb9f12-w01.svg",
-            "mask": "0xdb9f12",
-            "witness": 1,
-            "diskEyes": 8,
-            "annularEyes": 1,
-            "switches": 14,
+            "identifier": "D07",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-07-0x73bedf.svg",
+            "mask": "0x73bedf",
+            "witness": null,
+            "diskEyes": 12,
+            "annularEyes": 0,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=8 · A=1",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           },
           {
-            "identifier": "A02",
-            "sector": "annular",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-annular-02-0x5fb805-w01.svg",
-            "mask": "0x5fb805",
-            "witness": 1,
-            "diskEyes": 6,
-            "annularEyes": 2,
-            "switches": 12,
+            "identifier": "D08",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-08-0xbec7df.svg",
+            "mask": "0xbec7df",
+            "witness": null,
+            "diskEyes": 12,
+            "annularEyes": 0,
+            "switches": 18,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=6 · A=2",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -823,23 +823,23 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g1-standard-0xdfbf35.svg",
-            "mask": "0xdfbf35",
+            "src": "assets/rulings/one-interior/04_polygon-a766a56e11_m3-m2_1-0_1-2/g1-standard-0xffffff.svg",
+            "mask": "0xffffff",
             "witness": null,
-            "diskEyes": 10,
+            "diskEyes": 16,
             "annularEyes": 0,
-            "switches": 18,
+            "switches": 24,
             "sl2z": [
               [
-                1,
-                0
+                0,
+                -1
               ],
               [
-                0,
-                1
+                1,
+                -2
               ]
             ],
-            "profile": "D=10 · A=0",
+            "profile": "D=16 · A=0",
             "multiplicity": 1
           }
         ]
@@ -888,8 +888,8 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
-      1
+      -3,
+      2
     ],
     "displayName": "O(3) on P^2",
     "lambdaModel": "exact symmetric three-family realization",
@@ -1191,7 +1191,7 @@ window.RULING_CASES = [
       1
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact symmetry-adapted realization",
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -1208,8 +1208,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-01-0x003c.svg",
-            "mask": "0x003c",
+            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-01-0x00e2.svg",
+            "mask": "0x00e2",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -1230,8 +1230,8 @@ window.RULING_CASES = [
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-02-0x005a.svg",
-            "mask": "0x005a",
+            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-02-0x002e.svg",
+            "mask": "0x002e",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -1252,8 +1252,8 @@ window.RULING_CASES = [
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-03-0x00a5.svg",
-            "mask": "0x00a5",
+            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-03-0x00d1.svg",
+            "mask": "0x00d1",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -1274,8 +1274,8 @@ window.RULING_CASES = [
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-04-0x00c3.svg",
-            "mask": "0x00c3",
+            "src": "assets/rulings/one-interior/06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-04-0x001d.svg",
+            "mask": "0x001d",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -1358,29 +1358,29 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        2
       ],
       [
-        0,
-        1
+        1,
+        3
       ]
     ],
     "displayFromSource": [
       [
         1,
-        -2
+        0
       ],
       [
-        0,
+        1,
         1
       ]
     ],
     "verticalDirection": [
-      0,
-      1
+      2,
+      3
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact symmetry-adapted realization",
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -1388,8 +1388,8 @@ window.RULING_CASES = [
       {
         "genus": 0,
         "counts": {
-          "allDisk": 3,
-          "annular": 1,
+          "allDisk": 4,
+          "annular": 0,
           "total": 4
         },
         "phaseCardinality": "FINITE",
@@ -1397,8 +1397,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-01-0x018c.svg",
-            "mask": "0x018c",
+            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-01-0x02b0.svg",
+            "mask": "0x02b0",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -1406,11 +1406,11 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                2
               ],
               [
-                0,
-                1
+                1,
+                3
               ]
             ],
             "profile": "D=2 · A=0",
@@ -1419,8 +1419,8 @@ window.RULING_CASES = [
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-02-0x02ea.svg",
-            "mask": "0x02ea",
+            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-02-0x017a.svg",
+            "mask": "0x017a",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -1428,11 +1428,11 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                2
               ],
               [
-                0,
-                1
+                1,
+                3
               ]
             ],
             "profile": "D=4 · A=0",
@@ -1441,8 +1441,8 @@ window.RULING_CASES = [
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-03-0x0151.svg",
-            "mask": "0x0151",
+            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-03-0x00c5.svg",
+            "mask": "0x00c5",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -1450,36 +1450,36 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                2
               ],
               [
-                0,
-                1
+                1,
+                3
               ]
             ],
             "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
-            "identifier": "A01",
-            "sector": "annular",
-            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-annular-01-0x225-w01.svg",
-            "mask": "0x225",
-            "witness": 1,
-            "diskEyes": 2,
-            "annularEyes": 1,
-            "switches": 4,
+            "identifier": "D04",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-04-0x030f.svg",
+            "mask": "0x030f",
+            "witness": null,
+            "diskEyes": 4,
+            "annularEyes": 0,
+            "switches": 6,
             "sl2z": [
               [
                 1,
-                0
+                2
               ],
               [
-                0,
-                1
+                1,
+                3
               ]
             ],
-            "profile": "D=2 · A=1",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1496,23 +1496,23 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g1-standard-0x03ed.svg",
-            "mask": "0x03ed",
+            "src": "assets/rulings/one-interior/07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g1-standard-0x03ff.svg",
+            "mask": "0x03ff",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 8,
+            "switches": 10,
             "sl2z": [
               [
                 1,
-                0
+                2
               ],
               [
-                0,
-                1
+                1,
+                3
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -1547,7 +1547,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        1
       ],
       [
         0,
@@ -1557,7 +1557,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        -1
+        0
       ],
       [
         0,
@@ -1565,7 +1565,7 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      1,
       1
     ],
     "displayName": null,
@@ -1595,7 +1595,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -1617,7 +1617,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -1639,7 +1639,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -1661,7 +1661,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -1683,7 +1683,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -1716,7 +1716,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -1991,7 +1991,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        -2
       ],
       [
         0,
@@ -2001,7 +2001,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        2
+        0
       ],
       [
         0,
@@ -2009,7 +2009,7 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      -2,
       1
     ],
     "displayName": null,
@@ -2039,7 +2039,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2061,7 +2061,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2083,7 +2083,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2105,7 +2105,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2127,7 +2127,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2149,7 +2149,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2171,7 +2171,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2204,7 +2204,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2246,7 +2246,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        1
       ],
       [
         0,
@@ -2256,7 +2256,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        -1
+        0
       ],
       [
         0,
@@ -2264,11 +2264,11 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      1,
       1
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact symmetry-adapted realization",
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -2276,8 +2276,8 @@ window.RULING_CASES = [
       {
         "genus": 0,
         "counts": {
-          "allDisk": 6,
-          "annular": 2,
+          "allDisk": 8,
+          "annular": 0,
           "total": 8
         },
         "phaseCardinality": "FINITE",
@@ -2285,177 +2285,177 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-01-0x7cf34.svg",
-            "mask": "0x7cf34",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-01-0xb7fb8.svg",
+            "mask": "0xb7fb8",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 8,
             "annularEyes": 0,
-            "switches": 12,
+            "switches": 14,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-02-0xb6e59.svg",
-            "mask": "0xb6e59",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-02-0x5ffe4.svg",
+            "mask": "0x5ffe4",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 8,
             "annularEyes": 0,
-            "switches": 12,
+            "switches": 14,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-03-0x7c759.svg",
-            "mask": "0x7c759",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-03-0x6ffdb.svg",
+            "mask": "0x6ffdb",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 10,
             "annularEyes": 0,
-            "switches": 12,
+            "switches": 16,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-04-0x7cd4d.svg",
-            "mask": "0x7cd4d",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-04-0xbbf77.svg",
+            "mask": "0xbbf77",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 10,
             "annularEyes": 0,
-            "switches": 12,
+            "switches": 16,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D05",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-05-0x78b9d.svg",
-            "mask": "0x78b9d",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-05-0xf52ef.svg",
+            "mask": "0xf52ef",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 8,
             "annularEyes": 0,
-            "switches": 12,
+            "switches": 14,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D06",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-06-0x4d65f.svg",
-            "mask": "0x4d65f",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-06-0xfaedf.svg",
+            "mask": "0xfaedf",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 10,
             "annularEyes": 0,
-            "switches": 12,
+            "switches": 16,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           },
           {
-            "identifier": "A01",
-            "sector": "annular",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-annular-01-0x28f5c-w01.svg",
-            "mask": "0x28f5c",
-            "witness": 1,
-            "diskEyes": 4,
-            "annularEyes": 1,
-            "switches": 10,
+            "identifier": "D07",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-07-0xde1bf.svg",
+            "mask": "0xde1bf",
+            "witness": null,
+            "diskEyes": 8,
+            "annularEyes": 0,
+            "switches": 14,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=4 · A=1",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           },
           {
-            "identifier": "A02",
-            "sector": "annular",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-annular-02-0x54945-w01.svg",
-            "mask": "0x54945",
-            "witness": 1,
-            "diskEyes": 2,
-            "annularEyes": 2,
-            "switches": 8,
+            "identifier": "D08",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-08-0xedd7f.svg",
+            "mask": "0xedd7f",
+            "witness": null,
+            "diskEyes": 10,
+            "annularEyes": 0,
+            "switches": 16,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=2 · A=2",
+            "profile": "D=10 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2472,23 +2472,23 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g1-standard-0x7cf5d.svg",
-            "mask": "0x7cf5d",
+            "src": "assets/rulings/one-interior/11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g1-standard-0xfffff.svg",
+            "mask": "0xfffff",
             "witness": null,
-            "diskEyes": 6,
+            "diskEyes": 12,
             "annularEyes": 0,
-            "switches": 14,
+            "switches": 20,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=6 · A=0",
+            "profile": "D=12 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2523,29 +2523,29 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        -1
       ],
       [
-        0,
-        1
+        -1,
+        2
       ]
     ],
     "displayFromSource": [
       [
         1,
-        1
+        0
       ],
       [
-        0,
+        -1,
         1
       ]
     ],
     "verticalDirection": [
-      0,
-      1
+      -1,
+      2
     ],
-    "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "displayName": "O(2,2) on P^1 x P^1",
+    "lambdaModel": "exact symmetric four-by-four grid",
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -2562,177 +2562,177 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-01-0xf5a6.svg",
-            "mask": "0xf5a6",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-01-0xbdde.svg",
+            "mask": "0xbdde",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 10,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-02-0x7ce6.svg",
-            "mask": "0x7ce6",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-02-0x77be.svg",
+            "mask": "0x77be",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 10,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-03-0x7d81.svg",
-            "mask": "0x7d81",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-03-0xebdd.svg",
+            "mask": "0xebdd",
             "witness": null,
-            "diskEyes": 2,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 8,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=2 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-04-0x6ee5.svg",
-            "mask": "0x6ee5",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-04-0xdebd.svg",
+            "mask": "0xdebd",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 10,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D05",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-05-0x3d6b.svg",
-            "mask": "0x3d6b",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-05-0xddeb.svg",
+            "mask": "0xddeb",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 10,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D06",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-06-0x5d67.svg",
-            "mask": "0x5d67",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-06-0xe77b.svg",
+            "mask": "0xe77b",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 10,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D07",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-07-0x21e7.svg",
-            "mask": "0x21e7",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-07-0x7be7.svg",
+            "mask": "0x7be7",
             "witness": null,
-            "diskEyes": 2,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 8,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=2 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D08",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-08-0x59d7.svg",
-            "mask": "0x59d7",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-08-0xbe77.svg",
+            "mask": "0xbe77",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 6,
             "annularEyes": 0,
-            "switches": 10,
+            "switches": 12,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=6 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2749,23 +2749,23 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g1-standard-0x7de7.svg",
-            "mask": "0x7de7",
+            "src": "assets/rulings/one-interior/12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g1-standard-0xffff.svg",
+            "mask": "0xffff",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 8,
             "annularEyes": 0,
-            "switches": 12,
+            "switches": 16,
             "sl2z": [
               [
                 1,
-                0
+                -1
               ],
               [
-                0,
-                1
+                -1,
+                2
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=8 · A=0",
             "multiplicity": 1
           }
         ]
@@ -2804,7 +2804,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        -2
       ],
       [
         0,
@@ -2814,7 +2814,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        2
+        0
       ],
       [
         0,
@@ -2822,11 +2822,11 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      -2,
       1
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact symmetry-adapted realization",
     "doubleArea": 5,
     "boundaryLatticePoints": 5,
     "interiorLatticePoints": 1,
@@ -2843,30 +2843,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-01-0x025c.svg",
-            "mask": "0x025c",
-            "witness": null,
-            "diskEyes": 2,
-            "annularEyes": 0,
-            "switches": 5,
-            "sl2z": [
-              [
-                1,
-                0
-              ],
-              [
-                0,
-                1
-              ]
-            ],
-            "profile": "D=2 · A=0",
-            "multiplicity": 1
-          },
-          {
-            "identifier": "D02",
-            "sector": "all-disk",
-            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-02-0x056e.svg",
-            "mask": "0x056e",
+            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-01-0x07e4.svg",
+            "mask": "0x07e4",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -2874,7 +2852,29 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "profile": "D=4 · A=0",
+            "multiplicity": 1
+          },
+          {
+            "identifier": "D02",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-02-0x075a.svg",
+            "mask": "0x075a",
+            "witness": null,
+            "diskEyes": 4,
+            "annularEyes": 0,
+            "switches": 7,
+            "sl2z": [
+              [
+                1,
+                -2
               ],
               [
                 0,
@@ -2887,8 +2887,8 @@ window.RULING_CASES = [
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-03-0x0691.svg",
-            "mask": "0x0691",
+            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-03-0x04c6.svg",
+            "mask": "0x04c6",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -2896,7 +2896,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2909,30 +2909,30 @@ window.RULING_CASES = [
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-04-0x072d.svg",
-            "mask": "0x072d",
+            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-04-0x00ab.svg",
+            "mask": "0x00ab",
             "witness": null,
-            "diskEyes": 4,
+            "diskEyes": 2,
             "annularEyes": 0,
-            "switches": 7,
+            "switches": 5,
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=4 · A=0",
+            "profile": "D=2 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "A01",
             "sector": "annular",
-            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-annular-01-0x171-w01.svg",
-            "mask": "0x171",
+            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-annular-01-0x32c-w01.svg",
+            "mask": "0x32c",
             "witness": 1,
             "diskEyes": 2,
             "annularEyes": 1,
@@ -2940,7 +2940,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -2964,8 +2964,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g1-standard-0x077d.svg",
-            "mask": "0x077d",
+            "src": "assets/rulings/one-interior/13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g1-standard-0x07ee.svg",
+            "mask": "0x07ee",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -2973,7 +2973,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3019,7 +3019,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        -2
       ],
       [
         0,
@@ -3029,7 +3029,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        2
+        0
       ],
       [
         0,
@@ -3037,11 +3037,11 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      -2,
       1
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact symmetry-adapted realization",
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -3058,8 +3058,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-01-0x39b8.svg",
-            "mask": "0x39b8",
+            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-01-0x3fa0.svg",
+            "mask": "0x3fa0",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3067,7 +3067,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3080,8 +3080,8 @@ window.RULING_CASES = [
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-02-0x29cd.svg",
-            "mask": "0x29cd",
+            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-02-0x0f35.svg",
+            "mask": "0x0f35",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3089,7 +3089,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3102,8 +3102,8 @@ window.RULING_CASES = [
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-03-0x362d.svg",
-            "mask": "0x362d",
+            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-03-0x2cad.svg",
+            "mask": "0x2cad",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3111,7 +3111,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3124,8 +3124,8 @@ window.RULING_CASES = [
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-04-0x13fd.svg",
-            "mask": "0x13fd",
+            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-04-0x36dd.svg",
+            "mask": "0x36dd",
             "witness": null,
             "diskEyes": 6,
             "annularEyes": 0,
@@ -3133,7 +3133,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3146,8 +3146,8 @@ window.RULING_CASES = [
           {
             "identifier": "D05",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-05-0x1bf3.svg",
-            "mask": "0x1bf3",
+            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-05-0x3b1f.svg",
+            "mask": "0x3b1f",
             "witness": null,
             "diskEyes": 6,
             "annularEyes": 0,
@@ -3155,7 +3155,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3168,8 +3168,8 @@ window.RULING_CASES = [
           {
             "identifier": "A01",
             "sector": "annular",
-            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-annular-01-0x2a54-w01.svg",
-            "mask": "0x2a54",
+            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-annular-01-0x11b8-w01.svg",
+            "mask": "0x11b8",
             "witness": 1,
             "diskEyes": 2,
             "annularEyes": 1,
@@ -3177,7 +3177,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3201,8 +3201,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g1-standard-0x3bfd.svg",
-            "mask": "0x3bfd",
+            "src": "assets/rulings/one-interior/14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g1-standard-0x3fbd.svg",
+            "mask": "0x3fbd",
             "witness": null,
             "diskEyes": 6,
             "annularEyes": 0,
@@ -3210,7 +3210,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                -2
               ],
               [
                 0,
@@ -3256,7 +3256,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        1
       ],
       [
         0,
@@ -3266,7 +3266,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        -1
+        0
       ],
       [
         0,
@@ -3274,11 +3274,11 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      1,
       1
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact reflection-symmetric realization",
     "doubleArea": 7,
     "boundaryLatticePoints": 7,
     "interiorLatticePoints": 1,
@@ -3295,30 +3295,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-01-0x3e6a.svg",
-            "mask": "0x3e6a",
-            "witness": null,
-            "diskEyes": 4,
-            "annularEyes": 0,
-            "switches": 9,
-            "sl2z": [
-              [
-                1,
-                0
-              ],
-              [
-                0,
-                1
-              ]
-            ],
-            "profile": "D=4 · A=0",
-            "multiplicity": 1
-          },
-          {
-            "identifier": "D02",
-            "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-02-0x6a1a.svg",
-            "mask": "0x6a1a",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-01-0x7862.svg",
+            "mask": "0x7862",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -3326,7 +3304,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3337,10 +3315,32 @@ window.RULING_CASES = [
             "multiplicity": 1
           },
           {
+            "identifier": "D02",
+            "sector": "all-disk",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-02-0x5cce.svg",
+            "mask": "0x5cce",
+            "witness": null,
+            "diskEyes": 4,
+            "annularEyes": 0,
+            "switches": 9,
+            "sl2z": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "profile": "D=4 · A=0",
+            "multiplicity": 1
+          },
+          {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-03-0x3651.svg",
-            "mask": "0x3651",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-03-0x6465.svg",
+            "mask": "0x6465",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -3348,7 +3348,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3361,8 +3361,8 @@ window.RULING_CASES = [
           {
             "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-04-0x6e4d.svg",
-            "mask": "0x6e4d",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-04-0x78e5.svg",
+            "mask": "0x78e5",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3370,7 +3370,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3383,8 +3383,8 @@ window.RULING_CASES = [
           {
             "identifier": "D05",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-05-0x7c93.svg",
-            "mask": "0x7c93",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-05-0x3cb3.svg",
+            "mask": "0x3cb3",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3392,7 +3392,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3405,8 +3405,8 @@ window.RULING_CASES = [
           {
             "identifier": "D06",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-06-0x5c5b.svg",
-            "mask": "0x5c5b",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-06-0x2ec7.svg",
+            "mask": "0x2ec7",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3414,7 +3414,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3427,8 +3427,8 @@ window.RULING_CASES = [
           {
             "identifier": "D07",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-07-0x535b.svg",
-            "mask": "0x535b",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-07-0x55a7.svg",
+            "mask": "0x55a7",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3436,7 +3436,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3460,8 +3460,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x7e5b.svg",
-            "mask": "0x7e5b",
+            "src": "assets/rulings/one-interior/15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x7ce7.svg",
+            "mask": "0x7ce7",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3469,7 +3469,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3519,7 +3519,7 @@ window.RULING_CASES = [
     "displaySl2z": [
       [
         1,
-        0
+        1
       ],
       [
         0,
@@ -3529,7 +3529,7 @@ window.RULING_CASES = [
     "displayFromSource": [
       [
         1,
-        -1
+        0
       ],
       [
         0,
@@ -3537,11 +3537,11 @@ window.RULING_CASES = [
       ]
     ],
     "verticalDirection": [
-      0,
+      1,
       1
     ],
     "displayName": null,
-    "lambdaModel": "deterministic direct-count realization",
+    "lambdaModel": "exact separated three-pair realization",
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -3549,8 +3549,8 @@ window.RULING_CASES = [
       {
         "genus": 0,
         "counts": {
-          "allDisk": 6,
-          "annular": 0,
+          "allDisk": 5,
+          "annular": 1,
           "total": 6
         },
         "phaseCardinality": "FINITE",
@@ -3558,30 +3558,30 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-01-0x078c.svg",
-            "mask": "0x078c",
+            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-01-0x0ef2.svg",
+            "mask": "0x0ef2",
             "witness": null,
-            "diskEyes": 2,
+            "diskEyes": 4,
             "annularEyes": 0,
-            "switches": 6,
+            "switches": 8,
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
                 1
               ]
             ],
-            "profile": "D=2 · A=0",
+            "profile": "D=4 · A=0",
             "multiplicity": 1
           },
           {
             "identifier": "D02",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-02-0x04b6.svg",
-            "mask": "0x04b6",
+            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-02-0x0936.svg",
+            "mask": "0x0936",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -3589,7 +3589,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3602,30 +3602,8 @@ window.RULING_CASES = [
           {
             "identifier": "D03",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-03-0x0bb9.svg",
-            "mask": "0x0bb9",
-            "witness": null,
-            "diskEyes": 4,
-            "annularEyes": 0,
-            "switches": 8,
-            "sl2z": [
-              [
-                1,
-                0
-              ],
-              [
-                0,
-                1
-              ]
-            ],
-            "profile": "D=4 · A=0",
-            "multiplicity": 1
-          },
-          {
-            "identifier": "D04",
-            "sector": "all-disk",
-            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-04-0x0663.svg",
-            "mask": "0x0663",
+            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-03-0x0b25.svg",
+            "mask": "0x0b25",
             "witness": null,
             "diskEyes": 2,
             "annularEyes": 0,
@@ -3633,7 +3611,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3644,10 +3622,10 @@ window.RULING_CASES = [
             "multiplicity": 1
           },
           {
-            "identifier": "D05",
+            "identifier": "D04",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-05-0x059f.svg",
-            "mask": "0x059f",
+            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-04-0x03dd.svg",
+            "mask": "0x03dd",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3655,7 +3633,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3666,10 +3644,10 @@ window.RULING_CASES = [
             "multiplicity": 1
           },
           {
-            "identifier": "D06",
+            "identifier": "D05",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-06-0x033f.svg",
-            "mask": "0x033f",
+            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-05-0x0ad7.svg",
+            "mask": "0x0ad7",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3677,7 +3655,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,
@@ -3685,6 +3663,28 @@ window.RULING_CASES = [
               ]
             ],
             "profile": "D=4 · A=0",
+            "multiplicity": 1
+          },
+          {
+            "identifier": "A01",
+            "sector": "annular",
+            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-annular-01-0x1e3-w01.svg",
+            "mask": "0x1e3",
+            "witness": 1,
+            "diskEyes": 2,
+            "annularEyes": 1,
+            "switches": 6,
+            "sl2z": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "profile": "D=2 · A=1",
             "multiplicity": 1
           }
         ]
@@ -3701,8 +3701,8 @@ window.RULING_CASES = [
           {
             "identifier": "D01",
             "sector": "all-disk",
-            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x07bf.svg",
-            "mask": "0x07bf",
+            "src": "assets/rulings/one-interior/16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x0bf7.svg",
+            "mask": "0x0bf7",
             "witness": null,
             "diskEyes": 4,
             "annularEyes": 0,
@@ -3710,7 +3710,7 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                0
+                1
               ],
               [
                 0,

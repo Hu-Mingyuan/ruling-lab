@@ -5,20 +5,23 @@ lattice polygons. It is published separately from the author's main homepage.
 Every HTML page carries `noindex` metadata to discourage search-engine indexing;
 this is not access control.
 
-The home page links to two collections:
+The home page links to three collections:
 
 - the 16 lattice-equivalence classes with one interior lattice point;
-- the 45 lattice-equivalence classes with two interior lattice points.
+- the 45 lattice-equivalence classes with two interior lattice points;
+- other polygons, currently containing `O(4) on P^2`.
 
-Every entry is identified by its vertex coordinates.
+Every entry is identified by its vertex coordinates. The two interior-point
+collections list every ruling separately; the `O(4)` page instead preserves
+the previously drawn symmetry representatives and labels every orbit size.
 
 For each polygon the site records:
 
 - its lattice diagram and vertex coordinates;
 - area, boundary lattice-point count, and interior lattice-point count;
-- its ruling counts in every possible genus (`g = 0, 1` or `g = 0, 1, 2`);
+- its ruling counts in every possible genus;
 - all-disk and annular sectors for the displayed deterministic realization;
-- one SVG diagram for every ruling;
+- one SVG diagram for every ruling in the interior-point collections;
 - the single `SL(2,Z)`-equivalent polygon used to draw every ruling of the
   selected lattice-equivalence class.
 
@@ -51,6 +54,14 @@ Its displayed vertical direction is `(-1,2)`, transverse to both families.
 The genus-one ruling has eight equal square eyes and all 16 crossings are
 switches.
 
+The `O(4) on P^2` entry uses
+`Conv{(-2,-1), (2,-1), (-2,3)}` for every genus, with displayed vertical
+direction `(-3,2)`. Its page copies the 14 existing desktop SVGs directly:
+one genus-three diagram and thirteen genus-zero symmetry representatives.
+Their displayed orbit sizes sum to all 304 rational rulings (288 all-disk and
+16 annular). The figures use green Lambda, red and blue eyes, black switches,
+and darker fills where eyes overlap.
+
 The centrally symmetric six-vertex polygon
 `Conv{(-1,0), (0,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses exact separated
 phases. Its three parallel pairs have gaps `1/3`, `1/2`, and `1/2`, so no two
@@ -62,11 +73,13 @@ The five-vertex class
 exact realization: the horizontal and vertical phases are both
 `{0,1/3,2/3}`, and the diagonal phase is `1/6`.
 
-The atlas displays all 1,601 rulings: 112 for the one-interior collection and
-1,489 for the two-interior collection. For every polygon it also evaluates
-`R_Delta(z) = sum_g r_(Delta,g) z^(2g)` from these direct counts. Its counts and
-diagrams are generated from direct ruling certificates; the atlas exporter does
-not import or consult a tropical counter.
+The two census collections display all 1,601 rulings separately: 112 for the
+one-interior collection and 1,489 for the two-interior collection. The
+other-polygons page adds the 14 saved `O(4)` figures with symmetry
+multiplicities. Every page records the ruling polynomial
+`R_Delta(z) = sum_g r_(Delta,g) z^(2g)`. The census counts and diagrams are
+generated from direct ruling certificates; the atlas exporter does not import
+or consult a tropical counter.
 
 ## Run the site locally
 

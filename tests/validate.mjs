@@ -554,10 +554,13 @@ const index = fs.readFileSync(path.join(root, "index.html"), "utf8");
 assert.match(index, /name="robots" content="noindex, nofollow, noarchive"/);
 assert.match(index, /href="one-interior\.html"/);
 assert.match(index, /href="two-interior\.html"/);
+assert.match(index, /href="other-polygons\.html"/);
 assert.match(index, /Polygons with one interior lattice point/);
 assert.match(index, /Polygons with two interior lattice points/);
+assert.match(index, /Other polygons/);
 assert.match(index, /112 rulings/);
 assert.match(index, /1,489 rulings/);
+assert.match(index, /14 saved figures/);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Ruling Atlas/);
@@ -566,6 +569,10 @@ assert.doesNotMatch(index, /src="(?:core|app)\.js"|src="data\/cases\.js"/);
 
 const oneInterior = fs.readFileSync(path.join(root, "one-interior.html"), "utf8");
 const twoInterior = fs.readFileSync(path.join(root, "two-interior.html"), "utf8");
+const otherPolygons = fs.readFileSync(
+  path.join(root, "other-polygons.html"),
+  "utf8"
+);
 for (const [filename, document, collection] of [
   ["one-interior.html", oneInterior, "interior-1"],
   ["two-interior.html", twoInterior, "interior-2"],
@@ -606,6 +613,67 @@ assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);
 assert.match(twoInterior, /Polygons with two interior lattice points/);
 assert.match(twoInterior, /genera&nbsp;0, 1, and&nbsp;2/);
 assert.match(twoInterior, /45 polygons\s+·\s+1,489 rulings/);
+assert.match(otherPolygons, /Other polygons/);
+assert.match(otherPolygons, /O\(4\) on P\^2/);
+assert.match(otherPolygons, /symmetry orbit/i);
+assert.match(otherPolygons, /Genus 3/);
+assert.match(otherPolygons, /Genus 0/);
+assert.match(otherPolygons, /304 rational rulings/);
+assert.match(otherPolygons, /Conv\{\(-2,-1\), \(2,-1\), \(-2,3\)\}/);
+assert.match(otherPolygons, /vertical direction: \(-3,2\)/);
+assert.match(otherPolygons, /z⁶ \+ 16z⁴ \+ 104z² \+ 304/);
+
+const o4FigureDirectory = path.join(
+  root,
+  "assets",
+  "rulings",
+  "other",
+  "o4-p2"
+);
+const o4Figures = [
+  ["O4_standard_bipartite_ruling.svg", 1],
+  ["O4_rational_D01_x16.svg", 16],
+  ["O4_rational_D02_x32.svg", 32],
+  ["O4_rational_D03_x32.svg", 32],
+  ["O4_rational_D04_x32.svg", 32],
+  ["O4_rational_D05_x16.svg", 16],
+  ["O4_rational_D06_x32.svg", 32],
+  ["O4_rational_D07_x16.svg", 16],
+  ["O4_rational_D08_x32.svg", 32],
+  ["O4_rational_D09_x32.svg", 32],
+  ["O4_rational_D10_x16.svg", 16],
+  ["O4_rational_D11_x16.svg", 16],
+  ["O4_rational_D12_x16.svg", 16],
+  ["O4_rational_R01_x16.svg", 16],
+];
+assert.deepEqual(
+  fs.readdirSync(o4FigureDirectory).sort(),
+  o4Figures.map(([filename]) => filename).sort(),
+  "the O(4) page contains exactly the 14 saved desktop SVGs"
+);
+for (const [filename, multiplicity] of o4Figures) {
+  const figurePath = path.join(o4FigureDirectory, filename);
+  const svg = fs.readFileSync(figurePath, "utf8");
+  assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
+  assert.ok(
+    otherPolygons.includes(
+      `assets/rulings/other/o4-p2/${filename}`
+    ),
+    `${filename}: linked from Other polygons`
+  );
+  assert.match(
+    otherPolygons,
+    new RegExp(`symmetry orbit ×${multiplicity}`)
+  );
+}
+assert.equal(
+  o4Figures.slice(1).reduce(
+    (sum, [, multiplicity]) => sum + multiplicity,
+    0
+  ),
+  304,
+  "the 13 rational symmetry orbits represent all 304 genus-zero rulings"
+);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
 assert.doesNotMatch(app, /standard ruling/i);

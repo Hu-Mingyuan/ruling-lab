@@ -672,12 +672,12 @@ window.RULING_CASES = [
             "switches": 14,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                2
+                0,
+                1
               ]
             ],
             "profile": "D=8 · A=1",
@@ -694,12 +694,12 @@ window.RULING_CASES = [
             "switches": 12,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                2
+                0,
+                1
               ]
             ],
             "profile": "D=6 · A=2",
@@ -964,11 +964,11 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                -1
+                0
               ],
               [
-                -2,
-                3
+                0,
+                1
               ]
             ],
             "profile": "D=4 · A=2",
@@ -1289,12 +1289,12 @@ window.RULING_CASES = [
             "switches": 4,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                -2
+                0,
+                1
               ]
             ],
             "profile": "D=2 · A=1",
@@ -1682,11 +1682,11 @@ window.RULING_CASES = [
             "sl2z": [
               [
                 1,
-                1
+                0
               ],
               [
-                1,
-                2
+                0,
+                1
               ]
             ],
             "profile": "D=2 · A=1",
@@ -1910,12 +1910,12 @@ window.RULING_CASES = [
             "switches": 11,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                2
+                0,
+                1
               ]
             ],
             "profile": "D=6 · A=1",
@@ -2139,12 +2139,12 @@ window.RULING_CASES = [
             "switches": 10,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                -2
+                0,
+                1
               ]
             ],
             "profile": "D=4 · A=1",
@@ -2161,12 +2161,12 @@ window.RULING_CASES = [
             "switches": 8,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                -2
+                0,
+                1
               ]
             ],
             "profile": "D=2 · A=2",
@@ -2601,12 +2601,12 @@ window.RULING_CASES = [
             "switches": 5,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                3
+                0,
+                1
               ]
             ],
             "profile": "D=2 · A=1",
@@ -2812,12 +2812,12 @@ window.RULING_CASES = [
             "switches": 6,
             "sl2z": [
               [
-                0,
-                1
+                1,
+                0
               ],
               [
-                -1,
-                2
+                0,
+                1
               ]
             ],
             "profile": "D=2 · A=1",

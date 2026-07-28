@@ -120,6 +120,7 @@ for (const item of cases) {
   );
 
   const genera = [...item.genera].sort((left, right) => left.genus - right.genus);
+  const drawingRepresentatives = new Set();
   assert.deepEqual(
     genera.map((entry) => entry.genus),
     [0, 1],
@@ -153,14 +154,39 @@ for (const item of cases) {
       assert.equal(drawing.sl2z.length, 2, `${item.id}: SL2 matrix rows`);
       const [[a, b], [c, d]] = drawing.sl2z;
       assert.equal(a * d - b * c, 1, `${item.id}: determinant one`);
+      assert.deepEqual(
+        JSON.parse(JSON.stringify(drawing.sl2z)),
+        [[1, 0], [0, 1]],
+        `${item.id}: fixed global frame`
+      );
+      const drawingTransform = core.totalDrawingTransform(
+        item.arrangementShear,
+        drawing.sl2z
+      );
+      drawingRepresentatives.add(JSON.stringify(
+        core.transformVertices(item.vertices, drawingTransform)
+      ));
       const svgPath = path.join(root, drawing.src);
       assert.ok(fs.existsSync(svgPath), `${drawing.src} exists`);
       const svg = fs.readFileSync(svgPath, "utf8");
       assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
       assert.match(svg, /fill-opacity:(?:0?\.)30/);
+      assert.match(
+        svg,
+        /&quot;sl2z&quot;:\[\[1,0\],\[0,1\]\]/,
+        `${drawing.src}: identity global frame`
+      );
+      if (entry.counts.annular > 0 && drawing.sector === "annular") {
+        assert.match(svg, /fixed fundamental square/);
+      }
       assert.doesNotMatch(svg, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
     }
   }
+  assert.equal(
+    drawingRepresentatives.size,
+    1,
+    `${item.id}: one representative for every ruling`
+  );
 }
 
 assert.equal(rulingMultiplicity, 112, "96 rational + 16 standard rulings");
@@ -186,7 +212,9 @@ assert.doesNotMatch(oneInterior, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(oneInterior, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(oneInterior, /<th scope="col">Genus<\/th>/);
 assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);
-assert.match(oneInterior, /diagram-representative/);
+assert.match(oneInterior, /Polygon used for every ruling/);
+assert.match(oneInterior, /fixed Λ/);
+assert.doesNotMatch(oneInterior, /diagram-representative/);
 assert.match(oneInterior, /id="standard-ruling"/);
 assert.match(oneInterior, /id="genus-sections"/);
 
@@ -196,7 +224,8 @@ assert.match(app, /document\.createElement\("details"\)/);
 assert.match(app, /sortedGenera\.map\(\(entry\) => renderGenusPanel\(item, entry\)\)/);
 assert.doesNotMatch(app, /genus-links|showGenus/);
 assert.match(app, /totalDrawingTransform/);
-assert.match(app, /SL₂\(ℤ\) representative used/);
+assert.match(app, /fixedTransform/);
+assert.match(app, /Polygon used for every ruling/);
 
 const packageRoot = path.join(root, "downloads", "direct-ruling-counter");
 const archive = path.join(root, "downloads", "direct-ruling-counter.zip");

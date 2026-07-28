@@ -5,7 +5,7 @@
      role="img" aria-labelledby="title description">
   <title id="title">polygon-62443567f0, genus 0, annular ruling 0x1ba5, witness 1</title>
   <desc id="description">Newton polygon vertices [[-2, 1], [0, -1], [1, 0], [0, 1]]; 4 disk eyes, 1 annular eyes, and 8 switches.</desc>
-  <metadata>{&quot;polygon_id&quot;:&quot;polygon-62443567f0&quot;,&quot;vertices&quot;:[[-2,1],[0,-1],[1,0],[0,1]],&quot;genus&quot;:0,&quot;sector&quot;:&quot;annular&quot;,&quot;mask&quot;:&quot;0x1ba5&quot;,&quot;witness&quot;:1,&quot;disk_eyes&quot;:4,&quot;annular_eyes&quot;:1,&quot;switches&quot;:8,&quot;switch_profile&quot;:{&quot;A&quot;:3,&quot;B&quot;:1,&quot;V&quot;:4},&quot;essential_homology&quot;:[1,0],&quot;sl2z&quot;:[[1,0],[0,1]],&quot;uses_tropical_count&quot;:false}</metadata>
+  <metadata>{&quot;polygon_id&quot;:&quot;polygon-62443567f0&quot;,&quot;vertices&quot;:[[-2,1],[0,-1],[1,0],[0,1]],&quot;genus&quot;:0,&quot;sector&quot;:&quot;annular&quot;,&quot;mask&quot;:&quot;0x1ba5&quot;,&quot;witness&quot;:1,&quot;disk_eyes&quot;:4,&quot;annular_eyes&quot;:1,&quot;switches&quot;:8,&quot;switch_profile&quot;:{&quot;A&quot;:3,&quot;B&quot;:1,&quot;V&quot;:4},&quot;sl2z&quot;:[[1,0],[0,1]],&quot;uses_tropical_count&quot;:false,&quot;coordinate_model&quot;:&quot;fixed fundamental square with per-annular-eye lifted determinant-one normalization mapped back&quot;,&quot;essential_homologies&quot;:[[1,0]],&quot;annular_eye_transforms&quot;:[{&quot;pair&quot;:[3,0],&quot;color&quot;:&quot;blue&quot;,&quot;essential_homology&quot;:[1,0],&quot;phase_shift&quot;:[0,-1],&quot;horizontal_phase_shift&quot;:[0,-1],&quot;to_horizontal_determinant_one&quot;:[[1,0],[0,1]]}]}</metadata>
   <style>
     svg {
       --card: #ffffff;

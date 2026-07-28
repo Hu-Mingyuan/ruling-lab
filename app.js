@@ -113,10 +113,16 @@
   }
 
   function renderReport(item) {
-    const coordinateText = formatVertices(item.vertices);
-    reportTitle.textContent = `Polygon under consideration: ${coordinateText}`;
-    selectedVertices.textContent = coordinateText;
-    selectedPolygon.innerHTML = polygonSvg(item.vertices, { compact: false });
+    const fixedTransform = totalDrawingTransform(
+      Number(item.arrangementShear || 0),
+      [[1, 0], [0, 1]]
+    );
+    const drawingVertices = transformVertices(item.vertices, fixedTransform);
+    const coordinateText = formatVertices(drawingVertices);
+    reportTitle.textContent = `Polygon used for every ruling: ${coordinateText}`;
+    selectedVertices.textContent =
+      `${coordinateText}; M=${formatMatrix(fixedTransform)}`;
+    selectedPolygon.innerHTML = polygonSvg(drawingVertices, { compact: false });
     document.querySelector("#polygon-area").textContent =
       formatArea(item.doubleArea);
     document.querySelector("#boundary-count").textContent =
@@ -208,7 +214,6 @@
   function renderRulingCard(item, genusEntry, ruling, index) {
     const figure = rulingTemplate.content.firstElementChild.cloneNode(true);
     const image = figure.querySelector("img");
-    const representative = figure.querySelector(".diagram-representative");
     const label = figure.querySelector(".diagram-label");
     const profile = figure.querySelector(".diagram-profile");
     const multiplicity = Number(ruling.multiplicity || 1);
@@ -219,9 +224,6 @@
     );
     const drawingVertices = transformVertices(item.vertices, transform);
 
-    representative.textContent =
-      `SL₂(ℤ) representative used: ${formatVertices(drawingVertices)}; ` +
-      `M=${formatMatrix(transform)}`;
     image.src = ruling.src;
     image.alt =
       `${formatVertices(drawingVertices)}, genus ${genusEntry.genus}, ` +

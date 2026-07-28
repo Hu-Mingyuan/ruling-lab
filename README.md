@@ -18,11 +18,16 @@ For each polygon the site records:
 - its ruling counts in every possible genus (`g = 0, 1`);
 - all-disk and annular sectors for the displayed deterministic realization;
 - one SVG diagram for every ruling;
-- the exact `SL(2,Z)`-equivalent polygon used to draw each diagram.
+- the single `SL(2,Z)`-equivalent polygon used to draw every ruling of the
+  selected lattice-equivalence class.
 
-Selecting a polygon first shows its catalog representative and standard
+Selecting a polygon first shows its common drawing representative and standard
 ruling. The ruling galleries for the individual genera appear below as
 independent expandable sections.
+
+For a fixed polygon, all-disk, annular, and standard diagrams share one
+fundamental square and one fixed Lambda. Annular eyes are normalized only in
+lifted coordinates and mapped back before rendering.
 
 The preview displays 96 genus-zero rational rulings and 16 genus-one standard
 rulings, for 112 rulings in total. Its counts and diagrams are generated from

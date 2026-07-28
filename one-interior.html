@@ -61,7 +61,7 @@
 
         <div class="overview-grid">
           <article class="selected-polygon-card">
-            <div class="card-label">Catalog representative</div>
+            <div class="card-label">Polygon used for every ruling</div>
             <div id="selected-polygon" class="selected-polygon"></div>
             <code id="selected-vertices"></code>
           </article>
@@ -84,7 +84,7 @@
 
             <div class="count-table-wrap">
               <table class="count-table">
-                <caption>Direct rational ruling count</caption>
+                <caption>Direct ruling counts by genus</caption>
                 <thead>
                   <tr>
                     <th scope="col">Genus</th>
@@ -118,9 +118,9 @@
           belongs to the displayed torus realization.
         </p>
         <p class="coordinate-note">
-          The polygon above is the catalog representative. Before each ruling
-          diagram, the exact <span class="math">SL</span><sub>2</sub>(ℤ)-equivalent
-          polygon used in that drawing coordinate system is listed.
+          Every all-disk, annular, and standard ruling for this entry uses
+          exactly the polygon and the fixed Λ shown above. Annular eyes are
+          normalized only in lifted coordinates and then mapped back.
         </p>
 
       </section>
@@ -141,7 +141,6 @@
 
     <template id="ruling-card-template">
       <figure class="ruling-card">
-        <div class="diagram-representative"></div>
         <img loading="lazy" alt="">
         <figcaption>
           <span class="diagram-label"></span>

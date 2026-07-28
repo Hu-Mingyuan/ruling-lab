@@ -442,16 +442,6 @@ h2 {
   object-fit: contain;
 }
 
-.diagram-representative {
-  min-height: 3.8em;
-  margin-bottom: 8px;
-  overflow-wrap: anywhere;
-  color: #444;
-  font-family: Consolas, "Courier New", monospace;
-  font-size: .68rem;
-  line-height: 1.4;
-}
-
 .ruling-card figcaption {
   display: grid;
   gap: 4px;

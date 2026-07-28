@@ -1,8 +1,9 @@
-# Rational Ruling Atlas — private preview
+# Rational Ruling Atlas
 
-This repository is an unpublished static atlas of direct ruling counts and
-diagrams for lattice polygons. It is separate from the public homepage and has
-not been deployed.
+This repository is a static atlas of direct ruling counts and diagrams for
+lattice polygons. It is published separately from the author's main homepage.
+Every HTML page carries `noindex` metadata to discourage search-engine indexing;
+this is not access control.
 
 The home page is a collection index. Its first link opens the collection
 “Polygons with one interior lattice point.”
@@ -67,7 +68,7 @@ rulings in total. For every polygon it also evaluates
 diagrams are generated from direct ruling certificates; the atlas exporter does
 not import or consult a tropical counter.
 
-## Run the private site locally
+## Run the site locally
 
 Serve the repository root with any static HTTP server, for example:
 
@@ -86,9 +87,6 @@ with no third-party Python or npm packages.
 ```text
 python ruling_polygon.py example_polygon.json
 ```
-
-The package is intentionally distributed without a license while this
-repository remains private. Choose and add a license before public release.
 
 ## Rebuild and validate
 

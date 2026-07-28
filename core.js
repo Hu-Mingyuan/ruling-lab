@@ -1,69 +1,6 @@
 (() => {
   "use strict";
 
-  function parseVertices(text) {
-    const trimmed = text.trim();
-    if (!trimmed) {
-      throw new Error("Enter at least three lattice vertices.");
-    }
-
-    let value;
-    try {
-      value = JSON.parse(
-        trimmed
-          .replace(/\(/g, "[")
-          .replace(/\)/g, "]")
-      );
-    } catch (_error) {
-      const numbers = trimmed.match(/-?\d+/g);
-      if (!numbers || numbers.length % 2 !== 0) {
-        throw new Error(
-          "Could not read the vertices. Use pairs such as 0,0; 3,0; 3,1."
-        );
-      }
-      value = [];
-      for (let index = 0; index < numbers.length; index += 2) {
-        value.push([Number(numbers[index]), Number(numbers[index + 1])]);
-      }
-    }
-
-    if (!Array.isArray(value)) {
-      throw new Error("The polygon must be a list of coordinate pairs.");
-    }
-    const vertices = value.map((point) => {
-      if (
-        !Array.isArray(point) ||
-        point.length !== 2 ||
-        !Number.isInteger(point[0]) ||
-        !Number.isInteger(point[1])
-      ) {
-        throw new Error("Every vertex must be a pair of integers.");
-      }
-      return [point[0], point[1]];
-    });
-
-    if (
-      vertices.length > 1 &&
-      samePoint(vertices[0], vertices[vertices.length - 1])
-    ) {
-      vertices.pop();
-    }
-    return vertices;
-  }
-
-  function validatePolygon(vertices) {
-    if (vertices.length < 3) {
-      throw new Error("A polygon needs at least three distinct vertices.");
-    }
-    const unique = new Set(vertices.map((point) => point.join(",")));
-    if (unique.size !== vertices.length) {
-      throw new Error("The vertex list contains a repeated point.");
-    }
-    if (signedDoubleArea(vertices) === 0) {
-      throw new Error("The listed points have zero area.");
-    }
-  }
-
   function signedDoubleArea(vertices) {
     return vertices.reduce((sum, point, index) => {
       const next = vertices[(index + 1) % vertices.length];
@@ -71,32 +8,70 @@
     }, 0);
   }
 
-  function polygonKey(vertices) {
-    const candidates = [];
-    for (const sequence of [vertices, [...vertices].reverse()]) {
-      for (let shift = 0; shift < sequence.length; shift += 1) {
-        const rotated = sequence
-          .slice(shift)
-          .concat(sequence.slice(0, shift));
-        const [originX, originY] = rotated[0];
-        candidates.push(
-          rotated
-            .map(([x, y]) => `${x - originX},${y - originY}`)
-            .join(";")
-        );
-      }
+  function pointOnSegment(point, start, finish) {
+    const cross =
+      (finish[0] - start[0]) * (point[1] - start[1]) -
+      (finish[1] - start[1]) * (point[0] - start[0]);
+    if (cross !== 0) {
+      return false;
     }
-    return candidates.sort()[0];
+    return (
+      point[0] >= Math.min(start[0], finish[0]) &&
+      point[0] <= Math.max(start[0], finish[0]) &&
+      point[1] >= Math.min(start[1], finish[1]) &&
+      point[1] <= Math.max(start[1], finish[1])
+    );
   }
 
-  function samePoint(left, right) {
-    return left[0] === right[0] && left[1] === right[1];
+  function pointLocation(vertices, point) {
+    for (let index = 0; index < vertices.length; index += 1) {
+      if (
+        pointOnSegment(
+          point,
+          vertices[index],
+          vertices[(index + 1) % vertices.length]
+        )
+      ) {
+        return "boundary";
+      }
+    }
+    let inside = false;
+    for (let index = 0, previous = vertices.length - 1;
+      index < vertices.length;
+      previous = index, index += 1) {
+      const currentPoint = vertices[index];
+      const previousPoint = vertices[previous];
+      const crossesRay =
+        (currentPoint[1] > point[1]) !== (previousPoint[1] > point[1]);
+      if (!crossesRay) {
+        continue;
+      }
+      const intersectionX =
+        ((previousPoint[0] - currentPoint[0]) *
+          (point[1] - currentPoint[1])) /
+          (previousPoint[1] - currentPoint[1]) +
+        currentPoint[0];
+      if (point[0] < intersectionX) {
+        inside = !inside;
+      }
+    }
+    return inside ? "interior" : "outside";
+  }
+
+  function formatVertices(vertices) {
+    return `Conv{${vertices.map(([x, y]) => `(${x},${y})`).join(", ")}}`;
+  }
+
+  function formatArea(doubleArea) {
+    return doubleArea % 2 === 0
+      ? String(doubleArea / 2)
+      : `${doubleArea}/2`;
   }
 
   window.RulingLabCore = Object.freeze({
-    parseVertices,
-    polygonKey,
+    formatArea,
+    formatVertices,
+    pointLocation,
     signedDoubleArea,
-    validatePolygon,
   });
 })();

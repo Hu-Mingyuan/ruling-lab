@@ -1,121 +1,215 @@
 (() => {
   "use strict";
 
-  const {
-    parseVertices,
-    polygonKey,
-    validatePolygon,
-  } = window.RulingLabCore;
+  const { formatArea, formatVertices, pointLocation } =
+    window.RulingLabCore;
   const cases = Array.isArray(window.RULING_CASES)
     ? window.RULING_CASES
     : [];
   const caseById = new Map(cases.map((item) => [item.id, item]));
-  const caseByKey = new Map(
-    cases.map((item) => [polygonKey(item.vertices), item])
-  );
 
-  const input = document.querySelector("#polygon-input");
-  const analyzeButton = document.querySelector("#analyze-button");
-  const message = document.querySelector("#input-message");
-  const result = document.querySelector("#result");
-  const exampleButtons = document.querySelectorAll("[data-case]");
+  const gallery = document.querySelector("#polygon-gallery");
+  const report = document.querySelector("#report");
+  const reportTitle = document.querySelector("#report-title");
+  const selectedPolygon = document.querySelector("#selected-polygon");
+  const selectedVertices = document.querySelector("#selected-vertices");
+  const countTableBody = document.querySelector("#count-table-body");
+  const genusSections = document.querySelector("#genus-sections");
+  const cardTemplate = document.querySelector("#polygon-card-template");
+  const rulingTemplate = document.querySelector("#ruling-card-template");
+  const backButton = document.querySelector("#back-to-atlas");
+  const atlasStatus = document.querySelector("#atlas-status");
 
-  analyzeButton.addEventListener("click", analyze);
-  input.addEventListener("keydown", (event) => {
-    if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
-      analyze();
-    }
-  });
-  exampleButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const item = caseById.get(button.dataset.case);
-      if (!item) {
-        return;
-      }
-      input.value = JSON.stringify(item.vertices);
-      analyze();
+  let selectedId = null;
+  const cardById = new Map();
+
+  renderAtlas();
+  restoreFromHash(false);
+
+  window.addEventListener("hashchange", () => restoreFromHash(false));
+  backButton.addEventListener("click", () => {
+    selectedId = null;
+    report.hidden = true;
+    markSelectedCard();
+    history.pushState(null, "", window.location.pathname + window.location.search);
+    document.querySelector("#atlas-title").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   });
 
-  function analyze() {
-    hideMessage();
-    let vertices;
-    try {
-      vertices = parseVertices(input.value);
-      validatePolygon(vertices);
-    } catch (error) {
-      result.hidden = true;
-      showMessage(error.message);
-      return;
-    }
+  function renderAtlas() {
+    const fragment = document.createDocumentFragment();
+    for (const item of cases) {
+      const card = cardTemplate.content.firstElementChild.cloneNode(true);
+      const image = card.querySelector(".polygon-card-image");
+      const coordinates = card.querySelector(".polygon-card-coordinates");
+      const counts = card.querySelector(".polygon-card-counts");
 
-    const item = caseByKey.get(polygonKey(vertices));
-    if (!item) {
-      result.hidden = true;
-      showMessage(
-        "This first private version currently recognizes two verified cases. " +
-          "The arbitrary-polygon ruling engine will be connected in the next stage."
+      card.dataset.caseId = item.id;
+      card.setAttribute(
+        "aria-label",
+        `Open ruling report for ${formatVertices(item.vertices)}`
       );
-      return;
+      image.innerHTML = polygonSvg(item.vertices, { compact: true });
+      coordinates.textContent = formatVertices(item.vertices);
+      counts.textContent = [...item.genera]
+        .sort((left, right) => left.genus - right.genus)
+        .map((entry) => `g=${entry.genus}: ${entry.counts.total}`)
+        .join("  ·  ");
+      card.addEventListener("click", () => selectCase(item.id, true));
+      cardById.set(item.id, card);
+      fragment.append(card);
     }
-    renderCase(item, vertices);
+    gallery.replaceChildren(fragment);
+    atlasStatus.textContent =
+      `${cases.length} polygons · ` +
+      `${cases.reduce(
+        (sum, item) => sum + item.genera.reduce(
+          (inner, entry) => inner + Number(entry.counts.total),
+          0
+        ),
+        0
+      )} displayed rulings`;
   }
 
-  function renderCase(item, enteredVertices) {
-    document.querySelector("#case-title").textContent = item.title;
-    document.querySelector("#case-subtitle").textContent = item.description;
-    document.querySelector("#canonical-vertices").textContent =
-      JSON.stringify(item.vertices);
-    document.querySelector("#all-disk-count").textContent =
-      item.counts.allDisk;
-    document.querySelector("#annular-count").textContent =
-      item.counts.annular;
-    document.querySelector("#total-count").textContent = item.counts.total;
-    document.querySelector("#polygon-preview").innerHTML =
-      polygonSvg(enteredVertices);
+  function restoreFromHash(shouldScroll) {
+    const id = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    if (caseById.has(id)) {
+      selectCase(id, false, shouldScroll);
+    }
+  }
 
-    const standardImage = document.querySelector("#standard-image");
-    standardImage.src = item.standard.src;
-    standardImage.alt = `${item.title}, standard ruling`;
-    document.querySelector("#standard-profile").textContent =
-      item.standard.profile;
-    document.querySelector("#standard-caption").textContent =
-      `${item.standard.diskEyes} disk eyes · ` +
-      `${item.standard.switches} switches · genus ${item.standard.genus}`;
+  function selectCase(id, updateHash, shouldScroll = true) {
+    const item = caseById.get(id);
+    if (!item) {
+      return;
+    }
+    selectedId = id;
+    markSelectedCard();
+    renderReport(item);
+    if (updateHash) {
+      history.pushState(null, "", `#${encodeURIComponent(id)}`);
+    }
+    if (shouldScroll) {
+      report.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
 
-    document.querySelector("#symmetry-note").textContent = item.symmetry;
-    const gallery = document.querySelector("#rational-gallery");
-    gallery.replaceChildren(
-      ...item.rational.map((drawing) => {
-        const figure = document.createElement("figure");
-        const image = document.createElement("img");
-        const caption = document.createElement("figcaption");
-        const badge = document.createElement("span");
-        const profile = document.createElement("span");
+  function markSelectedCard() {
+    for (const [id, card] of cardById) {
+      card.classList.toggle("is-selected", id === selectedId);
+      card.setAttribute("aria-pressed", String(id === selectedId));
+    }
+  }
 
-        image.src = drawing.src;
-        image.alt =
-          `${item.title}, rational ruling representative ` +
-          `${drawing.identifier}, multiplicity ${drawing.multiplicity}`;
-        badge.className = "diagram-label";
-        badge.textContent =
-          `${drawing.identifier} ×${drawing.multiplicity}`;
-        profile.textContent =
-          `${drawing.profile} · ${drawing.switches} switches`;
-        caption.append(badge, profile);
-        figure.append(image, caption);
-        return figure;
+  function renderReport(item) {
+    const coordinateText = formatVertices(item.vertices);
+    reportTitle.textContent = coordinateText;
+    selectedVertices.textContent = coordinateText;
+    selectedPolygon.innerHTML = polygonSvg(item.vertices, { compact: false });
+    document.querySelector("#polygon-area").textContent =
+      formatArea(item.doubleArea);
+    document.querySelector("#boundary-count").textContent =
+      item.boundaryLatticePoints;
+    document.querySelector("#interior-count").textContent =
+      item.interiorLatticePoints;
+
+    const sortedGenera = [...item.genera].sort(
+      (left, right) => left.genus - right.genus
+    );
+    countTableBody.replaceChildren(
+      ...sortedGenera.map((entry) => {
+        const row = document.createElement("tr");
+        for (const value of [
+          entry.genus,
+          entry.counts.allDisk,
+          entry.counts.annular,
+          entry.counts.total,
+        ]) {
+          const cell = document.createElement("td");
+          cell.textContent = value;
+          row.append(cell);
+        }
+        return row;
       })
     );
-
-    result.hidden = false;
-    result.scrollIntoView({ behavior: "smooth", block: "start" });
+    genusSections.replaceChildren(
+      ...sortedGenera.map((entry, index) =>
+        renderGenusPanel(item, entry, index === 0)
+      )
+    );
+    report.hidden = false;
   }
 
-  function polygonSvg(vertices) {
-    const width = 320;
-    const height = 230;
-    const padding = 32;
+  function renderGenusPanel(item, entry, open) {
+    const panel = document.createElement("details");
+    const summary = document.createElement("summary");
+    const heading = document.createElement("span");
+    const title = document.createElement("strong");
+    const description = document.createElement("span");
+    const summaryCounts = document.createElement("span");
+    const rulingGallery = document.createElement("div");
+
+    panel.className = "genus-panel";
+    panel.open = open;
+    heading.className = "genus-heading";
+    title.textContent = `Genus ${entry.genus}`;
+    description.textContent =
+      entry.genus === 0 ? "rational rulings" : "standard ruling";
+    summaryCounts.className = "genus-summary-counts";
+    summaryCounts.textContent =
+      `${entry.counts.total} total · ` +
+      `${entry.counts.allDisk} disk · ${entry.counts.annular} annular`;
+    heading.append(title, description);
+    summary.append(heading, summaryCounts);
+    rulingGallery.className = "ruling-gallery";
+
+    const rulings = Array.isArray(entry.rulings) ? entry.rulings : [];
+    if (rulings.length === 0) {
+      const note = document.createElement("p");
+      note.className = "empty-gallery";
+      note.textContent = "Ruling diagrams are being generated for this entry.";
+      rulingGallery.append(note);
+    } else {
+      rulingGallery.append(
+        ...rulings.map((ruling, index) =>
+          renderRulingCard(item, entry, ruling, index)
+        )
+      );
+    }
+    panel.append(summary, rulingGallery);
+    return panel;
+  }
+
+  function renderRulingCard(item, genusEntry, ruling, index) {
+    const figure = rulingTemplate.content.firstElementChild.cloneNode(true);
+    const image = figure.querySelector("img");
+    const label = figure.querySelector(".diagram-label");
+    const profile = figure.querySelector(".diagram-profile");
+    const multiplicity = Number(ruling.multiplicity || 1);
+
+    image.src = ruling.src;
+    image.alt =
+      `${formatVertices(item.vertices)}, genus ${genusEntry.genus}, ` +
+      `${ruling.sector || ruling.family || "ruling"} ` +
+      `${index + 1} of ${genusEntry.rulings.length}`;
+    label.textContent =
+      `${ruling.identifier || `R${index + 1}`}` +
+      (multiplicity > 1 ? ` ×${multiplicity}` : "");
+    profile.textContent = [
+      ruling.profile,
+      Number.isInteger(ruling.switches)
+        ? `${ruling.switches} switches`
+        : null,
+    ].filter(Boolean).join(" · ");
+    return figure;
+  }
+
+  function polygonSvg(vertices, { compact }) {
+    const width = compact ? 300 : 440;
+    const height = compact ? 220 : 330;
+    const padding = compact ? 27 : 38;
     const xs = vertices.map((point) => point[0]);
     const ys = vertices.map((point) => point[1]);
     const minX = Math.min(...xs);
@@ -134,53 +228,63 @@
       offsetX + (x - minX) * scale,
       height - offsetY - (y - minY) * scale,
     ];
-    const points = vertices
+    const polygonPoints = vertices
       .map((point) => project(point).join(","))
       .join(" ");
 
     const grid = [];
     for (let x = Math.ceil(minX); x <= Math.floor(maxX); x += 1) {
-      const [[px]] = [project([x, minY])];
+      const [projectedX] = project([x, minY]);
       grid.push(
-        `<line x1="${px}" y1="${padding / 2}" x2="${px}" ` +
-          `y2="${height - padding / 2}"/>`
+        `<line x1="${projectedX}" y1="${padding / 2}" ` +
+        `x2="${projectedX}" y2="${height - padding / 2}"/>`
       );
     }
     for (let y = Math.ceil(minY); y <= Math.floor(maxY); y += 1) {
-      const [, py] = project([minX, y]);
+      const [, projectedY] = project([minX, y]);
       grid.push(
-        `<line x1="${padding / 2}" y1="${py}" ` +
-          `x2="${width - padding / 2}" y2="${py}"/>`
+        `<line x1="${padding / 2}" y1="${projectedY}" ` +
+        `x2="${width - padding / 2}" y2="${projectedY}"/>`
       );
     }
 
-    const dots = vertices
-      .map((point) => {
-        const [x, y] = project(point);
-        return `<circle cx="${x}" cy="${y}" r="4.5"/>`;
-      })
-      .join("");
+    const dots = [];
+    for (let x = Math.ceil(minX); x <= Math.floor(maxX); x += 1) {
+      for (let y = Math.ceil(minY); y <= Math.floor(maxY); y += 1) {
+        const location = pointLocation(vertices, [x, y]);
+        if (location === "outside") {
+          continue;
+        }
+        const [dotX, dotY] = project([x, y]);
+        const isInterior = location === "interior";
+        dots.push(
+          `<circle cx="${dotX}" cy="${dotY}" ` +
+          `r="${isInterior ? 5.2 : 3.6}" ` +
+          `fill="${isInterior ? "#9f2f25" : "#17202a"}" ` +
+          (isInterior
+            ? 'stroke="#fffdf8" stroke-width="1.8"'
+            : "") +
+          "/>"
+        );
+      }
+    }
 
     return (
       `<svg viewBox="0 0 ${width} ${height}" role="img" ` +
-      `aria-label="Newton polygon preview">` +
+      `aria-label="Lattice polygon ${escapeAttribute(formatVertices(vertices))}">` +
       `<g stroke="#d9d1c2" stroke-width="1">${grid.join("")}</g>` +
-      `<polygon points="${points}" fill="rgba(159,47,37,.13)" ` +
-      `stroke="#9f2f25" stroke-width="3"/>` +
-      `<g fill="#17202a">${dots}</g>` +
+      `<polygon points="${polygonPoints}" fill="rgba(159,47,37,.13)" ` +
+      `stroke="#9f2f25" stroke-width="${compact ? 2.6 : 3.2}"/>` +
+      `<g>${dots.join("")}</g>` +
       `</svg>`
     );
   }
 
-  function showMessage(text) {
-    message.textContent = text;
-    message.hidden = false;
+  function escapeAttribute(value) {
+    return value
+      .replaceAll("&", "&amp;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;");
   }
-
-  function hideMessage() {
-    message.hidden = true;
-    message.textContent = "";
-  }
-
-  analyze();
 })();

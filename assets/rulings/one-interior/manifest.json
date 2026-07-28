@@ -1,0 +1,2850 @@
+{
+  "schema": "one-interior-ruling-svg-gallery-v1",
+  "method": "direct ruling masks and exact annular witnesses rendered from the primitive multigeodesic arrangement",
+  "uses_tropical_count": false,
+  "sources": {
+    "polygons": "one_interior_lattice_polygons.json",
+    "counts": "one_interior_ruling_counts.json"
+  },
+  "summary": {
+    "polygons": 16,
+    "genus_0_all_disk": 84,
+    "genus_0_annular": 12,
+    "genus_1_all_disk": 16,
+    "svg_files": 112
+  },
+  "polygons": [
+    {
+      "id": "polygon-4682f4498d",
+      "vertices": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 3,
+      "boundary_lattice_points": 3,
+      "counts": {
+        "genus_0": {
+          "all_disk": 3,
+          "annular": 0,
+          "total": 3
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x008c",
+          "witness": null,
+          "file": "01_polygon-4682f4498d_m1-m1_1-0_0-1/g0-disk-01-0x008c.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 3,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0062",
+          "witness": null,
+          "file": "01_polygon-4682f4498d_m1-m1_1-0_0-1/g0-disk-02-0x0062.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 3,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0111",
+          "witness": null,
+          "file": "01_polygon-4682f4498d_m1-m1_1-0_0-1/g0-disk-03-0x0111.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 3,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x01ff",
+          "witness": null,
+          "file": "01_polygon-4682f4498d_m1-m1_1-0_0-1/g1-standard-0x01ff.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-f3913e9013",
+      "vertices": [
+        [
+          -2,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 4,
+      "boundary_lattice_points": 4,
+      "counts": {
+        "genus_0": {
+          "all_disk": 4,
+          "annular": 0,
+          "total": 4
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0c5a",
+          "witness": null,
+          "file": "02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-01-0x0c5a.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0366",
+          "witness": null,
+          "file": "02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-02-0x0366.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x06b1",
+          "witness": null,
+          "file": "02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-03-0x06b1.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x098d",
+          "witness": null,
+          "file": "02_polygon-f3913e9013_m2-m1_1-0_0-1/g0-disk-04-0x098d.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x0fff",
+          "witness": null,
+          "file": "02_polygon-f3913e9013_m2-m1_1-0_0-1/g1-standard-0x0fff.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-36a030f3ad",
+      "vertices": [
+        [
+          -3,
+          -2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 6,
+      "boundary_lattice_points": 6,
+      "counts": {
+        "genus_0": {
+          "all_disk": 6,
+          "annular": 0,
+          "total": 6
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x2f43c",
+          "witness": null,
+          "file": "03_polygon-36a030f3ad_m3-m2_1-0_0-1/g0-disk-01-0x2f43c.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x379f2",
+          "witness": null,
+          "file": "03_polygon-36a030f3ad_m3-m2_1-0_0-1/g0-disk-02-0x379f2.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x3e5d9",
+          "witness": null,
+          "file": "03_polygon-36a030f3ad_m3-m2_1-0_0-1/g0-disk-03-0x3e5d9.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x394c7",
+          "witness": null,
+          "file": "03_polygon-36a030f3ad_m3-m2_1-0_0-1/g0-disk-04-0x394c7.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x145af",
+          "witness": null,
+          "file": "03_polygon-36a030f3ad_m3-m2_1-0_0-1/g0-disk-05-0x145af.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0xb37f",
+          "witness": null,
+          "file": "03_polygon-36a030f3ad_m3-m2_1-0_0-1/g0-disk-06-0xb37f.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x3f5ff",
+          "witness": null,
+          "file": "03_polygon-36a030f3ad_m3-m2_1-0_0-1/g1-standard-0x3f5ff.svg",
+          "disk_eyes": 10,
+          "annular_eyes": 0,
+          "switches": 16,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-a766a56e11",
+      "vertices": [
+        [
+          -3,
+          -2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "double_area": 8,
+      "boundary_lattice_points": 8,
+      "counts": {
+        "genus_0": {
+          "all_disk": 6,
+          "annular": 2,
+          "total": 8
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0xdfbb38",
+          "witness": null,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-01-0xdfbb38.svg",
+          "disk_eyes": 10,
+          "annular_eyes": 0,
+          "switches": 16,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0xdfbe25",
+          "witness": null,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-02-0xdfbe25.svg",
+          "disk_eyes": 10,
+          "annular_eyes": 0,
+          "switches": 16,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0xd76535",
+          "witness": null,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-03-0xd76535.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 14,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0xa1bf35",
+          "witness": null,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-04-0xa1bf35.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 14,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x4e2fb5",
+          "witness": null,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-05-0x4e2fb5.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 14,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x9c9775",
+          "witness": null,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-disk-06-0x9c9775.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 14,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0xdb9f12",
+          "witness": 1,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-annular-01-0xdb9f12-w01.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 1,
+          "switches": 14,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x5fb805",
+          "witness": 1,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g0-annular-02-0x5fb805-w01.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 2,
+          "switches": 12,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0xdfbf35",
+          "witness": null,
+          "file": "04_polygon-a766a56e11_m3-m2_1-0_1-2/g1-standard-0xdfbf35.svg",
+          "disk_eyes": 10,
+          "annular_eyes": 0,
+          "switches": 18,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-a2cd47c761",
+      "vertices": [
+        [
+          -2,
+          -3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "double_area": 9,
+      "boundary_lattice_points": 9,
+      "counts": {
+        "genus_0": {
+          "all_disk": 8,
+          "annular": 1,
+          "total": 9
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x61c96e4",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-01-0x61c96e4.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 13,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x77c96c2",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-02-0x77c96c2.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 15,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x744c7c2",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-03-0x744c7c2.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 13,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x778d4c6",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-04-0x778d4c6.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 15,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x778d2c6",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-05-0x778d2c6.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 15,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x5b656c6",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-06-0x5b656c6.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 15,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x37c6696",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-07-0x37c6696.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 15,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x17cde45",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-disk-08-0x17cde45.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 15,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x66cd006",
+          "witness": 1,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g0-annular-01-0x66cd006-w01.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 2,
+          "switches": 11,
+          "sl2z": [
+            [
+              1,
+              -1
+            ],
+            [
+              -2,
+              3
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x77cd6c6",
+          "witness": null,
+          "file": "05_polygon-a2cd47c761_m2-m3_1-0_1-3/g1-standard-0x77cd6c6.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 17,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-38916813cd",
+      "vertices": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 4,
+      "boundary_lattice_points": 4,
+      "counts": {
+        "genus_0": {
+          "all_disk": 4,
+          "annular": 0,
+          "total": 4
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x003c",
+          "witness": null,
+          "file": "06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-01-0x003c.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 4,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x005a",
+          "witness": null,
+          "file": "06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-02-0x005a.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 4,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x00a5",
+          "witness": null,
+          "file": "06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-03-0x00a5.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 4,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x00c3",
+          "witness": null,
+          "file": "06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g0-disk-04-0x00c3.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 4,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x00ff",
+          "witness": null,
+          "file": "06_polygon-38916813cd_m1-0_0-m1_1-0_0-1/g1-standard-0x00ff.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-15c1e204ba",
+      "vertices": [
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 4,
+      "boundary_lattice_points": 4,
+      "counts": {
+        "genus_0": {
+          "all_disk": 3,
+          "annular": 1,
+          "total": 4
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x018c",
+          "witness": null,
+          "file": "07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-01-0x018c.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 4,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x02ea",
+          "witness": null,
+          "file": "07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-02-0x02ea.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0151",
+          "witness": null,
+          "file": "07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-disk-03-0x0151.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 4,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x225",
+          "witness": 1,
+          "file": "07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g0-annular-01-0x225-w01.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 1,
+          "switches": 4,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              -2
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x03ed",
+          "witness": null,
+          "file": "07_polygon-15c1e204ba_m1-0_1-m1_1-0_0-1/g1-standard-0x03ed.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-8b90cfe09b",
+      "vertices": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "double_area": 5,
+      "boundary_lattice_points": 5,
+      "counts": {
+        "genus_0": {
+          "all_disk": 4,
+          "annular": 1,
+          "total": 5
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x14a4",
+          "witness": null,
+          "file": "08_polygon-8b90cfe09b_m1-m1_1-0_0-1_m1-1/g0-disk-01-0x14a4.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 5,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0fea",
+          "witness": null,
+          "file": "08_polygon-8b90cfe09b_m1-m1_1-0_0-1_m1-1/g0-disk-02-0x0fea.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x1279",
+          "witness": null,
+          "file": "08_polygon-8b90cfe09b_m1-m1_1-0_0-1_m1-1/g0-disk-03-0x1279.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 7,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x19c5",
+          "witness": null,
+          "file": "08_polygon-8b90cfe09b_m1-m1_1-0_0-1_m1-1/g0-disk-04-0x19c5.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 7,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x0f0d",
+          "witness": 1,
+          "file": "08_polygon-8b90cfe09b_m1-m1_1-0_0-1_m1-1/g0-annular-01-0x0f0d-w01.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 1,
+          "switches": 7,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x1fed",
+          "witness": null,
+          "file": "08_polygon-8b90cfe09b_m1-m1_1-0_0-1_m1-1/g1-standard-0x1fed.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 11,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-62443567f0",
+      "vertices": [
+        [
+          -2,
+          1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 6,
+      "boundary_lattice_points": 6,
+      "counts": {
+        "genus_0": {
+          "all_disk": 4,
+          "annular": 2,
+          "total": 6
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x33ac",
+          "witness": null,
+          "file": "09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g0-disk-01-0x33ac.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x3a22",
+          "witness": null,
+          "file": "09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g0-disk-02-0x3a22.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x2b93",
+          "witness": null,
+          "file": "09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g0-disk-03-0x2b93.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x1d47",
+          "witness": null,
+          "file": "09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g0-disk-04-0x1d47.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x1ba5",
+          "witness": 1,
+          "file": "09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g0-annular-01-0x1ba5-w01.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 1,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x20a7",
+          "witness": 1,
+          "file": "09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g0-annular-02-0x20a7-w01.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 1,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x3ba7",
+          "witness": null,
+          "file": "09_polygon-62443567f0_m2-1_0-m1_1-0_0-1/g1-standard-0x3ba7.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-9ff967eacd",
+      "vertices": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "double_area": 7,
+      "boundary_lattice_points": 7,
+      "counts": {
+        "genus_0": {
+          "all_disk": 6,
+          "annular": 1,
+          "total": 7
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x3bff0",
+          "witness": null,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g0-disk-01-0x3bff0.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 13,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x59736",
+          "witness": null,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g0-disk-02-0x59736.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 11,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x53f85",
+          "witness": null,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g0-disk-03-0x53f85.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 11,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x6eef7",
+          "witness": null,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g0-disk-04-0x6eef7.svg",
+          "disk_eyes": 10,
+          "annular_eyes": 0,
+          "switches": 15,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x723f7",
+          "witness": null,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g0-disk-05-0x723f7.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 13,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x6b96f",
+          "witness": null,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g0-disk-06-0x6b96f.svg",
+          "disk_eyes": 8,
+          "annular_eyes": 0,
+          "switches": 13,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x39cd3",
+          "witness": 1,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g0-annular-01-0x39cd3-w01.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 1,
+          "switches": 11,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x7bff7",
+          "witness": null,
+          "file": "10_polygon-9ff967eacd_m1-m2_1-0_0-1_m1-1/g1-standard-0x7bff7.svg",
+          "disk_eyes": 10,
+          "annular_eyes": 0,
+          "switches": 17,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-12dcc6cad7",
+      "vertices": [
+        [
+          -2,
+          1
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 8,
+      "boundary_lattice_points": 8,
+      "counts": {
+        "genus_0": {
+          "all_disk": 6,
+          "annular": 2,
+          "total": 8
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x7cf34",
+          "witness": null,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-01-0x7cf34.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0xb6e59",
+          "witness": null,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-02-0xb6e59.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x7c759",
+          "witness": null,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-03-0x7c759.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x7cd4d",
+          "witness": null,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-04-0x7cd4d.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x78b9d",
+          "witness": null,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-05-0x78b9d.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x4d65f",
+          "witness": null,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-disk-06-0x4d65f.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x28f5c",
+          "witness": 1,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-annular-01-0x28f5c-w01.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 1,
+          "switches": 10,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              -2
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x54945",
+          "witness": 1,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g0-annular-02-0x54945-w01.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 2,
+          "switches": 8,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              -2
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x7cf5d",
+          "witness": null,
+          "file": "11_polygon-12dcc6cad7_m2-1_1-m2_1-0_0-1/g1-standard-0x7cf5d.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 14,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-10c88eafad",
+      "vertices": [
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "double_area": 8,
+      "boundary_lattice_points": 8,
+      "counts": {
+        "genus_0": {
+          "all_disk": 8,
+          "annular": 0,
+          "total": 8
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0xf5a6",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-01-0xf5a6.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x7ce6",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-02-0x7ce6.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x7d81",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-03-0x7d81.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x6ee5",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-04-0x6ee5.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x3d6b",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-05-0x3d6b.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x5d67",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-06-0x5d67.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x21e7",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-07-0x21e7.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x59d7",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g0-disk-08-0x59d7.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x7de7",
+          "witness": null,
+          "file": "12_polygon-10c88eafad_m1-m2_1-0_1-2_m1-0/g1-standard-0x7de7.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-08aed40a08",
+      "vertices": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "double_area": 5,
+      "boundary_lattice_points": 5,
+      "counts": {
+        "genus_0": {
+          "all_disk": 4,
+          "annular": 1,
+          "total": 5
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x025c",
+          "witness": null,
+          "file": "13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-01-0x025c.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 5,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x056e",
+          "witness": null,
+          "file": "13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-02-0x056e.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 7,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0691",
+          "witness": null,
+          "file": "13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-03-0x0691.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 5,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x072d",
+          "witness": null,
+          "file": "13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-disk-04-0x072d.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 7,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x171",
+          "witness": 1,
+          "file": "13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g0-annular-01-0x171-w01.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 1,
+          "switches": 5,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              3
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x077d",
+          "witness": null,
+          "file": "13_polygon-08aed40a08_m1-0_0-m1_1-0_1-1_0-1/g1-standard-0x077d.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-fefad406cd",
+      "vertices": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "double_area": 6,
+      "boundary_lattice_points": 6,
+      "counts": {
+        "genus_0": {
+          "all_disk": 5,
+          "annular": 1,
+          "total": 6
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x39b8",
+          "witness": null,
+          "file": "14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-01-0x39b8.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x29cd",
+          "witness": null,
+          "file": "14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-02-0x29cd.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x362d",
+          "witness": null,
+          "file": "14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-03-0x362d.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x13fd",
+          "witness": null,
+          "file": "14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-04-0x13fd.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x1bf3",
+          "witness": null,
+          "file": "14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-disk-05-0x1bf3.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "annular",
+          "genus": 0,
+          "mask": "0x2a54",
+          "witness": 1,
+          "file": "14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g0-annular-01-0x2a54-w01.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 1,
+          "switches": 6,
+          "sl2z": [
+            [
+              0,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x3bfd",
+          "witness": null,
+          "file": "14_polygon-fefad406cd_m1-m1_0-m1_1-0_0-1_m1-1/g1-standard-0x3bfd.svg",
+          "disk_eyes": 6,
+          "annular_eyes": 0,
+          "switches": 12,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-6a605367ef",
+      "vertices": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "double_area": 7,
+      "boundary_lattice_points": 7,
+      "counts": {
+        "genus_0": {
+          "all_disk": 7,
+          "annular": 0,
+          "total": 7
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x3e6a",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-01-0x3e6a.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x6a1a",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-02-0x6a1a.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 7,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x3651",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-03-0x3651.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 7,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x6e4d",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-04-0x6e4d.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x7c93",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-05-0x7c93.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x5c5b",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-06-0x5c5b.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x535b",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g0-disk-07-0x535b.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 9,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x7e5b",
+          "witness": null,
+          "file": "15_polygon-6a605367ef_m1-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x7e5b.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 11,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polygon-e95d7ae246",
+      "vertices": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "double_area": 6,
+      "boundary_lattice_points": 6,
+      "counts": {
+        "genus_0": {
+          "all_disk": 6,
+          "annular": 0,
+          "total": 6
+        },
+        "genus_1": {
+          "all_disk": 1,
+          "annular": 0,
+          "total": 1
+        }
+      },
+      "drawings": [
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x078c",
+          "witness": null,
+          "file": "16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-01-0x078c.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x04b6",
+          "witness": null,
+          "file": "16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-02-0x04b6.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0bb9",
+          "witness": null,
+          "file": "16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-03-0x0bb9.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x0663",
+          "witness": null,
+          "file": "16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-04-0x0663.svg",
+          "disk_eyes": 2,
+          "annular_eyes": 0,
+          "switches": 6,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x059f",
+          "witness": null,
+          "file": "16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-05-0x059f.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk",
+          "genus": 0,
+          "mask": "0x033f",
+          "witness": null,
+          "file": "16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g0-disk-06-0x033f.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 8,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "sector": "all-disk standard",
+          "genus": 1,
+          "mask": "0x07bf",
+          "witness": null,
+          "file": "16_polygon-e95d7ae246_m1-0_0-m1_1-m1_1-0_0-1_m1-1/g1-standard-0x07bf.svg",
+          "disk_eyes": 4,
+          "annular_eyes": 0,
+          "switches": 10,
+          "sl2z": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

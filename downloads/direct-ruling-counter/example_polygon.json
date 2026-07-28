@@ -1,0 +1,8 @@
+{
+  "description": "A triangle with unique interior lattice point (0,0).",
+  "vertices": [
+    [-1, -1],
+    [1, 0],
+    [0, 1]
+  ]
+}

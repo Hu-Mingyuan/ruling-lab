@@ -1,171 +1,195 @@
 #!/usr/bin/env python3
-"""Export verified direct-ruling cases for the private static prototype."""
+"""Export the one-interior-point ruling atlas as browser-ready JavaScript."""
 
 from __future__ import annotations
 
+import argparse
 import json
-import sys
 from pathlib import Path
 
 
 HERE = Path(__file__).resolve().parent
 SITE_ROOT = HERE.parent
 PROJECT_ROOT = SITE_ROOT.parent
-ASSET_ROOT = SITE_ROOT / "assets" / "rulings"
-DATA_ROOT = SITE_ROOT / "data"
-
-sys.path.insert(0, str(PROJECT_ROOT))
-
-import draw_fig2c_rulings as fig2c  # noqa: E402
-import draw_fig3p_rulings as fig3p  # noqa: E402
-import draw_p2o4_rulings as style  # noqa: E402
+DEFAULT_POLYGONS = PROJECT_ROOT / "one_interior_lattice_polygons.json"
+DEFAULT_COUNTS = PROJECT_ROOT / "one_interior_ruling_counts.json"
+DEFAULT_MANIFEST = (
+    SITE_ROOT / "assets" / "rulings" / "one-interior" / "manifest.json"
+)
+DEFAULT_OUTPUT = SITE_ROOT / "data" / "cases.js"
 
 
-def standalone_svg(svg_inner: str, label: str) -> str:
-    escaped_label = (
-        label.replace("&", "&amp;")
-        .replace('"', "&quot;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-    )
-    return f"""<svg xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 {style.SVG_SIZE} {style.SVG_SIZE}"
-  role="img"
-  aria-label="{escaped_label}"
-  style="--card:#fffdf8;--foreground:#17202a;--viz-series-1:#2766c7;--viz-series-2:#c43b31;--viz-series-3:#269163">
-{svg_inner}
-</svg>
-"""
+def load_json(path: Path) -> dict[str, object]:
+    value = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(value, dict):
+        raise ValueError(f"{path} must contain a JSON object")
+    return value
 
 
-def export_drawing(case_id: str, drawing: object) -> dict[str, object]:
-    filename = f"{case_id}-{drawing.identifier.lower()}.svg"
-    destination = ASSET_ROOT / filename
-    destination.write_text(
-        standalone_svg(
-            drawing.svg_inner,
-            (
-                f"{case_id} {drawing.family}; "
-                f"{drawing.disk_eyes} disk eyes; "
-                f"{drawing.annular_eyes} annular eyes; "
-                f"{drawing.switches} switches"
-            ),
-        ),
-        encoding="utf-8",
-    )
-    return {
-        "identifier": drawing.identifier,
-        "family": drawing.family,
-        "src": f"assets/rulings/{filename}",
-        "mask": drawing.mask_hex,
-        "multiplicity": drawing.multiplicity,
-        "diskEyes": drawing.disk_eyes,
-        "annularEyes": drawing.annular_eyes,
-        "switches": drawing.switches,
-        "profile": drawing.profile,
-    }
+def browser_drawings(
+    identifier: str,
+    genus_number: int,
+    manifest_records: dict[str, dict[str, object]],
+) -> list[dict[str, object]]:
+    record = manifest_records.get(identifier)
+    if record is None:
+        return []
+    raw_drawings = record.get("drawings", [])
+    if not isinstance(raw_drawings, list):
+        raise ValueError(f"invalid drawings for {identifier}")
 
-
-def export_fig2c() -> dict[str, object]:
-    standard, rational, audit = fig2c.build()
-    return {
-        "id": "fig2c",
-        "title": "Ding–Wei Fig. 2(c)",
-        "description": "Triangle with two interior lattice points",
-        "vertices": [[0, 0], [4, 0], [1, 2]],
-        "counts": {
-            "allDisk": int(audit["exactAllDiskRulingCount"]),
-            "annular": int(audit["exactAnnularRulingCount"]),
-            "total": int(audit["exactTotalRulingCount"]),
-        },
-        "symmetry": (
-            "Two displayed representatives; each has multiplicity 8 "
-            "under the selected diagram translation."
-        ),
-        "standard": {
-            **export_drawing("fig2c", standard),
-            "genus": 2,
-        },
-        "rational": [
-            export_drawing("fig2c", drawing) for drawing in rational
-        ],
-    }
-
-
-def export_fig3p() -> dict[str, object]:
-    standard, all_disk, annular, audit = fig3p.build()
-    rational = [*all_disk, *annular]
-    return {
-        "id": "fig3p",
-        "title": "Ding–Wei Fig. 3(p)",
-        "description": "Quadrilateral with two interior lattice points",
-        "vertices": [[0, 0], [3, 0], [3, 1], [0, 2]],
-        "counts": {
-            "allDisk": int(audit["exactAllDiskRulingCount"]),
-            "annular": int(audit["exactAnnularRulingCount"]),
-            "total": int(audit["exactTotalRulingCount"]),
-        },
-        "symmetry": (
-            "Eight displayed representatives; each has multiplicity 3 "
-            "under (x,y) ↦ (x+1/3,y+1/3)."
-        ),
-        "standard": {
-            **export_drawing("fig3p", standard),
-            "genus": 2,
-        },
-        "rational": [
-            export_drawing("fig3p", drawing) for drawing in rational
-        ],
-    }
+    output: list[dict[str, object]] = []
+    sector_indices: dict[str, int] = {}
+    for raw in raw_drawings:
+        if not isinstance(raw, dict) or int(raw.get("genus", -1)) != genus_number:
+            continue
+        sector = str(raw["sector"])
+        sector_indices[sector] = sector_indices.get(sector, 0) + 1
+        if genus_number == 1:
+            identifier_text = "Standard"
+        elif sector == "annular":
+            identifier_text = f"A{sector_indices[sector]:02d}"
+        else:
+            identifier_text = f"D{sector_indices[sector]:02d}"
+        relative_file = Path(str(raw["file"])).as_posix()
+        disk_eyes = int(raw["disk_eyes"])
+        annular_eyes = int(raw["annular_eyes"])
+        output.append(
+            {
+                "identifier": identifier_text,
+                "sector": sector,
+                "src": (
+                    "assets/rulings/one-interior/" + relative_file
+                ),
+                "mask": raw["mask"],
+                "witness": raw.get("witness"),
+                "diskEyes": disk_eyes,
+                "annularEyes": annular_eyes,
+                "switches": int(raw["switches"]),
+                "sl2z": raw["sl2z"],
+                "profile": f"D={disk_eyes} · A={annular_eyes}",
+                "multiplicity": 1,
+            }
+        )
+    return output
 
 
 def main() -> int:
-    ASSET_ROOT.mkdir(parents=True, exist_ok=True)
-    DATA_ROOT.mkdir(parents=True, exist_ok=True)
-    cases = [export_fig2c(), export_fig3p()]
-    if any(
-        case["counts"]["total"]
-        != case["counts"]["allDisk"] + case["counts"]["annular"]
-        for case in cases
-    ):
-        raise AssertionError("ruling sectors do not sum")
-    for case in cases:
-        all_disk_multiplicity = sum(
-            int(drawing["multiplicity"])
-            for drawing in case["rational"]
-            if int(drawing["annularEyes"]) == 0
-        )
-        annular_multiplicity = sum(
-            int(drawing["multiplicity"])
-            for drawing in case["rational"]
-            if int(drawing["annularEyes"]) > 0
-        )
-        if all_disk_multiplicity != int(case["counts"]["allDisk"]):
-            raise AssertionError(
-                f"{case['id']}: all-disk multiplicities do not sum"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--polygons", type=Path, default=DEFAULT_POLYGONS)
+    parser.add_argument("--counts", type=Path, default=DEFAULT_COUNTS)
+    parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    arguments = parser.parse_args()
+
+    polygon_payload = load_json(arguments.polygons)
+    count_payload = load_json(arguments.counts)
+    source_records = {
+        str(record["id"]): record
+        for record in polygon_payload["polygons"]  # type: ignore[index]
+    }
+    count_records = {
+        str(record["id"]): record
+        for record in count_payload["polygons"]  # type: ignore[index]
+    }
+    if source_records.keys() != count_records.keys() or len(source_records) != 16:
+        raise AssertionError("polygon and count files must contain the same 16 ids")
+
+    manifest: dict[str, object] = {}
+    if arguments.manifest.is_file():
+        manifest = load_json(arguments.manifest)
+    if manifest and manifest.get("uses_tropical_count") is not False:
+        raise ValueError("drawing manifest must record uses_tropical_count=false")
+    raw_manifest_polygons = manifest.get("polygons", [])
+    if not isinstance(raw_manifest_polygons, list):
+        raise ValueError("manifest 'polygons' must be a list")
+    manifest_records: dict[str, dict[str, object]] = {}
+    for record in raw_manifest_polygons:
+        if not isinstance(record, dict):
+            raise ValueError("malformed drawing manifest polygon")
+        manifest_records[str(record["id"])] = record
+    if manifest_records and manifest_records.keys() != source_records.keys():
+        raise AssertionError("drawing manifest must contain the same 16 ids")
+
+    cases: list[dict[str, object]] = []
+    for identifier, source in source_records.items():
+        counted = count_records[identifier]
+        genera = []
+        for genus in counted["genera"]:  # type: ignore[index]
+            genus_number = int(genus["genus"])
+            drawings = browser_drawings(
+                identifier, genus_number, manifest_records
             )
-        if annular_multiplicity != int(case["counts"]["annular"]):
-            raise AssertionError(
-                f"{case['id']}: annular multiplicities do not sum"
+            genera.append(
+                {
+                    "genus": genus_number,
+                    "counts": {
+                        "allDisk": genus["all_disk"],
+                        "annular": genus["annular"],
+                        "total": genus["total"],
+                    },
+                    "phaseCardinality": genus["phase_cardinality"],
+                    "rulings": drawings,
+                }
             )
-    payload = (
+        cases.append(
+            {
+                "id": identifier,
+                "vertices": source["vertices"],
+                "doubleArea": source["double_area"],
+                "boundaryLatticePoints": source["boundary_lattice_points"],
+                "interiorLatticePoints": len(source["interior_lattice_points"]),
+                "genera": genera,
+                "provenance": {
+                    "method": count_payload["method"],
+                    "usesTropicalCount": False,
+                },
+            }
+        )
+
+    cases.sort(
+        key=lambda item: (
+            len(item["vertices"]),
+            item["boundaryLatticePoints"],
+            item["vertices"],
+        )
+    )
+    for item in cases:
+        for genus in item["genera"]:
+            counts = genus["counts"]
+            if counts["total"] != counts["allDisk"] + counts["annular"]:
+                raise AssertionError(
+                    f"{item['id']} genus {genus['genus']}: sectors do not sum"
+                )
+            drawings = genus["rulings"]
+            if drawings:
+                multiplicity = sum(
+                    int(drawing.get("multiplicity", 1)) for drawing in drawings
+                )
+                if multiplicity != int(counts["total"]):
+                    raise AssertionError(
+                        f"{item['id']} genus {genus['genus']}: "
+                        "drawing multiplicities do not sum"
+                    )
+
+    arguments.output.parent.mkdir(parents=True, exist_ok=True)
+    arguments.output.write_text(
         "/* Generated by tools/export_cases.py. */\n"
         "window.RULING_CASES = "
-        + json.dumps(cases, ensure_ascii=False, indent=2)
-        + ";\n"
+        + json.dumps(cases, indent=2, ensure_ascii=False)
+        + ";\n",
+        encoding="utf-8",
     )
-    (DATA_ROOT / "cases.js").write_text(payload, encoding="utf-8")
     print(
         json.dumps(
             {
-                "cases": [
-                    {
-                        "id": case["id"],
-                        "counts": case["counts"],
-                        "representatives": len(case["rational"]),
-                    }
+                "cases": len(cases),
+                "genera": sum(len(case["genera"]) for case in cases),
+                "drawings": sum(
+                    len(genus["rulings"])
                     for case in cases
-                ],
+                    for genus in case["genera"]
+                ),
                 "usesTropicalCount": False,
             },
             indent=2,

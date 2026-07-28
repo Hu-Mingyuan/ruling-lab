@@ -4,134 +4,165 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow, noarchive">
-    <title>Ruling Laboratory — private prototype</title>
+    <title>Ruling Atlas · private development build</title>
     <meta
       name="description"
-      content="A private prototype for exploring direct ruling counts of lattice polygons."
+      content="A static atlas of direct ruling counts and diagrams for lattice polygons."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main>
       <header class="masthead">
-        <div>
-          <p class="eyebrow">Private prototype · direct ruling enumeration</p>
-          <h1>Ruling Laboratory</h1>
+        <div class="masthead-copy">
+          <p class="eyebrow">Private development build · direct ruling enumeration</p>
+          <h1>Ruling Atlas</h1>
           <p class="lede">
-            Enter a lattice polygon to see its rational ruling count and the
-            corresponding standard and rational ruling diagrams.
+            The sixteen lattice-equivalence classes of convex polygons with
+            exactly one interior lattice point. Select a polygon to inspect
+            every genus&nbsp;0 and genus&nbsp;1 ruling in the chosen torus
+            realization.
           </p>
+          <div class="hero-actions">
+            <a
+              class="primary-button"
+              href="downloads/direct-ruling-counter.zip"
+              download
+            >Download the ruling code</a>
+            <a
+              class="secondary-button"
+              href="https://github.com/Hu-Mingyuan/ruling-lab/tree/main/downloads/direct-ruling-counter"
+            >View source</a>
+          </div>
         </div>
-        <div class="formula" aria-label="Ruling count">
-          <span>r(Δ)</span>
+        <div class="formula" aria-label="Ruling counts by genus">
+          <span>r<sub>g</sub>(Δ)</span>
+          <small>g = 0, 1</small>
         </div>
       </header>
 
-      <section class="input-panel" aria-labelledby="input-title">
+      <section class="atlas-section" aria-labelledby="atlas-title">
         <div class="section-heading">
           <div>
             <p class="step">01</p>
-            <h2 id="input-title">Newton polygon</h2>
+            <h2 id="atlas-title">Choose a Newton polygon</h2>
           </div>
           <p class="hint">
-            Integer vertices, in cyclic order. Translation and reversal are
-            ignored.
+            Coordinates are centered at the unique interior lattice point
+            <span class="math">(0,0)</span>.
           </p>
         </div>
-
-        <label for="polygon-input">Vertices</label>
-        <textarea
-          id="polygon-input"
-          rows="3"
-          spellcheck="false"
-          aria-describedby="input-help"
-        >[(0,0),(3,0),(3,1),(0,2)]</textarea>
-        <p id="input-help" class="field-help">
-          Accepted forms: <code>[(0,0),(3,0),(3,1),(0,2)]</code> or
-          <code>0,0; 3,0; 3,1; 0,2</code>.
-        </p>
-
-        <div class="input-actions">
-          <button class="primary-button" id="analyze-button" type="button">
-            Show ruling report
-          </button>
-          <div class="examples" aria-label="Verified examples">
-            <span>Examples</span>
-            <button type="button" data-case="fig2c">Fig. 2(c)</button>
-            <button type="button" data-case="fig3p">Fig. 3(p)</button>
-          </div>
-        </div>
-
-        <div id="input-message" class="message" role="status" hidden></div>
+        <div id="polygon-gallery" class="polygon-gallery"></div>
       </section>
 
-      <section id="result" class="result" aria-live="polite" hidden>
-        <div class="section-heading result-heading">
+      <section id="report" class="report" aria-live="polite" hidden>
+        <div class="section-heading report-heading">
           <div>
             <p class="step">02</p>
-            <h2 id="case-title">Ruling report</h2>
+            <h2 id="report-title">Ruling report</h2>
           </div>
-          <p id="case-subtitle" class="hint"></p>
+          <button class="quiet-button" id="back-to-atlas" type="button">
+            Back to polygons
+          </button>
         </div>
 
         <div class="overview-grid">
-          <article class="polygon-card">
+          <article class="selected-polygon-card">
             <div class="card-label">Newton polygon</div>
-            <div id="polygon-preview" class="polygon-preview"></div>
-            <code id="canonical-vertices"></code>
+            <div id="selected-polygon" class="selected-polygon"></div>
+            <code id="selected-vertices"></code>
           </article>
-          <div class="count-grid">
-            <article class="count-card">
-              <span>All-disk</span>
-              <strong id="all-disk-count">—</strong>
-            </article>
-            <article class="count-card">
-              <span>Annular</span>
-              <strong id="annular-count">—</strong>
-            </article>
-            <article class="count-card total">
-              <span>Total rational rulings</span>
-              <strong id="total-count">—</strong>
-            </article>
+
+          <div class="report-summary">
+            <div class="invariant-grid" aria-label="Polygon invariants">
+              <article>
+                <span>Area</span>
+                <strong id="polygon-area">—</strong>
+              </article>
+              <article>
+                <span>Boundary points</span>
+                <strong id="boundary-count">—</strong>
+              </article>
+              <article>
+                <span>Interior points</span>
+                <strong id="interior-count">—</strong>
+              </article>
+            </div>
+
+            <div class="count-table-wrap">
+              <table class="count-table">
+                <caption>Direct ruling counts by genus</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Genus</th>
+                    <th scope="col">All-disk</th>
+                    <th scope="col">Annular</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="count-table-body"></tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         <p class="method-note">
-          Precomputed from direct ruling certificates for this prototype.
-          No tropical count is used.
+          The totals come from direct ruling certificates. No tropical count
+          or previously known answer is used. The disk/annular split belongs
+          to the displayed deterministic torus realization; the total is the
+          polygon invariant recorded here.
         </p>
 
-        <section class="gallery-section" aria-labelledby="standard-title">
-          <div class="gallery-heading">
-            <div>
-              <p class="step">03</p>
-              <h2 id="standard-title">Standard ruling</h2>
-            </div>
-            <p id="standard-profile" class="hint"></p>
-          </div>
-          <figure class="standard-figure">
-            <img id="standard-image" alt="">
-            <figcaption id="standard-caption"></figcaption>
-          </figure>
-        </section>
+        <div id="genus-sections" class="genus-sections"></div>
+      </section>
 
-        <section class="gallery-section" aria-labelledby="rational-title">
-          <div class="gallery-heading">
-            <div>
-              <p class="step">04</p>
-              <h2 id="rational-title">Rational representatives</h2>
-            </div>
-            <p id="symmetry-note" class="hint"></p>
+      <section class="code-section" aria-labelledby="code-title">
+        <div class="section-heading">
+          <div>
+            <p class="step">03</p>
+            <h2 id="code-title">Compute another polygon offline</h2>
           </div>
-          <div id="rational-gallery" class="rational-gallery"></div>
-        </section>
+        </div>
+        <div class="code-panel">
+          <div>
+            <p>
+              The downloadable package contains the same pure ruling engine
+              used to build this atlas. It accepts an integer convex polygon
+              and computes all genera from 0 through its arithmetic genus.
+            </p>
+            <ul>
+              <li>Python 3.10 or newer</li>
+              <li>Node.js 18 or newer</li>
+              <li>No Python or npm packages</li>
+            </ul>
+          </div>
+          <pre><code>python ruling_polygon.py example_polygon.json</code></pre>
+        </div>
       </section>
 
       <footer>
         <span>Private development build</span>
-        <span>Ruling engine prototype</span>
+        <span id="atlas-status">Direct ruling data</span>
       </footer>
     </main>
+
+    <template id="polygon-card-template">
+      <button class="polygon-card" type="button">
+        <span class="polygon-card-image"></span>
+        <span class="polygon-card-coordinates"></span>
+        <span class="polygon-card-counts"></span>
+      </button>
+    </template>
+
+    <template id="ruling-card-template">
+      <figure class="ruling-card">
+        <img loading="lazy" alt="">
+        <figcaption>
+          <span class="diagram-label"></span>
+          <span class="diagram-profile"></span>
+        </figcaption>
+      </figure>
+    </template>
 
     <script src="core.js"></script>
     <script src="data/cases.js"></script>

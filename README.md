@@ -1,23 +1,57 @@
-# Ruling Laboratory — private prototype
+# Ruling Atlas — private development build
 
-This is a static, unpublished prototype in its own private repository.  It is
-not part of Mingyuan Hu's public homepage; the homepage may link to it only
-after the tool has been validated and intentionally published.
+This repository is an unpublished static atlas of direct ruling counts and
+diagrams for lattice polygons. It is separate from the public homepage and has
+not been deployed.
 
-The first version accepts a lattice polygon as a coordinate list and recognizes
-two fully verified examples:
+The first atlas collection contains the 16 lattice-equivalence classes of
+convex lattice polygons with exactly one interior lattice point. Every entry is
+identified only by its vertex coordinates, centered at the unique interior
+point `(0,0)`.
 
-- Ding–Wei Fig. 2(c): `[(0,0),(4,0),(1,2)]`
-- Ding–Wei Fig. 3(p): `[(0,0),(3,0),(3,1),(0,2)]`
+For each polygon the site records:
 
-For a recognized polygon it shows:
+- its lattice diagram and vertex coordinates;
+- area, boundary lattice-point count, and interior lattice-point count;
+- the direct ruling counts in every possible genus (`g = 0, 1`);
+- all-disk and annular sectors for the displayed deterministic realization;
+- one SVG diagram for every enumerated ruling.
 
-- direct all-disk, annular, and total rational ruling counts;
-- the standard ruling;
-- rational ruling representatives modulo the selected diagram symmetry;
-- multiplicities and the `D/R/A/B/V` profiles.
+The totals and diagrams are generated from direct ruling certificates. The
+atlas exporter does not import or consult a tropical counter.
 
-The data and SVG diagrams are generated from direct ruling certificates in the
-`Nodal_Curves` project. Tropical counting is not imported by the exporter.
+## Run the private site locally
 
-This repository has not been deployed.
+Serve the repository root with any static HTTP server, for example:
+
+```text
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000/`.
+
+## Downloadable counter
+
+`downloads/direct-ruling-counter.zip` contains the standalone command-line
+counter used to produce the atlas. It requires Python 3.10+ and Node.js 18+,
+with no third-party Python or npm packages.
+
+```text
+python ruling_polygon.py example_polygon.json
+```
+
+The package is intentionally distributed without a license while this
+repository remains private. Choose and add a license before public release.
+
+## Rebuild and validate
+
+From the parent `Nodal_Curves` working directory:
+
+```text
+python ruling-lab/tools/export_cases.py
+node ruling-lab/tests/validate.mjs
+```
+
+The one-interior-point source data and direct-count audit live in the parent
+research repository. This repository stores the static browser data and
+generated SVG assets.

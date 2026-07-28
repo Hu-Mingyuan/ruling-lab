@@ -19,6 +19,16 @@ from verify_triangle_rulings import (
     _ray_compare,
 )
 
+COUNT_VERTICAL_DIRECTION: Vector = (0, 1)
+COUNT_SWEEP_COVECTOR: Vector = (1, 0)
+
+
+def _sweep_value(direction: Vector) -> int:
+    return (
+        COUNT_SWEEP_COVECTOR[0] * direction[0]
+        + COUNT_SWEEP_COVECTOR[1] * direction[1]
+    )
+
 
 def _make_geodesic_arrangement(
     geodesics: Iterable[Geodesic],
@@ -46,8 +56,15 @@ def _make_geodesic_arrangement(
             raise ValueError("a geodesic direction must be nonzero")
         if gcd(abs(line.direction[0]), abs(line.direction[1])) != 1:
             raise ValueError("every geodesic direction must be primitive")
-        if line.direction[0] == 0:
-            raise ValueError("every geodesic must be transverse to the x-sweep")
+        if _det(line.direction, COUNT_VERTICAL_DIRECTION) == 0:
+            raise ValueError(
+                "a geodesic is parallel to the count-frame vertical "
+                "direction v=(0,1)"
+            )
+        if _sweep_value(line.direction) == 0:
+            raise AssertionError(
+                "the sweep covector must be nonzero on every geodesic"
+            )
     if tuple(sum(line.direction[j] for line in lines) for j in range(2)) != (0, 0):
         raise ValueError("the oriented boundary classes are not balanced")
 
@@ -122,7 +139,7 @@ def _make_geodesic_arrangement(
                 (
                     vertex,
                     family,
-                    1 if lines[family].direction[0] > 0 else -1,
+                    1 if _sweep_value(lines[family].direction) > 0 else -1,
                 )
             ]
             for family in (first, second)
@@ -255,9 +272,10 @@ def make_parallel_geodesic_arrangement(
     """Build an exact generic arrangement allowing parallel families.
 
     Every direction is still required to be primitive and transverse to the
-    x-sweep.  Parallel geodesics must be distinct translates on the torus;
-    nonparallel pairs must have no triple (or higher) intersection.  The
-    total oriented homology class must vanish.
+    count-frame vertical direction ``v=(0,1)`` (equivalently, the sweep
+    covector ``tau=(1,0)`` is nonzero on it).  Parallel geodesics must be
+    distinct translates on the torus; nonparallel pairs must have no triple
+    (or higher) intersection.  The total oriented homology class must vanish.
     """
 
     return _make_geodesic_arrangement(

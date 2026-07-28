@@ -159,6 +159,40 @@ for (const item of cases) {
     expectedVerticalDirection,
     `${item.id}: vertical direction is transported to the display frame`
   );
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(item.sourceVerticalDirection)),
+    [item.arrangementShear === 0 ? 0 : -item.arrangementShear, 1],
+    `${item.id}: source-frame vertical direction`
+  );
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(item.countVerticalDirection)),
+    [0, 1],
+    `${item.id}: count-frame vertical direction`
+  );
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(item.sourceSweepCovector)),
+    [1, item.arrangementShear],
+    `${item.id}: source-frame sweep covector`
+  );
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(item.countSweepCovector)),
+    [1, 0],
+    `${item.id}: count-frame sweep covector`
+  );
+  const [
+    [displaySourceA, displaySourceB],
+    [displaySourceC, displaySourceD],
+  ] = item.displayFromSource;
+  assert.deepEqual(
+    JSON.parse(JSON.stringify([
+      displaySourceA * item.sourceVerticalDirection[0]
+        + displaySourceB * item.sourceVerticalDirection[1],
+      displaySourceC * item.sourceVerticalDirection[0]
+        + displaySourceD * item.sourceVerticalDirection[1],
+    ])),
+    JSON.parse(JSON.stringify(item.verticalDirection)),
+    `${item.id}: source vertical direction reaches the displayed direction`
+  );
   const displayedVertices = core.transformVertices(
     item.vertices,
     item.displayFromSource

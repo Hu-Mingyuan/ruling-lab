@@ -37,9 +37,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      0,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       0,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      0
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "deterministic direct-count realization",
@@ -200,9 +216,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      0,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       -1,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      0
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact symmetry-adapted realization",
@@ -385,9 +417,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      0,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       0,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      0
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "deterministic direct-count realization",
@@ -614,9 +662,25 @@ window.RULING_CASES = [
         -1
       ]
     ],
+    "sourceVerticalDirection": [
+      -1,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       -1,
       -2
+    ],
+    "sourceSweepCovector": [
+      1,
+      1
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact symmetry-adapted realization",
@@ -887,9 +951,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      -1,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       -3,
       2
+    ],
+    "sourceSweepCovector": [
+      1,
+      1
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": "O(3) on P^2",
     "lambdaModel": "exact symmetric three-family realization",
@@ -1186,9 +1266,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      0,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       0,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      0
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact symmetry-adapted realization",
@@ -1375,9 +1471,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      2,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       2,
       3
+    ],
+    "sourceSweepCovector": [
+      1,
+      -2
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact symmetry-adapted realization",
@@ -1564,9 +1676,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      1,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       1,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      -1
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "deterministic direct-count realization",
@@ -1775,9 +1903,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      0,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       0,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      0
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "deterministic direct-count realization",
@@ -2008,9 +2152,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      -2,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       -2,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      2
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "deterministic direct-count realization",
@@ -2263,9 +2423,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      1,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       1,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      -1
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact symmetry-adapted realization",
@@ -2540,9 +2716,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      -1,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       -1,
       2
+    ],
+    "sourceSweepCovector": [
+      1,
+      1
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": "O(2,2) on P^1 x P^1",
     "lambdaModel": "exact symmetric four-by-four grid",
@@ -2821,9 +3013,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      -2,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       -2,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      2
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact symmetry-adapted realization",
@@ -3036,9 +3244,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      -2,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       -2,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      2
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact symmetry-adapted realization",
@@ -3273,9 +3497,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      1,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       1,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      -1
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact reflection-symmetric realization",
@@ -3536,9 +3776,25 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "sourceVerticalDirection": [
+      1,
+      1
+    ],
+    "countVerticalDirection": [
+      0,
+      1
+    ],
     "verticalDirection": [
       1,
       1
+    ],
+    "sourceSweepCovector": [
+      1,
+      -1
+    ],
+    "countSweepCovector": [
+      1,
+      0
     ],
     "displayName": null,
     "lambdaModel": "exact separated three-pair realization",

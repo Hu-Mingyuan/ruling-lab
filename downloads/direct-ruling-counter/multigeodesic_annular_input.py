@@ -37,23 +37,26 @@ def exact_annular_payload(
         raise ValueError("tau must be a primitive covector")
     if abs(tau[0] * sigma[1] - tau[1] * sigma[0]) != 1:
         raise ValueError("tau and sigma must form a unimodular covector basis")
+    vertical_direction = (-tau[1], tau[0])
     sweep_agreements: set[int] = set()
     for line in lines:
         sweep = tau[0] * line.direction[0] + tau[1] * line.direction[1]
         if sweep == 0:
             raise ValueError(
-                f"tau is tangent to geodesic {line.name!r}"
+                f"vertical direction {vertical_direction} is parallel to "
+                f"geodesic {line.name!r}"
             )
-        # The arrangement's future ports use the x-sweep.  A different tau
-        # is safe only in the same (or globally opposite) covector chamber,
-        # so that every local horizontal/vertical switch type is unchanged.
+        # The arrangement uses tau=(1,0), whose kernel is the count-frame
+        # vertical direction (0,1).  A different tau is safe only in the same
+        # (or globally opposite) covector chamber, so that every local
+        # horizontal/vertical switch type is unchanged.
         sweep_agreements.add(
             (1 if sweep > 0 else -1)
             * (1 if line.direction[0] > 0 else -1)
         )
     if len(sweep_agreements) != 1:
         raise ValueError(
-            "tau is incompatible with the arrangement's x-sweep; "
+            "tau is incompatible with the arrangement's vertical direction; "
             "their future directions do not agree up to global reversal"
         )
     # Polygon edges of lattice length > 1 contribute several translated
@@ -142,6 +145,7 @@ def exact_annular_payload(
         "basePoint": [_fraction_text(value) for value in scaled_basepoint],
         "tau": list(tau),
         "sigma": list(sigma),
+        "verticalDirection": list(vertical_direction),
         # All vertices and edge endpoints are integral after scaling.  A
         # tau-step of 1/10 therefore stays strictly inside each incident edge.
         "typeBEpsilon": "1/10",

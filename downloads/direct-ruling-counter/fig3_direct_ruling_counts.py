@@ -21,6 +21,8 @@ from verify_triangle_rulings import Geodesic
 PointI = tuple[int, int]
 Direction = tuple[int, int]
 ORIGIN_DENOMINATOR = 1009
+COUNT_VERTICAL_DIRECTION: Direction = (0, 1)
+COUNT_SWEEP_COVECTOR: Direction = (1, 0)
 
 
 @dataclass(frozen=True)
@@ -29,6 +31,10 @@ class PolygonRulingDiagram:
     vertices: tuple[PointI, ...]
     geodesics: tuple[Geodesic, ...]
     shear: int
+    vertical_direction_source: Direction
+    vertical_direction_count: Direction
+    sweep_covector_source: Direction
+    sweep_covector_count: Direction
     origin_residues: tuple[int, ...]
     origin_attempt: int
     crossings: int
@@ -51,7 +57,13 @@ def _primitive_polygon_edges(vertices: Sequence[PointI]) -> tuple[Direction, ...
 
 
 def _transverse_shear(directions: Sequence[Direction]) -> int:
-    """Choose ``(x,y) -> (x+k*y,y)`` transverse to the x-sweep."""
+    """Choose a count frame whose vertical direction misses every edge.
+
+    For ``C_k(x,y)=(x+k*y,y)``, the count-frame vertical vector is
+    ``(0,1)`` and its source-frame pullback is ``(-k,1)``.  Hence
+
+    ``det((dx,dy),(-k,1)) = dx+k*dy``.
+    """
 
     for magnitude in range(0, 1 + len(directions)):
         candidates = (0,) if magnitude == 0 else (magnitude, -magnitude)
@@ -74,6 +86,26 @@ def build_polygon_ruling_diagram(
     primitive = _primitive_polygon_edges(polygon)
     shear = _transverse_shear(primitive)
     directions = tuple((dx + shear * dy, dy) for dx, dy in primitive)
+    vertical_direction_source = (-shear, 1)
+    sweep_covector_source = (1, shear)
+    if any(
+        dx * vertical_direction_source[1]
+        - dy * vertical_direction_source[0] == 0
+        for dx, dy in primitive
+    ):
+        raise AssertionError("source vertical direction is parallel to an edge")
+    if any(
+        dx * COUNT_VERTICAL_DIRECTION[1]
+        - dy * COUNT_VERTICAL_DIRECTION[0] == 0
+        for dx, dy in directions
+    ):
+        raise AssertionError("count vertical direction is parallel to an edge")
+    if any(
+        COUNT_SWEEP_COVECTOR[0] * dx
+        + COUNT_SWEEP_COVECTOR[1] * dy == 0
+        for dx, dy in directions
+    ):
+        raise AssertionError("count sweep covector vanishes on an edge")
     generator = random.Random(1000 + sum(ord(character) for character in label))
 
     last_error: Exception | None = None
@@ -104,6 +136,10 @@ def build_polygon_ruling_diagram(
                 vertices=polygon,
                 geodesics=lines,
                 shear=shear,
+                vertical_direction_source=vertical_direction_source,
+                vertical_direction_count=COUNT_VERTICAL_DIRECTION,
+                sweep_covector_source=sweep_covector_source,
+                sweep_covector_count=COUNT_SWEEP_COVECTOR,
                 origin_residues=residues,
                 origin_attempt=attempt,
                 crossings=len(arrangement.vertices),
@@ -157,6 +193,14 @@ def count_case(
         "lattice_perimeter": len(diagram.geodesics),
         "crossings": diagram.crossings,
         "shear": diagram.shear,
+        "vertical_direction_source": list(
+            diagram.vertical_direction_source
+        ),
+        "vertical_direction_count": list(
+            diagram.vertical_direction_count
+        ),
+        "sweep_covector_source": list(diagram.sweep_covector_source),
+        "sweep_covector_count": list(diagram.sweep_covector_count),
         "origin_denominator": ORIGIN_DENOMINATOR,
         "origin_residues": list(diagram.origin_residues),
         "origin_attempt": diagram.origin_attempt,

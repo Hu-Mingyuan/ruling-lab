@@ -34,6 +34,18 @@ def main() -> int:
     assert len(payload["polygons"]) == 1
 
     polygon = payload["polygons"][0]
+    shear = int(polygon["counting_shear"])
+    assert polygon["vertical_direction_source"] == [-shear, 1]
+    assert polygon["vertical_direction_count"] == [0, 1]
+    assert polygon["sweep_covector_source"] == [1, shear]
+    assert polygon["sweep_covector_count"] == [1, 0]
+    for start, finish in zip(
+        polygon["vertices"],
+        (*polygon["vertices"][1:], polygon["vertices"][0]),
+    ):
+        edge = (finish[0] - start[0], finish[1] - start[1])
+        vertical = polygon["vertical_direction_source"]
+        assert edge[0] * vertical[1] - edge[1] * vertical[0] != 0
     interior = int(polygon["interior_lattice_points"])
     genera = polygon["genera"]
     assert [record["genus"] for record in genera] == list(range(interior + 1))

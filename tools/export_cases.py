@@ -151,7 +151,19 @@ def main() -> int:
             count_from_source = coordinate_frames["count_from_source"]
             display_from_count = coordinate_frames["display_from_count"]
             display_from_source = coordinate_frames["display_from_source"]
+            vertical_direction_source = coordinate_frames[
+                "vertical_direction_source"
+            ]
+            vertical_direction_count = coordinate_frames[
+                "vertical_direction_count"
+            ]
             vertical_direction = coordinate_frames["vertical_direction"]
+            sweep_covector_source = coordinate_frames[
+                "sweep_covector_source"
+            ]
+            sweep_covector_count = coordinate_frames[
+                "sweep_covector_count"
+            ]
             if (
                 not isinstance(count_from_source, list)
                 or count_from_source[0][0] != 1
@@ -159,6 +171,22 @@ def main() -> int:
             ):
                 raise ValueError(f"invalid counting shear for {identifier}")
             counting_shear = int(count_from_source[0][1])
+            if vertical_direction_source != [-counting_shear, 1]:
+                raise ValueError(
+                    f"invalid source vertical direction for {identifier}"
+                )
+            if vertical_direction_count != [0, 1]:
+                raise ValueError(
+                    f"invalid count vertical direction for {identifier}"
+                )
+            if sweep_covector_source != [1, counting_shear]:
+                raise ValueError(
+                    f"invalid source sweep covector for {identifier}"
+                )
+            if sweep_covector_count != [1, 0]:
+                raise ValueError(
+                    f"invalid count sweep covector for {identifier}"
+                )
             expected_vertical_direction = [
                 int(display_from_count[0][1]),
                 int(display_from_count[1][1]),
@@ -172,7 +200,11 @@ def main() -> int:
             count_from_source = [[1, counting_shear], [0, 1]]
             display_from_count = [[1, 0], [0, 1]]
             display_from_source = count_from_source
+            vertical_direction_source = [-counting_shear, 1]
+            vertical_direction_count = [0, 1]
             vertical_direction = [0, 1]
+            sweep_covector_source = [1, counting_shear]
+            sweep_covector_count = [1, 0]
         genera = []
         for genus in counted["genera"]:  # type: ignore[index]
             genus_number = int(genus["genus"])
@@ -209,7 +241,11 @@ def main() -> int:
                 "arrangementShear": counting_shear,
                 "displaySl2z": display_from_count,
                 "displayFromSource": display_from_source,
+                "sourceVerticalDirection": vertical_direction_source,
+                "countVerticalDirection": vertical_direction_count,
                 "verticalDirection": vertical_direction,
+                "sourceSweepCovector": sweep_covector_source,
+                "countSweepCovector": sweep_covector_count,
                 "displayName": manifest_record.get("display_name"),
                 "lambdaModel": manifest_record.get("lambda_model"),
                 "doubleArea": source["double_area"],

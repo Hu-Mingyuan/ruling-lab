@@ -64,9 +64,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           0,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "deterministic direct-count realization",
@@ -216,9 +232,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           -1,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetry-adapted realization",
@@ -438,9 +470,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           0,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "deterministic direct-count realization",
@@ -650,9 +698,25 @@
             -1
           ]
         ],
+        "vertical_direction_source": [
+          -1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           -1,
           -2
+        ],
+        "sweep_covector_source": [
+          1,
+          1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetry-adapted realization",
@@ -984,9 +1048,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          -1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           -3,
           2
+        ],
+        "sweep_covector_source": [
+          1,
+          1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetric three-family realization",
@@ -1260,9 +1340,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           0,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetry-adapted realization",
@@ -1485,9 +1581,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          2,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           2,
           3
+        ],
+        "sweep_covector_source": [
+          1,
+          -2
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetry-adapted realization",
@@ -1712,9 +1824,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           1,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          -1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "deterministic direct-count realization",
@@ -1908,9 +2036,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           0,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "deterministic direct-count realization",
@@ -2124,9 +2268,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          -2,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           -2,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          2
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "deterministic direct-count realization",
@@ -2360,9 +2520,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           1,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          -1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetry-adapted realization",
@@ -2698,9 +2874,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          -1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           -1,
           2
+        ],
+        "sweep_covector_source": [
+          1,
+          1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetric four-by-four grid",
@@ -3039,9 +3231,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          -2,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           -2,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          2
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetry-adapted realization",
@@ -3299,9 +3507,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          -2,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           -2,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          2
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact symmetry-adapted realization",
@@ -3586,9 +3810,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           1,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          -1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact reflection-symmetric realization",
@@ -3904,9 +4144,25 @@
             1
           ]
         ],
+        "vertical_direction_source": [
+          1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
         "vertical_direction": [
           1,
           1
+        ],
+        "sweep_covector_source": [
+          1,
+          -1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
         ]
       },
       "lambda_model": "exact separated three-pair realization",

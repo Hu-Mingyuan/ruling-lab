@@ -74,6 +74,14 @@ The output separates `all_disk`, `annular`, and `total` counts for each
 genus.  `--certificates` also retains the smoothing masks and annular
 certificates; those records can be substantially larger.
 
+Before constructing the ruling diagram, the program chooses an integral
+vertical direction that is not parallel to any polygon edge.  Concretely, it
+chooses a shear `C_k(x,y)=(x+k*y,y)`.  The vertical direction is then
+`(-k,1)` in the input coordinates and `(0,1)` in the counting coordinates.
+The dual sweep covectors are `(1,k)` and `(1,0)`, respectively.  These four
+vectors are included in the JSON output, and the constructor rejects the
+input arrangement if transversality fails.
+
 ## Performance
 
 The outer ruling search is exponential in the number of crossings, although
@@ -87,8 +95,8 @@ a multicore machine.
 
 The polygon determines a stable identifier when no `id` is supplied.  The
 diagram construction uses deterministic rational translates.  Counts are
-reported as JSON, including the shear, translates, basepoint, crossing count,
-and search diagnostics used for that run.
+reported as JSON, including the vertical direction, shear, translates,
+basepoint, crossing count, and search diagnostics used for that run.
 
 No license file is included in this preview package.  Please contact the
 repository owner about reuse until a license is selected.

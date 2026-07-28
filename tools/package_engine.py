@@ -88,6 +88,8 @@ from verify_triangle_rulings import Geodesic
 PointI = tuple[int, int]
 Direction = tuple[int, int]
 ORIGIN_DENOMINATOR = 1009
+COUNT_VERTICAL_DIRECTION: Direction = (0, 1)
+COUNT_SWEEP_COVECTOR: Direction = (1, 0)
 """,
         "definitions": (
             "PolygonRulingDiagram",
@@ -273,8 +275,12 @@ from verify_triangle_rulings import (
     _intersection_parameters,
     _ray_compare,
 )
+
+COUNT_VERTICAL_DIRECTION: Vector = (0, 1)
+COUNT_SWEEP_COVECTOR: Vector = (1, 0)
 """,
         "definitions": (
+            "_sweep_value",
             "_make_geodesic_arrangement",
             "make_geodesic_arrangement",
             "make_parallel_geodesic_arrangement",

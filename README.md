@@ -31,6 +31,10 @@ and mapped back before rendering. Switches are the black points in the ruling
 diagrams. Each entry labels its chosen `SL(2,Z)` representative, the matrix
 from the catalog coordinates, and the vertical direction. The selected
 representative also draws that direction as an arrow beside the polygon.
+The counter first chooses a source-frame vertical direction `(-k,1)` whose
+determinant with every primitive polygon edge is nonzero; after the counting
+shear it is `(0,1)`.  The arrow is the image of this same vector in the
+display frame, not a separately chosen drawing direction.
 
 The plane cubic entry is explicitly labeled `O(3) on P^2`. It uses
 `Conv{(-1,-1), (2,-1), (-1,2)}` with vertical direction `(-3,2)`. Its exact

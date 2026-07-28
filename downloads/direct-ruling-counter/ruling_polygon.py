@@ -224,7 +224,21 @@ def count_records(
                 genus_record["all_disk_masks"] = result["all_disk_masks"]
                 genus_record["annular_results"] = result["annular_results"]
             genera.append(genus_record)
-        output_records.append({**record, "genera": genera})
+        first_genus = int(genera[0]["genus"])
+        diagram = completed[(identifier, first_genus)]
+        output_records.append({
+            **record,
+            "counting_shear": diagram["shear"],
+            "vertical_direction_source": diagram[
+                "vertical_direction_source"
+            ],
+            "vertical_direction_count": diagram[
+                "vertical_direction_count"
+            ],
+            "sweep_covector_source": diagram["sweep_covector_source"],
+            "sweep_covector_count": diagram["sweep_covector_count"],
+            "genera": genera,
+        })
 
     return {
         "schema": "direct-ruling-counts-v1",

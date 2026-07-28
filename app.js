@@ -1,8 +1,14 @@
 (() => {
   "use strict";
 
-  const { formatArea, formatVertices, pointLocation } =
-    window.RulingLabCore;
+  const {
+    formatArea,
+    formatMatrix,
+    formatVertices,
+    pointLocation,
+    totalDrawingTransform,
+    transformVertices,
+  } = window.RulingLabCore;
   const cases = Array.isArray(window.RULING_CASES)
     ? window.RULING_CASES
     : [];
@@ -49,13 +55,15 @@
       card.dataset.caseId = item.id;
       card.setAttribute(
         "aria-label",
-        `Open rational rulings for ${formatVertices(item.vertices)}`
+        `Open all rulings for ${formatVertices(item.vertices)}`
       );
       image.innerHTML = polygonSvg(item.vertices, { compact: true });
-      coordinates.textContent = formatVertices(item.vertices);
-      const rationalEntry = item.genera.find((entry) => entry.genus === 0);
-      counts.textContent =
-        `Rational rulings: ${rationalEntry?.counts.total ?? 0}`;
+      coordinates.textContent =
+        `Catalog representative: ${formatVertices(item.vertices)}`;
+      counts.textContent = [...item.genera]
+        .sort((left, right) => left.genus - right.genus)
+        .map((entry) => `g=${entry.genus}: ${entry.counts.total}`)
+        .join(" · ");
       card.addEventListener("click", () => selectCase(item.id, true));
       cardById.set(item.id, card);
       fragment.append(card);
@@ -64,12 +72,12 @@
     atlasStatus.textContent =
       `${cases.length} polygons · ` +
       `${cases.reduce(
-        (sum, item) =>
-          sum + Number(
-            item.genera.find((entry) => entry.genus === 0)?.counts.total || 0
-          ),
+        (sum, item) => sum + item.genera.reduce(
+          (inner, entry) => inner + Number(entry.counts.total),
+          0
+        ),
         0
-      )} rational rulings`;
+      )} rulings`;
   }
 
   function restoreFromHash(shouldScroll) {
@@ -115,26 +123,37 @@
     document.querySelector("#interior-count").textContent =
       item.interiorLatticePoints;
 
-    const rationalEntry = item.genera.find((entry) => entry.genus === 0);
-    if (!rationalEntry) {
-      return;
-    }
-    const row = document.createElement("tr");
-    for (const value of [
-      rationalEntry.counts.allDisk,
-      rationalEntry.counts.annular,
-      rationalEntry.counts.total,
-    ]) {
-      const cell = document.createElement("td");
-      cell.textContent = value;
-      row.append(cell);
-    }
-    countTableBody.replaceChildren(row);
-    genusSections.replaceChildren(renderGenusPanel(item, rationalEntry));
+    const sortedGenera = [...item.genera].sort(
+      (left, right) => left.genus - right.genus
+    );
+    countTableBody.replaceChildren(
+      ...sortedGenera.map((entry) => {
+        const row = document.createElement("tr");
+        const genusCell = document.createElement("th");
+        genusCell.scope = "row";
+        genusCell.textContent = entry.genus;
+        row.append(genusCell);
+        for (const value of [
+          entry.counts.allDisk,
+          entry.counts.annular,
+          entry.counts.total,
+        ]) {
+          const cell = document.createElement("td");
+          cell.textContent = value;
+          row.append(cell);
+        }
+        return row;
+      })
+    );
+    genusSections.replaceChildren(
+      ...sortedGenera.map((entry, index) =>
+        renderGenusPanel(item, entry, index === 0)
+      )
+    );
     report.hidden = false;
   }
 
-  function renderGenusPanel(item, entry) {
+  function renderGenusPanel(item, entry, open) {
     const panel = document.createElement("details");
     const summary = document.createElement("summary");
     const heading = document.createElement("span");
@@ -144,10 +163,11 @@
     const rulingGallery = document.createElement("div");
 
     panel.className = "genus-panel";
-    panel.open = true;
+    panel.open = open;
     heading.className = "genus-heading";
-    title.textContent = "Rational rulings";
-    description.textContent = "genus 0";
+    title.textContent = `Genus ${entry.genus}`;
+    description.textContent =
+      entry.genus === 0 ? "rational rulings" : "standard ruling";
     summaryCounts.className = "genus-summary-counts";
     summaryCounts.textContent =
       `${entry.counts.total} total · ` +
@@ -176,13 +196,23 @@
   function renderRulingCard(item, genusEntry, ruling, index) {
     const figure = rulingTemplate.content.firstElementChild.cloneNode(true);
     const image = figure.querySelector("img");
+    const representative = figure.querySelector(".diagram-representative");
     const label = figure.querySelector(".diagram-label");
     const profile = figure.querySelector(".diagram-profile");
     const multiplicity = Number(ruling.multiplicity || 1);
 
+    const transform = totalDrawingTransform(
+      Number(item.arrangementShear || 0),
+      ruling.sl2z
+    );
+    const drawingVertices = transformVertices(item.vertices, transform);
+
+    representative.textContent =
+      `SL₂(ℤ) representative used: ${formatVertices(drawingVertices)}; ` +
+      `M=${formatMatrix(transform)}`;
     image.src = ruling.src;
     image.alt =
-      `${formatVertices(item.vertices)}, genus ${genusEntry.genus}, ` +
+      `${formatVertices(drawingVertices)}, genus ${genusEntry.genus}, ` +
       `${ruling.sector || ruling.family || "ruling"} ` +
       `${index + 1} of ${genusEntry.rulings.length}`;
     const sectorLabel = String(ruling.sector || "")

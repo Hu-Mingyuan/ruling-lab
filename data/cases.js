@@ -16,6 +16,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 0,
     "doubleArea": 3,
     "boundaryLatticePoints": 3,
     "interiorLatticePoints": 1,
@@ -152,6 +153,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 0,
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -310,6 +312,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 0,
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -512,6 +515,7 @@ window.RULING_CASES = [
         2
       ]
     ],
+    "arrangementShear": 1,
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -758,6 +762,7 @@ window.RULING_CASES = [
         3
       ]
     ],
+    "arrangementShear": 1,
     "doubleArea": 9,
     "boundaryLatticePoints": 9,
     "interiorLatticePoints": 1,
@@ -1030,6 +1035,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 0,
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -1192,6 +1198,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": -2,
     "doubleArea": 4,
     "boundaryLatticePoints": 4,
     "interiorLatticePoints": 1,
@@ -1354,6 +1361,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": -1,
     "doubleArea": 5,
     "boundaryLatticePoints": 5,
     "interiorLatticePoints": 1,
@@ -1538,6 +1546,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 0,
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -1744,6 +1753,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 2,
     "doubleArea": 7,
     "boundaryLatticePoints": 7,
     "interiorLatticePoints": 1,
@@ -1972,6 +1982,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": -1,
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -2222,6 +2233,7 @@ window.RULING_CASES = [
         0
       ]
     ],
+    "arrangementShear": 1,
     "doubleArea": 8,
     "boundaryLatticePoints": 8,
     "interiorLatticePoints": 1,
@@ -2476,6 +2488,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 2,
     "doubleArea": 5,
     "boundaryLatticePoints": 5,
     "interiorLatticePoints": 1,
@@ -2664,6 +2677,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": 2,
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,
@@ -2874,6 +2888,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": -1,
     "doubleArea": 7,
     "boundaryLatticePoints": 7,
     "interiorLatticePoints": 1,
@@ -3110,6 +3125,7 @@ window.RULING_CASES = [
         1
       ]
     ],
+    "arrangementShear": -1,
     "doubleArea": 6,
     "boundaryLatticePoints": 6,
     "interiorLatticePoints": 1,

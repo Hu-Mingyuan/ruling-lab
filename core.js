@@ -68,10 +68,39 @@
       : `${doubleArea}/2`;
   }
 
+  function totalDrawingTransform(shear, annularMatrix) {
+    const matrix =
+      Array.isArray(annularMatrix) &&
+      annularMatrix.length === 2 &&
+      annularMatrix.every((row) => Array.isArray(row) && row.length === 2)
+        ? annularMatrix.map((row) => row.map(Number))
+        : [[1, 0], [0, 1]];
+    const [[a, b], [c, d]] = matrix;
+    return [
+      [a, a * shear + b],
+      [c, c * shear + d],
+    ];
+  }
+
+  function transformVertices(vertices, matrix) {
+    const [[a, b], [c, d]] = matrix;
+    return vertices.map(([x, y]) => [
+      a * x + b * y,
+      c * x + d * y,
+    ]);
+  }
+
+  function formatMatrix(matrix) {
+    return `[${matrix.map((row) => `[${row.join(",")}]`).join(",")}]`;
+  }
+
   window.RulingLabCore = Object.freeze({
     formatArea,
+    formatMatrix,
     formatVertices,
     pointLocation,
     signedDoubleArea,
+    totalDrawingTransform,
+    transformVertices,
   });
 })();

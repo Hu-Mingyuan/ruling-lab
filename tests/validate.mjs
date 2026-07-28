@@ -27,6 +27,38 @@ function enumerateInteriorPoints(core, vertices) {
   return interior;
 }
 
+function gcd(left, right) {
+  let a = Math.abs(left);
+  let b = Math.abs(right);
+  while (b !== 0) {
+    [a, b] = [b, a % b];
+  }
+  return a;
+}
+
+function expectedArrangementShear(vertices) {
+  const directions = [];
+  for (let index = 0; index < vertices.length; index += 1) {
+    const start = vertices[index];
+    const end = vertices[(index + 1) % vertices.length];
+    const dx = end[0] - start[0];
+    const dy = end[1] - start[1];
+    const length = gcd(dx, dy);
+    for (let copy = 0; copy < length; copy += 1) {
+      directions.push([dx / length, dy / length]);
+    }
+  }
+  for (let magnitude = 0; magnitude <= directions.length; magnitude += 1) {
+    const candidates = magnitude === 0 ? [0] : [magnitude, -magnitude];
+    for (const shear of candidates) {
+      if (directions.every(([dx, dy]) => dx + shear * dy !== 0)) {
+        return shear;
+      }
+    }
+  }
+  throw new Error("no transverse shear");
+}
+
 const coreContext = { window: {} };
 runBrowserScript("core.js", coreContext);
 const core = coreContext.window.RulingLabCore;
@@ -36,6 +68,23 @@ assert.equal(core.formatArea(3), "3/2");
 assert.equal(
   core.formatVertices([[-1, -1], [1, 0], [0, 1]]),
   "Conv{(-1,-1), (1,0), (0,1)}"
+);
+const annularTransform = core.totalDrawingTransform(
+  1,
+  [[0, 1], [-1, 2]]
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(annularTransform)),
+  [[0, 1], [-1, 1]],
+  "the displayed transform is A times the arrangement shear"
+);
+assert.deepEqual(
+  JSON.parse(JSON.stringify(core.transformVertices(
+    [[-3, -2], [1, 0], [1, 2]],
+    annularTransform
+  ))),
+  [[-2, 1], [0, -1], [2, 1]],
+  "the displayed SL2-equivalent polygon uses the full drawing transform"
 );
 
 const caseContext = { window: {} };
@@ -64,6 +113,11 @@ for (const item of cases) {
   );
   assert.match(item.provenance.method, /rollback smoothing DFS/);
   assert.equal(item.provenance.usesTropicalCount, false);
+  assert.equal(
+    item.arrangementShear,
+    expectedArrangementShear(item.vertices),
+    `${item.id}: exported drawing shear`
+  );
 
   const genera = [...item.genera].sort((left, right) => left.genus - right.genus);
   assert.deepEqual(
@@ -96,6 +150,9 @@ for (const item of cases) {
     }
 
     for (const drawing of entry.rulings) {
+      assert.equal(drawing.sl2z.length, 2, `${item.id}: SL2 matrix rows`);
+      const [[a, b], [c, d]] = drawing.sl2z;
+      assert.equal(a * d - b * c, 1, `${item.id}: determinant one`);
       const svgPath = path.join(root, drawing.src);
       assert.ok(fs.existsSync(svgPath), `${drawing.src} exists`);
       const svg = fs.readFileSync(svgPath, "utf8");
@@ -114,6 +171,7 @@ const index = fs.readFileSync(path.join(root, "index.html"), "utf8");
 assert.match(index, /name="robots" content="noindex, nofollow, noarchive"/);
 assert.match(index, /href="one-interior\.html"/);
 assert.match(index, /Polygons with one interior lattice point/);
+assert.match(index, /112 rulings/);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Rational Ruling Atlas/);
@@ -126,11 +184,14 @@ assert.match(oneInterior, /src="app\.js"/);
 assert.match(oneInterior, /Polygons with one interior lattice point/);
 assert.doesNotMatch(oneInterior, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(oneInterior, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
-assert.doesNotMatch(oneInterior, /Genus<\/th>|genus&nbsp;1/);
+assert.match(oneInterior, /<th scope="col">Genus<\/th>/);
+assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);
+assert.match(oneInterior, /diagram-representative/);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
-assert.match(app, /find\(\(entry\) => entry\.genus === 0\)/);
-assert.match(app, /Rational rulings:/);
+assert.match(app, /renderGenusPanel\(item, entry, index === 0\)/);
+assert.match(app, /totalDrawingTransform/);
+assert.match(app, /SL₂\(ℤ\) representative used/);
 
 const packageRoot = path.join(root, "downloads", "direct-ruling-counter");
 const archive = path.join(root, "downloads", "direct-ruling-counter.zip");

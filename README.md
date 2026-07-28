@@ -15,13 +15,15 @@ For each polygon the site records:
 
 - its lattice diagram and vertex coordinates;
 - area, boundary lattice-point count, and interior lattice-point count;
-- its genus-zero rational ruling count;
+- its ruling counts in every possible genus (`g = 0, 1`);
 - all-disk and annular sectors for the displayed deterministic realization;
-- one SVG diagram for every rational ruling.
+- one SVG diagram for every ruling;
+- the exact `SL(2,Z)`-equivalent polygon used to draw each diagram.
 
-The preview displays 96 rational rulings in total. Its counts and diagrams are
-generated from direct ruling certificates; the atlas exporter does not import
-or consult a tropical counter.
+The preview displays 96 genus-zero rational rulings and 16 genus-one standard
+rulings, for 112 rulings in total. Its counts and diagrams are generated from
+direct ruling certificates; the atlas exporter does not import or consult a
+tropical counter.
 
 ## Run the private site locally
 

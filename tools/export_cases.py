@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 
 
@@ -24,6 +25,32 @@ def load_json(path: Path) -> dict[str, object]:
     if not isinstance(value, dict):
         raise ValueError(f"{path} must contain a JSON object")
     return value
+
+
+def arrangement_shear(vertices: object) -> int:
+    if not isinstance(vertices, list) or len(vertices) < 3:
+        raise ValueError("polygon vertices must be a list")
+    polygon = [
+        (int(point[0]), int(point[1]))
+        for point in vertices
+        if isinstance(point, list) and len(point) == 2
+    ]
+    if len(polygon) != len(vertices):
+        raise ValueError("malformed polygon vertex")
+    directions: list[tuple[int, int]] = []
+    for start, end in zip(polygon, polygon[1:] + polygon[:1]):
+        dx = end[0] - start[0]
+        dy = end[1] - start[1]
+        length = math.gcd(abs(dx), abs(dy))
+        if length == 0:
+            raise ValueError("polygon has a repeated vertex")
+        directions.extend([(dx // length, dy // length)] * length)
+    for magnitude in range(0, 1 + len(directions)):
+        candidates = (0,) if magnitude == 0 else (magnitude, -magnitude)
+        for shear in candidates:
+            if all(dx + shear * dy != 0 for dx, dy in directions):
+                return shear
+    raise AssertionError("failed to find a transverse integral shear")
 
 
 def browser_drawings(
@@ -136,6 +163,7 @@ def main() -> int:
             {
                 "id": identifier,
                 "vertices": source["vertices"],
+                "arrangementShear": arrangement_shear(source["vertices"]),
                 "doubleArea": source["double_area"],
                 "boundaryLatticePoints": source["boundary_lattice_points"],
                 "interiorLatticePoints": len(source["interior_lattice_points"]),

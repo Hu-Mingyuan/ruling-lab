@@ -187,9 +187,14 @@ assert.doesNotMatch(oneInterior, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(oneInterior, /<th scope="col">Genus<\/th>/);
 assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);
 assert.match(oneInterior, /diagram-representative/);
+assert.match(oneInterior, /id="standard-ruling"/);
+assert.match(oneInterior, /id="genus-sections"/);
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
-assert.match(app, /renderGenusPanel\(item, entry, index === 0\)/);
+assert.match(app, /standardEntry = sortedGenera\[sortedGenera\.length - 1\]/);
+assert.match(app, /document\.createElement\("details"\)/);
+assert.match(app, /sortedGenera\.map\(\(entry\) => renderGenusPanel\(item, entry\)\)/);
+assert.doesNotMatch(app, /genus-links|showGenus/);
 assert.match(app, /totalDrawingTransform/);
 assert.match(app, /SL₂\(ℤ\) representative used/);
 

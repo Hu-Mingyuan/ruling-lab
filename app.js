@@ -20,6 +20,7 @@
   const selectedPolygon = document.querySelector("#selected-polygon");
   const selectedVertices = document.querySelector("#selected-vertices");
   const countTableBody = document.querySelector("#count-table-body");
+  const standardRuling = document.querySelector("#standard-ruling");
   const genusSections = document.querySelector("#genus-sections");
   const cardTemplate = document.querySelector("#polygon-card-template");
   const rulingTemplate = document.querySelector("#ruling-card-template");
@@ -113,7 +114,7 @@
 
   function renderReport(item) {
     const coordinateText = formatVertices(item.vertices);
-    reportTitle.textContent = coordinateText;
+    reportTitle.textContent = `Polygon under consideration: ${coordinateText}`;
     selectedVertices.textContent = coordinateText;
     selectedPolygon.innerHTML = polygonSvg(item.vertices, { compact: false });
     document.querySelector("#polygon-area").textContent =
@@ -145,15 +146,27 @@
         return row;
       })
     );
+
+    const standardEntry = sortedGenera[sortedGenera.length - 1];
+    const standardDrawing = standardEntry?.rulings?.[0];
+    if (standardEntry && standardDrawing) {
+      standardRuling.replaceChildren(
+        renderRulingCard(item, standardEntry, standardDrawing, 0)
+      );
+    } else {
+      const note = document.createElement("p");
+      note.className = "empty-gallery";
+      note.textContent = "The standard ruling diagram is not yet available.";
+      standardRuling.replaceChildren(note);
+    }
+
     genusSections.replaceChildren(
-      ...sortedGenera.map((entry, index) =>
-        renderGenusPanel(item, entry, index === 0)
-      )
+      ...sortedGenera.map((entry) => renderGenusPanel(item, entry))
     );
     report.hidden = false;
   }
 
-  function renderGenusPanel(item, entry, open) {
+  function renderGenusPanel(item, entry) {
     const panel = document.createElement("details");
     const summary = document.createElement("summary");
     const heading = document.createElement("span");
@@ -163,7 +176,6 @@
     const rulingGallery = document.createElement("div");
 
     panel.className = "genus-panel";
-    panel.open = open;
     heading.className = "genus-heading";
     title.textContent = `Genus ${entry.genus}`;
     description.textContent =

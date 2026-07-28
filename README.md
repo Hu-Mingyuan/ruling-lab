@@ -20,6 +20,10 @@ For each polygon the site records:
 - one SVG diagram for every ruling;
 - the exact `SL(2,Z)`-equivalent polygon used to draw each diagram.
 
+Selecting a polygon first shows its catalog representative and standard
+ruling. The ruling galleries for the individual genera appear below as
+independent expandable sections.
+
 The preview displays 96 genus-zero rational rulings and 16 genus-one standard
 rulings, for 112 rulings in total. Its counts and diagrams are generated from
 direct ruling certificates; the atlas exporter does not import or consult a

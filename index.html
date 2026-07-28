@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Ruling Laboratory — private prototype</title>
+    <meta
+      name="description"
+      content="A private prototype for exploring direct ruling counts of lattice polygons."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <header class="masthead">
+        <div>
+          <p class="eyebrow">Private prototype · direct ruling enumeration</p>
+          <h1>Ruling Laboratory</h1>
+          <p class="lede">
+            Enter a lattice polygon to see its rational ruling count and the
+            corresponding standard and rational ruling diagrams.
+          </p>
+        </div>
+        <div class="formula" aria-label="Ruling count">
+          <span>r(Δ)</span>
+        </div>
+      </header>
+
+      <section class="input-panel" aria-labelledby="input-title">
+        <div class="section-heading">
+          <div>
+            <p class="step">01</p>
+            <h2 id="input-title">Newton polygon</h2>
+          </div>
+          <p class="hint">
+            Integer vertices, in cyclic order. Translation and reversal are
+            ignored.
+          </p>
+        </div>
+
+        <label for="polygon-input">Vertices</label>
+        <textarea
+          id="polygon-input"
+          rows="3"
+          spellcheck="false"
+          aria-describedby="input-help"
+        >[(0,0),(3,0),(3,1),(0,2)]</textarea>
+        <p id="input-help" class="field-help">
+          Accepted forms: <code>[(0,0),(3,0),(3,1),(0,2)]</code> or
+          <code>0,0; 3,0; 3,1; 0,2</code>.
+        </p>
+
+        <div class="input-actions">
+          <button class="primary-button" id="analyze-button" type="button">
+            Show ruling report
+          </button>
+          <div class="examples" aria-label="Verified examples">
+            <span>Examples</span>
+            <button type="button" data-case="fig2c">Fig. 2(c)</button>
+            <button type="button" data-case="fig3p">Fig. 3(p)</button>
+          </div>
+        </div>
+
+        <div id="input-message" class="message" role="status" hidden></div>
+      </section>
+
+      <section id="result" class="result" aria-live="polite" hidden>
+        <div class="section-heading result-heading">
+          <div>
+            <p class="step">02</p>
+            <h2 id="case-title">Ruling report</h2>
+          </div>
+          <p id="case-subtitle" class="hint"></p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="polygon-card">
+            <div class="card-label">Newton polygon</div>
+            <div id="polygon-preview" class="polygon-preview"></div>
+            <code id="canonical-vertices"></code>
+          </article>
+          <div class="count-grid">
+            <article class="count-card">
+              <span>All-disk</span>
+              <strong id="all-disk-count">—</strong>
+            </article>
+            <article class="count-card">
+              <span>Annular</span>
+              <strong id="annular-count">—</strong>
+            </article>
+            <article class="count-card total">
+              <span>Total rational rulings</span>
+              <strong id="total-count">—</strong>
+            </article>
+          </div>
+        </div>
+
+        <p class="method-note">
+          Precomputed from direct ruling certificates for this prototype.
+          No tropical count is used.
+        </p>
+
+        <section class="gallery-section" aria-labelledby="standard-title">
+          <div class="gallery-heading">
+            <div>
+              <p class="step">03</p>
+              <h2 id="standard-title">Standard ruling</h2>
+            </div>
+            <p id="standard-profile" class="hint"></p>
+          </div>
+          <figure class="standard-figure">
+            <img id="standard-image" alt="">
+            <figcaption id="standard-caption"></figcaption>
+          </figure>
+        </section>
+
+        <section class="gallery-section" aria-labelledby="rational-title">
+          <div class="gallery-heading">
+            <div>
+              <p class="step">04</p>
+              <h2 id="rational-title">Rational representatives</h2>
+            </div>
+            <p id="symmetry-note" class="hint"></p>
+          </div>
+          <div id="rational-gallery" class="rational-gallery"></div>
+        </section>
+      </section>
+
+      <footer>
+        <span>Private development build</span>
+        <span>Ruling engine prototype</span>
+      </footer>
+    </main>
+
+    <script src="core.js"></script>
+    <script src="data/cases.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

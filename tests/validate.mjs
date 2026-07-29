@@ -714,6 +714,7 @@ assert.match(twoInterior, /45 polygons\s+·\s+1,489 rulings/);
 assert.match(otherPolygons, /Other polygons/);
 assert.match(otherPolygons, /O\(4\) on P\^2/);
 assert.match(otherPolygons, /O\(2,4\) on P\^1 × P\^1/);
+assert.match(otherPolygons, /id="o24-p1xp1"/);
 assert.match(otherPolygons, /symmetry orbit/i);
 assert.match(otherPolygons, /Genus 3/);
 assert.match(otherPolygons, /Genus 2/);

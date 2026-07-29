@@ -650,10 +650,14 @@ assert.match(index, /href="two-interior\.html"/);
 assert.match(index, /href="other-polygons\.html"/);
 assert.match(index, /Polygons with one interior lattice point/);
 assert.match(index, /Polygons with two interior lattice points/);
-assert.match(index, /Other polygons/);
+assert.match(index, /Some other polygons/);
 assert.match(index, /112 rulings/);
 assert.match(index, /1,489 rulings/);
 assert.match(index, /21 saved figures/);
+assert.match(
+  index,
+  /general convex lattice polygon can be computed with\s+the <a href="downloads\/direct-ruling-counter\.zip">accompanying code<\/a>/
+);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Ruling Atlas/);

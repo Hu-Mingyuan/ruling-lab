@@ -15,6 +15,7 @@ for (const filename of [
   "one-interior.html",
   "two-interior.html",
   "other-polygons.html",
+  "other-polygons.js",
   "app.js",
   "core.js",
   "styles.css",
@@ -650,7 +651,8 @@ assert.match(index, /href="two-interior\.html"/);
 assert.match(index, /href="other-polygons\.html"/);
 assert.match(index, /Polygons with one interior lattice point/);
 assert.match(index, /Polygons with two interior lattice points/);
-assert.match(index, /Some other polygons/);
+assert.match(index, /Polygons with more interior points/);
+assert.doesNotMatch(index, /Some other polygons/);
 assert.match(index, /112 rulings/);
 assert.match(index, /1,489 rulings/);
 assert.match(index, /2 polygons/);
@@ -711,10 +713,50 @@ assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);
 assert.match(twoInterior, /Polygons with two interior lattice points/);
 assert.match(twoInterior, /genera&nbsp;0, 1, and&nbsp;2/);
 assert.match(twoInterior, /45 polygons\s+·\s+1,489 rulings/);
-assert.match(otherPolygons, /Other polygons/);
+assert.match(otherPolygons, /Polygons with more interior points/);
+assert.doesNotMatch(otherPolygons, /<h1>Other polygons<\/h1>/);
 assert.match(otherPolygons, /O\(4\) on P\^2/);
 assert.match(otherPolygons, /O\(2,4\) on P\^1 × P\^1/);
 assert.match(otherPolygons, /id="o24-p1xp1"/);
+assert.match(
+  otherPolygons,
+  /<h2 id="more-atlas-title" tabindex="-1">Choose a Newton polygon<\/h2>/
+);
+assert.match(otherPolygons, /id="more-polygon-gallery"/);
+assert.equal(
+  [...otherPolygons.matchAll(/class="polygon-card more-polygon-card"/g)].length,
+  2,
+  "more-interior-points landing view has two polygon cards"
+);
+assert.match(
+  otherPolygons,
+  /data-report-id="o4-p2"[\s\S]*?aria-controls="o4-p2"[\s\S]*?aria-pressed="false"/
+);
+assert.match(
+  otherPolygons,
+  /data-report-id="o24-p1xp1"[\s\S]*?aria-controls="o24-p1xp1"[\s\S]*?aria-pressed="false"/
+);
+assert.equal(
+  [...otherPolygons.matchAll(/class="report more-polygon-report"/g)].length,
+  2,
+  "more-interior-points page has two detail reports"
+);
+assert.equal(
+  [...otherPolygons.matchAll(/class="quiet-button more-back-to-atlas"/g)].length,
+  2,
+  "each detail report has a back button"
+);
+assert.match(
+  otherPolygons,
+  /id="o4-p2"[\s\S]*?aria-labelledby="o4-p2-title"[\s\S]*?hidden/
+);
+assert.match(
+  otherPolygons,
+  /id="o24-p1xp1"[\s\S]*?aria-labelledby="o24-p1xp1-title"[\s\S]*?hidden/
+);
+assert.match(otherPolygons, /src="core\.js"/);
+assert.match(otherPolygons, /src="other-polygons\.js"/);
+assert.doesNotMatch(otherPolygons, /https?:\/\/[^"]+\.js/);
 assert.match(otherPolygons, /symmetry orbit/i);
 assert.match(otherPolygons, /Genus 3/);
 assert.match(otherPolygons, /Genus 2/);
@@ -1011,6 +1053,23 @@ const styles = fs.readFileSync(path.join(root, "styles.css"), "utf8");
 assert.match(styles, /\.selected-representative/);
 assert.match(styles, /\.vertical-direction-arrow::before/);
 assert.match(styles, /rotate\(var\(--direction-angle\)\)/);
+assert.match(styles, /\.more-polygon-gallery/);
+
+const otherPolygonsScript = fs.readFileSync(
+  path.join(root, "other-polygons.js"),
+  "utf8"
+);
+assert.match(otherPolygonsScript, /\.more-polygon-card/);
+assert.match(otherPolygonsScript, /\.more-polygon-report/);
+assert.match(otherPolygonsScript, /report\.hidden = reportId !== id/);
+assert.match(otherPolygonsScript, /window\.addEventListener\("hashchange"/);
+assert.match(otherPolygonsScript, /window\.addEventListener\("popstate"/);
+assert.match(otherPolygonsScript, /history\.pushState/);
+assert.match(otherPolygonsScript, /aria-pressed/);
+assert.match(otherPolygonsScript, /aria-expanded/);
+assert.match(otherPolygonsScript, /selected\.querySelector\("h2"\)\.focus/);
+assert.match(otherPolygonsScript, /atlasTitle\.focus/);
+assert.match(otherPolygonsScript, /polygonSvg/);
 
 const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
 assert.doesNotMatch(readme, /standard ruling/i);
@@ -1019,6 +1078,11 @@ assert.match(readme, /O\(3\) on P\^2/);
 assert.match(readme, /18 equal triangular eyes/);
 assert.match(readme, /O\(2,4\) on P\^1 x P\^1/);
 assert.match(readme, /zero annular rulings/);
+assert.match(readme, /polygons with more interior points/);
+assert.match(
+  readme,
+  /selecting either card reveals\s+only that polygon's details/
+);
 
 const packageRoot = path.join(root, "downloads", "direct-ruling-counter");
 const archive = path.join(root, "downloads", "direct-ruling-counter.zip");

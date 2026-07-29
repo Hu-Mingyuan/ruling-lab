@@ -9,12 +9,14 @@ The home page links to three collections:
 
 - the 16 lattice-equivalence classes with one interior lattice point;
 - the 45 lattice-equivalence classes with two interior lattice points;
-- other polygons, currently containing `O(4) on P^2` and
-  `O(2,4) on P^1 x P^1`.
+- polygons with more interior points, currently containing `O(4) on P^2`
+  and `O(2,4) on P^1 x P^1`.
 
 Every entry is identified by its vertex coordinates. The two interior-point
-collections list every ruling separately; the other-polygons page instead
-preserves symmetry representatives and labels every orbit size.
+collections list every ruling separately; the more-interior-points collection
+instead preserves symmetry representatives and labels every orbit size. Its
+landing view first lists the two polygons, and selecting either card reveals
+only that polygon's details.
 
 For each polygon the site records:
 

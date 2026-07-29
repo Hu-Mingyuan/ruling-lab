@@ -168,6 +168,11 @@ h2 {
   margin-top: 16px;
 }
 
+.more-polygon-gallery {
+  max-width: 720px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .polygon-card {
   min-width: 0;
   padding: 10px;

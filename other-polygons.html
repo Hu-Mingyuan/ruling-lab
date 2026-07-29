@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow, noarchive">
-    <title>Other polygons · Ruling Atlas</title>
+    <title>Polygons with more interior points · Ruling Atlas</title>
     <meta
       name="description"
-      content="Additional ruling diagrams, grouped by symmetry."
+      content="Ruling diagrams for selected polygons with more interior lattice points."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -16,19 +16,81 @@
       <header class="masthead">
         <div class="masthead-copy">
           <p class="breadcrumb"><a href="index.html">Ruling Atlas</a></p>
-          <h1>Other polygons</h1>
+          <h1>Polygons with more interior points</h1>
           <p class="lede">
-            Additional Newton polygons whose saved figures are grouped by
-            symmetry.
+            Selected Newton polygons with more than two interior lattice
+            points. Choose a polygon to see its rulings in every genus.
           </p>
         </div>
       </header>
 
-      <section class="report" id="o4-p2">
+      <section class="atlas-section" aria-labelledby="more-atlas-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="more-atlas-title" tabindex="-1">Choose a Newton polygon</h2>
+          </div>
+          <p class="hint">
+            Each card uses the same representative and vertical direction as
+            all ruling figures in its detail view.
+          </p>
+        </div>
+        <div
+          class="polygon-gallery more-polygon-gallery"
+          id="more-polygon-gallery"
+        >
+          <button
+            class="polygon-card more-polygon-card"
+            type="button"
+            data-report-id="o4-p2"
+            data-vertices="[[-2,-1],[2,-1],[-2,3]]"
+            aria-controls="o4-p2"
+            aria-pressed="false"
+            aria-label="Open all rulings for O(4) on P^2"
+          >
+            <span class="polygon-card-image"></span>
+            <span class="polygon-card-coordinates">
+              O(4) on P^2<br>
+              SL₂(ℤ) representative: Conv{(-2,-1), (2,-1), (-2,3)}
+            </span>
+            <span class="polygon-card-counts">
+              g=3: 1 · g=2: 16 · g=1: 104 · g=0: 304
+            </span>
+          </button>
+          <button
+            class="polygon-card more-polygon-card"
+            type="button"
+            data-report-id="o24-p1xp1"
+            data-vertices="[[0,0],[4,0],[4,2],[0,2]]"
+            aria-controls="o24-p1xp1"
+            aria-pressed="false"
+            aria-label="Open all rulings for O(2,4) on P^1 x P^1"
+          >
+            <span class="polygon-card-image"></span>
+            <span class="polygon-card-coordinates">
+              O(2,4) on P^1 × P^1<br>
+              SL₂(ℤ) representative: Conv{(0,0), (4,0), (4,2), (0,2)}
+            </span>
+            <span class="polygon-card-counts">
+              g=3: 1 · g=2: 16 · g=1: 96 · g=0: 256
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="report more-polygon-report"
+        id="o4-p2"
+        aria-live="polite"
+        aria-labelledby="o4-p2-title"
+        hidden
+      >
         <div class="section-heading report-heading">
           <div>
-            <h2>O(4) on P^2</h2>
+            <h2 id="o4-p2-title" tabindex="-1">O(4) on P^2</h2>
           </div>
+          <button class="quiet-button more-back-to-atlas" type="button">
+            Back to polygons
+          </button>
         </div>
 
         <div class="overview-grid">
@@ -312,11 +374,22 @@ vertical direction: (-1,2)
         </p>
       </section>
 
-      <section class="report" id="o24-p1xp1">
+      <section
+        class="report more-polygon-report"
+        id="o24-p1xp1"
+        aria-live="polite"
+        aria-labelledby="o24-p1xp1-title"
+        hidden
+      >
         <div class="section-heading report-heading">
           <div>
-            <h2>O(2,4) on P^1 × P^1</h2>
+            <h2 id="o24-p1xp1-title" tabindex="-1">
+              O(2,4) on P^1 × P^1
+            </h2>
           </div>
+          <button class="quiet-button more-back-to-atlas" type="button">
+            Back to polygons
+          </button>
         </div>
 
         <div class="overview-grid">
@@ -592,8 +665,10 @@ vertical direction: (1,1)
 
       <footer>
         <a href="index.html">Atlas home</a>
-        <span>41 saved figures · symmetry multiplicities shown</span>
+        <span>2 polygons · 41 saved figures · symmetry multiplicities shown</span>
       </footer>
     </main>
+    <script src="core.js"></script>
+    <script src="other-polygons.js"></script>
   </body>
 </html>

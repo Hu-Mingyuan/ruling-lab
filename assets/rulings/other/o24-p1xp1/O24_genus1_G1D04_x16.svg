@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 332.0 180.0"
+     width="332.0" height="180.0"
+     role="img" aria-labelledby="title description">
+  <title id="title">O(2,4) on P1 x P1, genus 1, G1D04, symmetry orbit 16</title>
+  <desc id="description">An 8 by 4 rectangular ruling diagram with 12 disk eyes and 24 black switch points.</desc>
+  <metadata>{&quot;polygon_id&quot;:&quot;O(2,4) on P^1 x P^1&quot;,&quot;vertices&quot;:[[0,0],[4,0],[4,2],[0,2]],&quot;genus&quot;:1,&quot;sector&quot;:&quot;all-disk&quot;,&quot;physical_mask&quot;:&quot;0x393ffff9&quot;,&quot;event_mask&quot;:&quot;0x7656dfff&quot;,&quot;orbit_size&quot;:16,&quot;disk_eyes&quot;:12,&quot;annular_eyes&quot;:0,&quot;switches&quot;:24,&quot;switch_profile&quot;:{&quot;A&quot;:12,&quot;B&quot;:0,&quot;V&quot;:12},&quot;vertical_direction_source&quot;:[1,1],&quot;vertical_direction_count&quot;:[0,1],&quot;count_from_source&quot;:[[1,-1],[1,0]],&quot;source_from_count&quot;:[[0,1],[-1,1]],&quot;uses_tropical_count&quot;:false}</metadata>
+  <style>
+    svg {
+      --card: #ffffff;
+      --foreground: #111827;
+      --blue: #2563eb;
+      --red: #ef4444;
+      --lambda: #16a34a;
+    }
+    .diagram-bg { fill: var(--card); }
+  </style>
+<defs><clipPath id="clip-g1d04"><rect x="14.0" y="14.0" width="304.0" height="152.0"/></clipPath></defs>
+<rect class="diagram-bg" x="0" y="0" width="332.0" height="180.0"/>
+<g clip-path="url(#clip-g1d04)">
+<polygon points="-24.00,166.00 -24.00,128.00 14.00,128.00 14.00,166.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="-24.00,14.00 -24.00,-24.00 14.00,-24.00 14.00,14.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="280.00,166.00 280.00,128.00 318.00,128.00 318.00,166.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="280.00,14.00 280.00,-24.00 318.00,-24.00 318.00,14.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="242.00,166.00 242.00,204.00 242.00,242.00 242.00,280.00 280.00,280.00 280.00,242.00 280.00,204.00 280.00,166.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="242.00,14.00 242.00,52.00 242.00,90.00 242.00,128.00 280.00,128.00 280.00,90.00 280.00,52.00 280.00,14.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="204.00,166.00 204.00,128.00 242.00,128.00 242.00,166.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="204.00,14.00 204.00,-24.00 242.00,-24.00 242.00,14.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="166.00,166.00 166.00,204.00 204.00,204.00 204.00,166.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="166.00,14.00 166.00,52.00 204.00,52.00 204.00,14.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="128.00,166.00 128.00,128.00 166.00,128.00 166.00,166.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="128.00,14.00 128.00,-24.00 166.00,-24.00 166.00,14.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="90.00,166.00 52.00,166.00 14.00,166.00 14.00,204.00 52.00,204.00 90.00,204.00 128.00,204.00 128.00,166.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="90.00,14.00 52.00,14.00 14.00,14.00 14.00,52.00 52.00,52.00 90.00,52.00 128.00,52.00 128.00,14.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="394.00,166.00 356.00,166.00 318.00,166.00 318.00,204.00 356.00,204.00 394.00,204.00 432.00,204.00 432.00,166.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="394.00,14.00 356.00,14.00 318.00,14.00 318.00,52.00 356.00,52.00 394.00,52.00 432.00,52.00 432.00,14.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="52.00,128.00 52.00,166.00 52.00,204.00 52.00,242.00 90.00,242.00 90.00,204.00 90.00,166.00 90.00,128.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="52.00,-24.00 52.00,14.00 52.00,52.00 52.00,90.00 90.00,90.00 90.00,52.00 90.00,14.00 90.00,-24.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="14.00,128.00 14.00,90.00 52.00,90.00 52.00,128.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="318.00,128.00 318.00,90.00 356.00,90.00 356.00,128.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="166.00,128.00 166.00,90.00 204.00,90.00 204.00,128.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="90.00,128.00 90.00,90.00 128.00,90.00 128.00,128.00" style="fill:var(--red,#ef4444);fill-opacity:.28;stroke:none"/>
+<polygon points="128.00,90.00 128.00,52.00 166.00,52.00 166.00,90.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="-24.00,90.00 -62.00,90.00 -100.00,90.00 -100.00,52.00 -62.00,52.00 -24.00,52.00 14.00,52.00 14.00,90.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="280.00,90.00 242.00,90.00 204.00,90.00 204.00,52.00 242.00,52.00 280.00,52.00 318.00,52.00 318.00,90.00" style="fill:var(--blue,#2563eb);fill-opacity:.28;stroke:none"/>
+<polygon points="-24.00,166.00 -24.00,128.00 14.00,128.00 14.00,166.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="-24.00,14.00 -24.00,-24.00 14.00,-24.00 14.00,14.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="280.00,166.00 280.00,128.00 318.00,128.00 318.00,166.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="280.00,14.00 280.00,-24.00 318.00,-24.00 318.00,14.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="242.00,166.00 242.00,204.00 242.00,242.00 242.00,280.00 280.00,280.00 280.00,242.00 280.00,204.00 280.00,166.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="242.00,14.00 242.00,52.00 242.00,90.00 242.00,128.00 280.00,128.00 280.00,90.00 280.00,52.00 280.00,14.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="204.00,166.00 204.00,128.00 242.00,128.00 242.00,166.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="204.00,14.00 204.00,-24.00 242.00,-24.00 242.00,14.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="166.00,166.00 166.00,204.00 204.00,204.00 204.00,166.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="166.00,14.00 166.00,52.00 204.00,52.00 204.00,14.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="128.00,166.00 128.00,128.00 166.00,128.00 166.00,166.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="128.00,14.00 128.00,-24.00 166.00,-24.00 166.00,14.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="90.00,166.00 52.00,166.00 14.00,166.00 14.00,204.00 52.00,204.00 90.00,204.00 128.00,204.00 128.00,166.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="90.00,14.00 52.00,14.00 14.00,14.00 14.00,52.00 52.00,52.00 90.00,52.00 128.00,52.00 128.00,14.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="394.00,166.00 356.00,166.00 318.00,166.00 318.00,204.00 356.00,204.00 394.00,204.00 432.00,204.00 432.00,166.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="394.00,14.00 356.00,14.00 318.00,14.00 318.00,52.00 356.00,52.00 394.00,52.00 432.00,52.00 432.00,14.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="52.00,128.00 52.00,166.00 52.00,204.00 52.00,242.00 90.00,242.00 90.00,204.00 90.00,166.00 90.00,128.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="52.00,-24.00 52.00,14.00 52.00,52.00 52.00,90.00 90.00,90.00 90.00,52.00 90.00,14.00 90.00,-24.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="14.00,128.00 14.00,90.00 52.00,90.00 52.00,128.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="318.00,128.00 318.00,90.00 356.00,90.00 356.00,128.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="166.00,128.00 166.00,90.00 204.00,90.00 204.00,128.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="90.00,128.00 90.00,90.00 128.00,90.00 128.00,128.00" style="fill:none;stroke:var(--red,#ef4444);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="128.00,90.00 128.00,52.00 166.00,52.00 166.00,90.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="-24.00,90.00 -62.00,90.00 -100.00,90.00 -100.00,52.00 -62.00,52.00 -24.00,52.00 14.00,52.00 14.00,90.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+<polygon points="280.00,90.00 242.00,90.00 204.00,90.00 204.00,52.00 242.00,52.00 280.00,52.00 318.00,52.00 318.00,90.00" style="fill:none;stroke:var(--blue,#2563eb);stroke-width:1.55;stroke-linejoin:round;stroke-linecap:round"/>
+</g>
+<rect x="14.0" y="14.0" width="304.0" height="152.0" style="fill:none;stroke:var(--lambda,#16a34a);stroke-width:1.8"/>
+<circle cx="52.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="128.00" cy="90.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="204.00" cy="52.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="280.00" cy="166.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="280.00" cy="14.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="14.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="318.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="90.00" cy="90.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="166.00" cy="52.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="242.00" cy="166.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="242.00" cy="14.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="52.00" cy="90.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="128.00" cy="52.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="204.00" cy="166.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="204.00" cy="14.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="280.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="14.00" cy="90.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="318.00" cy="90.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="166.00" cy="166.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="166.00" cy="14.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="242.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="128.00" cy="166.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="128.00" cy="14.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="204.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="14.00" cy="52.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="318.00" cy="52.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="166.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="128.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="204.00" cy="90.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="14.00" cy="166.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="14.00" cy="14.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="318.00" cy="166.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="318.00" cy="14.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="90.00" cy="128.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+<circle cx="166.00" cy="90.00" r="2.35" style="fill:var(--foreground,#111827);stroke:var(--card,#fff);stroke-width:.9"/>
+</svg>

@@ -80,7 +80,7 @@ function expectedArrangementShear(vertices) {
 
 function uniqueTorusSwitchCount(svg) {
   const frames = [...svg.matchAll(
-    /<rect x="(-?\d+(?:\.\d+)?)" y="(-?\d+(?:\.\d+)?)" width="(\d+(?:\.\d+)?)" height="(\d+(?:\.\d+)?)" style="fill:none;stroke:var\(--viz-series-3/g
+    /<rect x="(-?\d+(?:\.\d+)?)" y="(-?\d+(?:\.\d+)?)" width="(\d+(?:\.\d+)?)" height="(\d+(?:\.\d+)?)" style="fill:none;stroke:var\(--(?:viz-series-3|lambda)/g
   )];
   assert.ok(frames.length > 0, "the SVG has a torus frame");
   const frame = frames.at(-1);
@@ -653,7 +653,8 @@ assert.match(index, /Polygons with two interior lattice points/);
 assert.match(index, /Some other polygons/);
 assert.match(index, /112 rulings/);
 assert.match(index, /1,489 rulings/);
-assert.match(index, /21 saved figures/);
+assert.match(index, /2 polygons/);
+assert.match(index, /41 saved figures/);
 assert.match(
   index,
   /general convex lattice polygon can be computed with\s+the <a href="downloads\/direct-ruling-counter\.zip">accompanying code<\/a>/
@@ -712,6 +713,7 @@ assert.match(twoInterior, /genera&nbsp;0, 1, and&nbsp;2/);
 assert.match(twoInterior, /45 polygons\s+·\s+1,489 rulings/);
 assert.match(otherPolygons, /Other polygons/);
 assert.match(otherPolygons, /O\(4\) on P\^2/);
+assert.match(otherPolygons, /O\(2,4\) on P\^1 × P\^1/);
 assert.match(otherPolygons, /symmetry orbit/i);
 assert.match(otherPolygons, /Genus 3/);
 assert.match(otherPolygons, /Genus 2/);
@@ -720,9 +722,17 @@ assert.match(otherPolygons, /Genus 0/);
 assert.match(otherPolygons, /16 rulings/);
 assert.match(otherPolygons, /104 rulings/);
 assert.match(otherPolygons, /304 rational rulings/);
+assert.match(otherPolygons, /256 rational rulings/);
 assert.match(otherPolygons, /Conv\{\(-2,-1\), \(2,-1\), \(-2,3\)\}/);
 assert.match(otherPolygons, /vertical direction: \(-1,2\)/);
 assert.match(otherPolygons, /z⁶ \+ 16z⁴ \+ 104z² \+ 304/);
+assert.match(
+  otherPolygons,
+  /Conv\{\(0,0\), \(4,0\), \(4,2\), \(0,2\)\}/
+);
+assert.match(otherPolygons, /source-to-count matrix: \[\[1,-1\], \[1,0\]\]/);
+assert.match(otherPolygons, /vertical direction: \(1,1\)/);
+assert.match(otherPolygons, /z⁶ \+ 16z⁴ \+ 96z² \+ 256/);
 assert.match(
   otherPolygons,
   /G2D01 · symmetry orbit ×16<\/span><span class="diagram-profile">D28 · 42 switches · A\/B\/V 14\/0\/28/
@@ -834,6 +844,144 @@ assert.equal(o4Manifest.genus_1_annular_audit.phase_search_exhaustive, true);
 assert.equal(o4Manifest.genus_1_annular_audit.finite_phase_cutoff_used, false);
 assert.equal(o4Manifest.drawings.length, 21);
 
+const o24FigureDirectory = path.join(
+  root,
+  "assets",
+  "rulings",
+  "other",
+  "o24-p1xp1"
+);
+const o24GenusThreeFigures = [
+  ["O24_genus3_G3D01_x1.svg", 1],
+];
+const o24GenusTwoFigures = [
+  ["O24_genus2_G2D01_x16.svg", 16],
+];
+const o24GenusOneFigures = [
+  ["O24_genus1_G1D01_x16.svg", 16],
+  ["O24_genus1_G1D02_x16.svg", 16],
+  ["O24_genus1_G1D03_x8.svg", 8],
+  ["O24_genus1_G1D04_x16.svg", 16],
+  ["O24_genus1_G1D05_x16.svg", 16],
+  ["O24_genus1_G1D06_x16.svg", 16],
+  ["O24_genus1_G1D07_x8.svg", 8],
+];
+const o24GenusZeroFigures = [
+  ["O24_rational_D01_x16.svg", 16],
+  ["O24_rational_D02_x32.svg", 32],
+  ["O24_rational_D03_x16.svg", 16],
+  ["O24_rational_D04_x32.svg", 32],
+  ["O24_rational_D05_x32.svg", 32],
+  ["O24_rational_D06_x16.svg", 16],
+  ["O24_rational_D07_x32.svg", 32],
+  ["O24_rational_D08_x32.svg", 32],
+  ["O24_rational_D09_x16.svg", 16],
+  ["O24_rational_D10_x16.svg", 16],
+  ["O24_rational_D11_x16.svg", 16],
+];
+const o24Figures = [
+  ...o24GenusThreeFigures,
+  ...o24GenusTwoFigures,
+  ...o24GenusOneFigures,
+  ...o24GenusZeroFigures,
+];
+assert.deepEqual(
+  fs.readdirSync(o24FigureDirectory).sort(),
+  ["manifest.json", ...o24Figures.map(([filename]) => filename)].sort(),
+  "the O(2,4) page contains exactly 20 SVG symmetry representatives and its manifest"
+);
+const o24Manifest = JSON.parse(
+  fs.readFileSync(path.join(o24FigureDirectory, "manifest.json"), "utf8")
+);
+const o24DrawingByFilename = new Map(
+  o24Manifest.drawings.map((drawing) => [drawing.filename, drawing])
+);
+for (const [filename, multiplicity] of o24Figures) {
+  const figurePath = path.join(o24FigureDirectory, filename);
+  const svg = fs.readFileSync(figurePath, "utf8");
+  const drawing = o24DrawingByFilename.get(filename);
+  assert.ok(drawing, `${filename}: listed in the O(2,4) manifest`);
+  assert.doesNotMatch(svg, cjkText, `${filename}: English-only SVG`);
+  assert.match(svg, /<svg\b[^>]*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
+  assert.match(svg, /viewBox="0 0 332\.0 180\.0"/);
+  assert.match(svg, /uses_tropical_count[^<]*false/);
+  assert.equal(drawing.orbit_size, multiplicity);
+  assert.equal(drawing.sector, "all-disk");
+  assert.equal(
+    uniqueTorusSwitchCount(svg),
+    drawing.switches,
+    `${filename}: unique black switch count`
+  );
+  assert.ok(
+    otherPolygons.includes(
+      `assets/rulings/other/o24-p1xp1/${filename}`
+    ),
+    `${filename}: linked from Other polygons`
+  );
+  assert.match(
+    otherPolygons,
+    new RegExp(`symmetry orbit ×${multiplicity}`)
+  );
+}
+for (const [figures, expected, description] of [
+  [o24GenusThreeFigures, 1, "genus-three"],
+  [o24GenusTwoFigures, 16, "genus-two"],
+  [o24GenusOneFigures, 96, "genus-one"],
+  [o24GenusZeroFigures, 256, "genus-zero"],
+]) {
+  assert.equal(
+    figures.reduce((sum, [, multiplicity]) => sum + multiplicity, 0),
+    expected,
+    `the O(2,4) ${description} symmetry orbits are exhaustive`
+  );
+}
+assert.equal(o24Manifest.uses_tropical_count, false);
+assert.equal(o24Manifest.uses_preknown_answers, false);
+assert.deepEqual(o24Manifest.polygon, [[0, 0], [4, 0], [4, 2], [0, 2]]);
+assert.deepEqual(o24Manifest.count_from_source, [[1, -1], [1, 0]]);
+assert.deepEqual(o24Manifest.source_from_count, [[0, 1], [-1, 1]]);
+assert.deepEqual(o24Manifest.vertical_direction_source, [1, 1]);
+assert.deepEqual(o24Manifest.vertical_direction_count, [0, 1]);
+assert.deepEqual(o24Manifest.sweep_covector_source, [1, -1]);
+assert.deepEqual(o24Manifest.sweep_covector_count, [1, 0]);
+assert.equal(o24Manifest.symmetry_group.order, 32);
+assert.equal(o24Manifest.counts.genus_3_all_disk, 1);
+assert.equal(o24Manifest.counts.genus_3_annular, 0);
+assert.equal(o24Manifest.counts.genus_2_all_disk, 16);
+assert.equal(o24Manifest.counts.genus_2_annular, 0);
+assert.equal(o24Manifest.counts.genus_1_all_disk, 96);
+assert.equal(o24Manifest.counts.genus_1_annular, 0);
+assert.equal(o24Manifest.counts.genus_0_all_disk, 256);
+assert.equal(o24Manifest.counts.genus_0_annular, 0);
+assert.equal(o24Manifest.drawings.length, 20);
+assert.equal(
+  o24Manifest.drawings.filter((drawing) => drawing.genus === 3).length,
+  1
+);
+assert.equal(
+  o24Manifest.drawings.filter((drawing) => drawing.genus === 2).length,
+  1
+);
+assert.equal(
+  o24Manifest.drawings.filter((drawing) => drawing.genus === 1).length,
+  7
+);
+assert.equal(
+  o24Manifest.drawings.filter((drawing) => drawing.genus === 0).length,
+  11
+);
+for (const genus of [0, 1, 2, 3]) {
+  const audit = o24Manifest.exact_annular_audits[`genus_${genus}`];
+  assert.equal(audit.strict_complete, true);
+  assert.equal(audit.phase_search_exhaustive, true);
+  assert.equal(audit.finite_phase_cutoff_used, false);
+  assert.equal(audit.phase_cardinality, "FINITE");
+  assert.equal(audit.exact_annular_ruling_count, 0);
+  assert.ok(audit.search_nodes > 0);
+  assert.ok(audit.exact_phase_solver_calls > 0);
+  assert.equal(audit.empty_phase_systems, audit.exact_phase_solver_calls);
+}
+
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
 assert.doesNotMatch(app, /standard ruling/i);
 assert.doesNotMatch(app, /standardEntry|standardRuling/);
@@ -868,6 +1016,8 @@ assert.doesNotMatch(readme, /standard ruling/i);
 assert.match(readme, /highest genus to lowest genus/);
 assert.match(readme, /O\(3\) on P\^2/);
 assert.match(readme, /18 equal triangular eyes/);
+assert.match(readme, /O\(2,4\) on P\^1 x P\^1/);
+assert.match(readme, /zero annular rulings/);
 
 const packageRoot = path.join(root, "downloads", "direct-ruling-counter");
 const archive = path.join(root, "downloads", "direct-ruling-counter.zip");

@@ -9,11 +9,12 @@ The home page links to three collections:
 
 - the 16 lattice-equivalence classes with one interior lattice point;
 - the 45 lattice-equivalence classes with two interior lattice points;
-- other polygons, currently containing `O(4) on P^2`.
+- other polygons, currently containing `O(4) on P^2` and
+  `O(2,4) on P^1 x P^1`.
 
 Every entry is identified by its vertex coordinates. The two interior-point
-collections list every ruling separately; the `O(4)` page instead preserves
-the previously drawn symmetry representatives and labels every orbit size.
+collections list every ruling separately; the other-polygons page instead
+preserves symmetry representatives and labels every orbit size.
 
 For each polygon the site records:
 
@@ -68,6 +69,15 @@ The genus-zero orbit sizes sum to 304 (288 all-disk and 16 annular). The
 figures use green Lambda, red and blue eyes, black switches, and darker fills
 where eyes overlap.
 
+The `O(2,4) on P^1 x P^1` entry uses the rectangle
+`Conv{(0,0), (4,0), (4,2), (0,2)}` in every genus. Its source-to-count matrix
+is `[[1,-1],[1,0]]`, and its source-frame vertical direction is `(1,1)`.
+Every figure is drawn on the same exact 8-by-4 rectangular Lambda. A complete
+direct annular-phase audit gives the counts 1, 16, 96, and 256 in genera 3,
+2, 1, and 0, with zero annular rulings in this equally spaced realization.
+Quotienting by the 32 line-preserving diagram symmetries leaves 1, 1, 7, and
+11 displayed representatives, respectively.
+
 The centrally symmetric six-vertex polygon
 `Conv{(-1,0), (0,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses exact separated
 phases. Its three parallel pairs have gaps `1/3`, `1/2`, and `1/2`, so no two
@@ -89,8 +99,8 @@ blue equal square eyes.
 
 The two census collections display all 1,601 rulings separately: 112 for the
 one-interior collection and 1,489 for the two-interior collection. The
-other-polygons page adds the 21 saved `O(4)` figures with symmetry
-multiplicities. Every page records the ruling polynomial
+other-polygons page adds 41 saved symmetry representatives for `O(4)` and
+`O(2,4)`. Every page records the ruling polynomial
 `R_Delta(z) = sum_g r_(Delta,g) z^(2g)`. The census counts and diagrams are
 generated from direct ruling certificates; the atlas exporter does not import
 or consult a tropical counter.

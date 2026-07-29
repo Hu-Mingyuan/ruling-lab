@@ -1,0 +1,399 @@
+{
+  "schema": "o24-ruling-gallery-v1",
+  "method": "direct ruling certificates on one exact equally spaced 8-by-4 grid, quotient by its line-preserving diagram symmetries",
+  "uses_tropical_count": false,
+  "uses_preknown_answers": false,
+  "source_certificates": "o24_symmetric_direct_certificates.json",
+  "polygon": [
+    [
+      0,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "double_area": 16,
+  "boundary_lattice_points": 12,
+  "interior_lattice_points": 3,
+  "count_from_source": [
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "source_from_count": [
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      1
+    ]
+  ],
+  "vertical_direction_source": [
+    1,
+    1
+  ],
+  "vertical_direction_count": [
+    0,
+    1
+  ],
+  "sweep_covector_source": [
+    1,
+    -1
+  ],
+  "sweep_covector_count": [
+    1,
+    0
+  ],
+  "lambda_model": "exact 8-by-4 rectangular grid shared by every displayed ruling",
+  "symmetry_group": {
+    "description": "parity-preserving translations in Z/8 x Z/4, extended by the half-turn",
+    "order": 32
+  },
+  "counts": {
+    "genus_0_all_disk": 256,
+    "genus_0_annular": 0,
+    "genus_1_all_disk": 96,
+    "genus_1_annular": 0,
+    "genus_2_all_disk": 16,
+    "genus_2_annular": 0,
+    "genus_3_all_disk": 1,
+    "genus_3_annular": 0
+  },
+  "exact_annular_audits": {
+    "genus_0": {
+      "strict_complete": true,
+      "phase_search_exhaustive": true,
+      "finite_phase_cutoff_used": false,
+      "phase_cardinality": "FINITE",
+      "raw_euler_compatible_masks": 524812288,
+      "search_nodes": 12154079,
+      "completed_leaves": 10800,
+      "all_disk_leaves": 5312,
+      "annular_leaves": 5488,
+      "exact_phase_solver_calls": 12000,
+      "empty_phase_systems": 12000,
+      "exact_annular_ruling_count": 0
+    },
+    "genus_1": {
+      "strict_complete": true,
+      "phase_search_exhaustive": true,
+      "finite_phase_cutoff_used": false,
+      "phase_cardinality": "FINITE",
+      "raw_euler_compatible_masks": 119275520,
+      "search_nodes": 2367920,
+      "completed_leaves": 3964,
+      "all_disk_leaves": 2576,
+      "annular_leaves": 1388,
+      "exact_phase_solver_calls": 11280,
+      "empty_phase_systems": 11280,
+      "exact_annular_ruling_count": 0
+    },
+    "genus_2": {
+      "strict_complete": true,
+      "phase_search_exhaustive": true,
+      "finite_phase_cutoff_used": false,
+      "phase_cardinality": "FINITE",
+      "raw_euler_compatible_masks": 7864320,
+      "search_nodes": 139105,
+      "completed_leaves": 344,
+      "all_disk_leaves": 224,
+      "annular_leaves": 120,
+      "exact_phase_solver_calls": 1152,
+      "empty_phase_systems": 1152,
+      "exact_annular_ruling_count": 0
+    },
+    "genus_3": {
+      "strict_complete": true,
+      "phase_search_exhaustive": true,
+      "finite_phase_cutoff_used": false,
+      "phase_cardinality": "FINITE",
+      "raw_euler_compatible_masks": 65536,
+      "search_nodes": 1297,
+      "completed_leaves": 4,
+      "all_disk_leaves": 1,
+      "annular_leaves": 3,
+      "exact_phase_solver_calls": 48,
+      "empty_phase_systems": 48,
+      "exact_annular_ruling_count": 0
+    }
+  },
+  "drawings": [
+    {
+      "filename": "O24_genus3_G3D01_x1.svg",
+      "identifier": "G3D01",
+      "genus": 3,
+      "sector": "all-disk",
+      "physical_mask": "0xffffffff",
+      "event_mask": "0xffffffff",
+      "orbit_size": 1,
+      "disk_eyes": 16,
+      "annular_eyes": 0,
+      "switches": 32,
+      "profile": "D16 · 32 switches · A/B/V 16/0/16"
+    },
+    {
+      "filename": "O24_genus2_G2D01_x16.svg",
+      "identifier": "G2D01",
+      "genus": 2,
+      "sector": "all-disk",
+      "physical_mask": "0x3f3fffff",
+      "event_mask": "0x7777ffff",
+      "orbit_size": 16,
+      "disk_eyes": 14,
+      "annular_eyes": 0,
+      "switches": 28,
+      "profile": "D14 · 28 switches · A/B/V 14/0/14"
+    },
+    {
+      "filename": "O24_genus1_G1D01_x16.svg",
+      "identifier": "G1D01",
+      "genus": 1,
+      "sector": "all-disk",
+      "physical_mask": "0x0f0fffff",
+      "event_mask": "0x3377ffbb",
+      "orbit_size": 16,
+      "disk_eyes": 12,
+      "annular_eyes": 0,
+      "switches": 24,
+      "profile": "D12 · 24 switches · A/B/V 12/0/12"
+    },
+    {
+      "filename": "O24_genus1_G1D02_x16.svg",
+      "identifier": "G1D02",
+      "genus": 1,
+      "sector": "all-disk",
+      "physical_mask": "0x273fffe7",
+      "event_mask": "0x7775bdbf",
+      "orbit_size": 16,
+      "disk_eyes": 12,
+      "annular_eyes": 0,
+      "switches": 24,
+      "profile": "D12 · 24 switches · A/B/V 12/0/12"
+    },
+    {
+      "filename": "O24_genus1_G1D03_x8.svg",
+      "identifier": "G1D03",
+      "genus": 1,
+      "sector": "all-disk",
+      "physical_mask": "0x3333ffff",
+      "event_mask": "0x7777dddd",
+      "orbit_size": 8,
+      "disk_eyes": 12,
+      "annular_eyes": 0,
+      "switches": 24,
+      "profile": "D12 · 24 switches · A/B/V 12/0/12"
+    },
+    {
+      "filename": "O24_genus1_G1D04_x16.svg",
+      "identifier": "G1D04",
+      "genus": 1,
+      "sector": "all-disk",
+      "physical_mask": "0x393ffff9",
+      "event_mask": "0x7656dfff",
+      "orbit_size": 16,
+      "disk_eyes": 12,
+      "annular_eyes": 0,
+      "switches": 24,
+      "profile": "D12 · 24 switches · A/B/V 12/0/12"
+    },
+    {
+      "filename": "O24_genus1_G1D05_x16.svg",
+      "identifier": "G1D05",
+      "genus": 1,
+      "sector": "all-disk",
+      "physical_mask": "0x3dbc7e7e",
+      "event_mask": "0x677ee6e7",
+      "orbit_size": 16,
+      "disk_eyes": 10,
+      "annular_eyes": 0,
+      "switches": 22,
+      "profile": "D10 · 22 switches · A/B/V 10/2/10"
+    },
+    {
+      "filename": "O24_genus1_G1D06_x16.svg",
+      "identifier": "G1D06",
+      "genus": 1,
+      "sector": "all-disk",
+      "physical_mask": "0x3f3fcfcf",
+      "event_mask": "0x7733bbff",
+      "orbit_size": 16,
+      "disk_eyes": 12,
+      "annular_eyes": 0,
+      "switches": 24,
+      "profile": "D12 · 24 switches · A/B/V 12/0/12"
+    },
+    {
+      "filename": "O24_genus1_G1D07_x8.svg",
+      "identifier": "G1D07",
+      "genus": 1,
+      "sector": "all-disk",
+      "physical_mask": "0x3f3ff3f3",
+      "event_mask": "0x5555ffff",
+      "orbit_size": 8,
+      "disk_eyes": 12,
+      "annular_eyes": 0,
+      "switches": 24,
+      "profile": "D12 · 24 switches · A/B/V 12/0/12"
+    },
+    {
+      "filename": "O24_rational_D01_x16.svg",
+      "identifier": "D01",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x0303ffff",
+      "event_mask": "0x3377dd99",
+      "orbit_size": 16,
+      "disk_eyes": 10,
+      "annular_eyes": 0,
+      "switches": 20,
+      "profile": "D10 · 20 switches · A/B/V 10/0/10"
+    },
+    {
+      "filename": "O24_rational_D02_x32.svg",
+      "identifier": "D02",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x090ffff9",
+      "event_mask": "0x3256dfbb",
+      "orbit_size": 32,
+      "disk_eyes": 10,
+      "annular_eyes": 0,
+      "switches": 20,
+      "profile": "D10 · 20 switches · A/B/V 10/0/10"
+    },
+    {
+      "filename": "O24_rational_D03_x16.svg",
+      "identifier": "D03",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x0d2c5e9e",
+      "event_mask": "0x2772e22b",
+      "orbit_size": 16,
+      "disk_eyes": 6,
+      "annular_eyes": 0,
+      "switches": 16,
+      "profile": "D6 · 16 switches · A/B/V 6/4/6"
+    },
+    {
+      "filename": "O24_rational_D04_x32.svg",
+      "identifier": "D04",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x0d8c7e7e",
+      "event_mask": "0x237ee6a3",
+      "orbit_size": 32,
+      "disk_eyes": 8,
+      "annular_eyes": 0,
+      "switches": 18,
+      "profile": "D8 · 18 switches · A/B/V 8/2/8"
+    },
+    {
+      "filename": "O24_rational_D05_x32.svg",
+      "identifier": "D05",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x0f0ff3f3",
+      "event_mask": "0x1155ffbb",
+      "orbit_size": 32,
+      "disk_eyes": 10,
+      "annular_eyes": 0,
+      "switches": 20,
+      "profile": "D10 · 20 switches · A/B/V 10/0/10"
+    },
+    {
+      "filename": "O24_rational_D06_x16.svg",
+      "identifier": "D06",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x0fa6560f",
+      "event_mask": "0x357ba321",
+      "orbit_size": 16,
+      "disk_eyes": 6,
+      "annular_eyes": 0,
+      "switches": 16,
+      "profile": "D6 · 16 switches · A/B/V 6/4/6"
+    },
+    {
+      "filename": "O24_rational_D07_x32.svg",
+      "identifier": "D07",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x2533f3e9",
+      "event_mask": "0x5456bd9d",
+      "orbit_size": 32,
+      "disk_eyes": 8,
+      "annular_eyes": 0,
+      "switches": 18,
+      "profile": "D8 · 18 switches · A/B/V 8/2/8"
+    },
+    {
+      "filename": "O24_rational_D08_x32.svg",
+      "identifier": "D08",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x2727d3cb",
+      "event_mask": "0x1553b9bd",
+      "orbit_size": 32,
+      "disk_eyes": 8,
+      "annular_eyes": 0,
+      "switches": 18,
+      "profile": "D8 · 18 switches · A/B/V 8/2/8"
+    },
+    {
+      "filename": "O24_rational_D09_x16.svg",
+      "identifier": "D09",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x2739f9e7",
+      "event_mask": "0x5775bc9e",
+      "orbit_size": 16,
+      "disk_eyes": 10,
+      "annular_eyes": 0,
+      "switches": 20,
+      "profile": "D10 · 20 switches · A/B/V 10/0/10"
+    },
+    {
+      "filename": "O24_rational_D10_x16.svg",
+      "identifier": "D10",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x3333cfcf",
+      "event_mask": "0x773399dd",
+      "orbit_size": 16,
+      "disk_eyes": 10,
+      "annular_eyes": 0,
+      "switches": 20,
+      "profile": "D10 · 20 switches · A/B/V 10/0/10"
+    },
+    {
+      "filename": "O24_rational_D11_x16.svg",
+      "identifier": "D11",
+      "genus": 0,
+      "sector": "all-disk",
+      "physical_mask": "0x3927e7f9",
+      "event_mask": "0x3416dffd",
+      "orbit_size": 16,
+      "disk_eyes": 10,
+      "annular_eyes": 0,
+      "switches": 20,
+      "profile": "D10 · 20 switches · A/B/V 10/0/10"
+    }
+  ]
+}

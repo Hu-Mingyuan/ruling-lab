@@ -7,6 +7,14 @@ with rollback pruning, and checks both disk and annular eyes exactly.
 The computation does **not** call a tropical counter and does not look up
 previously known answers.
 
+Before counting, the engine checks whether the standard x-sweep has one
+crossing on each critical slice.  If it does not, the engine deterministically
+chooses a primitive integral covector in the same transverse chamber whose
+crossing levels are all distinct.  Type-B local probes are then chosen below
+one quarter of the minimum cyclic gap.  The effective sweep covector,
+vertical direction, transverse covector, and probe size are included in the
+JSON output.
+
 ## Requirements
 
 - Python 3.10 or newer
@@ -30,11 +38,21 @@ python ruling_polygon.py example_polygon.json
 ```
 
 With no genus option, the program computes every genus from `0` through the
-number of interior lattice points.  To compute only one genus:
+number of interior lattice points.  Any single genus in that range may be
+computed with `--genus`:
 
 ```console
 python ruling_polygon.py example_polygon.json --genus 0
 ```
+
+The second example has vertical edges in the input coordinates:
+
+```console
+python ruling_polygon.py example_vertical_polygon.json --genus 0
+```
+
+For that square the program automatically uses the source-frame vertical
+direction `v=(-1,1)` rather than the invalid choice `v=(0,1)`.
 
 Useful options include:
 
@@ -58,6 +76,19 @@ A single polygon may be written as:
 The vertices must be integer points listed cyclically around a strictly
 convex polygon.  Clockwise input is accepted and normalized.  The first
 vertex may be repeated at the end, but it is not required.
+
+The allowed range is
+
+```text
+0 <= genus <= number of interior lattice points.
+```
+
+The initial count frame is automatic.  If an edge has primitive direction
+`(dx,dy)`, the program finds an integral shear `k` for which `dx+k*dy` is
+nonzero on every edge; in the original coordinates its vertical direction is
+`v=(-k,1)`.  If the resulting crossing slices are not generic, the exact
+annular input layer then selects a primitive integral sweep covector in the
+same chamber with distinct crossing levels.
 
 For a batch, use:
 
@@ -95,8 +126,8 @@ a multicore machine.
 
 The polygon determines a stable identifier when no `id` is supplied.  The
 diagram construction uses deterministic rational translates.  Counts are
-reported as JSON, including the vertical direction, shear, translates,
-basepoint, crossing count, and search diagnostics used for that run.
+reported as JSON, including the shear, translates, basepoint, effective
+generic sweep, crossing count, and search diagnostics used for that run.
 
 No license file is included in this preview package.  Please contact the
 repository owner about reuse until a license is selected.

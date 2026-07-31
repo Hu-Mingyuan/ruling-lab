@@ -4,6 +4,7 @@ This repository is a static atlas of direct ruling counts and diagrams for
 lattice polygons. It is published separately from the author's main homepage.
 Every HTML page carries `noindex` metadata to discourage search-engine indexing;
 this is not access control.
+The repository also contains a standalone general Newton-polygon counter.
 
 The home page links to three collections:
 
@@ -125,7 +126,25 @@ with no third-party Python or npm packages.
 
 ```text
 python ruling_polygon.py example_polygon.json
+python ruling_polygon.py example_polygon.json --genus 1
 ```
+
+The input may be any strictly convex lattice Newton polygon with cyclically
+listed integer vertices. The program automatically chooses an integral
+vertical direction transverse to every edge, applies a generic sweep
+perturbation when crossing levels coincide, and accepts every genus
+`0 <= g <= I(Delta)`. Omitting `--genus` computes the complete range.
+
+For an edge with primitive direction `(dx,dy)`, the program chooses an
+integral shear `k` such that `dx+k*dy` is nonzero for every edge. In the source
+coordinates this gives the transverse vertical direction `v=(-k,1)`. If two
+crossings still occur on one sweep level, the annular solver automatically
+chooses a primitive generic covector in the same chamber. The JSON result
+records the effective `v`, sweep covector, transverse covector, and local
+probe size.
+
+No license file is currently included. Contact the repository owner about
+reuse until a license is selected.
 
 ## Rebuild and validate
 

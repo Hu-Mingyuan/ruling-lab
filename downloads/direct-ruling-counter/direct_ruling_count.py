@@ -57,8 +57,8 @@ def count_multigeodesic_rulings(
     boundary_components: int,
     target_genus: int,
     basepoint: Point,
-    tau: tuple[int, int] = (1, 0),
-    sigma: tuple[int, int] = (0, 1),
+    tau: tuple[int, int] | None = None,
+    sigma: tuple[int, int] | None = None,
     node_executable: str | Path | None = None,
     incremental: bool = True,
     name: str = "primitive multigeodesic arrangement",
@@ -97,6 +97,11 @@ def count_multigeodesic_rulings(
             + (completed.stderr.strip() or f"exit code {completed.returncode}")
         )
     audit = json.loads(completed.stdout)
+    audit["sweepCovector"] = payload["tau"]
+    audit["transverseCovector"] = payload["sigma"]
+    audit["verticalDirection"] = payload["verticalDirection"]
+    audit["sweepSelection"] = payload["sweepSelection"]
+    audit["typeBEpsilon"] = payload["typeBEpsilon"]
     phase = str(audit["phaseCardinality"])
     return DirectRulingCount(
         all_disk=int(audit["exactAllDiskRulingCount"]),

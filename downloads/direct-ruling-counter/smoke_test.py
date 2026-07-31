@@ -12,12 +12,13 @@ import sys
 HERE = Path(__file__).resolve().parent
 
 
-def main() -> int:
+def run_counter(source: Path, *arguments: str) -> dict[str, object]:
     completed = subprocess.run(
         [
             sys.executable,
             str(HERE / "ruling_polygon.py"),
-            str(HERE / "example_polygon.json"),
+            str(source),
+            *arguments,
         ],
         cwd=HERE,
         text=True,
@@ -26,9 +27,13 @@ def main() -> int:
     )
     if completed.returncode != 0:
         sys.stderr.write(completed.stderr or completed.stdout)
-        return completed.returncode
+        raise RuntimeError("direct ruling subprocess failed")
+    return json.loads(completed.stdout)
 
-    payload = json.loads(completed.stdout)
+
+def main() -> int:
+    payload = run_counter(HERE / "example_polygon.json")
+
     assert payload["schema"] == "direct-ruling-counts-v1"
     assert payload["uses_tropical_count"] is False
     assert len(payload["polygons"]) == 1
@@ -55,9 +60,19 @@ def main() -> int:
         if record["phase_cardinality"] == "FINITE":
             assert record["total"] == record["all_disk"] + record["annular"]
 
+    square_payload = run_counter(
+        HERE / "example_vertical_polygon.json",
+        "--genus",
+        "0",
+    )
+    square = square_payload["polygons"][0]
+    assert square["vertical_direction_source"] == [-1, 1]
+    assert square["sweep_selection"] == "automatic-generic"
+    assert [record["genus"] for record in square["genera"]] == [0]
+
     print(
         "direct-ruling smoke test passed: "
-        f"{len(genera)} genera, {genera[0]['crossings']} crossings"
+        f"{len(genera)} genera plus an automatically sheared square"
     )
     return 0
 

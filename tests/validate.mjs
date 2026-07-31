@@ -661,6 +661,11 @@ assert.match(
   index,
   /general convex lattice polygon can be computed with\s+the <a href="downloads\/direct-ruling-counter\.zip">accompanying code<\/a>/
 );
+assert.match(
+  index,
+  /href="https:\/\/github\.com\/Hu-Mingyuan\/ruling-lab\/tree\/one-interior-preview\/downloads\/direct-ruling-counter"[\s\S]*?>View source<\/a>/
+);
+assert.equal((index.match(/>View source<\/a>/g) ?? []).length, 1);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Ruling Atlas/);
@@ -707,6 +712,9 @@ for (const [filename, document, collection] of [
   assert.match(document, /class="vertical-direction-arrow"/);
   assert.match(document, /id="vertical-direction-label"/);
   assert.match(document, />vertical\s+v = \(0,1\)<\/span>/);
+  assert.match(document, />Download the ruling code<\/a>/);
+  assert.match(document, /href="downloads\/direct-ruling-counter\.zip"/);
+  assert.doesNotMatch(document, />View source<\/a>/);
 }
 assert.match(oneInterior, /Polygons with one interior lattice point/);
 assert.match(oneInterior, /genera&nbsp;0 and&nbsp;1/);

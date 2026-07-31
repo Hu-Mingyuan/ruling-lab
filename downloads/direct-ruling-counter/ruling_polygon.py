@@ -237,6 +237,11 @@ def count_records(
             ],
             "sweep_covector_source": diagram["sweep_covector_source"],
             "sweep_covector_count": diagram["sweep_covector_count"],
+            "sweep_selection": diagram["sweep_selection"],
+            "transverse_covector_count": diagram[
+                "transverse_covector_count"
+            ],
+            "type_b_epsilon": diagram["type_b_epsilon"],
             "genera": genera,
         })
 
@@ -254,7 +259,14 @@ def count_records(
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", type=Path)
-    parser.add_argument("--genus", type=int)
+    parser.add_argument(
+        "--genus",
+        type=int,
+        help=(
+            "compute only this genus; omit to compute every genus from 0 "
+            "through the number of interior lattice points"
+        ),
+    )
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument("--certificates", action="store_true")
     parser.add_argument("--output", type=Path)

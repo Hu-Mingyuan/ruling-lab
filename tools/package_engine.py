@@ -38,6 +38,7 @@ ENGINE_FILES = (
 SUPPORT_FILES = (
     "README.md",
     "example_polygon.json",
+    "example_vertical_polygon.json",
     "smoke_test.py",
 )
 
@@ -202,7 +203,7 @@ from verify_triangle_rulings import Geodesic, Point
 from __future__ import annotations
 
 from fractions import Fraction
-from math import gcd, lcm
+from math import floor, gcd, lcm
 from typing import Iterable, Sequence
 
 import ruling_smoothing as rs
@@ -211,6 +212,10 @@ from verify_triangle_rulings import Geodesic, Point
 """,
         "definitions": (
             "_fraction_text",
+            "_crossing_levels",
+            "_sweep_agreements",
+            "_unimodular_companion",
+            "_automatic_generic_sweep",
             "exact_annular_payload",
         ),
         "replacements": (

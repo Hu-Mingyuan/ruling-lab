@@ -35,6 +35,7 @@ class PolygonRulingDiagram:
     vertical_direction_count: Direction
     sweep_covector_source: Direction
     sweep_covector_count: Direction
+    origin_denominator: int
     origin_residues: tuple[int, ...]
     origin_attempt: int
     crossings: int
@@ -107,17 +108,18 @@ def build_polygon_ruling_diagram(
     ):
         raise AssertionError("count sweep covector vanishes on an edge")
     generator = random.Random(1000 + sum(ord(character) for character in label))
+    origin_denominator = max(ORIGIN_DENOMINATOR, 2 * len(directions) + 1)
 
     last_error: Exception | None = None
     for attempt in range(max_origin_attempts):
         residues = tuple(
-            generator.sample(range(ORIGIN_DENOMINATOR), len(directions))
+            generator.sample(range(origin_denominator), len(directions))
         )
         lines = tuple(
             Geodesic(
                 f"{label}{index}",
                 direction,
-                (Fraction(0), Fraction(residues[index], ORIGIN_DENOMINATOR)),
+                (Fraction(0), Fraction(residues[index], origin_denominator)),
             )
             for index, direction in enumerate(directions)
         )
@@ -140,6 +142,7 @@ def build_polygon_ruling_diagram(
                 vertical_direction_count=COUNT_VERTICAL_DIRECTION,
                 sweep_covector_source=sweep_covector_source,
                 sweep_covector_count=COUNT_SWEEP_COVECTOR,
+                origin_denominator=origin_denominator,
                 origin_residues=residues,
                 origin_attempt=attempt,
                 crossings=len(arrangement.vertices),
@@ -184,6 +187,17 @@ def count_case(
         name=f"{gallery_name}({label})",
     )
     audit = result.audit
+    sweep_covector_count = tuple(audit["sweepCovector"])
+    vertical_direction_count = tuple(audit["verticalDirection"])
+    sweep_covector_source = (
+        sweep_covector_count[0],
+        sweep_covector_count[0] * diagram.shear + sweep_covector_count[1],
+    )
+    vertical_direction_source = (
+        vertical_direction_count[0]
+        - diagram.shear * vertical_direction_count[1],
+        vertical_direction_count[1],
+    )
     output = {
         "label": label,
         "gallery": gallery_name,
@@ -194,14 +208,17 @@ def count_case(
         "crossings": diagram.crossings,
         "shear": diagram.shear,
         "vertical_direction_source": list(
-            diagram.vertical_direction_source
+            vertical_direction_source
         ),
         "vertical_direction_count": list(
-            diagram.vertical_direction_count
+            vertical_direction_count
         ),
-        "sweep_covector_source": list(diagram.sweep_covector_source),
-        "sweep_covector_count": list(diagram.sweep_covector_count),
-        "origin_denominator": ORIGIN_DENOMINATOR,
+        "sweep_covector_source": list(sweep_covector_source),
+        "sweep_covector_count": list(sweep_covector_count),
+        "sweep_selection": audit["sweepSelection"],
+        "transverse_covector_count": audit["transverseCovector"],
+        "type_b_epsilon": audit["typeBEpsilon"],
+        "origin_denominator": diagram.origin_denominator,
         "origin_residues": list(diagram.origin_residues),
         "origin_attempt": diagram.origin_attempt,
         "chambers": diagram.chambers,

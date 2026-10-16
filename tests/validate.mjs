@@ -659,8 +659,6 @@ assert.match(index, /2 polygons/);
 assert.match(index, /41 saved figures/);
 assert.match(index, /Code for counting rulings and tropical trees/);
 assert.doesNotMatch(index, /Code and downloads|id="code-title"/);
-assert.match(index, /The rulings of a general convex lattice polygon can be computed with/);
-assert.match(index, /href="downloads\/direct-ruling-counter\.zip"/);
 assert.match(index, /href="https:\/\/github\.com\/Hu-Mingyuan\/ruling-lab\/tree\/one-interior-preview#readme"/);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);

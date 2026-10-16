@@ -17,7 +17,12 @@ from math import gcd
 from pathlib import Path
 from typing import Iterable, Sequence
 
-from fig3_direct_ruling_counts import count_case
+from direct_ruling_count import ALGORITHM_VERSION
+from fig3_direct_ruling_counts import (
+    PolygonRulingDiagram,
+    build_polygon_ruling_diagram,
+    count_case,
+)
 
 
 Point = tuple[int, int]
@@ -78,17 +83,16 @@ def _validate_vertices(raw_vertices: object) -> tuple[Point, ...]:
     if len(set(vertices)) != len(vertices):
         raise ValueError("polygon vertices must be distinct")
 
-    turns = [
-        _cross(
-            vertices[index],
-            vertices[(index + 1) % len(vertices)],
-            vertices[(index + 2) % len(vertices)],
-        )
-        for index in range(len(vertices))
-    ]
-    if any(turn == 0 for turn in turns):
-        raise ValueError("consecutive polygon edges must not be collinear")
-    if not (all(turn > 0 for turn in turns) or all(turn < 0 for turn in turns)):
+    # Local turns alone also accept star polygons.  Every edge of a strictly
+    # convex polygon must have every other vertex strictly on its inner side.
+    orientation = 1 if _signed_double_area(vertices) > 0 else -1
+    if any(
+        orientation * _cross(start, finish, point) <= 0
+        for index, start in enumerate(vertices)
+        for finish in (vertices[(index + 1) % len(vertices)],)
+        for point_index, point in enumerate(vertices)
+        if point_index not in (index, (index + 1) % len(vertices))
+    ):
         raise ValueError(
             "vertices must be listed cyclically around a strictly convex polygon"
         )
@@ -152,6 +156,7 @@ def _count_one(
     record: dict[str, object],
     genus: int,
     include_certificates: bool,
+    diagram: PolygonRulingDiagram,
 ) -> tuple[str, int, dict[str, object]]:
     result = count_case(
         record,
@@ -159,6 +164,7 @@ def _count_one(
         target_genus=genus,
         incremental=True,
         include_certificates=include_certificates,
+        diagram=diagram,
     )
     return str(record["id"]), genus, result
 
@@ -171,29 +177,38 @@ def count_records(
     include_certificates: bool,
 ) -> dict[str, object]:
     records = list(records)
-    tasks = [
-        (record, genus)
-        for record in records
-        for genus in (
-            [selected_genus]
-            if selected_genus is not None
-            else range(int(record["interior_lattice_points"]) + 1)
-        )
-    ]
+
+    def prepared_tasks() -> Iterable[
+        tuple[dict[str, object], int, PolygonRulingDiagram]
+    ]:
+        for record in records:
+            diagram = build_polygon_ruling_diagram(
+                str(record["id"]),
+                record["vertices"],  # type: ignore[arg-type]
+                gallery_name="direct polygon input",
+            )
+            genera = (
+                [selected_genus]
+                if selected_genus is not None
+                else range(int(record["interior_lattice_points"]) + 1)
+            )
+            for genus in genera:
+                yield record, genus, diagram
+
     completed: dict[tuple[str, int], dict[str, object]] = {}
     if jobs == 1:
-        for record, genus in tasks:
+        for record, genus, diagram in prepared_tasks():
             identifier, actual_genus, result = _count_one(
-                record, genus, include_certificates
+                record, genus, include_certificates, diagram
             )
             completed[(identifier, actual_genus)] = result
     else:
         with ThreadPoolExecutor(max_workers=jobs) as executor:
             futures = {
                 executor.submit(
-                    _count_one, record, genus, include_certificates
+                    _count_one, record, genus, include_certificates, diagram
                 ): (record, genus)
-                for record, genus in tasks
+                for record, genus, diagram in prepared_tasks()
             }
             for future in as_completed(futures):
                 identifier, actual_genus, result = future.result()
@@ -237,11 +252,20 @@ def count_records(
             ],
             "sweep_covector_source": diagram["sweep_covector_source"],
             "sweep_covector_count": diagram["sweep_covector_count"],
+            "origin_denominator": diagram["origin_denominator"],
+            "origin_residues": diagram["origin_residues"],
+            "origin_attempt": diagram["origin_attempt"],
+            "basepoint": diagram["basepoint"],
+            "perturbation_step": diagram.get("perturbation_step"),
+            "perturbed_vertices": diagram.get("perturbed_vertices"),
+            "chambers": diagram["chambers"],
+            "alternating_chambers": diagram["alternating_chambers"],
             "genera": genera,
         })
 
     return {
         "schema": "direct-ruling-counts-v1",
+        "algorithm_version": ALGORITHM_VERSION,
         "method": (
             "primitive multigeodesic arrangement; rollback smoothing DFS; "
             "exact disk and unbounded annular audits"

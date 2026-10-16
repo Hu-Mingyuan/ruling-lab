@@ -46,10 +46,10 @@ function binomial(n, k) {
 
 class WeightedRollbackDSU {
   constructor(n) {
-    this.parent = new Int16Array(n);
-    this.size = new Int16Array(n);
-    this.potX = new Int16Array(n);
-    this.potY = new Int16Array(n);
+    this.parent = new Int32Array(n);
+    this.size = new Int32Array(n);
+    this.potX = new Float64Array(n);
+    this.potY = new Float64Array(n);
     this.tips = new Int8Array(n);
     this.closed = new Uint8Array(n);
     for (let i = 0; i < n; i += 1) {
@@ -62,9 +62,9 @@ class WeightedRollbackDSU {
     // Typed rollback storage avoids millions of short-lived object records.
     const capacity = 4 * n + 16;
     this.stackKind = new Int8Array(capacity);
-    this.stackChild = new Int16Array(capacity);
-    this.stackRoot = new Int16Array(capacity);
-    this.stackSize = new Int16Array(capacity);
+    this.stackChild = new Int32Array(capacity);
+    this.stackRoot = new Int32Array(capacity);
+    this.stackSize = new Int32Array(capacity);
     this.stackTips = new Int8Array(capacity);
     this.stackClosed = new Uint8Array(capacity);
     this.top = 0;
@@ -177,7 +177,7 @@ class WeightedRollbackDSU {
 
 class SmallParityDSU {
   constructor(n) {
-    this.parent = new Int16Array(n);
+    this.parent = new Int32Array(n);
     this.parity = new Int8Array(n);
     for (let i = 0; i < n; i += 1) this.parent[i] = i;
   }
@@ -247,11 +247,11 @@ function buildArrangement(d, targetGenus = 0) {
     BC: ["B+", "C-", "B-", "C+"],
   };
   const portCount = 4 * vertices.length;
-  const portVertex = new Int16Array(portCount);
+  const portVertex = new Int32Array(portCount);
   const portVectorX = new Int8Array(portCount);
   const portVectorY = new Int8Array(portCount);
   const portSign = new Int8Array(portCount);
-  const portTwin = new Int16Array(portCount);
+  const portTwin = new Int32Array(portCount);
   const portShiftX = new Int8Array(portCount);
   const portShiftY = new Int8Array(portCount);
   portTwin.fill(-1);
@@ -527,7 +527,7 @@ function inspectChoices(arr, choice, options = {}) {
   const requireNormalB = options.requireNormalB === true;
   const requireDistinctSwitchEyes = options.requireDistinctSwitchEyes === true;
   const seen = new Uint8Array(arr.portCount);
-  const eyeOf = new Int16Array(arr.portCount);
+  const eyeOf = new Int32Array(arr.portCount);
   const convexAt = new Uint8Array(arr.portCount);
   eyeOf.fill(-1);
   const eyes = [];
@@ -876,8 +876,8 @@ function enumerate(options = {}) {
   const requireBalance = options.requireBalance !== false;
   const requireNormalB = options.requireNormalB === true;
   const requireDistinctSwitchEyes = options.requireDistinctSwitchEyes === true;
-  const remainingH = new Int16Array(order.length + 1);
-  const remainingV = new Int16Array(order.length + 1);
+  const remainingH = new Int32Array(order.length + 1);
+  const remainingV = new Int32Array(order.length + 1);
   for (let i = order.length - 1; i >= 0; i -= 1) {
     const isH = arr.vertices[order[i]].orientation === "H";
     remainingH[i] = remainingH[i + 1] + (isH ? 1 : 0);

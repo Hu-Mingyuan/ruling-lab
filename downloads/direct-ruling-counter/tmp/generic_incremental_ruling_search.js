@@ -21,6 +21,7 @@
  */
 
 const fs = require("fs");
+const { safeInteger, validatePayloadNumbers } = require("./exact_number_guards.js");
 const {
   hydrateArrangement,
 } = require("./generic_annular_exact_search.js");
@@ -42,18 +43,21 @@ function gcd(left, right) {
 
 class RollbackVoltageDSU {
   constructor(size) {
-    this.parent = Int16Array.from({ length: size }, (_, index) => index);
-    this.componentSize = new Int16Array(size);
+    if (safeInteger(size, "DSU size") < 0 || size > 0x7fffffff) {
+      throw new RangeError("DSU size exceeds the signed 32-bit index range");
+    }
+    this.parent = Int32Array.from({ length: size }, (_, index) => index);
+    this.componentSize = new Int32Array(size);
     this.componentSize.fill(1);
-    this.potentialX = new Int16Array(size);
-    this.potentialY = new Int16Array(size);
+    this.potentialX = new Float64Array(size);
+    this.potentialY = new Float64Array(size);
     this.tips = new Int8Array(size);
     // 0=open, 1=closed disk, 2=closed essential.
     this.closedKind = new Int8Array(size);
-    this.closedHx = new Int16Array(size);
-    this.closedHy = new Int16Array(size);
+    this.closedHx = new Float64Array(size);
+    this.closedHy = new Float64Array(size);
     this.closedSide = new Int8Array(size);
-    this.zeroMate = new Int16Array(size);
+    this.zeroMate = new Int32Array(size);
     this.zeroKind = new Int8Array(size);
     this.zeroMate.fill(-1);
     this.stack = [];
@@ -74,8 +78,8 @@ class RollbackVoltageDSU {
     let y = 0;
     let current = node;
     while (this.parent[current] !== current) {
-      x += this.potentialX[current];
-      y += this.potentialY[current];
+      x = safeInteger(x + this.potentialX[current], "accumulated deck x");
+      y = safeInteger(y + this.potentialY[current], "accumulated deck y");
       current = this.parent[current];
     }
     return [current, x, y];
@@ -85,7 +89,8 @@ class RollbackVoltageDSU {
     const a = this.find(left);
     const b = this.find(right);
     if (a[0] !== b[0]) return null;
-    return [b[1] - a[1], b[2] - a[2]];
+    return [safeInteger(b[1] - a[1], "deck relation x"),
+      safeInteger(b[2] - a[2], "deck relation y")];
   }
 
   scanZeroConstraints() {
@@ -123,12 +128,16 @@ class RollbackVoltageDSU {
   }
 
   unite(left, right, dx, dy, addedTips = 0) {
+    safeInteger(dx, "deck x");
+    safeInteger(dy, "deck y");
     const a = this.find(left);
     const b = this.find(right);
     let root = a[0];
     let child = b[0];
-    let relativeX = a[1] + dx - b[1];
-    let relativeY = a[2] + dy - b[2];
+    let relativeX = safeInteger(a[1] + dx, "deck sum x") - b[1];
+    let relativeY = safeInteger(a[2] + dy, "deck sum y") - b[2];
+    safeInteger(relativeX, "relative deck x");
+    safeInteger(relativeY, "relative deck y");
     this.lastClosedRoot = -1;
 
     if (root === child) {
@@ -303,7 +312,9 @@ function exactAllDiskAudit(arr, choice, trace, payload) {
       * translatedDiskMultiplicityExact(arr, circuit, payload.basePoint);
   }
   const target = payload.balanceTarget === undefined ? 0n : BigInt(payload.balanceTarget);
-  if (balance !== target) return { ok: false, stage: "base-unbalanced", balance };
+  if (payload.requireBalance !== false && balance !== target) {
+    return { ok: false, stage: "base-unbalanced", balance };
+  }
   return { ok: true, structural, balance };
 }
 
@@ -326,18 +337,26 @@ function orderFromName(arr, name) {
   throw new Error(`unknown DFS order ${name}`);
 }
 
-function run(payload, options = {}) {
-  const arr = hydrateArrangement(payload.arrangement);
-  const order = orderFromName(arr, options.order || "crossing");
-  const requiredH = payload.requiredHorizontalSwitches === undefined
-    ? -arr.targetChi : Number(payload.requiredHorizontalSwitches);
-  const remainingH = new Int8Array(order.length + 1);
-  const remainingV = new Int8Array(order.length + 1);
+function remainingSwitchCounts(arr, order) {
+  const remainingH = new Int32Array(order.length + 1);
+  const remainingV = new Int32Array(order.length + 1);
   for (let index = order.length - 1; index >= 0; index -= 1) {
     const horizontal = arr.vertices[order[index]].orientation === "H";
     remainingH[index] = remainingH[index + 1] + (horizontal ? 1 : 0);
     remainingV[index] = remainingV[index + 1] + (horizontal ? 0 : 1);
   }
+  return { remainingH, remainingV };
+}
+
+function run(payload, options = {}) {
+  validatePayloadNumbers(payload);
+  const arr = hydrateArrangement(payload.arrangement);
+  const order = orderFromName(arr, options.order || "crossing");
+  const requiredH = payload.requiredHorizontalSwitches === undefined
+    ? -arr.targetChi : Number(payload.requiredHorizontalSwitches);
+  const { remainingH, remainingV } = remainingSwitchCounts(arr, order);
+  const crossingIndex = new Int32Array(order.length);
+  arr.crossingOrder.forEach((vertex, index) => { crossingIndex[vertex] = index; });
 
   const diagnostics = diagnosticsObject();
   const annularAudit = makeExactAuditor(core, diagnostics);
@@ -448,8 +467,8 @@ function run(payload, options = {}) {
           count(stats.leafRejected, `all-disk-${result.stage}`);
           return;
         }
-        stats.allDiskRulings += 1;
-        stats.allDiskMasks.push(`0x${mask.toString(16).padStart(4, "0")}`);
+        stats.allDiskRulings = safeInteger(stats.allDiskRulings + 1, "all-disk count");
+        if (collectAnswers) stats.allDiskMasks.push(`0x${mask.toString(16).padStart(4, "0")}`);
       } else {
         stats.annularLeaves += 1;
         const result = annularAudit(arr, choice, {
@@ -460,7 +479,7 @@ function run(payload, options = {}) {
           count(stats.leafRejected, result.stage);
           return;
         }
-        stats.annularRulings += result.connected;
+        stats.annularRulings = safeInteger(stats.annularRulings + result.connected, "annular count");
         if (collectAnswers && result.connected > 0) {
           stats.annularResults.push({
             mask: `0x${mask.toString(16).padStart(Math.ceil(arr.crossingOrder.length / 4), "0")}`,
@@ -507,7 +526,7 @@ function run(payload, options = {}) {
       if (okay) {
         signatures = addEssentialRoots(closedRoots);
         const nextMask = switched
-          ? mask | (1n << BigInt(arr.crossingOrder.indexOf(vertexId))) : mask;
+          ? mask | (1n << BigInt(crossingIndex[vertexId])) : mask;
         visit(
           index + 1,
           horizontalSwitches + (switched && horizontal ? 1 : 0),
@@ -534,7 +553,7 @@ function run(payload, options = {}) {
   stats.exactAnnularRulingCount = phaseCardinality === "FINITE"
     ? stats.annularRulings : phaseCardinality;
   stats.exactTotalRulingCount = phaseCardinality === "FINITE"
-    ? stats.allDiskRulings + stats.annularRulings : phaseCardinality;
+    ? safeInteger(stats.allDiskRulings + stats.annularRulings, "total ruling count") : phaseCardinality;
   return stats;
 }
 
@@ -562,4 +581,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { RollbackVoltageDSU, run };
+module.exports = { RollbackVoltageDSU, remainingSwitchCounts, run };

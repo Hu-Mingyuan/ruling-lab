@@ -26,6 +26,7 @@ def exact_annular_payload(
     tau: tuple[int, int] = (1, 0),
     sigma: tuple[int, int] = (0, 1),
     name: str = "primitive multigeodesic arrangement",
+    arrangement: rs.TorusArrangement | None = None,
 ) -> dict[str, object]:
     """Return JSON-ready data for ``tmp/generic_annular_exact_search.js``."""
 
@@ -59,12 +60,20 @@ def exact_annular_payload(
             "tau is incompatible with the arrangement's vertical direction; "
             "their future directions do not agree up to global reversal"
         )
+    same_sweep_orientation = next(iter(sweep_agreements)) > 0
     # Polygon edges of lattice length > 1 contribute several translated
     # primitive geodesics with the same (or opposite) direction.  The generic
     # parallel-family builder is therefore the right common entry point; it
     # also handles the pairwise-nonparallel special case.
-    arrangement = make_parallel_geodesic_arrangement(lines, name=name)
-    direction_by_name = {line.name: line.direction for line in lines}
+    if arrangement is None:
+        arrangement = make_parallel_geodesic_arrangement(lines, name=name)
+    errors = arrangement.validation_errors()
+    if errors:
+        raise ValueError("invalid prepared arrangement: " + "; ".join(errors))
+    if arrangement.periods != (1, 1):
+        raise ValueError("the serialized arrangement must use the unit torus")
+    if {edge.strand for edge in arrangement.halfedges} != {line.name for line in lines}:
+        raise ValueError("prepared arrangement has different geodesic labels")
     scale = 1
     for vertex in arrangement.vertices:
         scale = lcm(
@@ -98,9 +107,27 @@ def exact_annular_payload(
     port_vector_x: list[int] = []
     port_vector_y: list[int] = []
     for edge in arrangement.halfedges:
-        direction = direction_by_name[edge.strand]
-        port_vector_x.append(edge.coorientation_sign * direction[0])
-        port_vector_y.append(edge.coorientation_sign * direction[1])
+        # A genuine generic perturbation bends the original geodesics.
+        # Tangents must therefore come from the actual lifted edge, not
+        # from its original straight-line homology class.
+        start = arrangement.vertices[edge.origin].position
+        finish = arrangement.vertices[arrangement.halfedges[edge.twin].origin].position
+        dx = int((finish[0] + edge.deck_shift[0] - start[0]) * scale)
+        dy = int((finish[1] + edge.deck_shift[1] - start[1]) * scale)
+        divisor = gcd(abs(dx), abs(dy))
+        if divisor == 0:
+            raise ValueError("prepared arrangement has a zero-length edge")
+        direction = (dx // divisor, dy // divisor)
+        future = edge.index in arrangement.vertices[edge.origin].future_ports
+        if not direction[0] or (direction[0] > 0) != future:
+            raise ValueError("prepared edge tangent disagrees with its future port")
+        sweep = tau[0] * direction[0] + tau[1] * direction[1]
+        expected_positive = ((direction[0] > 0) if same_sweep_orientation
+                             else (direction[0] < 0))
+        if not sweep or (sweep > 0) != expected_positive:
+            raise ValueError("tau is incompatible with a perturbed edge tangent")
+        port_vector_x.append(direction[0])
+        port_vector_y.append(direction[1])
 
     edges = []
     for edge in arrangement.halfedges:

@@ -13,8 +13,10 @@ from pathlib import Path
 import random
 from typing import Iterable, Sequence
 
-from direct_ruling_count import count_multigeodesic_rulings
+from direct_ruling_count import ALGORITHM_VERSION, count_multigeodesic_rulings
+from generic_ruling_perturbation import perturb_arrangement
 from multigeodesic_alternating_audit import TorusChamber, enumerate_torus_chambers
+import ruling_smoothing as rs
 from verify_multigeodesic_rulings import make_parallel_geodesic_arrangement
 from verify_triangle_rulings import Geodesic
 
@@ -36,10 +38,14 @@ class PolygonRulingDiagram:
     sweep_covector_source: Direction
     sweep_covector_count: Direction
     origin_residues: tuple[int, ...]
+    origin_denominator: int
     origin_attempt: int
     crossings: int
     chambers: int
     alternating_chambers: tuple[TorusChamber, ...]
+    arrangement: rs.TorusArrangement
+    perturbation_step: Fraction
+    perturbed_vertices: int
 
 
 def _primitive_polygon_edges(vertices: Sequence[PointI]) -> tuple[Direction, ...]:
@@ -73,6 +79,19 @@ def _transverse_shear(directions: Sequence[Direction]) -> int:
     raise AssertionError("failed to find a transverse integral shear")
 
 
+def _origin_denominator(directions: Sequence[Direction]) -> int:
+    """Keep distinct sampled phases distinct on every parallel family.
+
+    For origins (0,r/D), two translates of a primitive (dx,dy) coincide
+    precisely when dx*(r-s)/D is integral. Coprimality with dx prevents
+    this for distinct residues, including oppositely oriented copies.
+    """
+    denominator = max(ORIGIN_DENOMINATOR, len(directions) + 1)
+    while any(gcd(denominator, abs(dx)) != 1 for dx, _dy in directions):
+        denominator += 1
+    return denominator
+
+
 def build_polygon_ruling_diagram(
     label: str,
     vertices: Iterable[Sequence[int]],
@@ -86,6 +105,7 @@ def build_polygon_ruling_diagram(
     primitive = _primitive_polygon_edges(polygon)
     shear = _transverse_shear(primitive)
     directions = tuple((dx + shear * dy, dy) for dx, dy in primitive)
+    origin_denominator = _origin_denominator(directions)
     vertical_direction_source = (-shear, 1)
     sweep_covector_source = (1, shear)
     if any(
@@ -111,13 +131,13 @@ def build_polygon_ruling_diagram(
     last_error: Exception | None = None
     for attempt in range(max_origin_attempts):
         residues = tuple(
-            generator.sample(range(ORIGIN_DENOMINATOR), len(directions))
+            generator.sample(range(origin_denominator), len(directions))
         )
         lines = tuple(
             Geodesic(
                 f"{label}{index}",
                 direction,
-                (Fraction(0), Fraction(residues[index], ORIGIN_DENOMINATOR)),
+                (Fraction(0), Fraction(residues[index], origin_denominator)),
             )
             for index, direction in enumerate(directions)
         )
@@ -131,6 +151,9 @@ def build_polygon_ruling_diagram(
             continue
         alternating = tuple(chamber for chamber in chambers if chamber.alternating)
         if alternating:
+            arrangement, perturbation_step, perturbed_vertices = perturb_arrangement(
+                arrangement, chambers
+            )
             return PolygonRulingDiagram(
                 label=label,
                 vertices=polygon,
@@ -141,10 +164,14 @@ def build_polygon_ruling_diagram(
                 sweep_covector_source=sweep_covector_source,
                 sweep_covector_count=COUNT_SWEEP_COVECTOR,
                 origin_residues=residues,
+                origin_denominator=origin_denominator,
                 origin_attempt=attempt,
                 crossings=len(arrangement.vertices),
                 chambers=len(chambers),
                 alternating_chambers=alternating,
+                arrangement=arrangement,
+                perturbation_step=perturbation_step,
+                perturbed_vertices=perturbed_vertices,
             )
     detail = f": {last_error}" if last_error is not None else ""
     raise RuntimeError(
@@ -164,16 +191,22 @@ def count_case(
     target_genus: int = 0,
     incremental: bool = True,
     include_certificates: bool = False,
+    diagram: PolygonRulingDiagram | None = None,
 ) -> dict[str, object]:
     identifier = record.get("id", record.get("label"))
     if identifier is None:
         raise ValueError("each polygon record needs an 'id' or 'label'")
     label = str(identifier)
-    diagram = build_polygon_ruling_diagram(  # type: ignore[arg-type]
-        label,
-        record["vertices"],
-        gallery_name=gallery_name,
-    )
+    if diagram is None:
+        diagram = build_polygon_ruling_diagram(  # type: ignore[arg-type]
+            label,
+            record["vertices"],
+            gallery_name=gallery_name,
+        )
+    elif diagram.label != label or diagram.vertices != tuple(
+        tuple(point) for point in record["vertices"]
+    ):
+        raise ValueError("prepared diagram does not match the polygon record")
     chamber = diagram.alternating_chambers[0]
     result = count_multigeodesic_rulings(
         diagram.geodesics,
@@ -182,12 +215,15 @@ def count_case(
         basepoint=chamber.basepoint,
         incremental=incremental,
         name=f"{gallery_name}({label})",
+        arrangement=diagram.arrangement,
+        include_certificates=include_certificates,
     )
     audit = result.audit
     output = {
         "label": label,
         "gallery": gallery_name,
         "engine": "incremental" if incremental else "flat-reference",
+        "algorithm_version": ALGORITHM_VERSION,
         "target_genus": target_genus,
         "polygon_vertices_ccw": [list(point) for point in diagram.vertices],
         "lattice_perimeter": len(diagram.geodesics),
@@ -201,12 +237,14 @@ def count_case(
         ),
         "sweep_covector_source": list(diagram.sweep_covector_source),
         "sweep_covector_count": list(diagram.sweep_covector_count),
-        "origin_denominator": ORIGIN_DENOMINATOR,
+        "origin_denominator": diagram.origin_denominator,
         "origin_residues": list(diagram.origin_residues),
         "origin_attempt": diagram.origin_attempt,
         "chambers": diagram.chambers,
         "alternating_chambers": len(diagram.alternating_chambers),
         "basepoint": [_fraction_text(value) for value in chamber.basepoint],
+        "perturbation_step": _fraction_text(diagram.perturbation_step),
+        "perturbed_vertices": diagram.perturbed_vertices,
         "all_disk": result.all_disk,
         "annular": result.annular,
         "total": result.total,

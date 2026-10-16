@@ -11,8 +11,12 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
+import ruling_smoothing as rs
 from multigeodesic_annular_input import exact_annular_payload
 from verify_triangle_rulings import Geodesic, Point
+
+
+ALGORITHM_VERSION = "direct-ruling-search-v2"
 
 
 @dataclass(frozen=True)
@@ -61,6 +65,8 @@ def count_multigeodesic_rulings(
     sigma: tuple[int, int] = (0, 1),
     node_executable: str | Path | None = None,
     incremental: bool = True,
+    include_certificates: bool = False,
+    arrangement: rs.TorusArrangement | None = None,
     name: str = "primitive multigeodesic arrangement",
 ) -> DirectRulingCount:
     """Exhaust the direct diagram, including exact no-cutoff annular phases."""
@@ -74,7 +80,10 @@ def count_multigeodesic_rulings(
         tau=tau,
         sigma=sigma,
         name=name,
+        arrangement=arrangement,
     )
+    payload["countOnly"] = not include_certificates
+    payload["collectAnswers"] = include_certificates
     script_name = (
         "generic_incremental_ruling_search.js"
         if incremental

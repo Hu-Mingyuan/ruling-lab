@@ -440,10 +440,6 @@ function makeExactAuditor(search, globalDiagnostics) {
             const phaseVector = point.map((z, eye) => (
               descriptors[eye].residue + descriptors[eye].q * z
             ));
-            const finalResult = exactResultFromStructure(
-              arr, choice, trace, matching, colors, descriptors, structural, phaseVector,
-              options.balanceTarget === undefined ? 0n : BigInt(options.balanceTarget),
-            );
             // The old finite-K audit is useful as a regression cross-check, but it
             // contains a floating-point type-B probe and is therefore never
             // part of the exact acceptance decision.
@@ -473,12 +469,17 @@ function makeExactAuditor(search, globalDiagnostics) {
               }
             }
             totals.locallyValid += 1;
-            totals.connected += 1;
-            const local = finalResult.localTypes;
-            const key = `D${finalResult.disks}-R${finalResult.annuli}`
-              + `-A${local.A}-B${local.B}-V${local.V}-S${finalResult.selfSwitches}`;
+            totals.connected = safeNumber(BigInt(totals.connected) + 1n, "annular ruling count");
+            const local = structural.localTypes;
+            const key = `D${structural.disks}-R${matching.length}`
+              + `-A${local.A}-B${local.B}-V${local.V}-S${structural.selfSwitches}`;
             increment(totals.connectedDistribution, key);
-            if (options.collectAnswers === true || totals.witnesses.length < 4) {
+            if (options.collectAnswers !== false
+                && (options.collectAnswers === true || totals.witnesses.length < 4)) {
+              const finalResult = exactResultFromStructure(
+                arr, choice, trace, matching, colors, descriptors, structural, phaseVector,
+                options.balanceTarget === undefined ? 0n : BigInt(options.balanceTarget),
+              );
               totals.witnesses.push(finalResult);
             }
           }

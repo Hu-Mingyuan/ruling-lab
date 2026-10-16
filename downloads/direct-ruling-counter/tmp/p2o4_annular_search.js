@@ -19,6 +19,7 @@
  */
 
 const { buildArrangement, buildOrder, maskHex } = require("./p2o4_smoothing_search.js");
+const { exactTurnSign, safeInteger } = require("./exact_number_guards.js");
 
 function buildAnnularOrder(arr, name) {
   if (name !== "yrev") return buildOrder(arr, name);
@@ -38,7 +39,7 @@ function translationInverses(arr) {
   const mod = (value) => ((value % d) + d) % d;
   for (let a = 0; a < d; a += 1) {
     for (let b = 0; b < d; b += 1) {
-      const inverse = new Int16Array(arr.vertices.length);
+      const inverse = new Int32Array(arr.vertices.length);
       for (const vertex of arr.vertices) {
         let i;
         let j;
@@ -118,10 +119,10 @@ function gcd(a, b) {
 
 class AnnularRollbackDSU {
   constructor(n) {
-    this.parent = new Int16Array(n);
-    this.size = new Int16Array(n);
-    this.potX = new Int16Array(n);
-    this.potY = new Int16Array(n);
+    this.parent = new Int32Array(n);
+    this.size = new Int32Array(n);
+    this.potX = new Float64Array(n);
+    this.potY = new Float64Array(n);
     this.tips = new Int8Array(n);
     // Signed area in the canonical circuit orientation whose outgoing ports
     // have coorientation sign +1.  A V tip fixes this sign before closure.
@@ -131,18 +132,18 @@ class AnnularRollbackDSU {
     this.diskColor = new Int8Array(n);
     this.diskInteriorSide = new Int8Array(n);
     this.diskTraceSide = new Int8Array(n);
-    this.closedRawHx = new Int32Array(n);
-    this.closedRawHy = new Int32Array(n);
+    this.closedRawHx = new Float64Array(n);
+    this.closedRawHy = new Float64Array(n);
     this.closedTraceSide = new Int8Array(n);
     this.forbiddenMask = Array(n).fill(0n);
     // Intrusive member lists let a union inspect only the smaller component.
     // They are used by the dynamic zero-lift inequalities below.  Each port
     // can be an endpoint of at most one active local inequality because a
     // crossing is either a switch or a nonswitch, never both.
-    this.memberHead = new Int16Array(n);
-    this.memberTail = new Int16Array(n);
-    this.memberNext = new Int16Array(n);
-    this.zeroConstraintMate = new Int16Array(n);
+    this.memberHead = new Int32Array(n);
+    this.memberTail = new Int32Array(n);
+    this.memberNext = new Int32Array(n);
+    this.zeroConstraintMate = new Int32Array(n);
     this.zeroConstraintKind = new Int8Array(n);
     this.memberNext.fill(-1);
     this.zeroConstraintMate.fill(-1);
@@ -154,22 +155,22 @@ class AnnularRollbackDSU {
     }
     const capacity = 4 * n + 16;
     this.stackKind = new Int8Array(capacity);
-    this.stackChild = new Int16Array(capacity);
-    this.stackRoot = new Int16Array(capacity);
-    this.stackSize = new Int16Array(capacity);
+    this.stackChild = new Int32Array(capacity);
+    this.stackRoot = new Int32Array(capacity);
+    this.stackSize = new Int32Array(capacity);
     this.stackTips = new Int8Array(capacity);
     this.stackAreaSign = new Int8Array(capacity);
     this.stackClosed = new Int8Array(capacity);
     this.stackMaskRoot = Array(capacity).fill(0n);
     this.stackMaskChild = Array(capacity).fill(0n);
-    this.stackMemberTail = new Int16Array(capacity);
+    this.stackMemberTail = new Int32Array(capacity);
     this.top = 0;
     this.components = n;
     this.closedCycles = 0;
     this.diskCycles = 0;
     this.essentialCycles = 0;
     // Number of open path components carrying 0, 1, or 2 V tips.
-    this.openTipCounts = new Int16Array(3);
+    this.openTipCounts = new Int32Array(3);
     this.openTipCounts[0] = n;
     this.lastFailure = "";
   }
@@ -629,7 +630,7 @@ function modInteger(value, period) {
 
 function traceCircuits(arr, choice) {
   const seen = new Uint8Array(arr.portCount);
-  const circuitOf = new Int16Array(arr.portCount);
+  const circuitOf = new Int32Array(arr.portCount);
   const turnAt = new Int8Array(arr.portCount);
   circuitOf.fill(-1);
   const circuits = [];
@@ -640,7 +641,7 @@ function traceCircuits(arr, choice) {
     let liftX = 0;
     let liftY = 0;
     let tips = 0;
-    let area2 = 0;
+    let area2 = 0n;
     const polygon = [];
     const segments = [];
     const visits = [];
@@ -673,8 +674,8 @@ function traceCircuits(arr, choice) {
       seen[outgoing] = 1;
       circuitOf[current] = id;
       circuitOf[outgoing] = id;
-      const turn = (-arr.portVectorX[current]) * arr.portVectorY[outgoing]
-        - (-arr.portVectorY[current]) * arr.portVectorX[outgoing];
+      const turn = exactTurnSign(-arr.portVectorX[current], -arr.portVectorY[current],
+        arr.portVectorX[outgoing], arr.portVectorY[outgoing]);
       turnAt[current] = turn;
       turnAt[outgoing] = turn;
       if (switched && vertex.orientation === "V") tips += 1;
@@ -685,14 +686,15 @@ function traceCircuits(arr, choice) {
       const bx = target.x + liftX * arr.L;
       const by = target.y + liftY * arr.L;
       segments.push([ax, ay, bx, by]);
-      area2 += ax * by - ay * bx;
+      for (const coordinate of [ax, ay, bx, by]) safeInteger(coordinate, "lifted coordinate");
+      area2 += BigInt(ax) * BigInt(by) - BigInt(ay) * BigInt(bx);
       current = next;
     }
     const signs = new Set(visits.map((visit) => arr.portSign[visit[2]]));
     if (signs.size !== 1) return null;
     const traceSide = [...signs][0];
     if (liftX === 0 && liftY === 0) {
-      if (tips !== 2 || area2 === 0) return null;
+      if (tips !== 2 || area2 === 0n) return null;
       const areaSign = area2 > 0 ? 1 : -1;
       const color = traceSide === areaSign ? 1 : -1;
       circuits.push({
@@ -743,8 +745,8 @@ function auditAnnularStrips(arr, trace, matching, colorMask) {
     essentialGroups.get(key).push(circuit.id);
   }
 
-  const mate = new Int16Array(trace.circuits.length);
-  const pairIndex = new Int16Array(trace.circuits.length);
+  const mate = new Int32Array(trace.circuits.length);
+  const pairIndex = new Int32Array(trace.circuits.length);
   mate.fill(-1);
   pairIndex.fill(-1);
   const sideFuture = new Int8Array(trace.circuits.length);
@@ -780,7 +782,7 @@ function auditAnnularStrips(arr, trace, matching, colorMask) {
     samples.push(modInteger((left + right) / 2, arr.L));
   }
 
-  const phaseByPair = new Int16Array(matching.length);
+  const phaseByPair = new Float64Array(matching.length);
   phaseByPair.fill(-1);
 
   for (const [key, ids] of essentialGroups.entries()) {
@@ -949,7 +951,7 @@ function annularPairIncompatibilities(arr, choice, trace) {
 
 class ParityDSU {
   constructor(n) {
-    this.parent = new Int16Array(n);
+    this.parent = new Int32Array(n);
     this.parity = new Int8Array(n);
     for (let i = 0; i < n; i += 1) this.parent[i] = i;
   }
@@ -981,8 +983,8 @@ function occupiedSectors(arr, vertex, port, color) {
 
 class RegionDSU {
   constructor(n) {
-    this.parent = new Int16Array(n);
-    this.size = new Int16Array(n);
+    this.parent = new Int32Array(n);
+    this.size = new Int32Array(n);
     for (let i = 0; i < n; i += 1) {
       this.parent[i] = i;
       this.size[i] = 1;
@@ -1731,7 +1733,7 @@ function localAudit(arr, choice, trace, matching, colorMask, options = {}, phase
   const phaseMode = phaseVector !== null || structuralOnly;
   const allowQuotientSelfSwitch = options.selfSwitchMode === "quotient" || phaseMode;
   const { circuits, circuitOf, turnAt } = trace;
-  const circuitToEye = new Int16Array(circuits.length);
+  const circuitToEye = new Int32Array(circuits.length);
   const interiorSide = new Int8Array(circuits.length);
   circuitToEye.fill(-1);
   const eyeColors = [];
@@ -2256,8 +2258,8 @@ function enumerate(options = {}) {
   const residueFeasible = useCentroidSymmetry
     ? horizontalResidueFeasibility(arr, order)
     : null;
-  const remainingH = new Int16Array(order.length + 1);
-  const remainingV = new Int16Array(order.length + 1);
+  const remainingH = new Int32Array(order.length + 1);
+  const remainingV = new Int32Array(order.length + 1);
   for (let i = order.length - 1; i >= 0; i -= 1) {
     const isH = arr.vertices[order[i]].orientation === "H";
     remainingH[i] = remainingH[i + 1] + (isH ? 1 : 0);

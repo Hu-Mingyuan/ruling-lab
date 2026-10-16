@@ -10,6 +10,7 @@
  */
 
 const fs = require("fs");
+const { safeInteger, validateArrangementNumbers, validatePayloadNumbers } = require("./exact_number_guards.js");
 const {
   auditAllDiskLocalExact,
   makeExactAuditor,
@@ -17,11 +18,12 @@ const {
 const { translatedDiskMultiplicityExact } = require("./annular_phase_exact.js");
 
 function hydrateArrangement(raw) {
+  validateArrangementNumbers(raw);
   const arr = { ...raw };
-  const signed16 = ["portVertex", "portTwin"];
-  const signed32 = ["portVectorX", "portVectorY", "portShiftX", "portShiftY"];
-  for (const name of signed16) arr[name] = Int16Array.from(raw[name]);
-  for (const name of signed32) arr[name] = Int32Array.from(raw[name]);
+  const indexFields = ["portVertex", "portTwin"];
+  const geometryFields = ["portVectorX", "portVectorY", "portShiftX", "portShiftY"];
+  for (const name of indexFields) arr[name] = Int32Array.from(raw[name]);
+  for (const name of geometryFields) arr[name] = Float64Array.from(raw[name]);
   arr.portSign = Int8Array.from(raw.portSign);
   arr.vertices = raw.vertices.map((vertex) => ({
     ...vertex,
@@ -127,6 +129,7 @@ function auditAllDisk(search, arr, choice, options) {
 }
 
 function run(payload) {
+  validatePayloadNumbers(payload);
   const arr = hydrateArrangement(payload.arrangement);
   const diagnostics = diagnosticsObject();
   const search = require("./p2o4_annular_search.js");
@@ -175,8 +178,8 @@ function run(payload) {
         increment(rejected, `all-disk-${diskAudit.stage}`);
         continue;
       }
-      exactAllDiskRulingCount += 1;
-      allDiskResults.push({
+      exactAllDiskRulingCount = safeInteger(exactAllDiskRulingCount + 1, "all-disk count");
+      if (options.collectAnswers) allDiskResults.push({
         mask: maskHex(mask, size),
         diskEyes: diskAudit.local.disks,
         switches: diskAudit.local.switches,
@@ -200,11 +203,11 @@ function run(payload) {
       continue;
     }
     pairableMasks += 1;
-    exactAnnularRulingCount += result.connected;
+    exactAnnularRulingCount = safeInteger(exactAnnularRulingCount + result.connected, "annular count");
     for (const [stage, count] of Object.entries(result.rejected)) {
       increment(rejected, stage, count);
     }
-    results.push({
+    if (options.collectAnswers) results.push({
       mask: maskHex(mask, size),
       diskEyes: result.diskEyes,
       essentialCircuits: result.essentialCircuits,
@@ -231,7 +234,7 @@ function run(payload) {
     exactAnnularRulingCount: phaseCardinality === "FINITE"
       ? exactAnnularRulingCount : phaseCardinality,
     exactTotalRulingCount: phaseCardinality === "FINITE"
-      ? exactAllDiskRulingCount + exactAnnularRulingCount : phaseCardinality,
+      ? safeInteger(exactAllDiskRulingCount + exactAnnularRulingCount, "total ruling count") : phaseCardinality,
     allDiskResults,
     results,
     rejected,

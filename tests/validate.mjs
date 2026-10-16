@@ -657,19 +657,11 @@ assert.match(index, /112 rulings/);
 assert.match(index, /1,489 rulings/);
 assert.match(index, /2 polygons/);
 assert.match(index, /41 saved figures/);
-assert.match(index, /Code and downloads/);
-assert.match(index, /Direct ruling counter/);
-assert.match(index, /Refined tropical tree counter/);
+assert.match(index, /Code for counting rulings and tropical trees/);
+assert.doesNotMatch(index, /Code and downloads|id="code-title"/);
+assert.match(index, /The rulings of a general convex lattice polygon can be computed with/);
 assert.match(index, /href="downloads\/direct-ruling-counter\.zip"/);
-assert.match(index, /href="downloads\/tropical-tree-counter\.zip"/);
 assert.match(index, /href="https:\/\/github\.com\/Hu-Mingyuan\/ruling-lab\/tree\/one-interior-preview#readme"/);
-for (const packageName of ["direct-ruling-counter", "tropical-tree-counter"]) {
-  assert.ok(
-    index.includes(`href="https://github.com/Hu-Mingyuan/ruling-lab/tree/one-interior-preview/downloads/${packageName}#readme"`),
-    `${packageName}: package instructions and source are linked`
-  );
-}
-assert.equal((index.match(/>README &amp; source<\/a>/g) ?? []).length, 2);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Ruling Atlas/);

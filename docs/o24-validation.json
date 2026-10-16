@@ -1,0 +1,28 @@
+{
+  "polygons": 1,
+  "genera": 4,
+  "jobs": 2,
+  "wall_seconds": 260.2292359000421,
+  "errors": [],
+  "mismatches": [],
+  "changed_sources_during_run": [],
+  "cases": [
+    {
+      "id": "O24",
+      "expected": {
+        "0": 256,
+        "1": 96,
+        "2": 16,
+        "3": 1
+      },
+      "actual": {
+        "0": 256,
+        "1": 96,
+        "2": 16,
+        "3": 1
+      },
+      "wall_seconds": 260.08500830002595
+    }
+  ],
+  "algorithm_version": "direct-ruling-search-v3"
+}

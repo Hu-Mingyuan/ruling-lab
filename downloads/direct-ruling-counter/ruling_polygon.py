@@ -266,9 +266,10 @@ def count_records(
     return {
         "schema": "direct-ruling-counts-v1",
         "algorithm_version": ALGORITHM_VERSION,
+        "count_scope": "connected-orientable-ruling-surfaces",
         "method": (
-            "primitive multigeodesic arrangement; rollback smoothing DFS; "
-            "exact disk and unbounded annular audits"
+            "arrangement of primitive input strands; rollback smoothing DFS; "
+            "exact disk and unbounded annular audits retaining full circuit periods"
         ),
         "uses_tropical_count": False,
         "polygons": output_records,

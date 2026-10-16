@@ -17,6 +17,7 @@ const {
   compileTypeBSameOrder,
   installCompiledConstraints,
   phaseResidueData,
+  phaseDeckShift,
   solveCompiledPhaseSystem,
   translatedDiskMultiplicityExact,
   stringifyExactResult,
@@ -210,10 +211,15 @@ function exactResultFromStructure(
     stripStage: "exact-annular-phase-polyhedron",
     regionOk: true,
     annularPhases: phaseVector.map(jsonInteger),
+    annularPhaseEncoding: "k=a+q*z; deck=a*v+z*w; 0<=a<q",
+    annularPhaseBases: descriptors.map((descriptor) => ({
+      q: jsonInteger(descriptor.q),
+      v: descriptor.phaseStep.map(jsonInteger),
+      w: descriptor.fixedSlicePeriod.map(jsonInteger),
+    })),
+    annularHomologies: matching.map(([left]) => [trace.circuits[left].hx, trace.circuits[left].hy]),
     annularPhaseShifts: descriptors.map((descriptor, index) => (
-      descriptor.phaseStep.map((coordinate) => jsonInteger(
-        coordinate * phaseVector[index],
-      ))
+      phaseDeckShift(descriptor, phaseVector[index]).map(jsonInteger)
     )),
     ribbonBoundaryComponents: structural.ribbon.boundaryComponents,
     ribbonGenus: structural.ribbon.genus,
@@ -444,9 +450,15 @@ function makeExactAuditor(search, globalDiagnostics) {
             // contains a floating-point type-B probe and is therefore never
             // part of the exact acceptance decision.
             if (options.verifyLegacyPhaseAudit === true) {
-              const legacyPhaseVector = phaseVector.map((phase) => (
-                safeNumber(phase, "legacy exact phase")
-              ));
+              const legacyPhaseVector = phaseVector.map((phase, eye) => {
+                const circuit = trace.circuits[matching[eye][0]];
+                const [dx, dy] = phaseDeckShift(descriptors[eye], phase);
+                // The optional old verifier uses determinant phase labels and
+                // explicitly rejects nonprimitive periods; it is not an
+                // acceptance condition for the general exact audit.
+                return safeNumber(BigInt(circuit.hx) * dy - BigInt(circuit.hy) * dx,
+                  "legacy exact phase");
+              });
               const legacy = search.localAudit(
                 arr,
                 choice,

@@ -7,7 +7,7 @@
  * A partial circuit may close either as
  *
  *   - a contractible disk boundary with exactly two V tips, or
- *   - a primitive essential annular boundary with zero V tips.
+ *   - an essential annular boundary with zero V tips.
  *
  * At a leaf, essential circuits are grouped by unoriented homology and
  * opposite coorientation side.  Every perfect matching and both colors of
@@ -266,10 +266,6 @@ class AnnularRollbackDSU {
           this.lastFailure = "essential-has-tip";
           return false;
         }
-        if (gcd(relX, relY) !== 1) {
-          this.lastFailure = "essential-nonprimitive";
-          return false;
-        }
         kind = 2;
       }
       const at = this.top++;
@@ -493,8 +489,8 @@ function closedEssentialSignatures(arr, dsu, choice, closedRoots) {
     const rawHx = dsu.closedRawHx[root];
     const rawHy = dsu.closedRawHy[root];
     const traceSide = dsu.closedTraceSide[root];
-    if (gcd(rawHx, rawHy) !== 1 || traceSide === 0) {
-      throw new Error("closed essential circuit is not primitive");
+    if ((rawHx === 0 && rawHy === 0) || traceSide === 0) {
+      throw new Error("closed essential circuit lost its period or coorientation");
     }
     const [hx, hy, canonicalSide] = canonicalHomology(
       rawHx, rawHy, traceSide,
@@ -703,7 +699,7 @@ function traceCircuits(arr, choice) {
         traceSide,
       });
     } else {
-      if (tips !== 0 || gcd(liftX, liftY) !== 1) return null;
+      if (tips !== 0) return null;
       const [hx, hy, canonicalSide] = canonicalHomology(liftX, liftY, traceSide);
       circuits.push({
         id, kind: "essential", color: 0, area2: 0, interiorSide: 0,
@@ -1058,9 +1054,18 @@ function bezout(a, b) {
   return [oldR, oldS * Math.sign(a || 1), oldT * Math.sign(b || 1)];
 }
 
+function deckInCircuitPeriod(hx, hy, dx, dy) {
+  [hx, hy, dx, dy] = [hx, hy, dx, dy].map((value) => BigInt(value));
+  if (hx === 0n && hy === 0n) return dx === 0n && dy === 0n;
+  if (hx * dy !== hy * dx) return false;
+  return hx !== 0n ? dx % hx === 0n : dy % hy === 0n;
+}
+
 function phaseShift(hx, hy, phase) {
   const [divisor, xCoefficient, yCoefficient] = bezout(hx, hy);
-  if (divisor !== 1) throw new Error("annular homology is not primitive");
+  if (divisor !== 1) {
+    throw new Error("legacy determinant phase coordinates require a primitive period; use the exact annular phase driver for general circuit periods");
+  }
   // hx * sy - hy * sx = phase.
   return [-yCoefficient * phase, xCoefficient * phase];
 }
@@ -1768,7 +1773,7 @@ function localAudit(arr, choice, trace, matching, colorMask, options = {}, phase
       left,
       right,
       phase,
-      shift: phaseShift(circuits[left].hx, circuits[left].hy, phase),
+      shift: structuralOnly ? [0, 0] : phaseShift(circuits[left].hx, circuits[left].hy, phase),
     } : null);
     eyes += 1;
   }
@@ -1874,16 +1879,15 @@ function localAudit(arr, choice, trace, matching, colorMask, options = {}, phase
         if (!Number.isInteger(deckX) || !Number.isInteger(deckY)) {
           return { ok: false, stage: "self-switch-nondeck-offset" };
         }
-        // A disk lift has no longitudinal period, so only the zero deck
-        // offset is the same lift.  An essential boundary is periodic along
-        // h; there its invariant lift label is det(h,deck), and any multiple
-        // of h is the same lifted boundary.
+        // A disk has no period.  For an essential boundary use the complete
+        // subgroup Zh: parallel deck vectors need not be integer multiples
+        // of a nonprimitive circuit period.
         const deckPhase = selfCircuit.kind === "essential"
           ? selfCircuit.hx * deckY - selfCircuit.hy * deckX
           : null;
         const sameLift = selfCircuit.kind === "disk"
           ? deckX === 0 && deckY === 0
-          : deckPhase === 0;
+          : deckInCircuitPeriod(selfCircuit.hx, selfCircuit.hy, deckX, deckY);
         if (sameLift) {
           return { ok: false, stage: "same-lift-self-switch" };
         }
@@ -2004,6 +2008,9 @@ function auditMask(arr, choice, options = {}) {
   ), 0);
   const essential = trace.circuits.filter((circuit) => circuit.kind === "essential");
   if (essential.length === 0) return { ok: false, stage: "all-disk" };
+  if (essential.some((circuit) => gcd(circuit.hx, circuit.hy) !== 1)) {
+    throw new Error("the legacy annular audit cannot enumerate nonprimitive circuit periods; use p2_annular_exact_search.js or generic_incremental_ruling_search.js");
+  }
   const phaseRange = options.annularPhaseRange;
   const phaseMode = Number.isInteger(phaseRange) && phaseRange >= 0;
   const matchings = perfectMatchings(
@@ -2619,6 +2626,7 @@ if (require.main === module) {
 }
 
 module.exports = {
+  deckInCircuitPeriod,
   buildArrangement,
   enumerate,
   traceCircuits,

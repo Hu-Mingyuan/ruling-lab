@@ -1,0 +1,820 @@
+{
+  "algorithm_version": "direct-ruling-search-v3",
+  "archive_sha256": "dbd29494be4407a9eeafe4b40c961d1278d07068218fadbab98c94719bc75373",
+  "archive_matches_current_source": true,
+  "source_sha256": {
+    "direct_ruling_count.py": "2282707fbbe459e139b5ee7db01dba3c20d8547eacbcaaa2e6b4a7b6c739279e",
+    "fig3_direct_ruling_counts.py": "7a0ab66dd6cc65ac61555a288d258377631b852b7d92ac42a85ceb4d1d724056",
+    "generic_ruling_perturbation.py": "c362283c2631307c21755f9158c971fa208880f5dfa0dcfff3315f07a833b4dc",
+    "multigeodesic_alternating_audit.py": "ac693ef4ea3fdc454556ae8bf820a63fbbadd3bc2da672df99146c62e950a092",
+    "multigeodesic_annular_input.py": "8a29a05eda11322b9438c7d3fff8d61352a11de523296b13ab528356245f004b",
+    "ruling_polygon.py": "915fb12d3c8c2eeb1963b05232c02fe189e7701236c5710844b9dba92eddef08",
+    "ruling_smoothing.py": "7e7d800db52e3948646a027ec3e841fb0fa8608a64a6ab508a3bc3af11885c97",
+    "smoke_test.py": "b0e66e86efbc42dc509687257df59de399823f83fcb4f2ce99b109675896e0a7",
+    "test_annular_periods.js": "7e324d7acb3f8a08abe3c0c727caf66d273d8a98819037b33c2c798d7b8a0710",
+    "test_engine_regressions.js": "06b2a55f9ef40cfebecff96083b3e4366e877dfe1742e0993eec20d33bbd5e04",
+    "test_geometry.py": "9df5fc87a9235188c474b0aec2165e52db071b6238a06c0cee6b87d71a5a7322",
+    "test_nonprimitive_annulus.py": "6342f12949486be80a0e6768362ecff12de8f0e7cd88766e52cc1a4f786e2887",
+    "test_polygon.py": "f168483b7cb41ccba097c5ce2ad9ef99561f1962b485c537d8f53b368410472a",
+    "tmp/annular_phase_exact.js": "6f772ca351e2792e5a6295267f18901fe499b6be0ba67f86288ab35c5b0c4379",
+    "tmp/exact_number_guards.js": "45f12bc5303115e6b176e73fa814de0bbd6d52a2ba013cffda03363bd27bf49d",
+    "tmp/generic_annular_exact_search.js": "1a9d707da5a520a27fa8668b8992988902cea686a64c46f0d0385cf16828ba42",
+    "tmp/generic_incremental_ruling_search.js": "be1c45383f220ffc9d53f89e0c3d065244172d3771c84163fd708b9bfeefcbeb",
+    "tmp/p2_annular_exact_search.js": "0b684eb32840d098973196e2fdc36165330b3488a624621ca726f928b525c596",
+    "tmp/p2o4_annular_search.js": "b4c832cf472dfce3222b77fad57555399fb7378c6d5c24eb21251813fbce037c",
+    "tmp/p2o4_smoothing_search.js": "6d69355a88363ced281b0c67e3191eb8e39630a217f00cb87824caa5fc870428",
+    "verify_multigeodesic_rulings.py": "e58d159761dccf72637eda92f76cebb4c1b3af9ffd6c969de5cbe948d250dacf",
+    "verify_triangle_rulings.py": "1c9a471bbbe577b817145d12d5f2ff946ab8e0a836e40cdb68f868fb90fb87da"
+  },
+  "static_python_imports": [
+    {
+      "file": "direct_ruling_count.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 6,
+      "module": "json"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 7,
+      "module": "shutil"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 8,
+      "module": "subprocess"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 9,
+      "module": "time"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 10,
+      "module": "dataclasses"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 11,
+      "module": "pathlib"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 12,
+      "module": "typing"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 14,
+      "module": "ruling_smoothing"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 15,
+      "module": "multigeodesic_annular_input"
+    },
+    {
+      "file": "direct_ruling_count.py",
+      "line": 16,
+      "module": "verify_triangle_rulings"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 6,
+      "module": "argparse"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 7,
+      "module": "concurrent.futures"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 8,
+      "module": "dataclasses"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 9,
+      "module": "fractions"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 10,
+      "module": "math"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 11,
+      "module": "json"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 12,
+      "module": "pathlib"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 13,
+      "module": "random"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 14,
+      "module": "typing"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 16,
+      "module": "direct_ruling_count"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 17,
+      "module": "generic_ruling_perturbation"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 18,
+      "module": "multigeodesic_alternating_audit"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 19,
+      "module": "ruling_smoothing"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 20,
+      "module": "verify_multigeodesic_rulings"
+    },
+    {
+      "file": "fig3_direct_ruling_counts.py",
+      "line": 21,
+      "module": "verify_triangle_rulings"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 11,
+      "module": "__future__"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 13,
+      "module": "collections"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 14,
+      "module": "dataclasses"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 15,
+      "module": "fractions"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 16,
+      "module": "math"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 17,
+      "module": "typing"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 19,
+      "module": "ruling_smoothing"
+    },
+    {
+      "file": "generic_ruling_perturbation.py",
+      "line": 22,
+      "module": "multigeodesic_alternating_audit"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 6,
+      "module": "dataclasses"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 7,
+      "module": "fractions"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 8,
+      "module": "itertools"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 9,
+      "module": "math"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 10,
+      "module": "typing"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 12,
+      "module": "verify_triangle_rulings"
+    },
+    {
+      "file": "multigeodesic_alternating_audit.py",
+      "line": 13,
+      "module": "verify_multigeodesic_rulings"
+    },
+    {
+      "file": "multigeodesic_annular_input.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "multigeodesic_annular_input.py",
+      "line": 6,
+      "module": "fractions"
+    },
+    {
+      "file": "multigeodesic_annular_input.py",
+      "line": 7,
+      "module": "math"
+    },
+    {
+      "file": "multigeodesic_annular_input.py",
+      "line": 8,
+      "module": "typing"
+    },
+    {
+      "file": "multigeodesic_annular_input.py",
+      "line": 10,
+      "module": "ruling_smoothing"
+    },
+    {
+      "file": "multigeodesic_annular_input.py",
+      "line": 11,
+      "module": "verify_multigeodesic_rulings"
+    },
+    {
+      "file": "multigeodesic_annular_input.py",
+      "line": 12,
+      "module": "verify_triangle_rulings"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 10,
+      "module": "__future__"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 12,
+      "module": "argparse"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 13,
+      "module": "concurrent.futures"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 14,
+      "module": "hashlib"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 15,
+      "module": "json"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 16,
+      "module": "math"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 17,
+      "module": "pathlib"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 18,
+      "module": "typing"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 20,
+      "module": "direct_ruling_count"
+    },
+    {
+      "file": "ruling_polygon.py",
+      "line": 21,
+      "module": "fig3_direct_ruling_counts"
+    },
+    {
+      "file": "ruling_smoothing.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "ruling_smoothing.py",
+      "line": 6,
+      "module": "collections"
+    },
+    {
+      "file": "ruling_smoothing.py",
+      "line": 7,
+      "module": "dataclasses"
+    },
+    {
+      "file": "ruling_smoothing.py",
+      "line": 8,
+      "module": "fractions"
+    },
+    {
+      "file": "smoke_test.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "smoke_test.py",
+      "line": 6,
+      "module": "json"
+    },
+    {
+      "file": "smoke_test.py",
+      "line": 7,
+      "module": "pathlib"
+    },
+    {
+      "file": "smoke_test.py",
+      "line": 8,
+      "module": "subprocess"
+    },
+    {
+      "file": "smoke_test.py",
+      "line": 9,
+      "module": "sys"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 6,
+      "module": "fractions"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 7,
+      "module": "itertools"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 8,
+      "module": "math"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 9,
+      "module": "unittest"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 11,
+      "module": "fig3_direct_ruling_counts"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 12,
+      "module": "generic_ruling_perturbation"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 13,
+      "module": "multigeodesic_alternating_audit"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 14,
+      "module": "multigeodesic_annular_input"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 15,
+      "module": "verify_multigeodesic_rulings"
+    },
+    {
+      "file": "test_geometry.py",
+      "line": 16,
+      "module": "verify_triangle_rulings"
+    },
+    {
+      "file": "test_nonprimitive_annulus.py",
+      "line": 3,
+      "module": "json"
+    },
+    {
+      "file": "test_nonprimitive_annulus.py",
+      "line": 4,
+      "module": "pathlib"
+    },
+    {
+      "file": "test_nonprimitive_annulus.py",
+      "line": 5,
+      "module": "subprocess"
+    },
+    {
+      "file": "test_nonprimitive_annulus.py",
+      "line": 6,
+      "module": "unittest"
+    },
+    {
+      "file": "test_nonprimitive_annulus.py",
+      "line": 8,
+      "module": "direct_ruling_count"
+    },
+    {
+      "file": "test_nonprimitive_annulus.py",
+      "line": 9,
+      "module": "fig3_direct_ruling_counts"
+    },
+    {
+      "file": "test_nonprimitive_annulus.py",
+      "line": 10,
+      "module": "multigeodesic_annular_input"
+    },
+    {
+      "file": "test_polygon.py",
+      "line": 3,
+      "module": "json"
+    },
+    {
+      "file": "test_polygon.py",
+      "line": 4,
+      "module": "pathlib"
+    },
+    {
+      "file": "test_polygon.py",
+      "line": 5,
+      "module": "types"
+    },
+    {
+      "file": "test_polygon.py",
+      "line": 6,
+      "module": "unittest"
+    },
+    {
+      "file": "test_polygon.py",
+      "line": 7,
+      "module": "unittest.mock"
+    },
+    {
+      "file": "test_polygon.py",
+      "line": 9,
+      "module": "direct_ruling_count"
+    },
+    {
+      "file": "test_polygon.py",
+      "line": 10,
+      "module": "ruling_polygon"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 6,
+      "module": "fractions"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 7,
+      "module": "functools"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 8,
+      "module": "itertools"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 9,
+      "module": "math"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 10,
+      "module": "typing"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 12,
+      "module": "ruling_smoothing"
+    },
+    {
+      "file": "verify_multigeodesic_rulings.py",
+      "line": 13,
+      "module": "verify_triangle_rulings"
+    },
+    {
+      "file": "verify_triangle_rulings.py",
+      "line": 4,
+      "module": "__future__"
+    },
+    {
+      "file": "verify_triangle_rulings.py",
+      "line": 6,
+      "module": "dataclasses"
+    },
+    {
+      "file": "verify_triangle_rulings.py",
+      "line": 7,
+      "module": "fractions"
+    },
+    {
+      "file": "verify_triangle_rulings.py",
+      "line": 8,
+      "module": "math"
+    }
+  ],
+  "static_js_requires": [
+    {
+      "file": "test_annular_periods.js",
+      "line": 6,
+      "module": "node:assert/strict"
+    },
+    {
+      "file": "test_annular_periods.js",
+      "line": 7,
+      "module": "./tmp/annular_phase_exact.js"
+    },
+    {
+      "file": "test_annular_periods.js",
+      "line": 8,
+      "module": "./tmp/p2o4_annular_search.js"
+    },
+    {
+      "file": "test_engine_regressions.js",
+      "line": 4,
+      "module": "node:assert/strict"
+    },
+    {
+      "file": "test_engine_regressions.js",
+      "line": 5,
+      "module": "./tmp/p2o4_annular_search.js"
+    },
+    {
+      "file": "test_engine_regressions.js",
+      "line": 6,
+      "module": "./tmp/p2_annular_exact_search.js"
+    },
+    {
+      "file": "test_engine_regressions.js",
+      "line": 7,
+      "module": "./tmp/annular_phase_exact.js"
+    },
+    {
+      "file": "test_engine_regressions.js",
+      "line": 8,
+      "module": "./tmp/generic_annular_exact_search.js"
+    },
+    {
+      "file": "test_engine_regressions.js",
+      "line": 9,
+      "module": "./tmp/generic_incremental_ruling_search.js"
+    },
+    {
+      "file": "test_engine_regressions.js",
+      "line": 10,
+      "module": "./tmp/exact_number_guards.js"
+    },
+    {
+      "file": "tmp/generic_annular_exact_search.js",
+      "line": 12,
+      "module": "fs"
+    },
+    {
+      "file": "tmp/generic_annular_exact_search.js",
+      "line": 13,
+      "module": "./exact_number_guards.js"
+    },
+    {
+      "file": "tmp/generic_annular_exact_search.js",
+      "line": 17,
+      "module": "./p2_annular_exact_search.js"
+    },
+    {
+      "file": "tmp/generic_annular_exact_search.js",
+      "line": 18,
+      "module": "./annular_phase_exact.js"
+    },
+    {
+      "file": "tmp/generic_annular_exact_search.js",
+      "line": 135,
+      "module": "./p2o4_annular_search.js"
+    },
+    {
+      "file": "tmp/generic_incremental_ruling_search.js",
+      "line": 23,
+      "module": "fs"
+    },
+    {
+      "file": "tmp/generic_incremental_ruling_search.js",
+      "line": 24,
+      "module": "./exact_number_guards.js"
+    },
+    {
+      "file": "tmp/generic_incremental_ruling_search.js",
+      "line": 27,
+      "module": "./generic_annular_exact_search.js"
+    },
+    {
+      "file": "tmp/generic_incremental_ruling_search.js",
+      "line": 31,
+      "module": "./p2_annular_exact_search.js"
+    },
+    {
+      "file": "tmp/generic_incremental_ruling_search.js",
+      "line": 32,
+      "module": "./p2o4_annular_search.js"
+    },
+    {
+      "file": "tmp/generic_incremental_ruling_search.js",
+      "line": 35,
+      "module": "./annular_phase_exact.js"
+    },
+    {
+      "file": "tmp/p2_annular_exact_search.js",
+      "line": 24,
+      "module": "./annular_phase_exact.js"
+    },
+    {
+      "file": "tmp/p2_annular_exact_search.js",
+      "line": 27,
+      "module": "./p2o4_annular_search.js"
+    },
+    {
+      "file": "tmp/p2o4_annular_search.js",
+      "line": 21,
+      "module": "./p2o4_smoothing_search.js"
+    },
+    {
+      "file": "tmp/p2o4_annular_search.js",
+      "line": 22,
+      "module": "./exact_number_guards.js"
+    },
+    {
+      "file": "tmp/p2o4_smoothing_search.js",
+      "line": 33,
+      "module": "node:crypto"
+    }
+  ],
+  "runtime_guards": "Python run with -I -S -B; reads restricted to extracted ruling package, interpreter distribution, and supplied polygon input. Node require hook permits package modules plus fs/node:crypto; reads restricted to package source files or fd 0. No tropical package or atlas data exists in the extraction directory.",
+  "call_chain": [
+    "ruling_polygon._load_records -> validated integer polygon vertices",
+    "ruling_polygon.count_records -> fig3_direct_ruling_counts.build_polygon_ruling_diagram -> exact torus geometry and certified perturbation",
+    "fig3_direct_ruling_counts.count_case -> direct_ruling_count.count_multigeodesic_rulings",
+    "multigeodesic_annular_input.exact_annular_payload(masks=None): targetChi=2-2*genus-boundary; arrangement/ports/basepoint/sweep data only",
+    "subprocess Node generic_incremental_ruling_search.js, payload on stdin",
+    "run -> DFS over switch/no-switch choices -> traceCircuits -> exact all-disk audit or exact annular phase audit",
+    "all-disk count increments by one per accepted mask; annular count accumulates exact connected phase solutions; total is their sum"
+  ],
+  "runs": [
+    {
+      "mode": "count-only",
+      "exit_code": 0,
+      "polygon_counts": [
+        {
+          "id": "independent-triangle",
+          "genera": [
+            {
+              "genus": 0,
+              "total": 3,
+              "search_nodes": 116
+            },
+            {
+              "genus": 1,
+              "total": 1,
+              "search_nodes": 28
+            }
+          ]
+        },
+        {
+          "id": "independent-translated-triangle",
+          "genera": [
+            {
+              "genus": 0,
+              "total": 5,
+              "search_nodes": 934
+            },
+            {
+              "genus": 1,
+              "total": 5,
+              "search_nodes": 1034
+            },
+            {
+              "genus": 2,
+              "total": 1,
+              "search_nodes": 84
+            }
+          ]
+        },
+        {
+          "id": "independent-square",
+          "genera": [
+            {
+              "genus": 0,
+              "total": 1,
+              "search_nodes": 9
+            }
+          ]
+        }
+      ],
+      "node_counting_processes": 6,
+      "observed_node_builtins": [
+        "fs",
+        "node:crypto"
+      ],
+      "all_content_reads_restricted_to_package_and_standard_input": true
+    },
+    {
+      "mode": "certificates",
+      "exit_code": 0,
+      "polygon_counts": [
+        {
+          "id": "independent-triangle",
+          "genera": [
+            {
+              "genus": 0,
+              "total": 3,
+              "search_nodes": 116
+            },
+            {
+              "genus": 1,
+              "total": 1,
+              "search_nodes": 28
+            }
+          ]
+        },
+        {
+          "id": "independent-translated-triangle",
+          "genera": [
+            {
+              "genus": 0,
+              "total": 5,
+              "search_nodes": 934
+            },
+            {
+              "genus": 1,
+              "total": 5,
+              "search_nodes": 1034
+            },
+            {
+              "genus": 2,
+              "total": 1,
+              "search_nodes": 84
+            }
+          ]
+        },
+        {
+          "id": "independent-square",
+          "genera": [
+            {
+              "genus": 0,
+              "total": 1,
+              "search_nodes": 9
+            }
+          ]
+        }
+      ],
+      "node_counting_processes": 6,
+      "observed_node_builtins": [
+        "fs",
+        "node:crypto"
+      ],
+      "all_content_reads_restricted_to_package_and_standard_input": true
+    }
+  ],
+  "conclusion": "The audited counter has no tropical dependency, atlas-answer file dependency, or use of the conjectural polynomial substitution to generate ruling totals. The successful guarded executions establish this for the tested runs; source inspection establishes the stated dependency/call-chain structure. Correctness of pruning and definition fidelity remains a separate issue."
+}

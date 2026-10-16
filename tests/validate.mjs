@@ -657,15 +657,19 @@ assert.match(index, /112 rulings/);
 assert.match(index, /1,489 rulings/);
 assert.match(index, /2 polygons/);
 assert.match(index, /41 saved figures/);
-assert.match(
-  index,
-  /general convex lattice polygon can be computed with\s+the <a href="downloads\/direct-ruling-counter\.zip">accompanying code<\/a>/
-);
-assert.match(
-  index,
-  /href="https:\/\/github\.com\/Hu-Mingyuan\/ruling-lab\/tree\/one-interior-preview\/downloads\/direct-ruling-counter"[\s\S]*?>View source<\/a>/
-);
-assert.equal((index.match(/>View source<\/a>/g) ?? []).length, 1);
+assert.match(index, /Code and downloads/);
+assert.match(index, /Direct ruling counter/);
+assert.match(index, /Refined tropical tree counter/);
+assert.match(index, /href="downloads\/direct-ruling-counter\.zip"/);
+assert.match(index, /href="downloads\/tropical-tree-counter\.zip"/);
+assert.match(index, /href="https:\/\/github\.com\/Hu-Mingyuan\/ruling-lab\/tree\/one-interior-preview#readme"/);
+for (const packageName of ["direct-ruling-counter", "tropical-tree-counter"]) {
+  assert.ok(
+    index.includes(`href="https://github.com/Hu-Mingyuan/ruling-lab/tree/one-interior-preview/downloads/${packageName}#readme"`),
+    `${packageName}: package instructions and source are linked`
+  );
+}
+assert.equal((index.match(/>README &amp; source<\/a>/g) ?? []).length, 2);
 assert.doesNotMatch(index, /https?:\/\/[^"]+\.js/);
 assert.doesNotMatch(index, /\bDing\b|Fig(?:ure)?\.?\s*\d/i);
 assert.match(index, /Ruling Atlas/);
@@ -1081,14 +1085,18 @@ assert.match(otherPolygonsScript, /polygonSvg/);
 
 const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
 assert.doesNotMatch(readme, /standard ruling/i);
-assert.match(readme, /highest genus to lowest genus/);
-assert.match(readme, /O\(3\) on P\^2/);
-assert.match(readme, /18 equal triangular eyes/);
-assert.match(readme, /O\(2,4\) on P\^1 x P\^1/);
-assert.match(readme, /zero annular rulings/);
-assert.match(readme, /polygons with more interior points/);
+const atlasConventions = fs.readFileSync(path.join(root, "docs", "atlas-conventions.md"), "utf8");
+assert.ok(readme.includes("docs/atlas-conventions.md"), "root README links to geometric conventions");
+assert.ok(readme.includes("downloads/README.md"), "root README links to the downloads guide");
+assert.doesNotMatch(atlasConventions, /standard ruling/i);
+assert.match(atlasConventions, /highest genus to lowest genus/);
+assert.match(atlasConventions, /O\(3\) on P\^2/);
+assert.match(atlasConventions, /18 equal triangular eyes/);
+assert.match(atlasConventions, /O\(2,4\) on P\^1 x P\^1/);
+assert.match(atlasConventions, /zero annular rulings/);
+assert.match(atlasConventions, /polygons with more interior points/);
 assert.match(
-  readme,
+  atlasConventions,
   /selecting either card reveals\s+only that polygon's details/
 );
 
@@ -1106,6 +1114,24 @@ for (const relative of [
 }
 for (const entry of fs.readdirSync(packageRoot, { recursive: true })) {
   assert.doesNotMatch(String(entry), /tropical/i);
+}
+
+const tropicalPackageRoot = path.join(root, "downloads", "tropical-tree-counter");
+const tropicalArchive = path.join(root, "downloads", "tropical-tree-counter.zip");
+assert.ok(fs.existsSync(tropicalArchive), "tropical downloadable archive exists");
+assert.ok(fs.statSync(tropicalArchive).size > 0, "tropical downloadable archive is nonempty");
+for (const relative of [
+  "README.md",
+  "tropical_tree.py",
+  "example_polygon.json",
+  "examples.json",
+  "test_tropical_tree.py",
+]) {
+  assert.ok(fs.existsSync(path.join(tropicalPackageRoot, relative)), `tropical ${relative} exists`);
+}
+for (const packageName of ["direct-ruling-counter", "tropical-tree-counter"]) {
+  assert.ok(readme.includes(`downloads/${packageName}/README.md`), `${packageName}: root README links to usage guide`);
+  assert.ok(readme.includes(`downloads/${packageName}.zip`), `${packageName}: root README links to download`);
 }
 
 console.log(

@@ -95,4 +95,31 @@ assert.throws(() => incremental.run(unsafe), /safe integer/);
 const enormous = triangle(0);
 enormous.arrangement.L = Number.MAX_SAFE_INTEGER;
 assert.throws(() => flat.run(enormous), /exact integer geometry range/);
-console.log("Engine regressions passed: shears, orders, count-only, O(12) witness, integer ranges.");
+
+// Complete deck classes, including torsion, with positive and negative tau(h).
+// Recover every bounded test vector modulo the actual circuit period, not
+// merely its primitive direction.  The property is independent of S7 counts.
+for (const [h, tau] of [
+  [[2, -2], [1, 0]], [[2, -2], [4, 1]], [[2, -2], [-1, 0]],
+  [[6, 9], [2, -1]], [[3, 2], [2, 1]], [[0, -4], [2, 1]],
+]) {
+  const data = phase.phaseResidueData(...h, ...tau);
+  const [vx, vy] = data.phaseStep;
+  const [wx, wy] = data.fixedSlicePeriod;
+  assert.equal(vx * wy - vy * wx, 1n);
+  for (let x = -5; x <= 5; x += 1) for (let y = -5; y <= 5; y += 1) {
+    const code = phase.deckPhaseClass(data, x, y);
+    const [dx, dy] = phase.phaseDeckShift(data, code);
+    assert.ok(core.deckInCircuitPeriod(...h, BigInt(x) - dx, BigInt(y) - dy));
+    assert.equal(phase.deckPhaseClass(data, dx, dy), code);
+    assert.equal(phase.deckPhaseClass(data, x + 3 * h[0], y + 3 * h[1]), code);
+  }
+}
+const torsion = phase.phaseResidueData(2, -2, 1, 0);
+assert.notEqual(phase.deckPhaseClass(torsion, 0, 0), phase.deckPhaseClass(torsion, 1, -1));
+assert.equal(phase.deckPhaseClass(torsion, 0, 0), phase.deckPhaseClass(torsion, 2, -2));
+assert.equal(core.deckInCircuitPeriod(2, -2, 1, -1), false);
+assert.equal(core.deckInCircuitPeriod(2, -2, -4, 4), true);
+assert.throws(() => phase.phaseResidueData(2, -2, 2, 0), /covector must be primitive/);
+assert.throws(() => phase.phaseResidueData(2, -2, 1, 1), /tangent/);
+console.log("Engine regressions passed: shears, orders, count-only, O(12), integer ranges, full deck classes.");

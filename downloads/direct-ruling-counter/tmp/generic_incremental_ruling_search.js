@@ -11,11 +11,11 @@
  * crossing at a time.  A component is checked as soon as it closes:
  *
  *   contractible  => exactly two vertical tips;
- *   essential     => zero vertical tips and primitive homology.
+ *   essential     => zero vertical tips and nonzero circuit period.
  *
  * Active zero-lift inequalities reject a nonswitch self-intersection or a
  * same-lift self-switch as soon as its two ports become connected.  Closed
- * essential circuits are also balanced incrementally by primitive homology
+ * essential circuits are also balanced incrementally by their full period
  * and canonical coorientation side.  Only surviving leaves are passed to
  * the existing full disk/annular auditors.
  */
@@ -156,10 +156,6 @@ class RollbackVoltageDSU {
       } else {
         if (tipCount !== 0) {
           this.lastFailure = "essential-has-tip";
-          return false;
-        }
-        if (gcd(relativeX, relativeY) !== 1) {
-          this.lastFailure = "essential-nonprimitive";
           return false;
         }
         kind = 2;

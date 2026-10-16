@@ -1,0 +1,853 @@
+{
+  "polygons": 61,
+  "genera": 167,
+  "jobs": 2,
+  "wall_seconds": 357.48151439998765,
+  "errors": [],
+  "mismatches": [],
+  "changed_sources_during_run": [],
+  "cases": [
+    {
+      "id": "polygon-4682f4498d",
+      "expected": {
+        "0": 3,
+        "1": 1
+      },
+      "actual": {
+        "0": 3,
+        "1": 1
+      },
+      "wall_seconds": 0.43428469996433705
+    },
+    {
+      "id": "polygon-f3913e9013",
+      "expected": {
+        "0": 4,
+        "1": 1
+      },
+      "actual": {
+        "0": 4,
+        "1": 1
+      },
+      "wall_seconds": 0.5127747000078671
+    },
+    {
+      "id": "polygon-36a030f3ad",
+      "expected": {
+        "0": 6,
+        "1": 1
+      },
+      "actual": {
+        "0": 6,
+        "1": 1
+      },
+      "wall_seconds": 0.8029650999815203
+    },
+    {
+      "id": "polygon-a766a56e11",
+      "expected": {
+        "0": 8,
+        "1": 1
+      },
+      "actual": {
+        "0": 8,
+        "1": 1
+      },
+      "wall_seconds": 4.414354599954095
+    },
+    {
+      "id": "polygon-a2cd47c761",
+      "expected": {
+        "0": 9,
+        "1": 1
+      },
+      "actual": {
+        "0": 9,
+        "1": 1
+      },
+      "wall_seconds": 5.900266999960877
+    },
+    {
+      "id": "polygon-38916813cd",
+      "expected": {
+        "0": 4,
+        "1": 1
+      },
+      "actual": {
+        "0": 4,
+        "1": 1
+      },
+      "wall_seconds": 0.6540900999680161
+    },
+    {
+      "id": "polygon-15c1e204ba",
+      "expected": {
+        "0": 4,
+        "1": 1
+      },
+      "actual": {
+        "0": 4,
+        "1": 1
+      },
+      "wall_seconds": 0.8631897000013851
+    },
+    {
+      "id": "polygon-8b90cfe09b",
+      "expected": {
+        "0": 5,
+        "1": 1
+      },
+      "actual": {
+        "0": 5,
+        "1": 1
+      },
+      "wall_seconds": 1.106740000017453
+    },
+    {
+      "id": "polygon-62443567f0",
+      "expected": {
+        "0": 6,
+        "1": 1
+      },
+      "actual": {
+        "0": 6,
+        "1": 1
+      },
+      "wall_seconds": 1.1348388000042178
+    },
+    {
+      "id": "polygon-9ff967eacd",
+      "expected": {
+        "0": 7,
+        "1": 1
+      },
+      "actual": {
+        "0": 7,
+        "1": 1
+      },
+      "wall_seconds": 2.17733869998483
+    },
+    {
+      "id": "polygon-12dcc6cad7",
+      "expected": {
+        "0": 8,
+        "1": 1
+      },
+      "actual": {
+        "0": 8,
+        "1": 1
+      },
+      "wall_seconds": 2.6127055999822915
+    },
+    {
+      "id": "polygon-10c88eafad",
+      "expected": {
+        "0": 8,
+        "1": 1
+      },
+      "actual": {
+        "0": 8,
+        "1": 1
+      },
+      "wall_seconds": 1.8206245000474155
+    },
+    {
+      "id": "polygon-08aed40a08",
+      "expected": {
+        "0": 5,
+        "1": 1
+      },
+      "actual": {
+        "0": 5,
+        "1": 1
+      },
+      "wall_seconds": 1.1284863000037149
+    },
+    {
+      "id": "polygon-fefad406cd",
+      "expected": {
+        "0": 6,
+        "1": 1
+      },
+      "actual": {
+        "0": 6,
+        "1": 1
+      },
+      "wall_seconds": 1.60173939995002
+    },
+    {
+      "id": "polygon-6a605367ef",
+      "expected": {
+        "0": 7,
+        "1": 1
+      },
+      "actual": {
+        "0": 7,
+        "1": 1
+      },
+      "wall_seconds": 1.3450274000060745
+    },
+    {
+      "id": "polygon-e95d7ae246",
+      "expected": {
+        "0": 6,
+        "1": 1
+      },
+      "actual": {
+        "0": 6,
+        "1": 1
+      },
+      "wall_seconds": 1.4191639000200666
+    },
+    {
+      "id": "polygon-a681cfa306",
+      "expected": {
+        "0": 5,
+        "1": 5,
+        "2": 1
+      },
+      "actual": {
+        "0": 5,
+        "1": 5,
+        "2": 1
+      },
+      "wall_seconds": 1.4889665000373498
+    },
+    {
+      "id": "polygon-6b87a9380f",
+      "expected": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "actual": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "wall_seconds": 1.6436267000390217
+    },
+    {
+      "id": "polygon-dcf2998504",
+      "expected": {
+        "0": 16,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 16,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 4.337334699986968
+    },
+    {
+      "id": "polygon-1a63e90b32",
+      "expected": {
+        "0": 30,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 30,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 44.37337479996495
+    },
+    {
+      "id": "polygon-813771d6cd",
+      "expected": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "actual": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "wall_seconds": 309.54549709998537
+    },
+    {
+      "id": "polygon-9bc8ebd46d",
+      "expected": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "actual": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "wall_seconds": 5.422644899983425
+    },
+    {
+      "id": "polygon-0a4dae8cf3",
+      "expected": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "actual": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "wall_seconds": 4.313118299993221
+    },
+    {
+      "id": "polygon-3a8279df42",
+      "expected": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "actual": {
+        "0": 9,
+        "1": 6,
+        "2": 1
+      },
+      "wall_seconds": 3.309620600019116
+    },
+    {
+      "id": "polygon-5c91265a95",
+      "expected": {
+        "0": 8,
+        "1": 6,
+        "2": 1
+      },
+      "actual": {
+        "0": 8,
+        "1": 6,
+        "2": 1
+      },
+      "wall_seconds": 2.679574399953708
+    },
+    {
+      "id": "polygon-c76806329e",
+      "expected": {
+        "0": 13,
+        "1": 7,
+        "2": 1
+      },
+      "actual": {
+        "0": 13,
+        "1": 7,
+        "2": 1
+      },
+      "wall_seconds": 4.703582699992694
+    },
+    {
+      "id": "polygon-f9fc22a652",
+      "expected": {
+        "0": 12,
+        "1": 7,
+        "2": 1
+      },
+      "actual": {
+        "0": 12,
+        "1": 7,
+        "2": 1
+      },
+      "wall_seconds": 3.7364798999624327
+    },
+    {
+      "id": "polygon-708fa79ea2",
+      "expected": {
+        "0": 16,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 16,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 3.851364400004968
+    },
+    {
+      "id": "polygon-b7c9e17670",
+      "expected": {
+        "0": 17,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 17,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 3.164330700004939
+    },
+    {
+      "id": "polygon-49478b3e4c",
+      "expected": {
+        "0": 16,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 16,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 2.9210300999693573
+    },
+    {
+      "id": "polygon-c848bca89e",
+      "expected": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 2.462719900009688
+    },
+    {
+      "id": "polygon-8c7dbbad4d",
+      "expected": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "actual": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "wall_seconds": 4.2533298000344075
+    },
+    {
+      "id": "polygon-6d53fc190f",
+      "expected": {
+        "0": 23,
+        "1": 9,
+        "2": 1
+      },
+      "actual": {
+        "0": 23,
+        "1": 9,
+        "2": 1
+      },
+      "wall_seconds": 4.6018853999557905
+    },
+    {
+      "id": "polygon-9042197af4",
+      "expected": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 14.987855000013951
+    },
+    {
+      "id": "polygon-074b9c863c",
+      "expected": {
+        "0": 30,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 30,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 8.20288450003136
+    },
+    {
+      "id": "polygon-3d3a950713",
+      "expected": {
+        "0": 30,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 30,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 5.7511539999977686
+    },
+    {
+      "id": "polygon-7a691b36ff",
+      "expected": {
+        "0": 39,
+        "1": 11,
+        "2": 1
+      },
+      "actual": {
+        "0": 39,
+        "1": 11,
+        "2": 1
+      },
+      "wall_seconds": 53.70198630000232
+    },
+    {
+      "id": "polygon-8ee8c76d7d",
+      "expected": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "actual": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "wall_seconds": 14.886229700001422
+    },
+    {
+      "id": "polygon-224b3c2c18",
+      "expected": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "actual": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "wall_seconds": 59.218635400000494
+    },
+    {
+      "id": "polygon-72dee905db",
+      "expected": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "actual": {
+        "0": 48,
+        "1": 12,
+        "2": 1
+      },
+      "wall_seconds": 19.00984980002977
+    },
+    {
+      "id": "polygon-c24201e518",
+      "expected": {
+        "0": 13,
+        "1": 7,
+        "2": 1
+      },
+      "actual": {
+        "0": 13,
+        "1": 7,
+        "2": 1
+      },
+      "wall_seconds": 1.8955923999892548
+    },
+    {
+      "id": "polygon-967be6cde6",
+      "expected": {
+        "0": 13,
+        "1": 7,
+        "2": 1
+      },
+      "actual": {
+        "0": 13,
+        "1": 7,
+        "2": 1
+      },
+      "wall_seconds": 0.9871681000222452
+    },
+    {
+      "id": "polygon-4b08cc5b68",
+      "expected": {
+        "0": 12,
+        "1": 7,
+        "2": 1
+      },
+      "actual": {
+        "0": 12,
+        "1": 7,
+        "2": 1
+      },
+      "wall_seconds": 2.1467828000313602
+    },
+    {
+      "id": "polygon-b2ba3f9e0f",
+      "expected": {
+        "0": 17,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 17,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 2.733265300048515
+    },
+    {
+      "id": "polygon-3ea2d345c2",
+      "expected": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 4.094007099978626
+    },
+    {
+      "id": "polygon-1bac798fa6",
+      "expected": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 2.0788515000022016
+    },
+    {
+      "id": "polygon-9d5da6549a",
+      "expected": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 4.240487699978985
+    },
+    {
+      "id": "polygon-87e249b306",
+      "expected": {
+        "0": 23,
+        "1": 9,
+        "2": 1
+      },
+      "actual": {
+        "0": 23,
+        "1": 9,
+        "2": 1
+      },
+      "wall_seconds": 5.058521999977529
+    },
+    {
+      "id": "polygon-907a260df5",
+      "expected": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "actual": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "wall_seconds": 4.624379099986982
+    },
+    {
+      "id": "polygon-10c4f230ce",
+      "expected": {
+        "0": 23,
+        "1": 9,
+        "2": 1
+      },
+      "actual": {
+        "0": 23,
+        "1": 9,
+        "2": 1
+      },
+      "wall_seconds": 2.7709717999678105
+    },
+    {
+      "id": "polygon-39ce848bff",
+      "expected": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "actual": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "wall_seconds": 3.048548299993854
+    },
+    {
+      "id": "polygon-fdd891e0b2",
+      "expected": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 6.599577100016177
+    },
+    {
+      "id": "polygon-39a1078c3d",
+      "expected": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 4.3831126999575645
+    },
+    {
+      "id": "polygon-727195663f",
+      "expected": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 18.028273299976718
+    },
+    {
+      "id": "polygon-d9142d77e1",
+      "expected": {
+        "0": 39,
+        "1": 11,
+        "2": 1
+      },
+      "actual": {
+        "0": 39,
+        "1": 11,
+        "2": 1
+      },
+      "wall_seconds": 13.704449800017755
+    },
+    {
+      "id": "polygon-8941ab99b7",
+      "expected": {
+        "0": 39,
+        "1": 11,
+        "2": 1
+      },
+      "actual": {
+        "0": 39,
+        "1": 11,
+        "2": 1
+      },
+      "wall_seconds": 8.865906300023198
+    },
+    {
+      "id": "polygon-9c7250448a",
+      "expected": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 2.719932999985758
+    },
+    {
+      "id": "polygon-0cf816656d",
+      "expected": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "actual": {
+        "0": 18,
+        "1": 8,
+        "2": 1
+      },
+      "wall_seconds": 2.654091500036884
+    },
+    {
+      "id": "polygon-3ab2e222a0",
+      "expected": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "actual": {
+        "0": 24,
+        "1": 9,
+        "2": 1
+      },
+      "wall_seconds": 2.5333631000248715
+    },
+    {
+      "id": "polygon-22ee4b3109",
+      "expected": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 5.3176311000133865
+    },
+    {
+      "id": "polygon-158f8a22ef",
+      "expected": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "actual": {
+        "0": 31,
+        "1": 10,
+        "2": 1
+      },
+      "wall_seconds": 4.342675400024746
+    }
+  ],
+  "algorithm_version": "direct-ruling-search-v3",
+  "source_sha256": {
+    "downloads/direct-ruling-counter/direct_ruling_count.py": "2282707fbbe459e139b5ee7db01dba3c20d8547eacbcaaa2e6b4a7b6c739279e",
+    "downloads/direct-ruling-counter/fig3_direct_ruling_counts.py": "7a0ab66dd6cc65ac61555a288d258377631b852b7d92ac42a85ceb4d1d724056",
+    "downloads/direct-ruling-counter/generic_ruling_perturbation.py": "c362283c2631307c21755f9158c971fa208880f5dfa0dcfff3315f07a833b4dc",
+    "downloads/direct-ruling-counter/multigeodesic_alternating_audit.py": "ac693ef4ea3fdc454556ae8bf820a63fbbadd3bc2da672df99146c62e950a092",
+    "downloads/direct-ruling-counter/multigeodesic_annular_input.py": "8a29a05eda11322b9438c7d3fff8d61352a11de523296b13ab528356245f004b",
+    "downloads/direct-ruling-counter/ruling_polygon.py": "915fb12d3c8c2eeb1963b05232c02fe189e7701236c5710844b9dba92eddef08",
+    "downloads/direct-ruling-counter/ruling_smoothing.py": "7e7d800db52e3948646a027ec3e841fb0fa8608a64a6ab508a3bc3af11885c97",
+    "downloads/direct-ruling-counter/smoke_test.py": "b0e66e86efbc42dc509687257df59de399823f83fcb4f2ce99b109675896e0a7",
+    "downloads/direct-ruling-counter/verify_multigeodesic_rulings.py": "e58d159761dccf72637eda92f76cebb4c1b3af9ffd6c969de5cbe948d250dacf",
+    "downloads/direct-ruling-counter/verify_triangle_rulings.py": "1c9a471bbbe577b817145d12d5f2ff946ab8e0a836e40cdb68f868fb90fb87da",
+    "downloads/direct-ruling-counter/tmp/annular_phase_exact.js": "6f772ca351e2792e5a6295267f18901fe499b6be0ba67f86288ab35c5b0c4379",
+    "downloads/direct-ruling-counter/tmp/exact_number_guards.js": "45f12bc5303115e6b176e73fa814de0bbd6d52a2ba013cffda03363bd27bf49d",
+    "downloads/direct-ruling-counter/tmp/generic_annular_exact_search.js": "1a9d707da5a520a27fa8668b8992988902cea686a64c46f0d0385cf16828ba42",
+    "downloads/direct-ruling-counter/tmp/generic_incremental_ruling_search.js": "be1c45383f220ffc9d53f89e0c3d065244172d3771c84163fd708b9bfeefcbeb",
+    "downloads/direct-ruling-counter/tmp/p2o4_annular_search.js": "b4c832cf472dfce3222b77fad57555399fb7378c6d5c24eb21251813fbce037c",
+    "downloads/direct-ruling-counter/tmp/p2o4_smoothing_search.js": "6d69355a88363ced281b0c67e3191eb8e39630a217f00cb87824caa5fc870428",
+    "downloads/direct-ruling-counter/tmp/p2_annular_exact_search.js": "0b684eb32840d098973196e2fdc36165330b3488a624621ca726f928b525c596"
+  }
+}

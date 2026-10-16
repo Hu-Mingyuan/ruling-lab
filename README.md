@@ -1,141 +1,175 @@
 # Ruling Atlas
 
-This repository is a static atlas of direct ruling counts and diagrams for
-lattice polygons. It is published separately from the author's main homepage.
-Every HTML page carries `noindex` metadata to discourage search-engine indexing;
-this is not access control.
+[Browse the atlas](https://hu-mingyuan.github.io/ruling-lab/) to see ruling
+diagrams for convex lattice polygons. This repository also supplies two
+independent command-line counters:
 
-The home page links to three collections:
+| Component | What it does | Requirements | Instructions |
+| --- | --- | --- | --- |
+| Static atlas | Displays saved polygons, ruling counts, and SVG diagrams | Web browser | [Website](https://hu-mingyuan.github.io/ruling-lab/) |
+| Direct ruling counter | Constructs a torus diagram and counts connected rulings, including disk and annular eyes, in every requested genus | Python 3.10+ and Node.js 18+ | [README and source](downloads/direct-ruling-counter/README.md) |
+| Refined tropical tree counter | Counts rational tropical trees with fixed boundary moments and returns the refined Laurent polynomial; optionally compares it with independently computed rulings | Python 3.10+ | [README and source](downloads/tropical-tree-counter/README.md) |
 
-- the 16 lattice-equivalence classes with one interior lattice point;
-- the 45 lattice-equivalence classes with two interior lattice points;
-- polygons with more interior points, currently containing `O(4) on P^2`
-  and `O(2,4) on P^1 x P^1`.
+Both counters use only standard libraries. No Python or npm packages need to
+be installed. The website displays precomputed data; it does not run either
+counter in the browser. The ruling counter does not import the tropical
+counter, and the tropical enumeration does not use ruling counts.
 
-Every entry is identified by its vertex coordinates. The two interior-point
-collections list every ruling separately; the more-interior-points collection
-instead preserves symmetry representatives and labels every orbit size. Its
-landing view first lists the two polygons, and selecting either card reveals
-only that polygon's details.
+See the [definition audit](docs/ruling-definition-audit.md) for the actual
+counting path and the correction of a nonprimitive-annulus omission in version 2.
 
-For each polygon the site records:
+## Download and run
 
-- its lattice diagram and vertex coordinates;
-- area, boundary lattice-point count, and interior lattice-point count;
-- its ruling counts in every possible genus;
-- all-disk and annular sectors for the displayed deterministic realization;
-- one SVG diagram for every ruling in the interior-point collections;
-- the single `SL(2,Z)`-equivalent polygon used to draw every ruling of the
-  selected lattice-equivalence class.
+Download and extract the package you need:
 
-Selecting a polygon first shows its common drawing representative. The ruling
-galleries then appear from highest genus to lowest genus as independent
-expandable sections.
+- [Direct ruling counter ZIP](https://hu-mingyuan.github.io/ruling-lab/downloads/direct-ruling-counter.zip)
+- [Refined tropical tree counter ZIP](https://hu-mingyuan.github.io/ruling-lab/downloads/tropical-tree-counter.zip)
 
-For a fixed polygon, all-disk and annular diagrams share one fundamental square
-and one fixed Lambda. Annular eyes are normalized only in lifted coordinates
-and mapped back before rendering. Switches are the black points in the ruling
-diagrams. Each entry labels its chosen `SL(2,Z)` representative, the matrix
-from the catalog coordinates, and the vertical direction. The selected
-representative also draws that direction as an arrow beside the polygon.
-The counter first chooses a source-frame vertical direction `(-k,1)` whose
-determinant with every primitive polygon edge is nonzero; after the counting
-shear it is `(0,1)`.  The arrow is the image of this same vector in the
-display frame, not a separately chosen drawing direction.
+From inside the extracted `direct-ruling-counter` directory:
 
-The plane cubic entry is explicitly labeled `O(3) on P^2`. It uses
-`Conv{(-1,-1), (2,-1), (-1,2)}` with vertical direction `(-3,2)`. Its exact
-symmetric three-family realization has a horizontal, diagonal, and vertical
-family; its genus-one ruling consists of 18 equal triangular eyes and all 27
-crossings are switches. In this displayed realization the genus-zero split is
-9 all-disk and 0 annular.
+```console
+python ruling_polygon.py example_polygon.json --output ruling.json
+```
 
-The `O(2,2) on P^1 x P^1` entry uses the standard centered square
-`Conv{(-1,-1), (1,-1), (1,1), (-1,1)}`. Its exact four-by-four Lambda grid
-has four evenly spaced horizontal and four evenly spaced vertical components.
-Its displayed vertical direction is `(-1,2)`, transverse to both families.
-The genus-one ruling has eight equal square eyes and all 16 crossings are
-switches.
+From inside the extracted `tropical-tree-counter` directory:
 
-The `O(4) on P^2` entry uses
-`Conv{(-2,-1), (2,-1), (-2,3)}` for every genus, with displayed vertical
-direction `(-1,2)`. This is the direction used by the ruling diagram itself:
-the covector `(2,1)` is positive on the displayed future tangents
-`(1,0)`, `(0,1)`, and `(1,-1)`. Its page contains one genus-three diagram,
-one genus-two symmetry representative, six genus-one symmetry
-representatives, and thirteen genus-zero symmetry representatives. The single
-genus-two orbit has size 16; an exhaustive exact annular search without
-translation reduction or a node cutoff gives zero additional genus-two
-rulings. The six genus-one orbit sizes sum to 104, with zero annular rulings.
-The genus-zero orbit sizes sum to 304 (288 all-disk and 16 annular). The
-figures use green Lambda, red and blue eyes, black switches, and darker fills
-where eyes overlap.
+```console
+python tropical_tree.py example_polygon.json --seed 17471 --output tropical.json
+```
 
-The `O(2,4) on P^1 x P^1` entry uses the rectangle
-`Conv{(0,0), (4,0), (4,2), (0,2)}` in every genus. Its source-to-count matrix
-is `[[1,-1],[1,0]]`, and its source-frame vertical direction is `(1,1)`.
-Every figure is drawn on the same exact 8-by-4 rectangular Lambda. A complete
-direct annular-phase audit gives the counts 1, 16, 96, and 256 in genera 3,
-2, 1, and 0, with zero annular rulings in this equally spaced realization.
-Quotienting by the 32 line-preserving diagram symmetries leaves 1, 1, 7, and
-11 displayed representatives, respectively.
+Use `python3` in place of `python` if that is the Python 3 command on your
+system. Run either entry point with `--help` for its options.
 
-The centrally symmetric six-vertex polygon
-`Conv{(-1,0), (0,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses exact separated
-phases. Its three parallel pairs have gaps `1/3`, `1/2`, and `1/2`, so no two
-components are visually coincident. Recounting this realization directly gives
-five all-disk and one annular genus-zero ruling.
+### Input and output
 
-The five-vertex class
-`Conv{(-1,-1), (1,-1), (1,0), (0,1), (-1,1)}` uses a reflection-symmetric
-exact realization: the horizontal and vertical phases are both
-`{0,1/3,2/3}`, and the diagonal phase is `1/6`.
+Both programs accept the same polygon JSON, for example:
 
-The two-interior collection was recounted after choosing exact
-symmetry-oriented phases for each of its 45 classes. In particular, the five
-triangle examples use congruent red and blue triangular eyes in their
-highest-genus rulings. The `O(2,3) on P^1 x P^1` entry keeps the catalog
-rectangle `Conv{(0,0), (3,0), (3,2), (0,2)}` and draws every ruling on one
-fixed 6-by-4 rectangular Lambda; its highest-genus ruling has six red and six
-blue equal square eyes.
+```json
+{
+  "vertices": [[-1, -1], [1, 0], [0, 1]]
+}
+```
 
-The two census collections display all 1,601 rulings separately: 112 for the
-one-interior collection and 1,489 for the two-interior collection. The
-other-polygons page adds 41 saved symmetry representatives for `O(4)` and
-`O(2,4)`. Every page records the ruling polynomial
-`R_Delta(z) = sum_g r_(Delta,g) z^(2g)`. The census counts and diagrams are
-generated from direct ruling certificates; the atlas exporter does not import
-or consult a tropical counter.
+List integer vertices cyclically around a strictly convex polygon. Clockwise
+input is accepted. A batch has the form
+`{"polygons": [{"id": "example", "vertices": [[-1,-1],[1,0],[0,1]]}]}`.
+The package READMEs give the complete format and options.
 
-## Run the site locally
+The ruling output gives `all_disk`, `annular`, and `total` for each genus,
+together with the exact diagram parameters and search diagnostics. The
+example has total counts `[3, 1]` in ascending genus, hence
+`R_Delta(z) = 3 + z^2`. The disk/annular split depends on the chosen diagram
+realization; compare the total counts when checking the refined identity.
+The counting diagram receives a certified small perturbation to separate
+vertical crossing coordinates. The saved atlas pictures retain their
+existing realizations.
 
-Serve the repository root with any static HTTP server, for example:
+The tropical output gives `refined_terms` as integer powers of
+`t = q^(1/2)` with integer coefficients. The example gives
+`t^2 + 1 + t^(-2) = q + 1 + q^(-1)`. It also records
+`unrefined_count = N_Delta(1)`, the boundary directions and moments, the
+actual seed, and search diagnostics. "Tree" refers to the abstract
+genus-zero tropical source; its plane image can have crossings. It does not
+mean an enumeration of tropical curves in every genus.
+
+### Compare the two independent calculations
+
+Extract both ZIPs into the same parent directory, so that
+`direct-ruling-counter/` and `tropical-tree-counter/` are siblings.
+Run these commands **from that parent directory**, using the same input
+file in both commands:
+
+```console
+python direct-ruling-counter/ruling_polygon.py direct-ruling-counter/example_polygon.json --output ruling.json
+python tropical-tree-counter/tropical_tree.py direct-ruling-counter/example_polygon.json --seed 17471 --compare-rulings ruling.json --output tropical.json
+```
+
+The comparison checks the conjectural identity
 
 ```text
+N_Delta(q) = R_Delta(q^(1/2) - q^(-1/2))
+          = sum_g r_(Delta,g) (q + q^(-1) - 2)^g.
+```
+
+Thus `3 + z^2` corresponds to `q + 1 + q^(-1)`. In particular,
+`N_Delta(1) = r_(Delta,0)`, not the sum of the ruling counts over all genera.
+The tropical count is completed independently before the comparison reads
+the ruling results. The latter must contain every genus and finite total
+counts. Exit status is `0` for a successful calculation (and a matching
+comparison, when requested), `1` for a mismatch, or `2` for invalid input
+or a degenerate moment choice. A finite comparison tests the conjecture;
+it is not a proof for all polygons.
+
+Both searches are exponential. The tropical program defaults to at most
+16 boundary ends; increasing `--max-ends` explicitly can require substantial
+time and memory. A degenerate moment choice is reported as an error; use a
+different `--seed` rather than treating an incomplete enumeration as a count.
+For the ruling program, `--genus` restricts the requested genus and
+`--jobs` runs independent counting tasks concurrently.
+
+## Repository guide
+
+- [All downloads](downloads/README.md): choose a program and find its source.
+- [Atlas contents and geometric conventions](docs/atlas-conventions.md):
+  polygon collections, drawing representatives, vertical directions, and orbit sizes.
+- [Computational validation](docs/validation.md): checks performed and their limits.
+- [Definition and independence audit](docs/ruling-definition-audit.md):
+  how the ruling conditions are implemented and the exact counting scope.
+- [Higher-genus stress inputs](examples/stress-polygons.json): four irregular
+  polygons with five or six interior lattice points.
+
+Repository layout:
+
+- `downloads/direct-ruling-counter/`: standalone ruling program, example,
+  tests, and usage guide.
+- `downloads/tropical-tree-counter/`: standalone tropical program, example,
+  tests, and mathematical conventions.
+- `downloads/*.zip`: matching standalone release archives.
+- `data/` and `assets/`: precomputed atlas data and illustrations.
+- `examples/`: additional inputs shared by both counters.
+- Root HTML, JavaScript, and CSS: the static browser interface.
+- `tools/`: atlas export and packaging utilities; some require the separate
+  research repository and are not needed to use either downloaded counter.
+- `tests/validate.mjs`: checks the static atlas data, figures, and download links.
+
+Serve the repository root with any static HTTP server:
+
+```console
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000/`.
+Then open `http://localhost:8000/`. From a full checkout of this repository,
+validate the site with:
 
-## Downloadable counter
-
-`downloads/direct-ruling-counter.zip` contains the standalone command-line
-counter used to produce the atlas. It requires Python 3.10+ and Node.js 18+,
-with no third-party Python or npm packages.
-
-```text
-python ruling_polygon.py example_polygon.json
-```
-
-## Rebuild and validate
-
-From the repository root:
-
-```text
-python tools/export_cases.py
+```console
 node tests/validate.mjs
 ```
 
-The source polygon catalogs and direct-count audits live in the parent research
-repository. This repository stores the static browser data and generated SVG
-assets.
+The two package READMEs describe their own computational tests. Rebuilding
+the atlas with `tools/export_cases.py` additionally requires the source
+polygon catalogs and direct-count audits from the parent research repository;
+it is not part of the standalone quick start.
+
+## Contributing and release checks
+
+Keep the two counters independent. A change to one counter should include
+its relevant regression checks and updated usage instructions. Before a
+release, run the package tests, regenerate its matching ZIP, and run the
+static-site validator above; check that the ZIP contains the current source
+and can run after extraction. Updating a counter does not require exporting
+or replacing the saved atlas drawings.
+
+Rebuild both ZIPs directly from the checked-in source with:
+
+```console
+python tools/package_counters.py
+```
+
+This packaging command is standalone and reproducible. The older
+`tools/package_engine.py` refreshes files from the separate parent research
+tree; it is not the release command for these checked-in counters.
+
+The site is published separately from the author's main homepage. Every HTML
+page carries `noindex` metadata to discourage search-engine indexing; this
+is not access control. No license file is included in these preview packages;
+please contact the repository owner about reuse.

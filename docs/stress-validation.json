@@ -1,0 +1,2506 @@
+{
+  "schema": "independent-counter-comparison-v1",
+  "input": {
+    "polygons": [
+      {
+        "id": "validation-Q5",
+        "vertices": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "validation-P5",
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      },
+      {
+        "id": "validation-S7",
+        "vertices": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "validation-T13",
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            13
+          ]
+        ]
+      }
+    ]
+  },
+  "source_sha256": {
+    "downloads/direct-ruling-counter/direct_ruling_count.py": "2282707fbbe459e139b5ee7db01dba3c20d8547eacbcaaa2e6b4a7b6c739279e",
+    "downloads/direct-ruling-counter/fig3_direct_ruling_counts.py": "7a0ab66dd6cc65ac61555a288d258377631b852b7d92ac42a85ceb4d1d724056",
+    "downloads/direct-ruling-counter/generic_ruling_perturbation.py": "c362283c2631307c21755f9158c971fa208880f5dfa0dcfff3315f07a833b4dc",
+    "downloads/direct-ruling-counter/multigeodesic_alternating_audit.py": "ac693ef4ea3fdc454556ae8bf820a63fbbadd3bc2da672df99146c62e950a092",
+    "downloads/direct-ruling-counter/multigeodesic_annular_input.py": "8a29a05eda11322b9438c7d3fff8d61352a11de523296b13ab528356245f004b",
+    "downloads/direct-ruling-counter/ruling_polygon.py": "915fb12d3c8c2eeb1963b05232c02fe189e7701236c5710844b9dba92eddef08",
+    "downloads/direct-ruling-counter/ruling_smoothing.py": "7e7d800db52e3948646a027ec3e841fb0fa8608a64a6ab508a3bc3af11885c97",
+    "downloads/direct-ruling-counter/smoke_test.py": "b0e66e86efbc42dc509687257df59de399823f83fcb4f2ce99b109675896e0a7",
+    "downloads/direct-ruling-counter/tmp/annular_phase_exact.js": "6f772ca351e2792e5a6295267f18901fe499b6be0ba67f86288ab35c5b0c4379",
+    "downloads/direct-ruling-counter/tmp/exact_number_guards.js": "45f12bc5303115e6b176e73fa814de0bbd6d52a2ba013cffda03363bd27bf49d",
+    "downloads/direct-ruling-counter/tmp/generic_annular_exact_search.js": "1a9d707da5a520a27fa8668b8992988902cea686a64c46f0d0385cf16828ba42",
+    "downloads/direct-ruling-counter/tmp/generic_incremental_ruling_search.js": "be1c45383f220ffc9d53f89e0c3d065244172d3771c84163fd708b9bfeefcbeb",
+    "downloads/direct-ruling-counter/tmp/p2_annular_exact_search.js": "0b684eb32840d098973196e2fdc36165330b3488a624621ca726f928b525c596",
+    "downloads/direct-ruling-counter/tmp/p2o4_annular_search.js": "b4c832cf472dfce3222b77fad57555399fb7378c6d5c24eb21251813fbce037c",
+    "downloads/direct-ruling-counter/tmp/p2o4_smoothing_search.js": "6d69355a88363ced281b0c67e3191eb8e39630a217f00cb87824caa5fc870428",
+    "downloads/direct-ruling-counter/verify_multigeodesic_rulings.py": "e58d159761dccf72637eda92f76cebb4c1b3af9ffd6c969de5cbe948d250dacf",
+    "downloads/direct-ruling-counter/verify_triangle_rulings.py": "1c9a471bbbe577b817145d12d5f2ff946ab8e0a836e40cdb68f868fb90fb87da",
+    "downloads/tropical-tree-counter/tropical_tree.py": "a8b3b6471f2c1e9874de26670c2d46e4f08eba078d536139915d9347ece283ee"
+  },
+  "ruling": {
+    "schema": "direct-ruling-counts-v1",
+    "algorithm_version": "direct-ruling-search-v3",
+    "count_scope": "connected-orientable-ruling-surfaces",
+    "method": "arrangement of primitive input strands; rollback smoothing DFS; exact disk and unbounded annular audits retaining full circuit periods",
+    "uses_tropical_count": false,
+    "polygons": [
+      {
+        "id": "validation-Q5",
+        "vertices": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "double_area": 12,
+        "boundary_lattice_points": 4,
+        "interior_lattice_points": 5,
+        "counting_shear": -1,
+        "vertical_direction_source": [
+          1,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
+        "sweep_covector_source": [
+          1,
+          -1
+        ],
+        "sweep_covector_count": [
+          1,
+          0
+        ],
+        "origin_denominator": 1009,
+        "origin_residues": [
+          672,
+          659,
+          44,
+          750
+        ],
+        "origin_attempt": 0,
+        "basepoint": [
+          "21264/35315",
+          "14001/35315"
+        ],
+        "perturbation_step": "1/847560",
+        "perturbed_vertices": 28,
+        "chambers": 28,
+        "alternating_chambers": 4,
+        "genera": [
+          {
+            "genus": 0,
+            "all_disk": 35,
+            "annular": 0,
+            "total": 35,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 1.1706574999843724,
+            "crossings": 28,
+            "search_nodes": 74549
+          },
+          {
+            "genus": 1,
+            "all_disk": 77,
+            "annular": 28,
+            "total": 105,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 8.357199800026137,
+            "crossings": 28,
+            "search_nodes": 348934
+          },
+          {
+            "genus": 2,
+            "all_disk": 104,
+            "annular": 8,
+            "total": 112,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 18.31247160001658,
+            "crossings": 28,
+            "search_nodes": 482459
+          },
+          {
+            "genus": 3,
+            "all_disk": 53,
+            "annular": 1,
+            "total": 54,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 9.714887799986172,
+            "crossings": 28,
+            "search_nodes": 222490
+          },
+          {
+            "genus": 4,
+            "all_disk": 12,
+            "annular": 0,
+            "total": 12,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 1.5406458999495953,
+            "crossings": 28,
+            "search_nodes": 29649
+          },
+          {
+            "genus": 5,
+            "all_disk": 1,
+            "annular": 0,
+            "total": 1,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 0.32339400000637397,
+            "crossings": 28,
+            "search_nodes": 545
+          }
+        ]
+      },
+      {
+        "id": "validation-P5",
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "double_area": 13,
+        "boundary_lattice_points": 5,
+        "interior_lattice_points": 5,
+        "counting_shear": 0,
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
+        ],
+        "origin_denominator": 1009,
+        "origin_residues": [
+          136,
+          876,
+          429,
+          143,
+          705
+        ],
+        "origin_attempt": 0,
+        "basepoint": [
+          "13984/15135",
+          "837/5045"
+        ],
+        "perturbation_step": "0",
+        "perturbed_vertices": 0,
+        "chambers": 29,
+        "alternating_chambers": 2,
+        "genera": [
+          {
+            "genus": 0,
+            "all_disk": 64,
+            "annular": 20,
+            "total": 84,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 3.4863819999736734,
+            "crossings": 29,
+            "search_nodes": 184500
+          },
+          {
+            "genus": 1,
+            "all_disk": 140,
+            "annular": 41,
+            "total": 181,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 13.252944600011688,
+            "crossings": 29,
+            "search_nodes": 495463
+          },
+          {
+            "genus": 2,
+            "all_disk": 136,
+            "annular": 20,
+            "total": 156,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 17.962078999960795,
+            "crossings": 29,
+            "search_nodes": 498508
+          },
+          {
+            "genus": 3,
+            "all_disk": 58,
+            "annular": 7,
+            "total": 65,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 8.590069799975026,
+            "crossings": 29,
+            "search_nodes": 191856
+          },
+          {
+            "genus": 4,
+            "all_disk": 12,
+            "annular": 1,
+            "total": 13,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 1.0758126000291668,
+            "crossings": 29,
+            "search_nodes": 22689
+          },
+          {
+            "genus": 5,
+            "all_disk": 1,
+            "annular": 0,
+            "total": 1,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 0.19624750001821667,
+            "crossings": 29,
+            "search_nodes": 375
+          }
+        ]
+      },
+      {
+        "id": "validation-S7",
+        "vertices": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "double_area": 14,
+        "boundary_lattice_points": 4,
+        "interior_lattice_points": 6,
+        "counting_shear": 0,
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
+        ],
+        "origin_denominator": 1009,
+        "origin_residues": [
+          483,
+          470,
+          405,
+          273
+        ],
+        "origin_attempt": 0,
+        "basepoint": [
+          "892/7063",
+          "432/7063"
+        ],
+        "perturbation_step": "0",
+        "perturbed_vertices": 0,
+        "chambers": 28,
+        "alternating_chambers": 14,
+        "genera": [
+          {
+            "genus": 0,
+            "all_disk": 49,
+            "annular": 0,
+            "total": 49,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 1.651278600038495,
+            "crossings": 28,
+            "search_nodes": 108325
+          },
+          {
+            "genus": 1,
+            "all_disk": 112,
+            "annular": 84,
+            "total": 196,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 12.946801099984441,
+            "crossings": 28,
+            "search_nodes": 629580
+          },
+          {
+            "genus": 2,
+            "all_disk": 252,
+            "annular": 42,
+            "total": 294,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 30.486862499965355,
+            "crossings": 28,
+            "search_nodes": 1185456
+          },
+          {
+            "genus": 3,
+            "all_disk": 189,
+            "annular": 21,
+            "total": 210,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 33.13531659997534,
+            "crossings": 28,
+            "search_nodes": 890673
+          },
+          {
+            "genus": 4,
+            "all_disk": 77,
+            "annular": 0,
+            "total": 77,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 16.236516200006008,
+            "crossings": 28,
+            "search_nodes": 254425
+          },
+          {
+            "genus": 5,
+            "all_disk": 14,
+            "annular": 0,
+            "total": 14,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 2.0237278999993578,
+            "crossings": 28,
+            "search_nodes": 20965
+          },
+          {
+            "genus": 6,
+            "all_disk": 1,
+            "annular": 0,
+            "total": 1,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 0.3497242000303231,
+            "crossings": 28,
+            "search_nodes": 241
+          }
+        ]
+      },
+      {
+        "id": "validation-T13",
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        "double_area": 13,
+        "boundary_lattice_points": 3,
+        "interior_lattice_points": 6,
+        "counting_shear": 0,
+        "vertical_direction_source": [
+          0,
+          1
+        ],
+        "vertical_direction_count": [
+          0,
+          1
+        ],
+        "sweep_covector_source": [
+          1,
+          0
+        ],
+        "sweep_covector_count": [
+          1,
+          0
+        ],
+        "origin_denominator": 1009,
+        "origin_residues": [
+          510,
+          584,
+          6
+        ],
+        "origin_attempt": 0,
+        "basepoint": [
+          "2805/13117",
+          "1031/4036"
+        ],
+        "perturbation_step": "0",
+        "perturbed_vertices": 0,
+        "chambers": 39,
+        "alternating_chambers": 13,
+        "genera": [
+          {
+            "genus": 0,
+            "all_disk": 13,
+            "annular": 0,
+            "total": 13,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 2.1146136000170372,
+            "crossings": 39,
+            "search_nodes": 136839
+          },
+          {
+            "genus": 1,
+            "all_disk": 91,
+            "annular": 0,
+            "total": 91,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 17.50225830002455,
+            "crossings": 39,
+            "search_nodes": 1023135
+          },
+          {
+            "genus": 2,
+            "all_disk": 182,
+            "annular": 0,
+            "total": 182,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 43.62754409998888,
+            "crossings": 39,
+            "search_nodes": 2064944
+          },
+          {
+            "genus": 3,
+            "all_disk": 156,
+            "annular": 0,
+            "total": 156,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 49.109436200000346,
+            "crossings": 39,
+            "search_nodes": 1625154
+          },
+          {
+            "genus": 4,
+            "all_disk": 65,
+            "annular": 0,
+            "total": 65,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 20.60720470000524,
+            "crossings": 39,
+            "search_nodes": 474554
+          },
+          {
+            "genus": 5,
+            "all_disk": 13,
+            "annular": 0,
+            "total": 13,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 1.3130781999789178,
+            "crossings": 39,
+            "search_nodes": 38376
+          },
+          {
+            "genus": 6,
+            "all_disk": 1,
+            "annular": 0,
+            "total": 1,
+            "phase_cardinality": "FINITE",
+            "elapsed_seconds": 0.19570460001705214,
+            "crossings": 39,
+            "search_nodes": 435
+          }
+        ]
+      }
+    ]
+  },
+  "tropical_runs": [
+    {
+      "seed": 17471,
+      "exit_status": 0,
+      "result": {
+        "schema": "tropical-tree-counts-v1",
+        "algorithm_version": "exact-tropical-tree-dp-v1",
+        "variable": "t=q^(1/2)",
+        "method": "exact labelled tropical tree subset dynamic program with prescribed end moments",
+        "uses_ruling_counts": false,
+        "polygons": [
+          {
+            "id": "validation-Q5",
+            "vertices": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            "double_area": 12,
+            "boundary_lattice_points": 4,
+            "interior_lattice_points": 5,
+            "seed": 17471,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  -1,
+                  -1
+                ],
+                "moment": -379023925307,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  3,
+                  -4
+                ],
+                "moment": -312280552235,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  1,
+                  0
+                ],
+                "moment": -946681804376,
+                "root": false
+              },
+              {
+                "index": 3,
+                "direction": [
+                  -3,
+                  5
+                ],
+                "moment": 1637986281918,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -10,
+                "coefficient": 1
+              },
+              {
+                "t_power": -8,
+                "coefficient": 2
+              },
+              {
+                "t_power": -6,
+                "coefficient": 3
+              },
+              {
+                "t_power": -4,
+                "coefficient": 4
+              },
+              {
+                "t_power": -2,
+                "coefficient": 5
+              },
+              {
+                "t_power": 0,
+                "coefficient": 5
+              },
+              {
+                "t_power": 2,
+                "coefficient": 5
+              },
+              {
+                "t_power": 4,
+                "coefficient": 4
+              },
+              {
+                "t_power": 6,
+                "coefficient": 3
+              },
+              {
+                "t_power": 8,
+                "coefficient": 2
+              },
+              {
+                "t_power": 10,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 35,
+            "elapsed_seconds": 0.0006912000244483352,
+            "diagnostics": {
+              "root_index": 3,
+              "nonroot_subsets": 7,
+              "stored_root_states": 5,
+              "candidate_splits": 6,
+              "nonparallel_splits": 6,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          },
+          {
+            "id": "validation-P5",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "double_area": 13,
+            "boundary_lattice_points": 5,
+            "interior_lattice_points": 5,
+            "seed": 17471,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  0,
+                  -1
+                ],
+                "moment": -379023925307,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  1,
+                  -1
+                ],
+                "moment": -312280552235,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  3,
+                  -1
+                ],
+                "moment": -946681804376,
+                "root": false
+              },
+              {
+                "index": 3,
+                "direction": [
+                  1,
+                  1
+                ],
+                "moment": 562585214476,
+                "root": false
+              },
+              {
+                "index": 4,
+                "direction": [
+                  -5,
+                  2
+                ],
+                "moment": 1075401067442,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -10,
+                "coefficient": 1
+              },
+              {
+                "t_power": -8,
+                "coefficient": 3
+              },
+              {
+                "t_power": -6,
+                "coefficient": 6
+              },
+              {
+                "t_power": -4,
+                "coefficient": 10
+              },
+              {
+                "t_power": -2,
+                "coefficient": 14
+              },
+              {
+                "t_power": 0,
+                "coefficient": 16
+              },
+              {
+                "t_power": 2,
+                "coefficient": 14
+              },
+              {
+                "t_power": 4,
+                "coefficient": 10
+              },
+              {
+                "t_power": 6,
+                "coefficient": 6
+              },
+              {
+                "t_power": 8,
+                "coefficient": 3
+              },
+              {
+                "t_power": 10,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 84,
+            "elapsed_seconds": 0.00126369995996356,
+            "diagnostics": {
+              "root_index": 4,
+              "nonroot_subsets": 15,
+              "stored_root_states": 16,
+              "candidate_splits": 25,
+              "nonparallel_splits": 25,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          },
+          {
+            "id": "validation-S7",
+            "vertices": [
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "double_area": 14,
+            "boundary_lattice_points": 4,
+            "interior_lattice_points": 6,
+            "seed": 17471,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  -3,
+                  -1
+                ],
+                "moment": -379023925307,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  -2,
+                  -3
+                ],
+                "moment": -312280552235,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  3,
+                  1
+                ],
+                "moment": -946681804376,
+                "root": false
+              },
+              {
+                "index": 3,
+                "direction": [
+                  2,
+                  3
+                ],
+                "moment": 1637986281918,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -12,
+                "coefficient": 1
+              },
+              {
+                "t_power": -10,
+                "coefficient": 2
+              },
+              {
+                "t_power": -8,
+                "coefficient": 3
+              },
+              {
+                "t_power": -6,
+                "coefficient": 4
+              },
+              {
+                "t_power": -4,
+                "coefficient": 5
+              },
+              {
+                "t_power": -2,
+                "coefficient": 6
+              },
+              {
+                "t_power": 0,
+                "coefficient": 7
+              },
+              {
+                "t_power": 2,
+                "coefficient": 6
+              },
+              {
+                "t_power": 4,
+                "coefficient": 5
+              },
+              {
+                "t_power": 6,
+                "coefficient": 4
+              },
+              {
+                "t_power": 8,
+                "coefficient": 3
+              },
+              {
+                "t_power": 10,
+                "coefficient": 2
+              },
+              {
+                "t_power": 12,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 49,
+            "elapsed_seconds": 0.0003165999660268426,
+            "diagnostics": {
+              "root_index": 3,
+              "nonroot_subsets": 7,
+              "stored_root_states": 3,
+              "candidate_splits": 5,
+              "nonparallel_splits": 4,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          },
+          {
+            "id": "validation-T13",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            "double_area": 13,
+            "boundary_lattice_points": 3,
+            "interior_lattice_points": 6,
+            "seed": 17471,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  0,
+                  -1
+                ],
+                "moment": -379023925307,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  13,
+                  -3
+                ],
+                "moment": -312280552235,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  -13,
+                  4
+                ],
+                "moment": 691304477542,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -12,
+                "coefficient": 1
+              },
+              {
+                "t_power": -10,
+                "coefficient": 1
+              },
+              {
+                "t_power": -8,
+                "coefficient": 1
+              },
+              {
+                "t_power": -6,
+                "coefficient": 1
+              },
+              {
+                "t_power": -4,
+                "coefficient": 1
+              },
+              {
+                "t_power": -2,
+                "coefficient": 1
+              },
+              {
+                "t_power": 0,
+                "coefficient": 1
+              },
+              {
+                "t_power": 2,
+                "coefficient": 1
+              },
+              {
+                "t_power": 4,
+                "coefficient": 1
+              },
+              {
+                "t_power": 6,
+                "coefficient": 1
+              },
+              {
+                "t_power": 8,
+                "coefficient": 1
+              },
+              {
+                "t_power": 10,
+                "coefficient": 1
+              },
+              {
+                "t_power": 12,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 13,
+            "elapsed_seconds": 0.000166199984960258,
+            "diagnostics": {
+              "root_index": 2,
+              "nonroot_subsets": 3,
+              "stored_root_states": 1,
+              "candidate_splits": 1,
+              "nonparallel_splits": 1,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          }
+        ],
+        "comparison": {
+          "formula": "N_Delta(q)=sum_g total[g]*(t-t^(-1))^(2g), t=q^(1/2)",
+          "all_match": true,
+          "polygons": [
+            {
+              "id": "validation-Q5",
+              "ruling_id": "validation-Q5",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            },
+            {
+              "id": "validation-P5",
+              "ruling_id": "validation-P5",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 16
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 16
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            },
+            {
+              "id": "validation-S7",
+              "ruling_id": "validation-S7",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 7
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 7
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            },
+            {
+              "id": "validation-T13",
+              "ruling_id": "validation-T13",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "seed": 98189,
+      "exit_status": 0,
+      "result": {
+        "schema": "tropical-tree-counts-v1",
+        "algorithm_version": "exact-tropical-tree-dp-v1",
+        "variable": "t=q^(1/2)",
+        "method": "exact labelled tropical tree subset dynamic program with prescribed end moments",
+        "uses_ruling_counts": false,
+        "polygons": [
+          {
+            "id": "validation-Q5",
+            "vertices": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            "double_area": 12,
+            "boundary_lattice_points": 4,
+            "interior_lattice_points": 5,
+            "seed": 98189,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  -1,
+                  -1
+                ],
+                "moment": 854975623432,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  3,
+                  -4
+                ],
+                "moment": 112253148350,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  1,
+                  0
+                ],
+                "moment": 956101678693,
+                "root": false
+              },
+              {
+                "index": 3,
+                "direction": [
+                  -3,
+                  5
+                ],
+                "moment": -1923330450475,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -10,
+                "coefficient": 1
+              },
+              {
+                "t_power": -8,
+                "coefficient": 2
+              },
+              {
+                "t_power": -6,
+                "coefficient": 3
+              },
+              {
+                "t_power": -4,
+                "coefficient": 4
+              },
+              {
+                "t_power": -2,
+                "coefficient": 5
+              },
+              {
+                "t_power": 0,
+                "coefficient": 5
+              },
+              {
+                "t_power": 2,
+                "coefficient": 5
+              },
+              {
+                "t_power": 4,
+                "coefficient": 4
+              },
+              {
+                "t_power": 6,
+                "coefficient": 3
+              },
+              {
+                "t_power": 8,
+                "coefficient": 2
+              },
+              {
+                "t_power": 10,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 35,
+            "elapsed_seconds": 0.0007927000406198204,
+            "diagnostics": {
+              "root_index": 3,
+              "nonroot_subsets": 7,
+              "stored_root_states": 4,
+              "candidate_splits": 6,
+              "nonparallel_splits": 6,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          },
+          {
+            "id": "validation-P5",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "double_area": 13,
+            "boundary_lattice_points": 5,
+            "interior_lattice_points": 5,
+            "seed": 98189,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  0,
+                  -1
+                ],
+                "moment": 854975623432,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  1,
+                  -1
+                ],
+                "moment": 112253148350,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  3,
+                  -1
+                ],
+                "moment": 956101678693,
+                "root": false
+              },
+              {
+                "index": 3,
+                "direction": [
+                  1,
+                  1
+                ],
+                "moment": 644362740561,
+                "root": false
+              },
+              {
+                "index": 4,
+                "direction": [
+                  -5,
+                  2
+                ],
+                "moment": -2567693191036,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -10,
+                "coefficient": 1
+              },
+              {
+                "t_power": -8,
+                "coefficient": 3
+              },
+              {
+                "t_power": -6,
+                "coefficient": 6
+              },
+              {
+                "t_power": -4,
+                "coefficient": 10
+              },
+              {
+                "t_power": -2,
+                "coefficient": 14
+              },
+              {
+                "t_power": 0,
+                "coefficient": 16
+              },
+              {
+                "t_power": 2,
+                "coefficient": 14
+              },
+              {
+                "t_power": 4,
+                "coefficient": 10
+              },
+              {
+                "t_power": 6,
+                "coefficient": 6
+              },
+              {
+                "t_power": 8,
+                "coefficient": 3
+              },
+              {
+                "t_power": 10,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 84,
+            "elapsed_seconds": 0.0016871000407263637,
+            "diagnostics": {
+              "root_index": 4,
+              "nonroot_subsets": 15,
+              "stored_root_states": 16,
+              "candidate_splits": 25,
+              "nonparallel_splits": 25,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          },
+          {
+            "id": "validation-S7",
+            "vertices": [
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "double_area": 14,
+            "boundary_lattice_points": 4,
+            "interior_lattice_points": 6,
+            "seed": 98189,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  -3,
+                  -1
+                ],
+                "moment": 854975623432,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  -2,
+                  -3
+                ],
+                "moment": 112253148350,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  3,
+                  1
+                ],
+                "moment": 956101678693,
+                "root": false
+              },
+              {
+                "index": 3,
+                "direction": [
+                  2,
+                  3
+                ],
+                "moment": -1923330450475,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -12,
+                "coefficient": 1
+              },
+              {
+                "t_power": -10,
+                "coefficient": 2
+              },
+              {
+                "t_power": -8,
+                "coefficient": 3
+              },
+              {
+                "t_power": -6,
+                "coefficient": 4
+              },
+              {
+                "t_power": -4,
+                "coefficient": 5
+              },
+              {
+                "t_power": -2,
+                "coefficient": 6
+              },
+              {
+                "t_power": 0,
+                "coefficient": 7
+              },
+              {
+                "t_power": 2,
+                "coefficient": 6
+              },
+              {
+                "t_power": 4,
+                "coefficient": 5
+              },
+              {
+                "t_power": 6,
+                "coefficient": 4
+              },
+              {
+                "t_power": 8,
+                "coefficient": 3
+              },
+              {
+                "t_power": 10,
+                "coefficient": 2
+              },
+              {
+                "t_power": 12,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 49,
+            "elapsed_seconds": 0.0004628999740816653,
+            "diagnostics": {
+              "root_index": 3,
+              "nonroot_subsets": 7,
+              "stored_root_states": 3,
+              "candidate_splits": 5,
+              "nonparallel_splits": 4,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          },
+          {
+            "id": "validation-T13",
+            "vertices": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                4,
+                13
+              ]
+            ],
+            "double_area": 13,
+            "boundary_lattice_points": 3,
+            "interior_lattice_points": 6,
+            "seed": 98189,
+            "moment_source": "seed",
+            "ends": [
+              {
+                "index": 0,
+                "direction": [
+                  0,
+                  -1
+                ],
+                "moment": 854975623432,
+                "root": false
+              },
+              {
+                "index": 1,
+                "direction": [
+                  13,
+                  -3
+                ],
+                "moment": 112253148350,
+                "root": false
+              },
+              {
+                "index": 2,
+                "direction": [
+                  -13,
+                  4
+                ],
+                "moment": -967228771782,
+                "root": true
+              }
+            ],
+            "refined_terms": [
+              {
+                "t_power": -12,
+                "coefficient": 1
+              },
+              {
+                "t_power": -10,
+                "coefficient": 1
+              },
+              {
+                "t_power": -8,
+                "coefficient": 1
+              },
+              {
+                "t_power": -6,
+                "coefficient": 1
+              },
+              {
+                "t_power": -4,
+                "coefficient": 1
+              },
+              {
+                "t_power": -2,
+                "coefficient": 1
+              },
+              {
+                "t_power": 0,
+                "coefficient": 1
+              },
+              {
+                "t_power": 2,
+                "coefficient": 1
+              },
+              {
+                "t_power": 4,
+                "coefficient": 1
+              },
+              {
+                "t_power": 6,
+                "coefficient": 1
+              },
+              {
+                "t_power": 8,
+                "coefficient": 1
+              },
+              {
+                "t_power": 10,
+                "coefficient": 1
+              },
+              {
+                "t_power": 12,
+                "coefficient": 1
+              }
+            ],
+            "unrefined_count": 13,
+            "elapsed_seconds": 0.0002429999876767397,
+            "diagnostics": {
+              "root_index": 2,
+              "nonroot_subsets": 3,
+              "stored_root_states": 1,
+              "candidate_splits": 1,
+              "nonparallel_splits": 1,
+              "detected_degeneracies": 0,
+              "max_ends": 16
+            }
+          }
+        ],
+        "comparison": {
+          "formula": "N_Delta(q)=sum_g total[g]*(t-t^(-1))^(2g), t=q^(1/2)",
+          "all_match": true,
+          "polygons": [
+            {
+              "id": "validation-Q5",
+              "ruling_id": "validation-Q5",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            },
+            {
+              "id": "validation-P5",
+              "ruling_id": "validation-P5",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 16
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 16
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 14
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 10
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            },
+            {
+              "id": "validation-S7",
+              "ruling_id": "validation-S7",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 7
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 7
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 6
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 5
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 4
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 3
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 2
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            },
+            {
+              "id": "validation-T13",
+              "ruling_id": "validation-T13",
+              "match": true,
+              "tropical_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "ruling_terms": [
+                {
+                  "t_power": -12,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": -2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 0,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 2,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 4,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 6,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 8,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 10,
+                  "coefficient": 1
+                },
+                {
+                  "t_power": 12,
+                  "coefficient": 1
+                }
+              ],
+              "differences": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "all_match": true,
+  "elapsed_seconds": 158.96404580003582
+}

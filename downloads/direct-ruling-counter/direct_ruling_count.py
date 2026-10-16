@@ -16,7 +16,7 @@ from multigeodesic_annular_input import exact_annular_payload
 from verify_triangle_rulings import Geodesic, Point
 
 
-ALGORITHM_VERSION = "direct-ruling-search-v2"
+ALGORITHM_VERSION = "direct-ruling-search-v3"
 
 
 @dataclass(frozen=True)

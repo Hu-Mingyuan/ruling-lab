@@ -1,0 +1,8 @@
+{
+  "polygons": [
+    {"id": "validation-Q5", "vertices": [[0, 1], [1, 0], [5, 3], [5, 4]]},
+    {"id": "validation-P5", "vertices": [[0, 0], [1, 0], [2, 1], [3, 4], [2, 5]]},
+    {"id": "validation-S7", "vertices": [[0, 5], [1, 2], [4, 0], [3, 3]]},
+    {"id": "validation-T13", "vertices": [[0, 0], [1, 0], [4, 13]]}
+  ]
+}

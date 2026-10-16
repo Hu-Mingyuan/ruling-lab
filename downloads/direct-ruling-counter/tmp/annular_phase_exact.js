@@ -1022,7 +1022,9 @@ function phaseResidueData(hx, hy, tauX, tauY) {
   if (tauH === 0n) throw new Error("sweep covector is tangent to annular homology");
   const q = absBigInt(tauH);
 
-  // Extended Euclid, with det(h,p)=hx*p_y-hy*p_x=1.
+  // Choose an integral basis (v,w) with tau(v)=1 and tau(w)=0.
+  // The actual circuit period h need not be primitive.  Replacing it by its
+  // primitive direction would identify different lifted boundary components.
   function extendedGcd(a, b) {
     const signA = a < 0n ? -1n : 1n;
     const signB = b < 0n ? -1n : 1n;
@@ -1040,15 +1042,12 @@ function phaseResidueData(hx, hy, tauX, tauY) {
     }
     return [oldR, oldS * signA, oldT * signB];
   }
-  const [divisor, xCoefficient, yCoefficient] = extendedGcd(hx, hy);
-  if (divisor !== 1n) throw new Error("annular homology must be primitive");
-  const px = -yCoefficient;
-  const py = xCoefficient;
-  const tauP = tauX * px + tauY * py;
+  const [divisor, px, py] = extendedGcd(tauX, tauY);
+  if (divisor !== 1n) throw new Error("the annular sweep covector must be primitive");
   const signTauH = tauH < 0n ? -1n : 1n;
-  const wx = q * px - signTauH * tauP * hx;
-  const wy = q * py - signTauH * tauP * hy;
-  if (tauX * wx + tauY * wy !== 0n || hx * wy - hy * wx !== q) {
+  const wx = -tauY;
+  const wy = tauX;
+  if (tauX * px + tauY * py !== 1n || px * wy - py * wx !== 1n) {
     throw new Error("internal phase-period identity failed");
   }
   return {
@@ -1056,7 +1055,34 @@ function phaseResidueData(hx, hy, tauX, tauY) {
     phaseStep: [px, py],
     fixedSlicePeriod: [wx, wy],
     tauH,
+    sweep: [tauX, tauY],
+    positivePeriod: [signTauH * hx, signTauH * hy],
   };
+}
+
+// An encoded phase k=a+q*z represents the deck vector a*v+z*w, 0<=a<q.
+// This is a bijection Z <-> Z^2/Zh even when the latter has torsion.
+function phaseDeckShift(residueData, phase) {
+  phase = BigInt(phase);
+  const q = residueData.q;
+  const residue = ((phase % q) + q) % q;
+  const z = (phase - residue) / q;
+  return residueData.phaseStep.map((coordinate, index) => (
+    residue * coordinate + z * residueData.fixedSlicePeriod[index]
+  ));
+}
+
+function deckPhaseClass(residueData, dx, dy) {
+  dx = BigInt(dx);
+  dy = BigInt(dy);
+  const [tx, ty] = residueData.sweep;
+  const [hx, hy] = residueData.positivePeriod;
+  const [vx, vy] = residueData.phaseStep;
+  const level = tx * dx + ty * dy;
+  const residue = ((level % residueData.q) + residueData.q) % residueData.q;
+  const longitudinal = (level - residue) / residueData.q;
+  const z = vx * (dy - longitudinal * hy) - vy * (dx - longitudinal * hx);
+  return residue + residueData.q * z;
 }
 
 function fractionScale(value, scalar) {
@@ -1320,7 +1346,7 @@ function exactDeckCoordinate(arr, visit) {
   return [numeratorX / period, numeratorY / period];
 }
 
-function forbiddenAnnularPhasesExact(arr, circuits, pair) {
+function forbiddenAnnularPhasesExact(arr, circuits, pair, residueData) {
   const [leftId, rightId] = pair;
   const left = circuits[leftId];
   const right = circuits[rightId];
@@ -1336,7 +1362,7 @@ function forbiddenAnnularPhasesExact(arr, circuits, pair) {
       const [rightX, rightY] = exactDeckCoordinate(arr, rightVisit);
       const dx = leftX - rightX;
       const dy = leftY - rightY;
-      const phase = BigInt(left.hx) * dy - BigInt(left.hy) * dx;
+      const phase = deckPhaseClass(residueData, dx, dy);
       forbidden.add(phase.toString());
     }
   }
@@ -1368,6 +1394,8 @@ function annularMultiplicityAtPhaseExact(
   const left = circuits[leftId];
   const right = circuits[rightId];
   const [px, py] = residueData.phaseStep;
+  const [wx, wy] = residueData.fixedSlicePeriod;
+  const [phaseX, phaseY] = phaseDeckShift(residueData, phase);
   const q = residueData.q;
   const period = BigInt(arr.L);
   const level = exactLinearForm(tau, basePoint[0], basePoint[1]);
@@ -1377,10 +1405,10 @@ function annularMultiplicityAtPhaseExact(
   for (let residue = 0n; residue < q; residue += 1n) {
     const leftShiftX = residue * px;
     const leftShiftY = residue * py;
-    const rightShiftX = leftShiftX + phase * px;
-    const rightShiftY = leftShiftY + phase * py;
-    const nextShiftX = (residue + q) * px;
-    const nextShiftY = (residue + q) * py;
+    const rightShiftX = leftShiftX + phaseX;
+    const rightShiftY = leftShiftY + phaseY;
+    const nextShiftX = leftShiftX + wx;
+    const nextShiftY = leftShiftY + wy;
     const leftHit = liftedLineHitExact(
       arr, left, leftShiftX, leftShiftY, level, tau,
     );
@@ -1453,7 +1481,7 @@ function compileAnnularEyeResidue(options) {
   const right = circuits[rightId];
   if (left.kind !== "essential" || right.kind !== "essential"
       || left.hx !== right.hx || left.hy !== right.hy) {
-    throw new Error("annular pair must have the same essential primitive homology");
+    throw new Error("annular pair must have the same essential circuit period");
   }
   const residueData = phaseResidueData(left.hx, left.hy, tau[0], tau[1]);
   const q = residueData.q;
@@ -1464,6 +1492,9 @@ function compileAnnularEyeResidue(options) {
   const [px, py] = residueData.phaseStep;
   const [wx, wy] = residueData.fixedSlicePeriod;
   const period = BigInt(arr.L);
+  if (sigma[0] * wx + sigma[1] * wy === 0n) {
+    throw new Error("the annular transverse covector must be independent of the sweep");
+  }
   const level = exactLinearForm(tau, basePoint[0], basePoint[1]);
   const localConstraints = [];
   for (let sheet = 0n; sheet < q; sheet += 1n) {
@@ -1512,7 +1543,7 @@ function compileAnnularEyeResidue(options) {
     });
   }
 
-  const forbiddenPhases = forbiddenAnnularPhasesExact(arr, circuits, pair);
+  const forbiddenPhases = forbiddenAnnularPhasesExact(arr, circuits, pair, residueData);
   const forbiddenZ = forbiddenPhases
     .filter((phase) => (phase - residue) % q === 0n)
     .map((phase) => (phase - residue) / q);
@@ -1888,6 +1919,8 @@ module.exports = {
   makeFraction,
   normalizeLinearConstraint,
   phaseResidueData,
+  phaseDeckShift,
+  deckPhaseClass,
   liftedLineHitExact,
   forbiddenAnnularPhasesExact,
   translatedDiskMultiplicityExact,
